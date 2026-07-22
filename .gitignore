@@ -1,0 +1,16 @@
+# Dados sensíveis e arquivos locais
+.env
+.env.*
+!.env.example
+data/
+reports/
+
+# Cache e temporários
+*.log
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc
+
+# Scripts temporários de setup
+create_structure.py
