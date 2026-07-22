@@ -85,9 +85,24 @@ HIGH HOUSE/
     ├── imagens/
     ├── marcas/
     ├── artigos/
-    ├── livros/
-    └── videos/
+├── 10_REFERENCIAS/             # Acervo de imagens, livros, artigos e marcas
+│   ├── imagens/
+│   ├── marcas/
+│   ├── artigos/
+│   ├── livros/
+│   └── videos/
+│
+└── apresentacao/               # Apresentação interativa Web
 ```
+
+---
+
+## 🌐 Apresentação Interativa Web
+Foi desenvolvida uma apresentação web interativa e fluida em HTML/CSS/JS vanilla, localizada no diretório `apresentacao/`.
+
+- **Objetivo:** Apresentar a visão, essência, cultura de resistência, comunidade, produtos e metas da High House a quem não conhece profundamente a ideia.
+- **Localização:** [`apresentacao/index.html`](file:///c:/Users/user/Documents/High%20House/apresentacao/index.html)
+- **Como executar:** Basta abrir o arquivo `apresentacao/index.html` em qualquer navegador web moderno (sem necessidade de bundlers ou servidores Node.js).
 
 ---
 
