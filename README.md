@@ -106,10 +106,16 @@ Foi desenvolvida uma apresentação web interativa e fluida em HTML/CSS/JS vanil
 
 ---
 
+## 📄 Documentos Recentes
+- **Hipóteses de Mercado** — 16 hipóteses testáveis formuladas a partir da pesquisa exploratória: [`02_PESQUISA/mercado/hipoteses-de-mercado.md`](file:///c:/Users/user/Documents/High%20House/02_PESQUISA/mercado/hipoteses-de-mercado.md)
+
+---
+
 ## 🎯 Próximos Passos
-1. Concluir o mapeamento de repertório e pesquisa (Diretório `02_PESQUISA`).
-2. Definir a identidade visual e o produto de estreia (Diretórios `06_IDENTIDADE_VISUAL` e `07_PRODUTOS`).
-3. Validar a primeira gota/drop e atingir a **Meta 1** e **Meta 2** de viabilidade financeira.
+1. ~~Concluir o mapeamento de repertório e pesquisa~~ → Hipóteses de mercado formuladas ✅
+2. **Validar hipóteses prioritárias:** público, produto inicial e disposição a pagar.
+3. Definir a identidade visual e o produto de estreia (Diretórios `06_IDENTIDADE_VISUAL` e `07_PRODUTOS`).
+4. Validar a primeira gota/drop e atingir a **Meta 1** e **Meta 2** de viabilidade financeira.
 
 ---
 *Atualizado em Julho de 2026.*
