@@ -8,6 +8,7 @@ Este diretório concentra os documentos operacionais, de acompanhamento e tomada
 - [ROADMAP.md](file:///c:/Users/user/Documents/High%20House/00_GESTAO_DO_PROJETO/ROADMAP.md) — O mapa de desenvolvimento por fases do projeto.
 - [DECISOES.md](file:///c:/Users/user/Documents/High%20House/00_GESTAO_DO_PROJETO/DECISOES.md) — O registro formal de decisões já tomadas.
 - [QUESTOES_EM_ABERTO.md](file:///c:/Users/user/Documents/High%20House/00_GESTAO_DO_PROJETO/QUESTOES_EM_ABERTO.md) — As dúvidas e escolhas pendentes que demandam pesquisa e validação.
+- [recursos-e-restricoes-do-fundador.md](file:///c:/Users/user/Documents/High%20House/00_GESTAO_DO_PROJETO/recursos-e-restricoes-do-fundador.md) — Diagnóstico dos recursos disponíveis e restrições reais do fundador.
 
 ## Ciclo de Desenvolvimento
 O projeto é guiado pelo ciclo iterativo de descoberta:

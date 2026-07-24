@@ -108,6 +108,7 @@ Foi desenvolvida uma apresentação web interativa e fluida em HTML/CSS/JS vanil
 
 ## 📄 Documentos Recentes
 - **Hipóteses de Mercado** — 16 hipóteses testáveis formuladas a partir da pesquisa exploratória: [`02_PESQUISA/mercado/hipoteses-de-mercado.md`](file:///c:/Users/user/Documents/High%20House/02_PESQUISA/mercado/hipoteses-de-mercado.md)
+- **Recursos e Restrições do Fundador** — Diagnóstico dos recursos disponíveis, limitações reais e estratégia de compensação: [`00_GESTAO_DO_PROJETO/recursos-e-restricoes-do-fundador.md`](file:///c:/Users/user/Documents/High%20House/00_GESTAO_DO_PROJETO/recursos-e-restricoes-do-fundador.md)
 
 ---
 
