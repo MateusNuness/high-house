@@ -97,12 +97,13 @@ HIGH HOUSE/
 
 ---
 
-## 🌐 Apresentação Interativa Web
-Foi desenvolvida uma apresentação web interativa e fluida em HTML/CSS/JS vanilla, localizada no diretório `apresentacao/`.
+## 🌐 Brand Deck — Apresentação de Marca
+Brand Deck interativo em HTML/CSS/JS vanilla, com 7 seções focadas em comunicação externa: o que é a High House, por que existe, para onde quer ir e onde está agora.
 
-- **Objetivo:** Apresentar a visão, essência, cultura de resistência, comunidade, produtos e metas da High House a quem não conhece profundamente a ideia.
+- **Estrutura:** Abertura → O que é → O que defende → Para onde vai → O que faz primeiro → Onde está agora → Convite
+- **Identidade visual:** Paleta MVP Visual (#0E0F12, #F3EDE3, #D46A4C, #7467E6, #36C2A6, #C8B59C), Space Grotesk + Inter
 - **Localização:** [`apresentacao/index.html`](file:///c:/Users/user/Documents/High%20House/apresentacao/index.html)
-- **Como executar:** Basta abrir o arquivo `apresentacao/index.html` em qualquer navegador web moderno (sem necessidade de bundlers ou servidores Node.js).
+- **Como executar:** Abrir o arquivo `apresentacao/index.html` em qualquer navegador web moderno.
 
 ---
 

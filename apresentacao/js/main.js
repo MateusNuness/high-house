@@ -1,7 +1,6 @@
 /**
- * HIGH HOUSE — Apresentação Interativa (v2)
- * Interações: scroll reveal, progress nav (11 seções), parallax, keyboard nav.
- * Sem dependências externas.
+ * HIGH HOUSE — Brand Deck
+ * 7 seções. Scroll reveal, progress nav, parallax, keyboard nav.
  */
 
 (function () {
@@ -9,10 +8,7 @@
 
   const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  // ==========================================
-  // 1. SCROLL REVEAL (Intersection Observer)
-  // ==========================================
-
+  // 1. SCROLL REVEAL
   const revealElements = document.querySelectorAll('.reveal');
 
   if (!prefersReducedMotion && 'IntersectionObserver' in window) {
@@ -27,22 +23,16 @@
       },
       { threshold: 0.12, rootMargin: '0px 0px -35px 0px' }
     );
-
     revealElements.forEach((el) => revealObserver.observe(el));
   } else {
     revealElements.forEach((el) => el.classList.add('is-visible'));
   }
 
-
-  // ==========================================
   // 2. PROGRESS NAVIGATION
-  // ==========================================
-
   const progressNav = document.getElementById('progressNav');
   const navDots = progressNav ? progressNav.querySelectorAll('.progress-nav__dot') : [];
   const sections = document.querySelectorAll('main > section[id]');
 
-  // Click → smooth scroll
   navDots.forEach((dot) => {
     dot.addEventListener('click', () => {
       const targetId = dot.getAttribute('data-target');
@@ -51,7 +41,6 @@
     });
   });
 
-  // Track active section
   if (sections.length > 0 && 'IntersectionObserver' in window) {
     const sectionObserver = new IntersectionObserver(
       (entries) => {
@@ -66,15 +55,10 @@
       },
       { threshold: 0, rootMargin: '-45% 0px -45% 0px' }
     );
-
     sections.forEach((s) => sectionObserver.observe(s));
   }
 
-
-  // ==========================================
   // 3. PARALLAX ON HERO ORBS
-  // ==========================================
-
   const heroOrbs = document.querySelectorAll('.hero__orb');
 
   if (!prefersReducedMotion && heroOrbs.length > 0) {
@@ -96,11 +80,7 @@
     }, { passive: true });
   }
 
-
-  // ==========================================
-  // 4. HIDE SCROLL INDICATOR ON SCROLL
-  // ==========================================
-
+  // 4. HIDE SCROLL INDICATOR
   const scrollIndicator = document.querySelector('.hero__scroll');
 
   if (scrollIndicator && !prefersReducedMotion) {
@@ -114,11 +94,7 @@
     }, { passive: true });
   }
 
-
-  // ==========================================
   // 5. KEYBOARD NAVIGATION
-  // ==========================================
-
   document.addEventListener('keydown', (e) => {
     if (e.key !== 'ArrowDown' && e.key !== 'ArrowUp') return;
 
