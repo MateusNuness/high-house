@@ -43,7 +43,9 @@ HIGH HOUSE/
 │   ├── posicionamento.md
 │   ├── proposta-de-valor.md
 │   ├── publico.md
-│   └── modelo-de-negocio.md
+│   ├── modelo-de-negocio.md
+│   ├── plano-de-validacao-de-baixo-contato.md
+│   └── primeiro-sistema-de-conteudo.md
 │
 ├── 04_IDENTIDADE_DA_MARCA/     # Personalidade, voz, linguagem e comunicação
 │   ├── personalidade.md
@@ -79,12 +81,9 @@ HIGH HOUSE/
 │   ├── clientes.md
 │   ├── receitas.md
 │   ├── custos.md
-│   └── viabilidade.md
+│   ├── viabilidade.md
+│   └── oportunidades-concretas-e-priorizacao.md
 │
-└── 10_REFERENCIAS/             # Acervo de imagens, livros, artigos e marcas
-    ├── imagens/
-    ├── marcas/
-    ├── artigos/
 ├── 10_REFERENCIAS/             # Acervo de imagens, livros, artigos e marcas
 │   ├── imagens/
 │   ├── marcas/
@@ -107,16 +106,23 @@ Foi desenvolvida uma apresentação web interativa e fluida em HTML/CSS/JS vanil
 ---
 
 ## 📄 Documentos Recentes
-- **Hipóteses de Mercado** — 16 hipóteses testáveis formuladas a partir da pesquisa exploratória: [`02_PESQUISA/mercado/hipoteses-de-mercado.md`](file:///c:/Users/user/Documents/High%20House/02_PESQUISA/mercado/hipoteses-de-mercado.md)
+- **Plano de Validação de Baixo Contato** — Metodologia de validação adaptada ao perfil introspectivo do fundador, com 5 fases progressivas e 5 experimentos práticos: [`03_ESTRATEGIA/plano-de-validacao-de-baixo-contato.md`](file:///c:/Users/user/Documents/High%20House/03_ESTRATEGIA/plano-de-validacao-de-baixo-contato.md)
+- **Primeiro Sistema de Conteúdo** — Sistema completo de conteúdo definindo territórios, formatos, séries editoriais, tom de voz e métricas: [`03_ESTRATEGIA/primeiro-sistema-de-conteudo.md`](file:///c:/Users/user/Documents/High%20House/03_ESTRATEGIA/primeiro-sistema-de-conteudo.md)
+- **Oportunidades Concretas e Priorização** — 6 oportunidades avaliadas por 8 critérios com matriz de priorização e recomendação de sequência: [`09_NEGOCIO/oportunidades-concretas-e-priorizacao.md`](file:///c:/Users/user/Documents/High%20House/09_NEGOCIO/oportunidades-concretas-e-priorizacao.md)
 - **Recursos e Restrições do Fundador** — Diagnóstico dos recursos disponíveis, limitações reais e estratégia de compensação: [`00_GESTAO_DO_PROJETO/recursos-e-restricoes-do-fundador.md`](file:///c:/Users/user/Documents/High%20House/00_GESTAO_DO_PROJETO/recursos-e-restricoes-do-fundador.md)
+- **Hipóteses de Mercado** — 16 hipóteses testáveis formuladas a partir da pesquisa exploratória: [`02_PESQUISA/mercado/hipoteses-de-mercado.md`](file:///c:/Users/user/Documents/High%20House/02_PESQUISA/mercado/hipoteses-de-mercado.md)
 
 ---
 
 ## 🎯 Próximos Passos
 1. ~~Concluir o mapeamento de repertório e pesquisa~~ → Hipóteses de mercado formuladas ✅
-2. **Validar hipóteses prioritárias:** público, produto inicial e disposição a pagar.
-3. Definir a identidade visual e o produto de estreia (Diretórios `06_IDENTIDADE_VISUAL` e `07_PRODUTOS`).
-4. Validar a primeira gota/drop e atingir a **Meta 1** e **Meta 2** de viabilidade financeira.
+2. ~~Mapear recursos, restrições e perfil do fundador~~ → Diagnóstico completo ✅
+3. ~~Identificar e priorizar oportunidades concretas~~ → Matriz de priorização definida ✅
+4. ~~Definir plano de validação de baixo contato~~ → 5 fases e 5 experimentos documentados ✅
+5. ~~Criar primeiro sistema de conteúdo~~ → Territórios, formatos e séries definidos ✅
+6. **Executar Experimento 1:** série inicial de posts curados para validar linguagem da marca.
+7. Definir a identidade visual e o produto de estreia (Diretórios `06_IDENTIDADE_VISUAL` e `07_PRODUTOS`).
+8. Validar a primeira gota/drop e atingir a **Meta 1** e **Meta 2** de viabilidade financeira.
 
 ---
 *Atualizado em Julho de 2026.*
