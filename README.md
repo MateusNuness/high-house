@@ -62,7 +62,8 @@ HIGH HOUSE/
 │   ├── logo/
 │   ├── tipografia/
 │   ├── cores/
-│   └── brand-guidelines.md
+│   ├── brand-guidelines.md
+│   └── identidade-visual-minima-viavel.md
 │
 ├── 07_PRODUTOS/                # Linhas de vestuário, headshop e coleções
 │   ├── roupas/
@@ -106,11 +107,11 @@ Foi desenvolvida uma apresentação web interativa e fluida em HTML/CSS/JS vanil
 ---
 
 ## 📄 Documentos Recentes
+- **Identidade Visual Mínima Viável (MVP Visual)** — Kit provisório de marca (paleta, tipografia, composição, tom de voz e assinatura) para postar sem paralisar: [`06_IDENTIDADE_VISUAL/identidade-visual-minima-viavel.md`](file:///c:/Users/user/Documents/High%20House/06_IDENTIDADE_VISUAL/identidade-visual-minima-viavel.md)
 - **Plano de Validação de Baixo Contato** — Metodologia de validação adaptada ao perfil introspectivo do fundador, com 5 fases progressivas e 5 experimentos práticos: [`03_ESTRATEGIA/plano-de-validacao-de-baixo-contato.md`](file:///c:/Users/user/Documents/High%20House/03_ESTRATEGIA/plano-de-validacao-de-baixo-contato.md)
 - **Primeiro Sistema de Conteúdo** — Sistema completo de conteúdo definindo territórios, formatos, séries editoriais, tom de voz e métricas: [`03_ESTRATEGIA/primeiro-sistema-de-conteudo.md`](file:///c:/Users/user/Documents/High%20House/03_ESTRATEGIA/primeiro-sistema-de-conteudo.md)
 - **Oportunidades Concretas e Priorização** — 6 oportunidades avaliadas por 8 critérios com matriz de priorização e recomendação de sequência: [`09_NEGOCIO/oportunidades-concretas-e-priorizacao.md`](file:///c:/Users/user/Documents/High%20House/09_NEGOCIO/oportunidades-concretas-e-priorizacao.md)
 - **Recursos e Restrições do Fundador** — Diagnóstico dos recursos disponíveis, limitações reais e estratégia de compensação: [`00_GESTAO_DO_PROJETO/recursos-e-restricoes-do-fundador.md`](file:///c:/Users/user/Documents/High%20House/00_GESTAO_DO_PROJETO/recursos-e-restricoes-do-fundador.md)
-- **Hipóteses de Mercado** — 16 hipóteses testáveis formuladas a partir da pesquisa exploratória: [`02_PESQUISA/mercado/hipoteses-de-mercado.md`](file:///c:/Users/user/Documents/High%20House/02_PESQUISA/mercado/hipoteses-de-mercado.md)
 
 ---
 
@@ -120,8 +121,8 @@ Foi desenvolvida uma apresentação web interativa e fluida em HTML/CSS/JS vanil
 3. ~~Identificar e priorizar oportunidades concretas~~ → Matriz de priorização definida ✅
 4. ~~Definir plano de validação de baixo contato~~ → 5 fases e 5 experimentos documentados ✅
 5. ~~Criar primeiro sistema de conteúdo~~ → Territórios, formatos e séries definidos ✅
-6. **Executar Experimento 1:** série inicial de posts curados para validar linguagem da marca.
-7. Definir a identidade visual e o produto de estreia (Diretórios `06_IDENTIDADE_VISUAL` e `07_PRODUTOS`).
+6. ~~Estruturar Identidade Visual Mínima Viável (MVP Visual)~~ → Kit básico (cores, fontes, grid, assinatura) definido ✅
+7. **Executar Experimento 1:** produzir os primeiros 3 a 5 posts usando a Identidade Mínima Viável para testar engajamento.
 8. Validar a primeira gota/drop e atingir a **Meta 1** e **Meta 2** de viabilidade financeira.
 
 ---
