@@ -33,50 +33,61 @@ Para este primeiro ciclo, onde o foco é criar o universo e atrair quem se ident
 
 ---
 
-## Etapa 3: O Banco de Repertório (A Matéria-Prima)
+## Etapa 3: O Banco de Perguntas (A Matéria-Prima)
 
-Esqueça o "Banco de Ideias". Ideias tiradas do nada, criadas por IA ou inventadas para preencher calendário parecem artificiais, genéricas e fáceis de copiar. A High House não é uma marca que "gera conteúdo"; é uma marca que **interpreta o mundo**.
+O método tradicional de criar conteúdo pressupõe que você já "vive" como a marca no dia a dia. Mas a High House ainda não existe publicamente. Exigir que você tenha 50 ideias prontas agora seria paralisante e irreal.
 
-Para isso, substituímos a lista de ideias por um **Banco de Repertório**. Ele será alimentado continuamente pelas suas observações reais. Os melhores posts nascem da sua vida, do seu olhar e das suas convicções.
+Por isso, substituímos o "Banco de Ideias" por um **Banco de Perguntas**. A High House é curiosa, exploradora e questionadora, não a dona da verdade.
 
-**O que entra no Banco de Repertório?**
-- **Observações:** *"Hoje fui numa tabacaria e percebi que quase tudo era de plástico."*
-- **Questionamentos:** *"Será que os terceiros lugares (cafés, praças) ainda existem, ou todo mundo só vai para usar o notebook?"*
-- **Percepções:** *"Por que uma mesa muda tanto a dinâmica de uma conversa?"*
-- **Fragmentos:** Fotos que tirou, frases que ouviu, trechos de livros, cenas de filmes, músicas, texturas, embalagens ou pessoas interessantes.
+Em vez de tentar inventar posts completos, começamos com "sementes" — palavras simples que formam o universo da marca:
+*Materiais, Casa, Tempo, Objetos, Mesa, Luz, Silêncio, Cidade, Ritual, Comunidade.*
 
-### A Dinâmica de Criação com a IA
-A IA não entra no processo para **inventar** a essência, mas sim para **lapidar e estruturar** a sua matéria-prima. O fluxo funciona de duas formas:
+Para cada semente, fazemos perguntas. Por exemplo:
 
-**Cenário A: Quando você tem uma observação**
-Você entra com a matéria-prima crua:
-> *"Observação: Fui numa loja de móveis. Percebi que uma mesa muda totalmente o ritmo de uma conversa. Transforme isso num post da High House cruzando com o nosso pilar de Convivência."*
+**Materiais**
+- Por que alguns materiais envelhecem melhor?
+- Por que plástico transmite algo diferente da madeira?
+- Existe material "honesto"?
 
-**Cenário B: Quando você não tem uma observação no dia**
-A IA faz o papel de entrevistadora e extrai de você:
-> *"O que chamou sua atenção essa semana?"*
-> *"Qual foi o último lugar bonito que você entrou?"*
-> *"Qual objeto você usou hoje que parecia ter sido feito com cuidado?"*
+**Mesa**
+- O que uma mesa comunica?
+- Por que algumas mesas convidam à conversa?
+- O que existe em comum entre um café e uma roda de amigos?
 
-Você responde de forma simples, e a partir da sua resposta, a IA estrutura o post.
-Com isso, você combina elementos para criar algo original (ex: `Livro + Objeto + Observação = Post`).
+**Cidade**
+- Qual é o lugar mais silencioso da cidade?
+- O que torna um lugar acolhedor?
+- Existe hospitalidade urbana?
 
-Essa mudança de perspectiva valida algo muito importante: a essência da High House já está na sua cabeça. Se você contratar um diretor de criação no futuro, ele fará exatamente o mesmo que a IA faz hoje: não inventará a marca do zero, mas traduzirá as suas percepções (que você acha que "não são tão criativas") em uma linguagem consistente.
+Essas perguntas (*Como, Por que, Será que, O que faz...*) viram observações. As observações viram posts. Algumas poucas sementes bem exploradas já rendem o conteúdo inicial necessário sem a pressão de "ter uma grande ideia do nada".
+
+### A Dinâmica de Criação
+A IA não entra para **inventar** a essência, mas sim para agir como uma ferramenta de provocação. Ela ajuda a transformar as perguntas, observações cruas da sua vida e os questionamentos das sementes no formato final da High House. Você não inventa os temas; você apenas explora as perguntas.
+
+Essa mudança de perspectiva valida algo muito importante: a essência da High House já está na sua cabeça. O trabalho inicial é apenas extrair isso através da curiosidade.
 
 ---
 
-## Etapa 4: O Primeiro Post
+## Etapa 4: O Plano de Voo (Do Primeiro Post em Diante)
 
-A nossa intenção principal é que a pessoa sinta: *"Essa marca tem muito bom gosto, quero acompanhar, mesmo sem saber exatamente o que é"*.
+A nossa intenção principal ao lançar a marca não é viralizar, nem ensinar, nem sequer explicar o que exatamente é a High House.
 
-A decisão de qual post lançar primeiro é o que vai ancorar toda a percepção da marca. Não devemos tentar explicar nada, nem vender nada, nem anunciar que "chegamos". Deve ser uma **afirmação estética e filosófica**.
+**A função do Post 001**
+Ele existe para responder a uma única pergunta de quem abre o perfil pela primeira vez: *"Vale a pena acompanhar essa marca?"*
+Se a resposta for "sim", o post cumpriu a sua missão. Como ainda não deu tempo de viver o dia a dia da marca, o Post 001 **não nasce de uma observação**, mas da **essência e do manifesto** da marca. Ele é fundacional.
 
-**A Sugestão para o Post 001:**
-**Ideia base:** "Por que material importa." (Ideia 1).
+**O Roteiro de Crescimento:**
+
+- **Post 001 (Fundacional):** Nasce do manifesto. É uma afirmação estética e filosófica.
+- **Posts 002–010 (Exploração):** Misturam as suas observações diárias, seu repertório pessoal, a vida real e as respostas ao **Banco de Perguntas**.
+- **Posts 011+ (Comunidade):** A própria comunidade e as interações começam a alimentar o repertório.
+
+**A Sugestão para o Post 001 (Fundacional):**
+**Ideia base:** "Por que material importa." (Uma das nossas sementes).
 **Formato:** Template D (Carrossel).
 
 - **Slide 1 (Imagem forte):** Uma foto macro/close-up de uma textura rica e "pesada" (ex: um cinzeiro de cerâmica crua ou metal fosco sobre concreto), com o título em Space Grotesk: *Por que o material importa.*
-- **Slide 2 (Texto - Manifesto):** "O peso, a textura, a temperatura. O nosso mundo está cheio de objetos rápidos, leves e descartáveis. Nós queremos voltar a sentir o peso das coisas bem feitas. A qualidade do ritual começa pelo que você tem nas mãos."
+- **Slide 2 (Texto - Manifesto):** "O peso, a textura, a temperatura. O nosso mundo está cheio de objetos rápidos, leves e descartáveis. Queremos voltar a sentir o peso das coisas bem feitas. A qualidade do ritual começa pelo que você tem nas mãos."
 - **Slide 3 (Imagem inspiracional):** Um ambiente de luz baixa, sofisticado, com objetos de design curados (uma sala de estar, mesa de centro, café, etc), refletindo a "High House" sem mostrar um produto óbvio.
 
-Essa estrutura atende 100% à sua premissa: quem busca a estética do plástico colorido e clichês vai embora. Quem se interessa por design, maturidade e hospitalidade pensa *"Ainda não sei o que eles vendem, mas gostei da visão deles, vou seguir"*.
+Essa estrutura atende à premissa: quem busca a estética do plástico colorido e clichês vai embora. Quem se interessa por design, maturidade e hospitalidade pensa *"Ainda não sei o que eles vendem, mas gostei da visão deles, vou seguir"*. A partir daqui, as portas estão abertas para começarmos a explorar o Banco de Perguntas.
