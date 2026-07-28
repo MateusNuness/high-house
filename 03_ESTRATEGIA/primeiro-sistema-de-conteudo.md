@@ -7,102 +7,96 @@
 
 ---
 
-## 1. A Filosofia de Produção
+## 1. A Filosofia: Documentar vs. Produzir
 
-A premissa deste sistema é libertadora: **Você não é um designer gráfico. E não precisa ser.**
-A High House não vai exigir que você abra o Canva do zero, encare uma tela em branco e tente acertar hierarquia, contraste e espaçamento. 
+A premissa deste sistema é libertadora: **A High House não é uma marca que "produz conteúdo". Ela é uma marca que documenta um universo.**
 
-O seu papel na High House é de **Diretor de Arte e Curador**.
-Você não cria o layout do zero. Você tem ideias, escreve conceitos, aprova imagens geradas e **apenas monta** o conteúdo em um molde que já funciona.
+Quem produz conteúdo acorda pensando: *"O que eu posto hoje pro algoritmo?"*
+Quem documenta acorda pensando: *"O que eu vi, li, ouvi ou percebi hoje que merece ser compartilhado?"*
 
-Produzir um post deixa de ser um exercício exaustivo de criatividade e vira um **processo repetível de 20 a 30 minutos**.
-
----
-
-## 2. A Pilha Tecnológica (Custo: R$ 0)
-
-Você utilizará exatamente 5 ferramentas para colocar a High House no mundo:
-
-1. **ChatGPT:** Para gerar ideias, refinar textos curtos e criar os "prompts" de imagem.
-2. **Gerador de Imagens IA (Flux / Midjourney / DALL-E):** Para materializar a direção de fotografia (ex: objeto escuro, luz lateral, estética de revista).
-3. **Figma (Gratuito):** Onde os *Templates* (moldes fixos) estarão salvos. Você só vai entrar para trocar a foto, colar o texto e exportar.
-4. **Google Fonts:** Suas fontes base (*Space Grotesk* e *Inter*) instaladas no computador.
-5. **Instagram (A Casa Provisória):** Onde o conteúdo é publicado.
+Você não é um designer gráfico refém de um calendário editorial exaustivo. O seu papel na High House é de **Diretor de Arte e Curador**. Você não cria layouts do zero; você tem ideias, cruza territórios, aprova imagens e **apenas monta** o conteúdo em moldes que já funcionam.
 
 ---
 
-## 3. Os 4 Modelos de Templates (Figma)
+## 2. O Banco de Ideias (A Matriz Infinita)
 
-Para evitar ter que "inventar um post" toda vez, a High House terá apenas **4 templates fixos** configurados no Figma. 
+A origem de um post não é a tela em branco. A origem é o seu repertório. Toda vez que algo chamar a sua atenção no mundo real, você o guarda em um **Território**. 
 
-*   **Modelo A (O Pôster):** Imagem grande cobrindo o post + Título forte + Assinatura no rodapé.
-*   **Modelo B (A Citação/Curadoria):** Imagem centralizada menor + Frase/Citação abaixo + Rodapé minimalista.
-*   **Modelo C (O Manifesto):** Apenas texto. Título em *Space Grotesk* + Parágrafo em *Inter* + Fundo nas cores da marca (Preto Profundo ou Off-White).
+### Os 6 Territórios (O Assunto)
+1. **Cannabis:** Cultura, ritual, preparação, tempo, silêncio (não o consumo nu e cru).
+2. **Design:** Objetos, materiais (cerâmica, metal, madeira), durabilidade, arquitetura.
+3. **Música:** Capas de disco, equipamentos, cultura do vinil, playlists, shows.
+4. **Cidade:** Niterói, Rio de Janeiro, cafés, praças, galerias, cenas urbanas.
+5. **Construção da Marca:** Os bastidores, os erros, os acertos, escolhas de tecido.
+6. **Comunidade:** A convivência, hospitalidade, o ato de reunir pessoas ao redor de uma mesa.
+
+---
+
+## 3. As Categorias (A Intenção)
+
+Quando você for documentar algo do seu Banco de Ideias, você deve escolher *como* falar sobre aquilo. 
+
+1. **Manifesto:** Serve para mostrar como a High House pensa. Posicionamento duro. (Ex: "Material importa", "Cultura não se compra").
+2. **Curadoria:** Mostrar algo interessante (uma cadeira, um disco, um café) e responder: *Por que isso importa para a High House?*
+3. **Observação:** Quando você percebe algo no mundo e questiona. (Ex: "Por que quase todos os acessórios canábicos precisam parecer brinquedos fluorescentes?").
+4. **Construção:** Mostrar o processo bruto. (Ex: "Essas são as paletas de cor que descartamos").
+
+*Ao cruzar 6 Territórios com 4 Categorias, você tem dezenas de possibilidades de posts sem nunca precisar "inventar" assunto.*
+
+---
+
+## 4. Os 4 Modelos de Templates (O Formato no Figma)
+
+A High House terá apenas **4 templates fixos** configurados no Figma (Custo R$ 0). 
+Você só precisará arrastar a foto, colar o texto e exportar.
+
+*   **Modelo A (O Pôster):** Imagem grande cobrindo o post + Título forte + Assinatura.
+*   **Modelo B (A Citação/Curadoria):** Imagem centralizada menor + Frase/Citação + Rodapé.
+*   **Modelo C (O Manifesto):** Apenas texto. Título em *Space Grotesk* + Parágrafo em *Inter* + Fundo nas cores da marca.
 *   **Modelo D (O Carrossel):** Sequência lógica do Modelo A e Modelo C alternados.
 
-> **O que você precisa aprender no Figma (Apenas 3 coisas):**
-> 1. Como arrastar e soltar uma imagem nova dentro do "quadrado" da foto.
-> 2. Como dar dois cliques no texto e colar o texto novo.
-> 3. Como clicar em "Exportar PNG".
-> *Nada além disso.*
-
 ---
 
-## 4. O Fluxo de Trabalho (O Processo de 30 Minutos)
+## 5. O Fluxo de Trabalho (O Processo de 30 Minutos)
 
-Quando você for produzir conteúdo, siga **estritamente** este passo a passo. 
+Quando você for materializar uma ideia, siga **estritamente** este passo a passo. 
 
-### Passo 1: Qual é a categoria da ideia?
-Escolha sobre o que você vai falar hoje:
-*   [ ] **Editorial:** Reflexões sobre ritual, autonomia, design e cultura.
-*   [ ] **Curadoria:** Indicar uma revista, um café, uma peça de cerâmica, uma música.
-*   [ ] **Construção:** Mostrar os bastidores (ex: "estamos escolhendo tecidos").
-*   [ ] **Observação:** Detalhes de um material ou comportamento.
+### Passo 0: Escolha o Território (Sobre o quê?)
+*   [ ] Cannabis
+*   [ ] Design
+*   [ ] Música
+*   [ ] Cidade
+*   [ ] Construção da Marca
+*   [ ] Comunidade
 
-### Passo 2: Qual será o molde?
+### Passo 1: Escolha a Categoria (Qual a intenção?)
+*   [ ] Manifesto
+*   [ ] Curadoria
+*   [ ] Observação
+*   [ ] Construção
+
+### Passo 2: Escolha o Template (O Molde Visual)
 *   [ ] Modelo A (Pôster)
 *   [ ] Modelo B (Citação/Curadoria)
 *   [ ] Modelo C (Só Texto)
 *   [ ] Modelo D (Carrossel)
 
-### Passo 3: Terceirizar a base para a IA (ChatGPT)
-Você escreve no ChatGPT a sua intenção crua. 
-*Exemplo: "Quero fazer um post sobre como o material das coisas importa. A ideia é que os objetos de tabacaria não deveriam ser descartáveis. Escreva o título, 1 frase curta para a imagem, e gere o prompt em inglês para eu pedir para uma IA gerar uma foto de revista de design de um objeto de cerâmica escura em cima do concreto com luz suave."*
+### Passo 3: Terceirizar a Base para a IA (ChatGPT)
+Você escreve a sua intenção crua no ChatGPT, já informando o território e a categoria. 
+*Exemplo: "Quero fazer um post de Observação no território de Design. Percebi que muitos acessórios canábicos são de plástico e coloridos demais. A High House acredita em materiais nobres, como a cerâmica. Escreva o título, 1 frase de impacto, e gere um prompt em inglês para eu criar uma foto realista de um objeto escuro de cerâmica sobre o concreto."*
 
-### Passo 4: Gerar a Imagem (Se houver)
-Pegue o prompt gigante que o ChatGPT criou e cole no gerador de imagens. Escolha a que ficar mais fiel ao *MVP Visual* da High House (texturas, fundo limpo, iluminação suave).
+### Passo 4: Gerar a Imagem (Midjourney / Flux / GPT Images)
+Cole o prompt criado pela IA no gerador de imagens. Escolha a mais fiel ao *MVP Visual* da High House.
 
 ### Passo 5: A Montagem no Figma
-1. Abra o Figma.
-2. Jogue a imagem gerada dentro do seu Template.
-3. Cole o título criado pelo ChatGPT.
-4. Exporte o arquivo (PNG).
+Abra o Figma. Jogue a imagem no template escolhido (Passo 2). Cole os textos. Exporte em PNG.
 
 ### Passo 6: Publicar no Laboratório (Instagram)
-Cole a legenda (também já refinada pela IA) e poste.
+Cole a legenda e poste. O ciclo se encerra e o aprendizado começa.
 
 ---
 
-## 5. Pesquisa e Curadoria de Fontes Originais
+## 6. Pesquisa e Distribuição
 
-Quando for fazer conteúdo de **Curadoria**, não dependa apenas do Pinterest, pois ele é um agregador de algoritmos e tende a homogeneizar a estética. 
-
-Vá nas fontes originais para trazer coisas que poucas pessoas estão vendo:
-*   **Revistas independentes de design e arquitetura.**
-*   **Estúdios de branding.**
-*   **Sites de premiações de embalagens e design industrial.**
-*   **Editoriais de moda contemporânea.**
-*   **Fotógrafos independentes.**
-
----
-
-## 6. A Regra de Distribuição (Contexto vs. Replicação)
-
-**Não existe distribuição obrigatória cruzada nesta fase.** 
-Se o post foi feito para o Instagram (Casa), ele fica no Instagram.
-
-Se você decidir usar o Reddit, **não republique o card gerado no Figma lá**. O Reddit é para conversas, não para banners de marca.
-*   **No Instagram:** Você posta o card "Material importa."
-*   **No Reddit:** Você faz uma pergunta: *"Vocês acham que os acessórios da cultura canábica ainda são vistos como descartáveis? O que faz um objeto parecer bem projetado para vocês?"*
-
-Use cada ambiente para a sua função principal. Não gaste energia adaptando tamanhos de imagem para mil redes sociais diferentes se você ainda está apenas validando a sua primeira mensagem.
+*   **Curadoria Externa:** Quando buscar referências visuais para o seu *Banco de Ideias*, vá além do Pinterest (que cria estética homogeneizada). Procure em revistas independentes, estúdios de branding, premiações de design e editoriais de moda.
+*   **A Regra do Contexto (Ex: Reddit):** Se você criar um post e decidir usá-lo fora do Instagram (como no Reddit), **não publique o card do Figma lá**. O Reddit é para conversas. Transforme o post em uma pergunta direta (Ex: "O que faz um objeto de tabacaria não parecer descartável para vocês?"). Distribua a discussão, não o layout gráfico.
