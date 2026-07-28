@@ -1,85 +1,72 @@
-# Sistema Operacional de Produção de Conteúdo
+# Sistema de Coleções Editoriais
 
 **Projeto:** High House  
 **Etapa:** Validação e Descoberta de Público (Fase 2)  
-**Status:** Documento Ativo (Manual de Operação)  
+**Status:** Documento Ativo (Estratégia de Publicação)  
 **Última atualização:** Julho de 2026
 
 ---
 
-## 1. A Filosofia: Documentar vs. Produzir
+## 1. A Filosofia: Coleção vs. Posts Isolados
 
-A premissa deste sistema operacional é estrutural: **A High House documenta um universo em vez de produzir conteúdo para algoritmos.**
+A premissa deste sistema operacional é estrutural: **A High House não faz posts diários avulsos; ela lança "Revistas" ou "Coleções" temáticas.**
 
-- A produção convencional responde à demanda algorítmica.
-- A documentação responde a um evento, observação, leitura ou percepção real do cotidiano que mereça registro e compartilhamento.
+- O Instagram não é visto como um feed cronológico frenético, mas como uma **parede de galeria** ou uma **edição de revista impressa**.
+- O objetivo de quem chega não é curtir uma foto, mas sentir um "universo" instantâneo ao bater o olho no grid (blocos de 6 a 9 publicações que conversam entre si).
 
-O papel definido para o responsável pela marca não é o de um designer gráfico refém de um calendário editorial exaustivo, mas sim o de **Diretor de Arte e Curador**. Não há criação de layouts do zero; o trabalho consiste em ter ideias, cruzar territórios, aprovar imagens e montar o conteúdo utilizando matrizes pré-validadas.
-
----
-
-## 2. O Banco de Repertório (A Matéria-Prima)
-
-A origem de uma publicação não provém de uma tela em branco. Toda vez que uma percepção genuína ocorre no mundo real, essa observação é arquivada em um **Território**. A marca interpreta o mundo através dos seus pilares.
-
-### Os 6 Territórios (O Assunto)
-1. **Cannabis:** Cultura, ritual, preparação, tempo, silêncio (exclusão do consumo nu e cru).
-2. **Design:** Objetos, materiais (cerâmica, metal, madeira), durabilidade, arquitetura.
-3. **Música:** Capas de disco, equipamentos, cultura do vinil, playlists, shows.
-4. **Cidade:** Niterói, Rio de Janeiro, cafés, praças, galerias, cenas urbanas.
-5. **Construção da Marca:** Os bastidores, os erros, os acertos, decisões de projeto.
-6. **Comunidade:** A convivência, hospitalidade, o ato de reunir pessoas ao redor de uma mesa.
+O foco não é descobrir "o que o público gosta", mas sim expressar de forma coesa: *"Que tipo de experiência a High House acredita que vale a pena viver?"*
 
 ---
 
-## 3. As Categorias (A Intenção)
+## 2. O Fio Condutor: A Ausência do Tempo (Imersão)
 
-Cada registro do Banco de Repertório requer uma intenção de comunicação. O sistema exige a categorização da mensagem antes da produção:
+O critério de curadoria de todo conteúdo publicado pela marca é o **tempo** — mais especificamente, experiências imersivas onde não se vê o tempo passar (estado de flow, presença absoluta).
 
-1. **Manifesto:** Demonstração de posicionamento forte (Ex: "O material importa", "Cultura não se compra").
-2. **Curadoria:** Exibição de uma referência (cadeira, disco, café) acompanhada da resposta estrutural: *Por que isso importa para a marca?*
-3. **Observação:** Registro de um questionamento advindo do mundo real. (Ex: "Por que quase todos os acessórios canábicos parecem brinquedos fluorescentes?").
-4. **Construção:** Documentação do processo bruto e tomada de decisão. (Ex: "Anotações e paletas de cores descartadas").
-
-*Nota: O cruzamento entre os 6 Territórios e as 4 Categorias gera matrizes sistemáticas de publicações sem a necessidade de criação aleatória de pautas.*
+Qualquer elemento da High House (seja cinema de autor, música house, um projeto de design de produto, rituais de hospitalidade, etc.) deve estar a serviço dessa ideia. Não publicamos "sobre café", publicamos sobre a imersão de estar num café sem pressa. Não publicamos "sobre cannabis", publicamos sobre o ritual que dissolve a percepção das horas.
 
 ---
 
-## 4. Matrizes Visuais (O Formato no Figma)
+## 3. A Primeira Coleção (Grid 001)
 
-A produção utiliza apenas **4 templates fixos** configurados no Figma. O processo restringe-se à alocação de ativos (imagem e texto) nos moldes.
+Em vez de focar no "Post 1", o foco está em lançar a **Primeira Coleção**. Ela servirá para criar o universo que fará alguém pensar: *"Não sei o que vendem, mas gosto desse lugar".*
 
-*   **Modelo A (O Pôster):** Imagem ocupando a totalidade do frame + Título estrutural + Assinatura.
-*   **Modelo B (A Citação/Curadoria):** Imagem centralizada (proporção menor) + Frase/Citação + Rodapé.
-*   **Modelo C (O Manifesto):** Ausência de imagem. Título (Space Grotesk) + Parágrafo (Inter) + Fundo nas cores institucionais.
-*   **Modelo D (O Carrossel):** Composição sequencial lógica alternando Modelo A e Modelo C.
+A coleção deve ser montada narrativamente em capítulos:
 
----
+### Capítulo 1 — O Manifesto
+- **Intenção:** Não explicar a marca. Fazer sentir o clima e as intenções.
+- **Formato Sugerido:** Textura pesada, silêncio visual, tipografia assertiva. 
+- **Mensagem:** O núcleo da High House (imersão, a perda da noção do tempo).
 
-## 5. Fluxo de Trabalho (Procedimento Operacional Padrão)
+### Capítulo 2 — O Universo
+- **Intenção:** Mostrar estética pura sem vender nada (sem fotos de produtos com preço).
+- **Foco:** Materiais (madeira, metal, vidro), arquitetura, luzes controladas, sombras, silêncio visual. Mostrar objetos que merecem envelhecer.
 
-Este é o procedimento de execução rigoroso para a conversão de uma ideia em publicação (Tempo estimado: 30 minutos).
+### Capítulo 3 — A Construção
+- **Intenção:** Provar que existe pele em jogo. Mostrar os bastidores, mas não com estética de "influencer fazendo vlog", e sim com recortes honestos e brutos do trabalho (documentando o projeto sem filtro excessivo).
+- **Foco:** Rascunhos, estudos, erros.
 
-### Etapa 1: Definição de Variáveis (Entrada)
-- **Território:** Seleção de 1 entre as 6 opções disponíveis.
-- **Categoria:** Seleção de 1 entre as 4 opções disponíveis.
-- **Template:** Seleção do Molde Visual adequado à intenção.
-
-### Etapa 2: Processamento e Estruturação via IA
-- **Ação:** Inserção da intenção crua, território e categoria no sistema de Inteligência Artificial (ChatGPT/Claude).
-- **Entrada Padrão (Prompt Base):** *"Elaboração de postagem com intenção de [Categoria] no território de [Território]. A observação base é: [Inserir observação crua]. Requisito: Fornecer 1 título estrutural, 1 frase de apoio e 1 prompt em inglês para geração de imagem realista fotográfica."*
-
-### Etapa 3: Direção de Arte e Geração de Ativos
-- **Ação:** Utilização de geradores de imagem (Midjourney/Flux) com o prompt gerado na Etapa 2.
-- **Critério de Aprovação:** A imagem gerada deve respeitar o MVP Visual da High House (texturas pesadas, luz controlada, sobriedade).
-
-### Etapa 4: Montagem e Publicação (Saída)
-- **Procedimento no Figma:** Alocação da imagem no template; inserção de textos; exportação em PNG.
-- **Procedimento no Instagram (Laboratório):** Publicação com legenda objetiva para início do ciclo de validação.
+### Capítulo 4 — O Convite
+- **Intenção:** Abrir a porta. Não é um "compre agora" (Call to Action barato). É um aviso de que a High House está começando e as pessoas podem participar do processo.
 
 ---
 
-## 6. Procedimentos de Distribuição e Referenciamento
+## 4. O Banco de Experiências (Não Banco de Temas)
 
-*   **Curadoria Externa:** A captação de referências para o *Banco de Repertório* deve priorizar revistas independentes, estúdios de branding e premiações de design, evitando plataformas de hiper-homogeneização estética como o Pinterest.
-*   **A Regra da Distribuição em Comunidades (Ex: Reddit):** Em fóruns de discussão externa, é vetada a publicação dos cards e layouts gráficos do Figma. O procedimento correto exige a tradução do post em texto puro ou pergunta direta, fomentando o debate sem viés publicitário.
+Para montar as coleções, não procuramos por "temas", procuramos por experiências que exemplificam a ausência do tempo e a imersão profunda.
+
+**Em vez de:** "Vamos falar sobre design de cadeira."  
+**A busca é:** "Vamos mostrar um objeto que é feito para durar décadas e ser herdado, que absorve nossa atenção total."
+
+**Em vez de:** "Vamos fazer um post de recomendação de música."  
+**A busca é:** "Vamos postar um disco/set de música eletrônica focado em repetição e transe, que nos faz não ver o tempo passar."
+
+---
+
+## 5. Dinâmica de Publicação e Fluxo de Produção
+
+Apesar da mudança filosófica, o processo de montagem continua utilizando a Inteligência Artificial e o Figma para viabilizar a produção por um fundador solo, focando na curadoria e direção de arte.
+
+1. **Concepção do Capítulo:** Selecionar qual capítulo (Manifesto, Universo, Construção, Convite) está sendo desenhado.
+2. **Definição da Experiência:** Baseado no Fio Condutor (Imersão absoluta/Ausência de tempo), definir a mensagem.
+3. **Geração e Curadoria Visual:** Direção de arte no Figma baseada nas matrizes visuais minimalistas e geração de imagem fotográfica via IA, caso necessário.
+4. **Agrupamento:** As publicações devem ser pensadas em blocos visuais para manter o Grid sempre coeso.
