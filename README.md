@@ -124,6 +124,7 @@ O repositório já está preparado para o GitHub Pages. Ao ativar nas configura�
 ---
 
 ## 📄 Documentos Recentes
+- **Estratégia de Conteúdo (Ciclo 1)** — Definição do universo editorial, pilares do ciclo 1, banco com 50 ideias e roteiro estrutural do primeiro post: [`03_ESTRATEGIA/estrategia-conteudo-ciclo-1.md`](file:///c:/Users/user/Documents/High%20House/03_ESTRATEGIA/estrategia-conteudo-ciclo-1.md)
 - **Protocolo de Experimentação e Aprendizado** — Motor de validação com 4 hipóteses práticas, testes estruturados, métricas (saves/shares) e restrições (R$ 0) para o laboratório inicial: [`03_ESTRATEGIA/protocolo-de-experimentacao.md`](file:///c:/Users/user/Documents/High%20House/03_ESTRATEGIA/protocolo-de-experimentacao.md)
 - **Identidade Visual Mínima Viável (MVP Visual)** — Kit provisório de marca (paleta, tipografia, composição, tom de voz e assinatura) para postar sem paralisar: [`06_IDENTIDADE_VISUAL/identidade-visual-minima-viavel.md`](file:///c:/Users/user/Documents/High%20House/06_IDENTIDADE_VISUAL/identidade-visual-minima-viavel.md)
 - **Plano de Validação de Baixo Contato** — Metodologia de validação adaptada ao perfil introspectivo do fundador, com 5 fases progressivas e 5 experimentos práticos: [`03_ESTRATEGIA/plano-de-validacao-de-baixo-contato.md`](file:///c:/Users/user/Documents/High%20House/03_ESTRATEGIA/plano-de-validacao-de-baixo-contato.md)
@@ -141,8 +142,9 @@ O repositório já está preparado para o GitHub Pages. Ao ativar nas configura�
 5. ~~Criar primeiro sistema de conteúdo~~ → Territórios, formatos e séries definidos ✅
 6. ~~Estruturar Identidade Visual Mínima Viável (MVP Visual)~~ → Kit básico (cores, fontes, grid, assinatura) definido ✅
 7. ~~Criar Protocolo de Experimentação~~ → Hipóteses, testes e métricas definidos ✅
-8. **Rodar o Ciclo 1 do Laboratório:** Criar 8 a 12 conteúdos via Figma/Canva com IA e testar hipóteses no Instagram.
-9. **Definir o Drop 0 (Produto Mínimo):** Iniciar assim que as métricas qualitativas de engajamento validarem o público.
+8. ~~Estratégia de Conteúdo (Ciclo 1)~~ → Universo editorial, 50 ideias e 1º post desenhado ✅
+9. **Rodar o Ciclo 1 do Laboratório:** Criar os 10 primeiros conteúdos via Figma/Canva com IA e testar hipóteses no Instagram.
+10. **Definir o Drop 0 (Produto Mínimo):** Iniciar assim que as métricas qualitativas de engajamento validarem o público.
 
 ---
-*Atualizado em Julho de 2026 — criado Protocolo de Experimentação avançando o projeto para a Fase 2 (Validação de Público).*
+*Atualizado em Julho de 2026 — criado Estratégia de Conteúdo do Ciclo 1 avançando a execução da Fase 2.*
