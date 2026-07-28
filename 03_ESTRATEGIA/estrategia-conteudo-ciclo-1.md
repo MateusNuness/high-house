@@ -33,67 +33,35 @@ Para este primeiro ciclo, onde o foco é criar o universo e atrair quem se ident
 
 ---
 
-## Etapa 3: As 50 Ideias (Banco de Pautas)
+## Etapa 3: O Banco de Repertório (A Matéria-Prima)
 
-Aqui estão 50 ideias brutas, prontas para serem transformadas em posts. O objetivo da lista é eliminar o bloqueio criativo; basta escolher uma e executar com os templates.
+Esqueça o "Banco de Ideias". Ideias tiradas do nada, criadas por IA ou inventadas para preencher calendário parecem artificiais, genéricas e fáceis de copiar. A High House não é uma marca que "gera conteúdo"; é uma marca que **interpreta o mundo**.
 
-**Design e Materialidade (20 ideias)**
-1. Por que material importa.
-2. O que faz um objeto durar.
-3. Cerâmica vs Plástico: uma questão de peso.
-4. A beleza de um cinzeiro que parece escultura.
-5. Onde o design industrial encontra o ritual.
-6. A paleta de cores de uma sala que convida a ficar.
-7. Objetos que ganham personalidade com o tempo (patina).
-8. Cadeira de madeira: a postura do descanso.
-9. A textura do concreto e do vidro.
-10. Por que evitamos o neon.
-11. Menos plástico no mundo, mais peso na mesa.
-12. O que a arquitetura brutalista nos ensina sobre simplicidade.
-13. O design invisível das coisas que funcionam bem.
-14. A curadoria de uma mesa de centro perfeita.
-15. A importância do espaço em branco.
-16. Como a iluminação muda a percepção de um ambiente.
-17. Utensílios que não precisam ser escondidos na gaveta.
-18. A elegância do aço escovado.
-19. Design escandinavo e o conceito de *Hygge* na nossa visão.
-20. Quando o utilitário vira arte.
+Para isso, substituímos a lista de ideias por um **Banco de Repertório**. Ele será alimentado continuamente pelas suas observações reais. Os melhores posts nascem da sua vida, do seu olhar e das suas convicções.
 
-**Ritual e Convivência (15 ideias)**
-21. O ritual de preparar um café.
-22. O tempo que levamos para fazer algo com as mãos.
-23. O silêncio antes de acender.
-24. A playlist certa para baixar a frequência.
-25. O que significa hospitalidade moderna.
-26. Receber os amigos sem pressa.
-27. A textura sonora do vinil.
-28. A diferença entre consumir e apreciar.
-29. Ritual da manhã vs Ritual da noite.
-30. A mesa como o centro da casa.
-31. O peso de um copo de vidro grosso na mão.
-32. Conversas que só acontecem de madrugada.
-33. A pausa: um luxo contemporâneo.
-34. A estética do preparo lento.
-35. Como o ambiente molda a nossa mente.
+**O que entra no Banco de Repertório?**
+- **Observações:** *"Hoje fui numa tabacaria e percebi que quase tudo era de plástico."*
+- **Questionamentos:** *"Será que os terceiros lugares (cafés, praças) ainda existem, ou todo mundo só vai para usar o notebook?"*
+- **Percepções:** *"Por que uma mesa muda tanto a dinâmica de uma conversa?"*
+- **Fragmentos:** Fotos que tirou, frases que ouviu, trechos de livros, cenas de filmes, músicas, texturas, embalagens ou pessoas interessantes.
 
-**Construção da Marca (10 ideias)**
-36. Por que não queremos clichês.
-37. Como nasceu a High House.
-38. Por que "casa" e não "club".
-39. O que estamos tentando construir.
-40. "Ainda não sei o que eles vendem..." – Nosso objetivo.
-41. A decisão de não apressar o lançamento.
-42. Por trás da nossa identidade visual (Space Grotesk).
-43. Os protótipos que descartamos.
-44. A dificuldade de encontrar fornecedores que entendam o conceito.
-45. Manifesto: Cultura não se compra, se constrói.
+### A Dinâmica de Criação com a IA
+A IA não entra no processo para **inventar** a essência, mas sim para **lapidar e estruturar** a sua matéria-prima. O fluxo funciona de duas formas:
 
-**Curadoria da Cidade (5 ideias)**
-46. O contraste entre o caos da rua e o silêncio de dentro.
-47. Cafés que entendem o valor do tempo.
-48. A arquitetura escondida de Niterói/Rio.
-49. Espaços públicos que convidam à contemplação.
-50. O ritmo de uma cidade vista da janela.
+**Cenário A: Quando você tem uma observação**
+Você entra com a matéria-prima crua:
+> *"Observação: Fui numa loja de móveis. Percebi que uma mesa muda totalmente o ritmo de uma conversa. Transforme isso num post da High House cruzando com o nosso pilar de Convivência."*
+
+**Cenário B: Quando você não tem uma observação no dia**
+A IA faz o papel de entrevistadora e extrai de você:
+> *"O que chamou sua atenção essa semana?"*
+> *"Qual foi o último lugar bonito que você entrou?"*
+> *"Qual objeto você usou hoje que parecia ter sido feito com cuidado?"*
+
+Você responde de forma simples, e a partir da sua resposta, a IA estrutura o post.
+Com isso, você combina elementos para criar algo original (ex: `Livro + Objeto + Observação = Post`).
+
+Essa mudança de perspectiva valida algo muito importante: a essência da High House já está na sua cabeça. Se você contratar um diretor de criação no futuro, ele fará exatamente o mesmo que a IA faz hoje: não inventará a marca do zero, mas traduzirá as suas percepções (que você acha que "não são tão criativas") em uma linguagem consistente.
 
 ---
 

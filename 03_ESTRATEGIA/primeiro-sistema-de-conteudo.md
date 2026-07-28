@@ -18,9 +18,9 @@ Você não é um designer gráfico refém de um calendário editorial exaustivo.
 
 ---
 
-## 2. O Banco de Ideias (A Matriz Infinita)
+## 2. O Banco de Repertório (A Matéria-Prima)
 
-A origem de um post não é a tela em branco. A origem é o seu repertório. Toda vez que algo chamar a sua atenção no mundo real, você o guarda em um **Território**. 
+A origem de um post não é a tela em branco nem uma ideia tirada do nada. A origem é o seu repertório. Toda vez que algo no mundo real gerar uma observação genuína, você guarda essa percepção em um **Território**. Nós não somos uma marca que cria conteúdo vazio, somos uma marca que interpreta o mundo através dos nossos pilares.
 
 ### Os 6 Territórios (O Assunto)
 1. **Cannabis:** Cultura, ritual, preparação, tempo, silêncio (não o consumo nu e cru).
@@ -34,7 +34,7 @@ A origem de um post não é a tela em branco. A origem é o seu repertório. Tod
 
 ## 3. As Categorias (A Intenção)
 
-Quando você for documentar algo do seu Banco de Ideias, você deve escolher *como* falar sobre aquilo. 
+Quando você for documentar algo do seu Banco de Repertório, você deve escolher *como* falar sobre aquilo. 
 
 1. **Manifesto:** Serve para mostrar como a High House pensa. Posicionamento duro. (Ex: "Material importa", "Cultura não se compra").
 2. **Curadoria:** Mostrar algo interessante (uma cadeira, um disco, um café) e responder: *Por que isso importa para a High House?*
@@ -98,5 +98,5 @@ Cole a legenda e poste. O ciclo se encerra e o aprendizado começa.
 
 ## 6. Pesquisa e Distribuição
 
-*   **Curadoria Externa:** Quando buscar referências visuais para o seu *Banco de Ideias*, vá além do Pinterest (que cria estética homogeneizada). Procure em revistas independentes, estúdios de branding, premiações de design e editoriais de moda.
+*   **Curadoria Externa:** Quando buscar referências visuais para o seu *Banco de Repertório*, vá além do Pinterest (que cria estética homogeneizada). Procure em revistas independentes, estúdios de branding, premiações de design e editoriais de moda.
 *   **A Regra do Contexto (Ex: Reddit):** Se você criar um post e decidir usá-lo fora do Instagram (como no Reddit), **não publique o card do Figma lá**. O Reddit é para conversas. Transforme o post em uma pergunta direta (Ex: "O que faz um objeto de tabacaria não parecer descartável para vocês?"). Distribua a discussão, não o layout gráfico.
