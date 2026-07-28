@@ -108,13 +108,18 @@ Apresentação conceitual com visão de objetivo final da marca — o que a High
 - **Localização:** [`apresentacao/index.html`](file:///c:/Users/user/Documents/High%20House/apresentacao/index.html)
 
 ### Caderno de Projeto — Narrativa de Construção (`apresentacao-v2/`)
-Nova apresentação com narrativa focada em processo e pertencimento — honesta sobre o que já existe e o que ainda está sendo descoberto. Feita para ser compartilhada com pessoas próximas para coletar feedback sobre a ideia.
+Nova apresentação com narrativa focada em processo e pertencimento — honesta sobre o que já existe e o que ainda está sendo descobeto. Feita para ser compartilhada com pessoas próximas para coletar feedback sobre a ideia.
 
 - **Estrutura:** Abertura → O que é → Por que existe → O que já descobrimos → O que ainda não sabemos → O caminho → Referências → Onde estamos
 - **Tom:** Caderno de projeto · journal · brand deck de construção
 - **Estética:** DM Serif Display + Inter, paleta sóbria em dourado envelhecido, layout editorial
 - **Localização:** [`apresentacao-v2/index.html`](file:///c:/Users/user/Documents/High%20House/apresentacao-v2/index.html)
-- **Como executar:** Abrir o arquivo `apresentacao-v2/index.html` em qualquer navegador web moderno.
+
+### 🚀 Publicação no GitHub Pages
+O repositório já está preparado para o GitHub Pages. Ao ativar nas configurações do repositório, os links públicos serão:
+- **Portal de Apresentações (Raiz):** `https://mateusnuness.github.io/high-house/`
+- **Caderno de Projeto (V2):** `https://mateusnuness.github.io/high-house/apresentacao-v2/`
+- **Brand Deck Conceitual (V1):** `https://mateusnuness.github.io/high-house/apresentacao/`
 
 ---
 
