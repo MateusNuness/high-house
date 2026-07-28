@@ -7,46 +7,46 @@
 
 ## Etapa 1: O Universo Editorial da High House
 
-A High House não é apenas uma marca de produtos; é um estilo de vida, uma estética e uma forma de se relacionar com o tempo. O nosso universo editorial gira em torno da intersecção entre o **ritual**, o **design** e a **cultura urbana**. 
+A High House não é apenas uma marca de produtos; é um estilo de vida, uma estética e uma forma de se relacionar com o tempo. O universo editorial gira em torno da intersecção entre o **ritual**, o **design** e a **cultura urbana**. 
 
-**O que defendemos:**
-- **Materialidade:** Cansamos do plástico descartável e das cores neon. Valorizamos cerâmica, metal, madeira, vidro. O peso e a textura importam.
-- **Ritual e Tempo:** O ato de preparar e consumir não deve ser apressado. É um momento de pausa, de apreciação. 
+**O que a marca defende:**
+- **Materialidade:** Rejeição ao plástico descartável e às cores neon. Valorização de cerâmica, metal, madeira, vidro. O peso e a textura importam.
+- **Ritual e Tempo:** O ato de preparar e consumir não deve ser apressado. Trata-se de um momento de pausa e apreciação. 
 - **Estética Madura:** Uma abordagem sofisticada e sóbria para o estilo de vida contemporâneo. Menos estereótipos, mais curadoria.
 - **Convivência:** A hospitalidade e a troca real de ideias ao redor de uma mesa.
 
-**O que evitamos:**
+**O que a marca evita:**
 - Clichês da cultura canábica tradicional (folhas verdes, psicodelia, apologia barata).
 - Sensacionalismo ou humor forçado.
-- A pressa do "compre agora".
+- A pressa e a agressividade do "compre agora".
 
 ---
 
 ## Etapa 2: Pilares do Ciclo 1
 
-Para este primeiro ciclo, onde o foco é criar o universo e atrair quem se identifica com ele, os conteúdos serão divididos nos seguintes pilares (proporções para guiar a rotina):
+Para o primeiro ciclo, com foco em estabelecer o universo e atrair o público alinhado à visão, os conteúdos são divididos nos seguintes pilares e proporções:
 
-- **40% Design e Materialidade:** Foco em texturas, objetos (mesmo que não sejam os nossos ainda), referências de arquitetura e a beleza das coisas bem feitas. O objetivo é estabelecer o nosso "bom gosto".
+- **40% Design e Materialidade:** Foco em texturas, objetos (mesmo que não autorais no início), referências de arquitetura e a beleza das coisas bem feitas. O objetivo é estabelecer o rigor estético.
 - **30% Ritual e Convivência:** Cenas de preparo (café, bebidas, rituais pessoais), hospitalidade, o tempo correndo mais devagar, música ambiente (vinis, equipamentos de som).
-- **20% Construção da Marca (Bastidores):** Mostrar o processo de pensar a High House. Por que estamos fazendo isso? A escolha da tipografia, o descarte de materiais, o manifesto da marca. Traz as pessoas para perto.
-- **10% Curadoria da Cidade:** Cenas urbanas, lugares que conversam com a nossa estética, observações sobre o comportamento na cidade.
+- **20% Construção da Marca (Bastidores):** Documentação do processo de pensar a High House. O raciocínio por trás da marca, a escolha da tipografia, o descarte de materiais, o manifesto. Aproxima a comunidade da fundação.
+- **10% Curadoria da Cidade:** Cenas urbanas, lugares que conversam com a estética proposta, observações sobre o comportamento na cidade.
 
 ---
 
 ## Etapa 3: O Banco de Perguntas (A Matéria-Prima)
 
-O método tradicional de criar conteúdo pressupõe que você já "vive" como a marca no dia a dia. Mas a High House ainda não existe publicamente. Exigir que você tenha 50 ideias prontas agora seria paralisante e irreal.
+O método tradicional de criar conteúdo pressupõe o registro de uma rotina pré-existente. Como a High House encontra-se em fase de fundação, exigir ideias prontas e rotinas estabelecidas torna-se inviável.
 
-Por isso, substituímos o "Banco de Ideias" por um **Banco de Perguntas**. A High House é curiosa, exploradora e questionadora, não a dona da verdade.
+Por isso, adota-se o formato de **Banco de Perguntas**. A marca posiciona-se como exploradora e questionadora, não como dona da verdade. 
 
-Em vez de tentar inventar posts completos, começamos com "sementes" — palavras simples que formam o universo da marca:
+O processo inicia-se com "sementes" — palavras simples que formam o universo da marca:
 *Materiais, Casa, Tempo, Objetos, Mesa, Luz, Silêncio, Cidade, Ritual, Comunidade.*
 
-Para cada semente, fazemos perguntas. Por exemplo:
+Para cada semente, formulam-se perguntas direcionadoras. Exemplos:
 
 **Materiais**
 - Por que alguns materiais envelhecem melhor?
-- Por que plástico transmite algo diferente da madeira?
+- Por que o plástico transmite algo diferente da madeira?
 - Existe material "honesto"?
 
 **Mesa**
@@ -59,35 +59,32 @@ Para cada semente, fazemos perguntas. Por exemplo:
 - O que torna um lugar acolhedor?
 - Existe hospitalidade urbana?
 
-Essas perguntas (*Como, Por que, Será que, O que faz...*) viram observações. As observações viram posts. Algumas poucas sementes bem exploradas já rendem o conteúdo inicial necessário sem a pressão de "ter uma grande ideia do nada".
+Essas perguntas (*Como, Por que, Será que, O que faz...*) tornam-se as observações que, posteriormente, são convertidas em publicações. 
 
-### A Dinâmica de Criação
-A IA não entra para **inventar** a essência, mas sim para agir como uma ferramenta de provocação. Ela ajuda a transformar as perguntas, observações cruas da sua vida e os questionamentos das sementes no formato final da High House. Você não inventa os temas; você apenas explora as perguntas.
-
-Essa mudança de perspectiva valida algo muito importante: a essência da High House já está na sua cabeça. O trabalho inicial é apenas extrair isso através da curiosidade.
+### Dinâmica de Criação e IA
+A inteligência artificial não atua na invenção da essência, mas como uma ferramenta de provocação e estruturação. A ferramenta auxilia a transformar observações cruas e respostas ao Banco de Perguntas no formato final estabelecido para a marca. O direcionamento e os temas são fornecidos pela curiosidade natural do fundador, mantendo a autenticidade da visão original.
 
 ---
 
-## Etapa 4: O Plano de Voo (Do Primeiro Post em Diante)
+## Etapa 4: O Plano de Voo (Roteiro de Publicação)
 
-A nossa intenção principal ao lançar a marca não é viralizar, nem ensinar, nem sequer explicar o que exatamente é a High House.
+A intenção principal do lançamento não é a viralização, o ensino ou a explicação literal da marca. 
 
-**A função do Post 001**
-Ele existe para responder a uma única pergunta de quem abre o perfil pela primeira vez: *"Vale a pena acompanhar essa marca?"*
-Se a resposta for "sim", o post cumpriu a sua missão. Como ainda não deu tempo de viver o dia a dia da marca, o Post 001 **não nasce de uma observação**, mas da **essência e do manifesto** da marca. Ele é fundacional.
+**Função do Post 001**
+O primeiro post existe para responder a uma única pergunta de quem acessa o perfil pela primeira vez: *"Vale a pena acompanhar essa marca?"*
+Por ser fundacional e a marca ainda não possuir um histórico público de observações, o Post 001 é puramente fundamentado na **essência e no manifesto**.
 
-**O Roteiro de Crescimento:**
+**Roteiro de Crescimento:**
 
-- **Post 001 (Fundacional):** Nasce do manifesto. É uma afirmação estética e filosófica.
-- **Posts 002–010 (Exploração):** Misturam as suas observações diárias, seu repertório pessoal, a vida real e as respostas ao **Banco de Perguntas**.
-- **Posts 011+ (Comunidade):** A própria comunidade e as interações começam a alimentar o repertório.
+- **Post 001 (Fundacional):** Baseado no manifesto. Afirmação estética e filosófica.
+- **Posts 002–010 (Exploração):** Mescla de observações diárias, repertório e respostas ao **Banco de Perguntas**.
+- **Posts 011+ (Comunidade):** Integração de interações e contribuições da comunidade no repertório.
 
-**A Sugestão para o Post 001 (Fundacional):**
-**Ideia base:** "Por que material importa." (Uma das nossas sementes).
-**Formato:** Template D (Carrossel).
+**Estrutura Definida para o Post 001 (Fundacional):**
+- **Ideia base:** "Por que o material importa" (Semente central).
+- **Formato:** Template D (Carrossel).
+- **Slide 1 (Imagem Forte):** Foto macro/close-up de textura rica e "pesada" (ex: cerâmica crua ou metal fosco sobre concreto). Título em Space Grotesk: *Por que o material importa.*
+- **Slide 2 (Texto Manifesto):** "O peso, a textura, a temperatura. O mundo está cheio de objetos rápidos, leves e descartáveis. Queremos voltar a sentir o peso das coisas bem feitas. A qualidade do ritual começa pelo que se tem nas mãos."
+- **Slide 3 (Imagem Inspiracional):** Ambiente de luz baixa e sofisticado, com objetos de design curados (sala de estar, mesa de centro, café), refletindo a visão da High House sem exibição óbvia de produtos.
 
-- **Slide 1 (Imagem forte):** Uma foto macro/close-up de uma textura rica e "pesada" (ex: um cinzeiro de cerâmica crua ou metal fosco sobre concreto), com o título em Space Grotesk: *Por que o material importa.*
-- **Slide 2 (Texto - Manifesto):** "O peso, a textura, a temperatura. O nosso mundo está cheio de objetos rápidos, leves e descartáveis. Queremos voltar a sentir o peso das coisas bem feitas. A qualidade do ritual começa pelo que você tem nas mãos."
-- **Slide 3 (Imagem inspiracional):** Um ambiente de luz baixa, sofisticado, com objetos de design curados (uma sala de estar, mesa de centro, café, etc), refletindo a "High House" sem mostrar um produto óbvio.
-
-Essa estrutura atende à premissa: quem busca a estética do plástico colorido e clichês vai embora. Quem se interessa por design, maturidade e hospitalidade pensa *"Ainda não sei o que eles vendem, mas gostei da visão deles, vou seguir"*. A partir daqui, as portas estão abertas para começarmos a explorar o Banco de Perguntas.
+Esta estrutura alinha-se à premissa inicial: afasta o público que busca a estética do plástico e atrai aqueles interessados em design, maturidade e hospitalidade. A partir deste ponto, inicia-se a exploração contínua do Banco de Perguntas.

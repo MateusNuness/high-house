@@ -9,94 +9,77 @@
 
 ## 1. A Filosofia: Documentar vs. Produzir
 
-A premissa deste sistema é libertadora: **A High House não é uma marca que "produz conteúdo". Ela é uma marca que documenta um universo.**
+A premissa deste sistema operacional é estrutural: **A High House documenta um universo em vez de produzir conteúdo para algoritmos.**
 
-Quem produz conteúdo acorda pensando: *"O que eu posto hoje pro algoritmo?"*
-Quem documenta acorda pensando: *"O que eu vi, li, ouvi ou percebi hoje que merece ser compartilhado?"*
+- A produção convencional responde à demanda algorítmica.
+- A documentação responde a um evento, observação, leitura ou percepção real do cotidiano que mereça registro e compartilhamento.
 
-Você não é um designer gráfico refém de um calendário editorial exaustivo. O seu papel na High House é de **Diretor de Arte e Curador**. Você não cria layouts do zero; você tem ideias, cruza territórios, aprova imagens e **apenas monta** o conteúdo em moldes que já funcionam.
+O papel definido para o responsável pela marca não é o de um designer gráfico refém de um calendário editorial exaustivo, mas sim o de **Diretor de Arte e Curador**. Não há criação de layouts do zero; o trabalho consiste em ter ideias, cruzar territórios, aprovar imagens e montar o conteúdo utilizando matrizes pré-validadas.
 
 ---
 
 ## 2. O Banco de Repertório (A Matéria-Prima)
 
-A origem de um post não é a tela em branco nem uma ideia tirada do nada. A origem é o seu repertório. Toda vez que algo no mundo real gerar uma observação genuína, você guarda essa percepção em um **Território**. Nós não somos uma marca que cria conteúdo vazio, somos uma marca que interpreta o mundo através dos nossos pilares.
+A origem de uma publicação não provém de uma tela em branco. Toda vez que uma percepção genuína ocorre no mundo real, essa observação é arquivada em um **Território**. A marca interpreta o mundo através dos seus pilares.
 
 ### Os 6 Territórios (O Assunto)
-1. **Cannabis:** Cultura, ritual, preparação, tempo, silêncio (não o consumo nu e cru).
+1. **Cannabis:** Cultura, ritual, preparação, tempo, silêncio (exclusão do consumo nu e cru).
 2. **Design:** Objetos, materiais (cerâmica, metal, madeira), durabilidade, arquitetura.
 3. **Música:** Capas de disco, equipamentos, cultura do vinil, playlists, shows.
 4. **Cidade:** Niterói, Rio de Janeiro, cafés, praças, galerias, cenas urbanas.
-5. **Construção da Marca:** Os bastidores, os erros, os acertos, escolhas de tecido.
+5. **Construção da Marca:** Os bastidores, os erros, os acertos, decisões de projeto.
 6. **Comunidade:** A convivência, hospitalidade, o ato de reunir pessoas ao redor de uma mesa.
 
 ---
 
 ## 3. As Categorias (A Intenção)
 
-Quando você for documentar algo do seu Banco de Repertório, você deve escolher *como* falar sobre aquilo. 
+Cada registro do Banco de Repertório requer uma intenção de comunicação. O sistema exige a categorização da mensagem antes da produção:
 
-1. **Manifesto:** Serve para mostrar como a High House pensa. Posicionamento duro. (Ex: "Material importa", "Cultura não se compra").
-2. **Curadoria:** Mostrar algo interessante (uma cadeira, um disco, um café) e responder: *Por que isso importa para a High House?*
-3. **Observação:** Quando você percebe algo no mundo e questiona. (Ex: "Por que quase todos os acessórios canábicos precisam parecer brinquedos fluorescentes?").
-4. **Construção:** Mostrar o processo bruto. (Ex: "Essas são as paletas de cor que descartamos").
+1. **Manifesto:** Demonstração de posicionamento forte (Ex: "O material importa", "Cultura não se compra").
+2. **Curadoria:** Exibição de uma referência (cadeira, disco, café) acompanhada da resposta estrutural: *Por que isso importa para a marca?*
+3. **Observação:** Registro de um questionamento advindo do mundo real. (Ex: "Por que quase todos os acessórios canábicos parecem brinquedos fluorescentes?").
+4. **Construção:** Documentação do processo bruto e tomada de decisão. (Ex: "Anotações e paletas de cores descartadas").
 
-*Ao cruzar 6 Territórios com 4 Categorias, você tem dezenas de possibilidades de posts sem nunca precisar "inventar" assunto.*
-
----
-
-## 4. Os 4 Modelos de Templates (O Formato no Figma)
-
-A High House terá apenas **4 templates fixos** configurados no Figma (Custo R$ 0). 
-Você só precisará arrastar a foto, colar o texto e exportar.
-
-*   **Modelo A (O Pôster):** Imagem grande cobrindo o post + Título forte + Assinatura.
-*   **Modelo B (A Citação/Curadoria):** Imagem centralizada menor + Frase/Citação + Rodapé.
-*   **Modelo C (O Manifesto):** Apenas texto. Título em *Space Grotesk* + Parágrafo em *Inter* + Fundo nas cores da marca.
-*   **Modelo D (O Carrossel):** Sequência lógica do Modelo A e Modelo C alternados.
+*Nota: O cruzamento entre os 6 Territórios e as 4 Categorias gera matrizes sistemáticas de publicações sem a necessidade de criação aleatória de pautas.*
 
 ---
 
-## 5. O Fluxo de Trabalho (O Processo de 30 Minutos)
+## 4. Matrizes Visuais (O Formato no Figma)
 
-Quando você for materializar uma ideia, siga **estritamente** este passo a passo. 
+A produção utiliza apenas **4 templates fixos** configurados no Figma. O processo restringe-se à alocação de ativos (imagem e texto) nos moldes.
 
-### Passo 0: Escolha o Território (Sobre o quê?)
-*   [ ] Cannabis
-*   [ ] Design
-*   [ ] Música
-*   [ ] Cidade
-*   [ ] Construção da Marca
-*   [ ] Comunidade
-
-### Passo 1: Escolha a Categoria (Qual a intenção?)
-*   [ ] Manifesto
-*   [ ] Curadoria
-*   [ ] Observação
-*   [ ] Construção
-
-### Passo 2: Escolha o Template (O Molde Visual)
-*   [ ] Modelo A (Pôster)
-*   [ ] Modelo B (Citação/Curadoria)
-*   [ ] Modelo C (Só Texto)
-*   [ ] Modelo D (Carrossel)
-
-### Passo 3: Terceirizar a Base para a IA (ChatGPT)
-Você escreve a sua intenção crua no ChatGPT, já informando o território e a categoria. 
-*Exemplo: "Quero fazer um post de Observação no território de Design. Percebi que muitos acessórios canábicos são de plástico e coloridos demais. A High House acredita em materiais nobres, como a cerâmica. Escreva o título, 1 frase de impacto, e gere um prompt em inglês para eu criar uma foto realista de um objeto escuro de cerâmica sobre o concreto."*
-
-### Passo 4: Gerar a Imagem (Midjourney / Flux / GPT Images)
-Cole o prompt criado pela IA no gerador de imagens. Escolha a mais fiel ao *MVP Visual* da High House.
-
-### Passo 5: A Montagem no Figma
-Abra o Figma. Jogue a imagem no template escolhido (Passo 2). Cole os textos. Exporte em PNG.
-
-### Passo 6: Publicar no Laboratório (Instagram)
-Cole a legenda e poste. O ciclo se encerra e o aprendizado começa.
+*   **Modelo A (O Pôster):** Imagem ocupando a totalidade do frame + Título estrutural + Assinatura.
+*   **Modelo B (A Citação/Curadoria):** Imagem centralizada (proporção menor) + Frase/Citação + Rodapé.
+*   **Modelo C (O Manifesto):** Ausência de imagem. Título (Space Grotesk) + Parágrafo (Inter) + Fundo nas cores institucionais.
+*   **Modelo D (O Carrossel):** Composição sequencial lógica alternando Modelo A e Modelo C.
 
 ---
 
-## 6. Pesquisa e Distribuição
+## 5. Fluxo de Trabalho (Procedimento Operacional Padrão)
 
-*   **Curadoria Externa:** Quando buscar referências visuais para o seu *Banco de Repertório*, vá além do Pinterest (que cria estética homogeneizada). Procure em revistas independentes, estúdios de branding, premiações de design e editoriais de moda.
-*   **A Regra do Contexto (Ex: Reddit):** Se você criar um post e decidir usá-lo fora do Instagram (como no Reddit), **não publique o card do Figma lá**. O Reddit é para conversas. Transforme o post em uma pergunta direta (Ex: "O que faz um objeto de tabacaria não parecer descartável para vocês?"). Distribua a discussão, não o layout gráfico.
+Este é o procedimento de execução rigoroso para a conversão de uma ideia em publicação (Tempo estimado: 30 minutos).
+
+### Etapa 1: Definição de Variáveis (Entrada)
+- **Território:** Seleção de 1 entre as 6 opções disponíveis.
+- **Categoria:** Seleção de 1 entre as 4 opções disponíveis.
+- **Template:** Seleção do Molde Visual adequado à intenção.
+
+### Etapa 2: Processamento e Estruturação via IA
+- **Ação:** Inserção da intenção crua, território e categoria no sistema de Inteligência Artificial (ChatGPT/Claude).
+- **Entrada Padrão (Prompt Base):** *"Elaboração de postagem com intenção de [Categoria] no território de [Território]. A observação base é: [Inserir observação crua]. Requisito: Fornecer 1 título estrutural, 1 frase de apoio e 1 prompt em inglês para geração de imagem realista fotográfica."*
+
+### Etapa 3: Direção de Arte e Geração de Ativos
+- **Ação:** Utilização de geradores de imagem (Midjourney/Flux) com o prompt gerado na Etapa 2.
+- **Critério de Aprovação:** A imagem gerada deve respeitar o MVP Visual da High House (texturas pesadas, luz controlada, sobriedade).
+
+### Etapa 4: Montagem e Publicação (Saída)
+- **Procedimento no Figma:** Alocação da imagem no template; inserção de textos; exportação em PNG.
+- **Procedimento no Instagram (Laboratório):** Publicação com legenda objetiva para início do ciclo de validação.
+
+---
+
+## 6. Procedimentos de Distribuição e Referenciamento
+
+*   **Curadoria Externa:** A captação de referências para o *Banco de Repertório* deve priorizar revistas independentes, estúdios de branding e premiações de design, evitando plataformas de hiper-homogeneização estética como o Pinterest.
+*   **A Regra da Distribuição em Comunidades (Ex: Reddit):** Em fóruns de discussão externa, é vetada a publicação dos cards e layouts gráficos do Figma. O procedimento correto exige a tradução do post em texto puro ou pergunta direta, fomentando o debate sem viés publicitário.

@@ -2,137 +2,90 @@
 
 **Projeto:** High House  
 **Etapa:** Validação e Descoberta de Público (Fase 2)  
-**Status:** Documento Ativo  
+**Status:** Documento Ativo (Registro Oficial)  
 **Última atualização:** Julho de 2026
 
 ---
 
-## 1. O que é este documento?
+## 1. Definição do Documento
 
-Até agora, a High House pesquisou o mercado. A partir de agora, **a High House vai pesquisar como uma marca cultural nasce.**
+A documentação precedente estabeleceu as hipóteses de mercado da High House. Este documento estabelece o motor operacional de aprendizado da marca para a validação empírica. 
 
-Este documento é o motor de aprendizado da marca. Ele funciona como um protocolo científico, não como um plano de marketing de 30 dias. Não estamos validando apenas pessoas; estamos validando plataformas, formatos, linguagem, identidade visual, comunidade e, por fim, produto.
+O foco atual não é a formulação de um plano de marketing de curto prazo, mas sim o desenvolvimento de um laboratório de testes estruturados para validar canais, formatos, linguagem, identidade visual e construção de comunidade antes da fase de produto.
 
-Toda experimentação aqui deve sempre responder a quatro perguntas:
-1. O que queremos descobrir?
-2. Como vamos testar?
-3. O que mediremos?
-4. O que faremos dependendo do resultado?
+Todas as etapas de experimentação adotam o seguinte rigor metodológico:
+1. **Hipótese:** O que se deseja validar.
+2. **Método de Validação:** Qual é o procedimento do teste.
+3. **Métrica de Sucesso:** Quais dados qualitativos/quantitativos serão aferidos.
+4. **Critério de Decisão:** Qual será a ação operacional dependendo do resultado.
 
-> **Regra de Ouro:** Não existe fracasso nesta fase, apenas dados. Um teste que ninguém engaja não é ruim; é uma hipótese invalidada.
+> **Diretriz Estratégica:** Nesta fase exploratória, a ausência de engajamento não é um fracasso operacional, mas sim a invalidação formal de uma hipótese. A aquisição de dados prevalece sobre a métrica de vaidade.
 
 ---
 
 ## 2. Estrutura do Laboratório
 
-A High House precisa de diferentes ambientes com papéis claros. A plataforma escolhida inicialmente **não é a casa definitiva da marca**, mas sim o laboratório do momento.
+O projeto requer diferentes ambientes virtuais com papéis estratégicos claros. A plataforma inicial não representa o destino definitivo da marca, servindo exclusivamente como laboratório de dados para a fase 1.
 
-| Plataforma | Papel | Frequência / Objetivo |
+| Plataforma | Papel Estratégico | Frequência / Objetivo Operacional |
 | :--- | :--- | :--- |
-| **Instagram** *(caso escolhido)* | Laboratório Inicial (Casa Provisória) | 100% dos conteúdos. Construir identidade e concentrar experimentos. |
-| **Reddit** | Pesquisa e Distribuição contextual | Apenas quando fizer sentido. Iniciar conversas em vez de replicar posts. |
-| **Fontes Originais** *(Revistas de design, editoriais, livros, estúdios)* | Curadoria e Inspiração | Substituir o uso exclusivo do Pinterest por fontes de pesquisa primária. |
-| **Site** *(futuro)* | Casa Definitiva | Depois. Centralizar a marca e os produtos. |
-
-*Observação: A casa não é definitiva. Não existe distribuição obrigatória em várias redes nesta fase. O laboratório exige foco e conversas reais onde elas fizerem sentido.*
+| **Instagram** *(seleção primária)* | Laboratório Inicial (Casa Provisória) | Concentração de 100% dos experimentos para validar aderência visual e textual. |
+| **Reddit** | Pesquisa e Distribuição Contextual | Utilização tática para inserção em discussões segmentadas. |
+| **Fontes Originais** | Curadoria Primária | Consulta a publicações independentes e editoriais, descartando algoritmos homogeneizados (ex: Pinterest). |
+| **Site** *(fase futura)* | Casa Definitiva | Centralização do portfólio, e-commerce e comunidade oficial. |
 
 ---
 
-## 3. Experimentos de Estrutura
+## 3. Matriz de Experimentos Estruturais
 
-Antes de criar conteúdo, precisamos validar onde esse conteúdo vai morar.
+A validação do canal de distribuição precede a validação do conteúdo.
 
-### Experimento 0: A Escolha da Casa (Hipótese 0)
+### Hipótese 0: Viabilidade do Canal Primário (Laboratório Inicial)
 
-**O que queremos descobrir?**  
-Qual é a melhor plataforma para iniciar a High House (ex: Instagram)?
-
-**Como vamos testar?**  
-Publicar todo o Ciclo 1 de conteúdo (8 a 12 posts) nesta plataforma exclusiva. Ao final, o fundador deve responder:
-1. Gostei de produzir conteúdo aqui?
-2. Consegui conversar com pessoas?
-3. Consegui alcançar desconhecidos?
-4. O formato nativo combina com a marca?
-
-**O que mediremos?**  
-A fluidez operacional do fundador e as métricas nativas da plataforma (alcance vs. engajamento).
-
-**O que faremos dependendo do resultado?**  
-Se as respostas forem positivas, a plataforma é mantida como Laboratório Inicial. Se forem muito negativas, migramos o laboratório para outra plataforma (ex: Reddit ou Newsletter) para o Ciclo 2.
+- **Hipótese:** A plataforma primária escolhida (Instagram) apresenta viabilidade operacional e demográfica para o estabelecimento da marca.
+- **Método de Validação:** Execução e publicação integral do Ciclo 1 de conteúdo (8 a 12 publicações) exclusivamente no canal.
+- **Métrica de Sucesso:** Avaliação da fluidez operacional na geração do material e análise da relação entre alcance e retenção nativa.
+- **Critério de Decisão:** Havendo viabilidade e resposta positiva de dados, o canal é efetivado. Havendo fricção excessiva ou resposta nula continuada, o laboratório é realocado (ex: Newsletter, Reddit).
 
 ---
 
-## 4. Experimentos de Conteúdo (Ciclo 1)
+## 4. Matriz de Experimentos de Conteúdo (Ciclo 1)
 
-Uma vez definida a Casa Provisória, rodamos as seguintes hipóteses de conteúdo (aprox. 8 a 12 posts, sem gastar com design).
+Definido o Laboratório Inicial, o projeto avança para os testes de linguagem e estética sem alocação de orçamento de mídia.
 
-### Hipótese 1: Estética Editorial
+### Hipótese 1: Aderência à Estética Editorial
+- **Hipótese:** Uma direção de arte focada em texturas, maturidade e sobriedade afasta o público-padrão e atrai o segmento aspiracional.
+- **Método de Validação:** Publicação de 3 peças gráficas com elevado peso visual, ênfase tipográfica (Space Grotesk/DM Serif) e composição limpa.
+- **Métrica de Sucesso:** Volume de Salvamentos (Saves) e Compartilhamentos (Shares).
+- **Critério de Decisão:** Resultados positivos indicam a efetivação da direção de arte atual; resultados negativos exigem reavaliação do contraste entre mensagem e forma.
 
-**O que queremos descobrir?**  
-A estética fotográfica e editorial atrai pessoas cansadas de clichês (folhas de maconha, cores berrantes)?
+### Hipótese 2: Curadoria como Ferramenta de Conexão
+- **Hipótese:** A curadoria de elementos externos (design, espaços, música) sob a ótica da marca gera maior conexão relacional inicial do que a autopromoção.
+- **Método de Validação:** Publicação de 3 peças baseadas exclusivamente na indicação comentada de elementos culturais relevantes ao universo da marca.
+- **Métrica de Sucesso:** Volume de comentários qualitativos e início de diálogos (Direct Messages).
+- **Critério de Decisão:** Interações ativas estabelecem a curadoria como pilar fixo e permanente no sistema de conteúdo.
 
-**Como vamos testar?**  
-Publicar 3 posts com forte peso visual, focados em textura, tipografia (Space Grotesk/DM Serif) e composição limpa.
+### Hipótese 3: Valorização do Ritual vs. Valorização do Produto
+- **Hipótese:** A comunidade potencial valoriza o conceito e a experiência do "ritual e autonomia" acima do produto tangível isolado.
+- **Método de Validação:** Publicação de 2 narrativas focadas na experiência temporal (a pausa, a ambientação), com total ausência de exposição de produtos físicos.
+- **Métrica de Sucesso:** Qualidade da aderência nos comentários textuais (identificação).
+- **Critério de Decisão:** Validação positiva define a linha argumentativa que será utilizada na futura fase de monetização (Drop 0).
 
-**O que mediremos?**  
-Salvamentos (Saves) e Compartilhamentos (Shares). As pessoas salvam o que acham esteticamente aspiracional.
-
-**O que faremos dependendo do resultado?**  
-Se gerar salvamentos, dobramos a aposta na direção de arte. Se ignorado, precisaremos ajustar o contraste entre "beleza" e "mensagem".
-
-### Hipótese 2: Curadoria como Conexão
-
-**O que queremos descobrir?**  
-Fazer curadoria de terceiros gera mais conexão inicial do que falar de si mesmo?
-
-**Como vamos testar?**  
-Publicar 3 posts atuando como "revista/curadora" (ex: indicar um café em Niterói, uma peça de design independente, um álbum de música) com o olhar da marca.
-
-**O que mediremos?**  
-Comentários e conversas por Direct Message (DM).
-
-**O que faremos dependendo do resultado?**  
-Se houver interação ("fui lá e amei", "já ouviram o disco X?"), a curadoria se torna um pilar fixo da linha editorial.
-
-### Hipótese 3: Ritual vs. Produto
-
-**O que queremos descobrir?**  
-A comunidade valoriza o conceito do "ritual e autonomia" mais do que o "produto em si"?
-
-**Como vamos testar?**  
-Publicar 2 posts focados no momento (o fim do dia, a pausa, a música rolando, a reflexão), sem mostrar produtos físicos à venda.
-
-**O que mediremos?**  
-Respostas textuais qualificadas (ex: pessoas comentando "exatamente isso").
-
-**O que faremos dependendo do resultado?**  
-Se validado, usaremos essa mesma linguagem de ritual quando formos vender o Drop 0.
-
-### Hipótese 4: Caderno de Projeto
-
-**O que queremos descobrir?**  
-Mostrar os bastidores e as dúvidas (formato Caderno de Projeto) gera sensação de pertencimento?
-
-**Como vamos testar?**  
-Publicar 2 posts documentais (ex: abrindo uma dúvida sobre qual tecido usar ou qual caminho seguir na marca).
-
-**O que mediremos?**  
-Respostas construtivas e ganho de seguidores participativos.
-
-**O que faremos dependendo do resultado?**  
-Se gerar conversas ricas, a transparência e a vulnerabilidade estratégica se tornam a "voz principal" da High House.
+### Hipótese 4: Efetividade do "Caderno de Projeto"
+- **Hipótese:** A transparência na documentação do processo de construção gera senso de pertencimento e conversão de comunidade.
+- **Método de Validação:** Abertura formal de 2 decisões estratégicas do projeto para acompanhamento e interação pública.
+- **Métrica de Sucesso:** Qualidade construtiva dos retornos e retenção de público engajado.
+- **Critério de Decisão:** Resultados favoráveis consagram a vulnerabilidade estratégica documentada como voz central da marca.
 
 ---
 
-## 5. Critério de Avanço (Go/No-Go)
+## 5. Critérios de Avanço (Portão de Decisão Go/No-Go)
 
-Quando saberemos que é hora de sair da fase de experimentação de linguagem e ir para a criação do **Drop 0 (Primeiro Produto)**?
+A transição da Fase Exploratória para a Fase Comercial (Drop 0) é bloqueada até o cumprimento dos seguintes critérios obrigatórios:
 
-Antes de pensar em vender qualquer coisa, precisamos conseguir responder **SIM** para estas quatro perguntas:
+1. [ ] A validação empírica estabeleceu uma identidade visual e textual reconhecível.
+2. [ ] A análise de dados determinou a hierarquia de formatos de conteúdo mais eficazes.
+3. [ ] A viabilidade da plataforma primária de retenção foi comprovada.
+4. [ ] O monitoramento qualitativo atestou a formação inicial de interesse orgânico fora da rede de contatos originária.
 
-1. [ ] Existe uma linguagem (visual e textual) que as pessoas reconhecem como "High House"?
-2. [ ] Existe um formato de conteúdo que funciona melhor (ex: foto, texto, curadoria)?
-3. [ ] Existe uma plataforma onde faz sentido continuar investindo energia?
-4. [ ] Existem pessoas (fora do círculo de amigos) demonstrando interesse espontâneo pelo projeto?
-
-Se a resposta for "sim" para essas quatro perguntas, o Laboratório cumpriu seu papel inicial. A marca existe para pessoas reais. Só então passamos para a experimentação de Produto (Drop 0).
+O cumprimento integral dos quatro requisitos assinala a conclusão da função deste laboratório. Apenas após a confirmação destes dados o projeto está autorizado a iniciar a estruturação da oferta tangível (Drop 0).

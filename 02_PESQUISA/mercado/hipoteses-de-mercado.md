@@ -39,8 +39,8 @@ Este documento transforma a pesquisa exploratória realizada sobre o
 ecossistema de cannabis, cultura urbana, arte, música, moda, design e
 comunidade em **hipóteses testáveis**.
 
-A função deste documento não é afirmar que a High House já encontrou o
-seu mercado ou que o seu modelo de negócio está comprovado.
+A função deste documento não é afirmar que a High House já encontrou
+o mercado ideal ou que o modelo de negócio está comprovado.
 
 A função é responder:
 
@@ -263,7 +263,7 @@ marca ou se esses valores precisam ser constantemente explicados.
 
 **Hipótese:**
 O espaço físico é o objetivo de longo prazo, mas a marca não precisa
-esperar a sua existência para começar a criar valor.
+esperar a construção física para começar a criar valor.
 
 A High House pode começar por:
 
@@ -331,7 +331,7 @@ está claro qual grupo será o primeiro a comprar.
 > experiências de comunidade.
 
 A marca pode alcançar pessoas além do consumidor de cannabis, mas não
-deve perder sua conexão com a cultura que originou o projeto.
+deve perder a conexão com a cultura que originou o projeto.
 
 **O que precisa ser descoberto:**
 
@@ -545,7 +545,7 @@ Mais capacidade de criar produtos
 ```
 
 A resistência não deve ser apenas comunicação.
-Ela deve aparecer na forma como a High House utiliza sua capacidade
+Ela deve aparecer na forma como a High House utiliza a capacidade
 financeira e cultural.
 
 Ainda não existe capacidade financeira para grandes investimentos culturais.

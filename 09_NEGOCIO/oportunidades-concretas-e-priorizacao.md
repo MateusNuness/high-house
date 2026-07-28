@@ -2,300 +2,153 @@
 
 **Projeto:** High House  
 **Etapa:** Identificação, priorização e validação de oportunidades  
-**Status:** Documento de trabalho  
+**Status:** Documento Estratégico (Registro Oficial)  
 **Última atualização:** Julho de 2026
 
 ---
 
 ## 1. Objetivo deste documento
 
-Este documento existe para responder a uma pergunta simples:
+Este documento existe para registrar a decisão estratégica sobre a seguinte questão:
 
-> **Qual é a primeira oportunidade concreta que a High House pode testar com os recursos reais do fundador?**
+> **Qual é a primeira oportunidade concreta que a High House deve testar, considerando os recursos reais disponíveis da gestão do projeto?**
 
-A High House tem uma visão de longo prazo ligada a cultura canábica, arte, música, design, comunidade e, no futuro, um espaço físico em Niterói.
+A visão de longo prazo da marca engloba cultura canábica, arte, música, design, comunidade e um espaço físico em Niterói. No entanto, a fase atual é de **foco e validação**, não de expansão.
 
-Mas a fase atual não é de expansão.
-
-A fase atual é de **escolha e foco**.
-
-Por isso, a pergunta certa agora não é apenas "o que seria mais bonito?", e sim:
-
-- O que pode ser testado com pouco dinheiro?
-- O que depende menos de contatos?
-- O que combina com um fundador introspectivo?
-- O que pode gerar aprendizado rápido?
-- O que pode gerar receita sem exigir uma operação grande?
-- O que ajuda a construir marca, não apenas venda?
+A priorização estratégica não avalia o cenário idealizado, mas sim os seguintes condicionantes:
+- Viabilidade de teste com baixo capital;
+- Independência de rede de contatos prévia;
+- Adequação a um perfil de fundador introspectivo;
+- Velocidade de aquisição de dados e aprendizado;
+- Potencial de geração de receita com baixo atrito operacional;
+- Capacidade de construção de marca em oposição a apenas giro de produto.
 
 ---
 
-## 2. Critérios de avaliação
+## 2. Critérios de Avaliação
 
-Cada oportunidade será avaliada pelos critérios abaixo.
+As oportunidades candidatas são filtradas de acordo com os seguintes critérios técnicos:
 
-### 2.1 Custo inicial
+### 2.1 Custo Inicial
+O volume de capital exigido para viabilizar o primeiro teste de mercado.
 
-Quanto dinheiro é necessário para testar a ideia?
+### 2.2 Complexidade Operacional
+A carga de infraestrutura, logística e gestão demandada pela execução.
 
-### 2.2 Complexidade operacional
+### 2.3 Dependência de Rede Social
+O grau de necessidade de networking ativo, articulação de pessoas e promoção de eventos imediatos.
 
-Quanta infraestrutura, logística e gestão são necessárias?
+### 2.4 Adequação ao Perfil da Gestão
+A viabilidade de execução por um fundador que prioriza a introspecção, gere recursos limitados e se encontra em fase de mapeamento de mercado.
 
-### 2.3 Dependência de rede social
+### 2.5 Potencial de Receita
+A viabilidade de tração financeira em curto a médio prazo.
 
-A oportunidade exige muitas pessoas, eventos e networking imediato?
+### 2.6 Potencial de Construção de Marca
+O impacto da oportunidade na solidificação da identidade e autoridade da High House.
 
-### 2.4 Compatibilidade com o fundador
+### 2.7 Alcance Nacional
+A escalabilidade do formato para além das fronteiras regionais.
 
-A oportunidade combina com alguém que:
-
-- é introspectivo;
-- tem pouco capital;
-- ainda está aprendendo;
-- gosta da cultura, mas não está totalmente inserido na cena.
-
-### 2.5 Potencial de receita
-
-A oportunidade pode gerar dinheiro real no curto ou médio prazo?
-
-### 2.6 Potencial de marca
-
-A oportunidade ajuda a construir a identidade da High House?
-
-### 2.7 Alcance nacional
-
-A oportunidade pode ser vendida ou comunicada para o Brasil todo?
-
-### 2.8 Valor cultural
-
-A oportunidade ajuda a construir comunidade, repertório e legitimidade?
+### 2.8 Valor Cultural
+O grau em que a iniciativa consolida repertório, legitimidade e base de comunidade.
 
 ---
 
-## 3. Oportunidades candidatas
+## 3. Avaliação de Oportunidades Candidatas
 
-### 3.1 Conteúdo e curadoria digital
+### 3.1 Conteúdo e Curadoria Digital
+**Descrição:** Publicação de análises, referências, pequenos ensaios e documentação do processo construtivo.
+**Vantagens Estratégicas:** Custo tendendo a zero; alinhamento total à baixa sociabilidade forçada; alta eficiência na descoberta de linguagem; alcance nacional imediato.
+**Riscos:** Retorno financeiro de longo prazo; necessidade extrema de constância.
+**Adequação à Fase Atual:** Muito Alta.
 
-**Descrição:** publicações, análises, referências, comentários, pequenos textos, imagens, vídeos curtos e documentação do processo.
+### 3.2 Produto Leve sob Demanda
+**Descrição:** Itens de baixo atrito produtivo (adesivos, pôsteres, impressos, ecobags, camisetas básicas) via impressão restrita ou pré-venda.
+**Vantagens Estratégicas:** Risco financeiro minimizado; valida materialização visual da marca; alcance logístico viável para todo o território.
+**Riscos:** Problemas na garantia de qualidade desviam o foco; falhas em gestão de estoque caso haja excesso de grade.
+**Adequação à Fase Atual:** Alta (condicionada à extrema simplicidade).
 
-**Por que importa:** pode começar com custo muito baixo e ajuda a construir autoridade sem exigir exposição presencial intensa.
+### 3.3 Curadoria de Produtos de Terceiros
+**Descrição:** Seleção e recomendação de peças do ecossistema cultural (via parceria ou afiliação não intrusiva).
+**Vantagens Estratégicas:** Mapeamento de intenção de compra sem custos de estoque; construção de autoridade (confiança).
+**Riscos:** Margens comprimidas; percepção equivocada como vitrine em vez de marca autoral.
+**Adequação à Fase Atual:** Alta.
 
-**Vantagens:**
+### 3.4 Colaborações Pontuais
+**Descrição:** Intersecções criativas com artistas, designers e produtores locais.
+**Vantagens Estratégicas:** Transferência de legitimidade e assimilação acelerada dos códigos da cena.
+**Riscos:** Alta fricção negocial; dependência de timing e articulação externa.
+**Adequação à Fase Atual:** Média (prioridade secundária, subsequente à consolidação de uma base).
 
-- quase nenhum custo inicial;
-- compatível com baixa sociabilidade;
-- ajuda a descobrir linguagem da marca;
-- constrói repertório e legitimidade;
-- pode alcançar o Brasil inteiro;
-- gera base para futuras vendas.
+### 3.5 Micro-eventos e Experiências Pop-up
+**Descrição:** Encontros presenciais de nicho em parceria com espaços consolidados.
+**Vantagens Estratégicas:** Prototipação do espaço físico futuro; adensamento relacional da comunidade.
+**Riscos:** Escalonamento de custos logísticos; incompatibilidade com a estratégia atual de baixo atrito presencial.
+**Adequação à Fase Atual:** Baixa.
 
-**Riscos:**
-
-- pode demorar para gerar dinheiro;
-- pode virar só "conteúdo" sem produto;
-- exige consistência.
-
-**Compatibilidade com o momento atual:** muito alta.
-
----
-
-### 3.2 Produto leve sob demanda
-
-**Descrição:** adesivos, pôsteres, ecobags, camisetas básicas ou impressos simples, produzidos em pequena escala ou sob demanda.
-
-**Por que importa:** permite testar se alguém compra algo da High House antes de existir uma estrutura maior.
-
-**Vantagens:**
-
-- baixo risco se for pequeno;
-- pode funcionar em pré-venda;
-- ajuda a materializar a marca;
-- permite testar identidade visual;
-- pode ser vendido online para todo o Brasil.
-
-**Riscos:**
-
-- produto ruim queima a marca;
-- camisetas e vestuário podem gerar erro de estoque e tamanho;
-- exige cuidado com design e execução.
-
-**Compatibilidade com o momento atual:** alta, desde que simples.
+### 3.6 Vestuário Estruturado
+**Descrição:** Coleções complexas (alfaiataria urbana, moletons estruturados).
+**Vantagens Estratégicas:** Tradução robusta da marca; tickets médios elevados.
+**Riscos:** Congelamento de capital; risco severo de encalhe em grades; desgaste operacional alto.
+**Adequação à Fase Atual:** Muito Baixa.
 
 ---
 
-### 3.3 Curadoria de produtos de terceiros
+## 4. Matriz de Priorização Estratégica
 
-**Descrição:** recomendar, selecionar e organizar produtos relevantes do ecossistema (com potencial uso de afiliação, indicação ou parceria).
-
-**Por que importa:** é uma forma de participar da cultura sem produzir tudo do zero.
-
-**Vantagens:**
-
-- baixo custo;
-- baixo risco;
-- ajuda a aprender mercado;
-- pode criar confiança;
-- pode monetizar sem estoque grande.
-
-**Riscos:**
-
-- menor margem;
-- exige consistência editorial;
-- pode parecer apenas "vitrine".
-
-**Compatibilidade com o momento atual:** muito alta.
-
----
-
-### 3.4 Colaborações pontuais
-
-**Descrição:** parcerias pequenas com artistas, designers, fotógrafos, músicos ou criadores locais.
-
-**Por que importa:** pode trazer legitimidade e reforçar a dimensão cultural da marca.
-
-**Vantagens:**
-
-- valor cultural alto;
-- ajuda a aprender códigos da cena;
-- empresta credibilidade;
-- pode gerar conteúdo e produto ao mesmo tempo.
-
-**Riscos:**
-
-- depende de contatos;
-- exige negociação;
-- pode avançar rápido demais antes de a marca estar pronta.
-
-**Compatibilidade com o momento atual:** média. Melhor depois de algum conteúdo e prova de trabalho.
-
----
-
-### 3.5 Eventos pequenos e experiências pop-up
-
-**Descrição:** encontros pequenos, presenciais ou híbridos, em parceria com espaços já existentes.
-
-**Por que importa:** testa convivência, atmosfera e interesse por uma experiência High House.
-
-**Vantagens:**
-
-- boa ponte para o futuro espaço físico;
-- fortalece comunidade;
-- cria lembrança de marca;
-- pode gerar conteúdo.
-
-**Riscos:**
-
-- exige mais sociabilidade;
-- logística e custo sobem;
-- não é a melhor porta de entrada para o fundador hoje.
-
-**Compatibilidade com o momento atual:** média-baixa.
-
----
-
-### 3.6 Vestuário pesado e coleção mais complexa
-
-**Descrição:** camisetas premium, moletons, alfaiataria urbana, peças com maior construção.
-
-**Por que importa:** pode ser muito forte para a marca, mas também é uma das categorias mais arriscadas para começar.
-
-**Vantagens:**
-
-- alto potencial de marca;
-- pode comunicar identidade com força;
-- pode vender para o Brasil.
-
-**Riscos:**
-
-- estoque;
-- grade de tamanhos;
-- custo alto;
-- risco de encalhe;
-- risco de a peça não representar bem a marca ainda.
-
-**Compatibilidade com o momento atual:** média-baixa.
-
----
-
-## 4. Matriz de priorização
-
-| Oportunidade | Custo inicial | Complexidade | Rede necessária | Potencial de receita | Potencial de marca | Compatibilidade com o fundador | Prioridade |
+| Oportunidade | Custo Inicial | Complexidade | Fricção Relacional | Geração de Receita | Impacto na Marca | Adequação Operacional | Prioridade |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Conteúdo e curadoria digital | Baixo | Baixa | Baixa | Média/baixa no início | Alta | Muito alta | 1 |
-| Curadoria de produtos de terceiros | Baixo | Baixa | Baixa | Média | Média/alta | Muito alta | 2 |
-| Produto leve sob demanda | Baixo/médio | Média | Baixa | Média | Alta | Alta | 3 |
-| Colaborações pontuais | Baixo/médio | Média | Média | Média | Alta | Média | 4 |
-| Eventos pequenos e pop-up | Médio | Alta | Alta | Média | Alta | Média/baixa | 5 |
-| Vestuário pesado e coleção complexa | Médio/alto | Alta | Média | Média/alta | Alta | Média/baixa | 6 |
+| Conteúdo e Curadoria Digital | Baixo | Baixa | Baixa | Lenta | Alta | Muito Alta | **1** |
+| Curadoria de Produtos Externos | Baixo | Baixa | Baixa | Moderada | Alta | Alta | **2** |
+| Produto Leve (Pré-venda) | Médio-Baixo | Média | Baixa | Rápida | Alta | Alta | **3** |
+| Colaborações | Médio | Média | Moderada | Variável | Muito Alta | Média | **4** |
+| Micro-eventos | Médio-Alto | Alta | Alta | Variável | Alta | Baixa | **5** |
+| Vestuário Estruturado | Alto | Alta | Média | Alta | Muito Alta | Muito Baixa | **6** |
 
 ---
 
-## 5. O que não faz sentido priorizar agora
+## 5. Exclusões Estratégicas da Fase 1
 
-Neste momento, não parece inteligente começar por:
+O escopo do projeto, neste momento, veta formalmente as seguintes abordagens operacionais:
+- Aluguel ou prospecção de espaço físico primário;
+- Constituição de estoque base abrangente;
+- Grade complexa de modelagem têxtil;
+- Orçamentação de eventos institucionais;
+- Ações de networking forçado sem propósito imediato.
 
-- espaço físico;
-- loja grande;
-- estoque amplo;
-- coleção complexa;
-- muitos produtos ao mesmo tempo;
-- eventos caros;
-- networking forçado;
-- tentativa de parecer uma marca já consolidada.
-
-A prioridade deve ser o caminho que combina:
-
-> baixo custo + baixo atrito + alto aprendizado + alto potencial de marca.
+O norte estratégico exige o alinhamento: **Baixo capital investido + Baixa fricção inicial + Alta captação de dados.**
 
 ---
 
-## 6. Recomendação de prioridade
+## 6. Recomendação de Prioridade Oficial
 
-### Prioridade 1
+### Prioridade 1: Documentação e Curadoria
+### Prioridade 2: Curadoria Externa Comentada
+### Prioridade 3: Oferta Leve sob Demanda (Drop 0)
 
-**Conteúdo e curadoria digital**
-
-### Prioridade 2
-
-**Curadoria de produtos de terceiros**
-
-### Prioridade 3
-
-**Produto leve sob demanda**
-
-A lógica é simples:
-
-1. primeiro você constrói linguagem e atenção;
-2. depois você cria confiança;
-3. depois você oferece um primeiro produto;
-4. depois você mede resposta;
-5. depois você decide se vale escalar.
+A lógica estrutural aprovada é:
+1. Estabelece-se primeiro a linguagem e atenção (audiência);
+2. Constrói-se a confiança (autoridade);
+3. Ofertam-se veículos iniciais de pertencimento (produto leve);
+4. Analisam-se as métricas de resposta (conversão);
+5. Decide-se a viabilidade de escalada.
 
 ---
 
-## 7. Hipótese de trabalho
+## 7. Registro da Hipótese de Trabalho
 
-A hipótese mais promissora, considerando os recursos reais do fundador, é a seguinte:
+A hipótese direcional assumida como linha mestra de execução atual é:
 
-> **A High House deve começar como uma marca de conteúdo e curadoria digital, com pequenos produtos leves e de baixa produção, antes de tentar qualquer modelo mais complexo.**
-
-Essa hipótese ainda precisa ser validada, mas ela é mais compatível com a fase atual do que uma operação grande de moda, evento ou espaço físico.
+> **A High House deve ser iniciada como um veículo editorial e de curadoria digital, validando sua demanda e marca via produtos leves, retardando qualquer operação complexa de moda e espaço físico até a constatação empírica de aderência.**
 
 ---
 
-## 8. Próximo passo
+## 8. Definição do Próximo Portão de Execução
 
-A próxima etapa deve transformar essas oportunidades em testes concretos.
+As deliberações deste documento remetem o avanço da marca para os testes de baixo contato. O desenvolvimento subsequente exigirá respostas a:
+- Qual é o objeto exato do primeiro teste de comunicação;
+- Onde os dados serão colhidos;
+- Quais métricas configurarão um teste exitoso ou falho.
 
-O documento seguinte deve responder:
-
-- o que exatamente será testado primeiro;
-- quanto custa;
-- onde será publicado;
-- como medir interesse;
-- qual resultado confirma ou enfraquece a hipótese;
-- quando parar ou avançar.
-
-> A decisão não é "o que parece mais bonito".  
-> A decisão é "o que posso testar de verdade agora?"
+A decisão pauta-se estritamente na viabilidade de execução, desconsiderando ambições de longo prazo que não encontrem suporte nos recursos atuais.

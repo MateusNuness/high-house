@@ -13,6 +13,18 @@ A **High House** é uma marca contemporânea de lifestyle, cultura urbana e conv
 
 ---
 
+## ✍️ Convenção de Escrita da Documentação (Regra Obrigatória)
+Todo o repositório deve funcionar como uma **documentação oficial de projeto**. Fica estritamente proibido o uso de linguagem típica de IA, tutorial, aconselhamento ou conversa (ex: *"você deve"*, *"faça isso"*, *"recomendo que"*). Em vez de "orientar o que deve ser feito", a documentação **registra o que foi decidido**.
+
+Para garantir o rigor profissional, todos os documentos adotam quatro perspectivas distintas:
+
+1. **Documentos Estratégicos:** Escrita institucional e objetiva. Utilizados para registrar decisões, hipóteses, objetivos e direcionamentos (*ex: "A estratégia prioriza...", "O objetivo é..."*). Evita-se 1ª e 2ª pessoa.
+2. **Documentos Operacionais:** Manuais técnicos, fluxos, procedimentos e checklists impessoais. Utilizam estruturas técnicas (*ex: "Procedimento", "Entrada", "Saída", "Fluxo de Criação"*). Nunca utilizam frases imperativas como "faça isso".
+3. **Documentos da Marca:** Utilizam a 1ª pessoa do plural ("nós") **apenas** quando a voz é da própria marca (manifestos, posicionamentos, valores e princípios).
+4. **Documentos do Fundador:** Utilizam a 1ª pessoa do singular ("eu") **apenas** para registrar restrições, decisões pessoais, gestão de tempo, orçamento e limitações do fundador.
+
+---
+
 ## 🗂️ Estrutura do Projeto
 
 Abaixo está a arquitetura completa da documentação e diretórios do projeto:
