@@ -9,88 +9,130 @@
 
 ## 1. O que é este documento?
 
-Até agora, a High House pesquisou o mercado. A partir de agora, **a High House vai pesquisar o público.**
+Até agora, a High House pesquisou o mercado. A partir de agora, **a High House vai pesquisar como uma marca cultural nasce.**
 
-Este documento é o motor de aprendizado da marca. Ele garante que não estamos produzindo conteúdo apenas "para postar", mas sim rodando testes estruturados para descobrir:
-1. Quem se identifica com o universo da marca?
-2. Que tipo de linguagem (texto e visual) desperta interesse genuíno?
-3. Em qual plataforma essa comunidade está mais disposta a interagir?
+Este documento é o motor de aprendizado da marca. Ele funciona como um protocolo científico, não como um plano de marketing de 30 dias. Não estamos validando apenas pessoas; estamos validando plataformas, formatos, linguagem, identidade visual, comunidade e, por fim, produto.
 
-> **Regra de Ouro:** Não existe fracasso nesta fase, apenas dados. Um post que ninguém curte não é um post ruim; é uma hipótese invalidada.
+Toda experimentação aqui deve sempre responder a quatro perguntas:
+1. O que queremos descobrir?
+2. Como vamos testar?
+3. O que mediremos?
+4. O que faremos dependendo do resultado?
 
----
-
-## 2. Parâmetros do Laboratório Inicial
-
-Para evitar paralisia por análise e dispersão de energia, o laboratório inicial tem restrições claras:
-
-*   **Duração do Ciclo 1:** 30 dias.
-*   **Volume de Testes:** 8 a 12 conteúdos publicados.
-*   **Plataforma Principal (Casa):** Instagram (para testar estética, curadoria e tom editorial).
-*   **Plataforma de Distribuição (Opcional):** Reddit ou fóruns específicos (para testar profundidade e discussões).
-*   **Orçamento de Design/Agência:** R$ 0. (Uso exclusivo da *Identidade Visual Mínima Viável* via Figma/Canva e IA).
+> **Regra de Ouro:** Não existe fracasso nesta fase, apenas dados. Um teste que ninguém engaja não é ruim; é uma hipótese invalidada.
 
 ---
 
-## 3. Hipóteses e Testes (Ciclo 1)
+## 2. Estrutura do Laboratório
 
-O que precisamos descobrir nestes 30 dias?
+A High House precisa de diferentes ambientes com papéis claros. A plataforma escolhida inicialmente **não é a casa definitiva da marca**, mas sim o laboratório do momento.
 
-### Hipótese 1: "A estética editorial atrai pessoas cansadas de clichês."
-*   **O Teste:** 3 posts com forte peso visual (fotografia limpa, texturas, tipografia Space Grotesk/DM Serif), sem folhas de maconha ou cores berrantes, abordando o universo canábico de forma indireta e sofisticada.
-*   **Métrica de Sucesso:** Salvamentos (Saves) e Compartilhamentos (Shares). Pessoas salvam o que acham esteticamente aspiracional.
-*   **Validação:** Se os posts forem salvos/compartilhados por pessoas fora do círculo primário do fundador.
+| Plataforma | Papel | Objetivo |
+| :--- | :--- | :--- |
+| **Instagram** *(caso escolhido)* | Laboratório Inicial (Casa Provisória) | Construir identidade e concentrar os primeiros experimentos de marca e conteúdo. |
+| **Reddit** | Pesquisa | Ouvir pessoas, testar ideias e entender discussões profundas. |
+| **Pinterest** | Inspiração | Descobrir referências visuais e testar estética. |
+| **Site** *(futuro)* | Casa Definitiva | Centralizar a marca, os produtos e o conteúdo sem depender de algoritmos. |
 
-### Hipótese 2: "Curadoria de terceiros gera mais conexão inicial do que falar de si mesmo."
-*   **O Teste:** 3 posts onde a High House atua como "revista/curadora". Exemplo: indicar um café em Niterói, uma peça de design independente, ou um álbum de música, conectando com a "vibe" da marca.
-*   **Métrica de Sucesso:** Comentários e conversas por Direct Message (DM).
-*   **Validação:** Se as pessoas interagirem recomendando outras coisas ou concordando com a visão.
-
-### Hipótese 3: "A comunidade valoriza o conceito do 'Ritual' mais do que o 'Produto'."
-*   **O Teste:** 2 posts focados não no consumo, mas no momento (o fim do dia, a pausa, a música rolando, o café). O texto deve focar na introspecção e autonomia.
-*   **Métrica de Sucesso:** Respostas textuais (pessoas comentando "exatamente isso", "meu momento favorito", etc).
-*   **Validação:** Criação de um vocabulário compartilhado nos comentários.
-
-### Hipótese 4: "O formato de 'Caderno de Projeto' gera pertencimento."
-*   **O Teste:** 2 posts documentais (ex: "Ainda não temos produto, mas temos esta paleta de cores. O que acham?").
-*   **Métrica de Sucesso:** Respostas construtivas e ganho de seguidores engajados.
-*   **Validação:** Se o público se sentir "sócio fundador" da marca, interagindo com o processo.
+*Observação: A casa não é definitiva. Ao longo do projeto, ela poderá migrar para um site, newsletter ou outro ambiente próprio. O importante agora é descobrir onde a High House consegue construir atenção e relacionamento de forma consistente.*
 
 ---
 
-## 4. O Processo Prático de Execução
+## 3. Experimentos de Estrutura
 
-Como criar e medir sem gastar dinheiro:
+Antes de criar conteúdo, precisamos validar onde esse conteúdo vai morar.
 
-1.  **Direção de Arte (Você):** Defina o conceito do post.
-2.  **Geração (IA):** Use ChatGPT para refinar o texto e estruturar a ideia. Se precisar de imagens abstratas/mood, gere no Midjourney/Flux.
-3.  **Montagem (Figma/Canva):** Aplique as cores e fontes do *MVP Visual*. Insira o texto, alinhe à esquerda, coloque a assinatura no rodapé.
-4.  **Publicação:** Poste no Instagram.
-5.  **Observação (Pós-Postagem):** Espere 48 horas.
-6.  **Registro:** Anote os resultados na matriz abaixo.
+### Experimento 0: A Escolha da Casa (Hipótese 0)
+
+**O que queremos descobrir?**  
+Qual é a melhor plataforma para iniciar a High House (ex: Instagram)?
+
+**Como vamos testar?**  
+Publicar todo o Ciclo 1 de conteúdo (8 a 12 posts) nesta plataforma exclusiva. Ao final, o fundador deve responder:
+1. Gostei de produzir conteúdo aqui?
+2. Consegui conversar com pessoas?
+3. Consegui alcançar desconhecidos?
+4. O formato nativo combina com a marca?
+
+**O que mediremos?**  
+A fluidez operacional do fundador e as métricas nativas da plataforma (alcance vs. engajamento).
+
+**O que faremos dependendo do resultado?**  
+Se as respostas forem positivas, a plataforma é mantida como Laboratório Inicial. Se forem muito negativas, migramos o laboratório para outra plataforma (ex: Reddit ou Newsletter) para o Ciclo 2.
 
 ---
 
-## 5. Matriz de Resultados (A Preencher)
+## 4. Experimentos de Conteúdo (Ciclo 1)
 
-*Use esta tabela para acompanhar cada experimento ao longo das semanas.*
+Uma vez definida a Casa Provisória, rodamos as seguintes hipóteses de conteúdo (aprox. 8 a 12 posts, sem gastar com design).
 
-| Post / Tema | Hipótese Testada | Formato (Foto/Carrossel) | Salvamentos | Compartilhamentos | Comentários | Conclusão / Aprendizado |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Ex: Post Manifesto | H4: Caderno de projeto | Carrossel texto | 0 | 0 | 0 | [A preencher após o teste] |
-| Ex: Curadoria Café | H2: Curadoria gera DM | Foto + Texto | 0 | 0 | 0 | [A preencher após o teste] |
-| Ex: Foto Textura | H1: Estética editorial | Imagem Única | 0 | 0 | 0 | [A preencher após o teste] |
+### Hipótese 1: Estética Editorial
+
+**O que queremos descobrir?**  
+A estética fotográfica e editorial atrai pessoas cansadas de clichês (folhas de maconha, cores berrantes)?
+
+**Como vamos testar?**  
+Publicar 3 posts com forte peso visual, focados em textura, tipografia (Space Grotesk/DM Serif) e composição limpa.
+
+**O que mediremos?**  
+Salvamentos (Saves) e Compartilhamentos (Shares). As pessoas salvam o que acham esteticamente aspiracional.
+
+**O que faremos dependendo do resultado?**  
+Se gerar salvamentos, dobramos a aposta na direção de arte. Se ignorado, precisaremos ajustar o contraste entre "beleza" e "mensagem".
+
+### Hipótese 2: Curadoria como Conexão
+
+**O que queremos descobrir?**  
+Fazer curadoria de terceiros gera mais conexão inicial do que falar de si mesmo?
+
+**Como vamos testar?**  
+Publicar 3 posts atuando como "revista/curadora" (ex: indicar um café em Niterói, uma peça de design independente, um álbum de música) com o olhar da marca.
+
+**O que mediremos?**  
+Comentários e conversas por Direct Message (DM).
+
+**O que faremos dependendo do resultado?**  
+Se houver interação ("fui lá e amei", "já ouviram o disco X?"), a curadoria se torna um pilar fixo da linha editorial.
+
+### Hipótese 3: Ritual vs. Produto
+
+**O que queremos descobrir?**  
+A comunidade valoriza o conceito do "ritual e autonomia" mais do que o "produto em si"?
+
+**Como vamos testar?**  
+Publicar 2 posts focados no momento (o fim do dia, a pausa, a música rolando, a reflexão), sem mostrar produtos físicos à venda.
+
+**O que mediremos?**  
+Respostas textuais qualificadas (ex: pessoas comentando "exatamente isso").
+
+**O que faremos dependendo do resultado?**  
+Se validado, usaremos essa mesma linguagem de ritual quando formos vender o Drop 0.
+
+### Hipótese 4: Caderno de Projeto
+
+**O que queremos descobrir?**  
+Mostrar os bastidores e as dúvidas (formato Caderno de Projeto) gera sensação de pertencimento?
+
+**Como vamos testar?**  
+Publicar 2 posts documentais (ex: abrindo uma dúvida sobre qual tecido usar ou qual caminho seguir na marca).
+
+**O que mediremos?**  
+Respostas construtivas e ganho de seguidores participativos.
+
+**O que faremos dependendo do resultado?**  
+Se gerar conversas ricas, a transparência e a vulnerabilidade estratégica se tornam a "voz principal" da High House.
 
 ---
 
-## 6. Critério para Avanço (O Gato na Caixa)
+## 5. Critério de Avanço (Go/No-Go)
 
-Quando saberemos que é hora de sair da fase de experimentação de conteúdo e ir para o **Drop 0 (Primeiro Produto)**?
+Quando saberemos que é hora de sair da fase de experimentação de linguagem e ir para a criação do **Drop 0 (Primeiro Produto)**?
 
-**Não** é quando chegarmos a 10.000 seguidores.
-Avançaremos quando tivermos **3 interações qualitativas repetidas**, tais como:
-*   Pessoas perguntando "Onde compro?" ou "Vocês vendem o quê?".
-*   Pessoas enviando mensagens diretas (DM) para conversar sobre um post de curadoria.
-*   Pessoas (desconhecidas) compartilhando os posts da High House em seus próprios stories porque acharam a estética/mensagem foda.
+Antes de pensar em vender qualquer coisa, precisamos conseguir responder **SIM** para estas quatro perguntas:
 
-Alcançado esse pequeno grupo de *early adopters* engajados, a Hipótese de Audiência estará validada. Só então ativaremos a etapa do Drop 0.
+1. [ ] Existe uma linguagem (visual e textual) que as pessoas reconhecem como "High House"?
+2. [ ] Existe um formato de conteúdo que funciona melhor (ex: foto, texto, curadoria)?
+3. [ ] Existe uma plataforma onde faz sentido continuar investindo energia?
+4. [ ] Existem pessoas (fora do círculo de amigos) demonstrando interesse espontâneo pelo projeto?
+
+Se a resposta for "sim" para essas quatro perguntas, o Laboratório cumpriu seu papel inicial. A marca existe para pessoas reais. Só então passamos para a experimentação de Produto (Drop 0).
