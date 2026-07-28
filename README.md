@@ -146,6 +146,17 @@ O repositório já está preparado para o GitHub Pages. Ao ativar nas configura�
 
 ---
 
+## 🚧 Pastas Pendentes / Em Construção
+As pastas abaixo possuem estrutura criada, mas ainda aguardam o desenvolvimento dos seus respectivos documentos oficiais (atualmente contêm apenas um arquivo `README.md` descritivo provisório):
+
+- **Pesquisa:** `02_PESQUISA/cannabis/`, `02_PESQUISA/concorrentes/`, `02_PESQUISA/cultura/`, `02_PESQUISA/moda/`, `02_PESQUISA/publico/`
+- **Direção Criativa:** `05_DIRECAO_CRIATIVA/moodboards/`, `05_DIRECAO_CRIATIVA/referencias/`
+- **Identidade Visual:** `06_IDENTIDADE_VISUAL/cores/`, `06_IDENTIDADE_VISUAL/logo/`, `06_IDENTIDADE_VISUAL/tipografia/`
+- **Produtos:** `07_PRODUTOS/acessorios/`, `07_PRODUTOS/colecoes/`, `07_PRODUTOS/headshop/`, `07_PRODUTOS/roupas/`
+- **Referências:** `10_REFERENCIAS/artigos/`, `10_REFERENCIAS/imagens/`, `10_REFERENCIAS/livros/`, `10_REFERENCIAS/marcas/`, `10_REFERENCIAS/videos/`
+
+---
+
 ## 🎯 Próximos Passos
 1. ~~Concluir o mapeamento de repertório e pesquisa~~ → Hipóteses de mercado formuladas ✅
 2. ~~Mapear recursos, restrições e perfil do fundador~~ → Diagnóstico completo ✅
