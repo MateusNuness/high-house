@@ -92,18 +92,29 @@ HIGH HOUSE/
 │   ├── livros/
 │   └── videos/
 │
-└── apresentacao/               # Apresentação interativa Web
+├── apresentacao/               # Brand Deck conceitual (objetivo da marca)
+└── apresentacao-v2/            # Caderno de Projeto (processo de construção)
 ```
 
 ---
 
-## 🌐 Brand Deck — Apresentação de Marca
-Brand Deck interativo em HTML/CSS/JS vanilla, com 7 seções focadas em comunicação externa: o que é a High House, por que existe, para onde quer ir e onde está agora.
+## 🌐 Apresentações de Marca
+
+### Brand Deck — Conceitual (`apresentacao/`)
+Apresentação conceitual com visão de objetivo final da marca — o que a High House defende, para onde quer ir e onde está agora.
 
 - **Estrutura:** Abertura → O que é → O que defende → Para onde vai → O que faz primeiro → Onde está agora → Convite
-- **Identidade visual:** Paleta MVP Visual (#0E0F12, #F3EDE3, #D46A4C, #7467E6, #36C2A6, #C8B59C), Space Grotesk + Inter
+- **Tom:** Conceitual, resumo do objetivo da marca
 - **Localização:** [`apresentacao/index.html`](file:///c:/Users/user/Documents/High%20House/apresentacao/index.html)
-- **Como executar:** Abrir o arquivo `apresentacao/index.html` em qualquer navegador web moderno.
+
+### Caderno de Projeto — Narrativa de Construção (`apresentacao-v2/`)
+Nova apresentação com narrativa focada em processo e pertencimento — honesta sobre o que já existe e o que ainda está sendo descoberto. Feita para ser compartilhada com pessoas próximas para coletar feedback sobre a ideia.
+
+- **Estrutura:** Abertura → O que é → Por que existe → O que já descobrimos → O que ainda não sabemos → O caminho → Referências → Onde estamos
+- **Tom:** Caderno de projeto · journal · brand deck de construção
+- **Estética:** DM Serif Display + Inter, paleta sóbria em dourado envelhecido, layout editorial
+- **Localização:** [`apresentacao-v2/index.html`](file:///c:/Users/user/Documents/High%20House/apresentacao-v2/index.html)
+- **Como executar:** Abrir o arquivo `apresentacao-v2/index.html` em qualquer navegador web moderno.
 
 ---
 
@@ -127,4 +138,4 @@ Brand Deck interativo em HTML/CSS/JS vanilla, com 7 seções focadas em comunica
 8. Validar a primeira gota/drop e atingir a **Meta 1** e **Meta 2** de viabilidade financeira.
 
 ---
-*Atualizado em Julho de 2026.*
+*Atualizado em Julho de 2026 — adicionada apresentação v2 (Caderno de Projeto).*
