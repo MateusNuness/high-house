@@ -27,14 +27,14 @@ Toda experimentação aqui deve sempre responder a quatro perguntas:
 
 A High House precisa de diferentes ambientes com papéis claros. A plataforma escolhida inicialmente **não é a casa definitiva da marca**, mas sim o laboratório do momento.
 
-| Plataforma | Papel | Objetivo |
+| Plataforma | Papel | Frequência / Objetivo |
 | :--- | :--- | :--- |
-| **Instagram** *(caso escolhido)* | Laboratório Inicial (Casa Provisória) | Construir identidade e concentrar os primeiros experimentos de marca e conteúdo. |
-| **Reddit** | Pesquisa | Ouvir pessoas, testar ideias e entender discussões profundas. |
-| **Pinterest** | Inspiração | Descobrir referências visuais e testar estética. |
-| **Site** *(futuro)* | Casa Definitiva | Centralizar a marca, os produtos e o conteúdo sem depender de algoritmos. |
+| **Instagram** *(caso escolhido)* | Laboratório Inicial (Casa Provisória) | 100% dos conteúdos. Construir identidade e concentrar experimentos. |
+| **Reddit** | Pesquisa e Distribuição contextual | Apenas quando fizer sentido. Iniciar conversas em vez de replicar posts. |
+| **Fontes Originais** *(Revistas de design, editoriais, livros, estúdios)* | Curadoria e Inspiração | Substituir o uso exclusivo do Pinterest por fontes de pesquisa primária. |
+| **Site** *(futuro)* | Casa Definitiva | Depois. Centralizar a marca e os produtos. |
 
-*Observação: A casa não é definitiva. Ao longo do projeto, ela poderá migrar para um site, newsletter ou outro ambiente próprio. O importante agora é descobrir onde a High House consegue construir atenção e relacionamento de forma consistente.*
+*Observação: A casa não é definitiva. Não existe distribuição obrigatória em várias redes nesta fase. O laboratório exige foco e conversas reais onde elas fizerem sentido.*
 
 ---
 

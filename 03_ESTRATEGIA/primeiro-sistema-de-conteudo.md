@@ -1,389 +1,108 @@
-# Primeiro Sistema de Conteúdo
+# Sistema Operacional de Produção de Conteúdo
 
 **Projeto:** High House  
-**Etapa:** Descoberta, validação e construção de marca  
-**Status:** Documento de orientação  
+**Etapa:** Validação e Descoberta de Público (Fase 2)  
+**Status:** Documento Ativo (Manual de Operação)  
 **Última atualização:** Julho de 2026
 
 ---
 
-## 1. Objetivo deste documento
+## 1. A Filosofia de Produção
 
-Este documento define o primeiro sistema de conteúdo da High House.
+A premissa deste sistema é libertadora: **Você não é um designer gráfico. E não precisa ser.**
+A High House não vai exigir que você abra o Canva do zero, encare uma tela em branco e tente acertar hierarquia, contraste e espaçamento. 
 
-O conteúdo é importante porque, nesta fase, ele pode:
+O seu papel na High House é de **Diretor de Arte e Curador**.
+Você não cria o layout do zero. Você tem ideias, escreve conceitos, aprova imagens geradas e **apenas monta** o conteúdo em um molde que já funciona.
 
-- construir linguagem;
-- mostrar pensamento;
-- gerar atenção;
-- organizar repertório;
-- validar interesse;
-- criar autoridade gradual;
-- preparar o terreno para produtos e comunidade.
-
-A High House não precisa começar vendendo tudo.
-
-Ela pode começar **mostrando com clareza o mundo que quer construir**.
+Produzir um post deixa de ser um exercício exaustivo de criatividade e vira um **processo repetível de 20 a 30 minutos**.
 
 ---
 
-## 2. Função do conteúdo
+## 2. A Pilha Tecnológica (Custo: R$ 0)
 
-O conteúdo da High House deve cumprir quatro funções:
+Você utilizará exatamente 5 ferramentas para colocar a High House no mundo:
 
-### 2.1 Curadoria
-
-Selecionar e organizar referências úteis e interessantes.
-
-### 2.2 Educação
-
-Explicar temas da cultura, do design, da cannabis e da construção de marca.
-
-### 2.3 Identidade
-
-Mostrar como a High House enxerga o mundo.
-
-### 2.4 Pré-validação
-
-Descobrir se existe interesse antes de investir em estoque, produto ou estrutura maior.
+1. **ChatGPT:** Para gerar ideias, refinar textos curtos e criar os "prompts" de imagem.
+2. **Gerador de Imagens IA (Flux / Midjourney / DALL-E):** Para materializar a direção de fotografia (ex: objeto escuro, luz lateral, estética de revista).
+3. **Figma (Gratuito):** Onde os *Templates* (moldes fixos) estarão salvos. Você só vai entrar para trocar a foto, colar o texto e exportar.
+4. **Google Fonts:** Suas fontes base (*Space Grotesk* e *Inter*) instaladas no computador.
+5. **Instagram (A Casa Provisória):** Onde o conteúdo é publicado.
 
 ---
 
-## 3. Princípios do conteúdo
+## 3. Os 4 Modelos de Templates (Figma)
 
-### 3.1 Não fingir autoridade
+Para evitar ter que "inventar um post" toda vez, a High House terá apenas **4 templates fixos** configurados no Figma. 
 
-O conteúdo não deve soar como quem já domina tudo.
+*   **Modelo A (O Pôster):** Imagem grande cobrindo o post + Título forte + Assinatura no rodapé.
+*   **Modelo B (A Citação/Curadoria):** Imagem centralizada menor + Frase/Citação abaixo + Rodapé minimalista.
+*   **Modelo C (O Manifesto):** Apenas texto. Título em *Space Grotesk* + Parágrafo em *Inter* + Fundo nas cores da marca (Preto Profundo ou Off-White).
+*   **Modelo D (O Carrossel):** Sequência lógica do Modelo A e Modelo C alternados.
 
-A postura inicial é de:
-
-- estudo;
-- observação;
-- construção;
-- refinamento.
-
-### 3.2 Não virar diário pessoal
-
-O conteúdo não deve ser só sobre angústia ou vida privada.
-
-A vida do fundador pode aparecer, mas sempre conectada ao projeto e ao universo da marca.
-
-### 3.3 Não depender de interação social intensa
-
-O sistema precisa funcionar mesmo com o fundador sendo pouco sociável.
-
-Por isso, o conteúdo deve ser:
-
-- planejável;
-- publicável de forma assíncrona;
-- possível de produzir sozinho;
-- forte o suficiente para que as pessoas cheguem até ele.
-
-### 3.4 Construir valor antes de pedir atenção
-
-O conteúdo deve entregar algo útil ou interessante antes de tentar vender.
+> **O que você precisa aprender no Figma (Apenas 3 coisas):**
+> 1. Como arrastar e soltar uma imagem nova dentro do "quadrado" da foto.
+> 2. Como dar dois cliques no texto e colar o texto novo.
+> 3. Como clicar em "Exportar PNG".
+> *Nada além disso.*
 
 ---
 
-## 4. Territórios iniciais de conteúdo
+## 4. O Fluxo de Trabalho (O Processo de 30 Minutos)
 
-A High House pode começar com estes territórios:
+Quando você for produzir conteúdo, siga **estritamente** este passo a passo. 
 
-### 4.1 Cultura canábica
+### Passo 1: Qual é a categoria da ideia?
+Escolha sobre o que você vai falar hoje:
+*   [ ] **Editorial:** Reflexões sobre ritual, autonomia, design e cultura.
+*   [ ] **Curadoria:** Indicar uma revista, um café, uma peça de cerâmica, uma música.
+*   [ ] **Construção:** Mostrar os bastidores (ex: "estamos escolhendo tecidos").
+*   [ ] **Observação:** Detalhes de um material ou comportamento.
 
-- história;
-- códigos;
-- produtos;
-- problemas do usuário;
-- objetos;
-- materiais;
-- linguagem;
-- estética.
+### Passo 2: Qual será o molde?
+*   [ ] Modelo A (Pôster)
+*   [ ] Modelo B (Citação/Curadoria)
+*   [ ] Modelo C (Só Texto)
+*   [ ] Modelo D (Carrossel)
 
-### 4.2 Design e objetos
+### Passo 3: Terceirizar a base para a IA (ChatGPT)
+Você escreve no ChatGPT a sua intenção crua. 
+*Exemplo: "Quero fazer um post sobre como o material das coisas importa. A ideia é que os objetos de tabacaria não deveriam ser descartáveis. Escreva o título, 1 frase curta para a imagem, e gere o prompt em inglês para eu pedir para uma IA gerar uma foto de revista de design de um objeto de cerâmica escura em cima do concreto com luz suave."*
 
-- materiais;
-- ergonomia;
-- durabilidade;
-- curadoria;
-- bom gosto;
-- comparação entre produtos;
-- críticas de design.
+### Passo 4: Gerar a Imagem (Se houver)
+Pegue o prompt gigante que o ChatGPT criou e cole no gerador de imagens. Escolha a que ficar mais fiel ao *MVP Visual* da High House (texturas, fundo limpo, iluminação suave).
 
-### 4.3 Música e ambiente
+### Passo 5: A Montagem no Figma
+1. Abra o Figma.
+2. Jogue a imagem gerada dentro do seu Template.
+3. Cole o título criado pelo ChatGPT.
+4. Exporte o arquivo (PNG).
 
-- rap;
-- hip-hop;
-- eletrônica;
-- cenas urbanas;
-- playlists;
-- espaços;
-- atmosfera;
-- relação com o lifestyle.
-
-### 4.4 Arte e imagem
-
-- grafite;
-- fotografia;
-- ilustração;
-- cartazes;
-- referências visuais;
-- identidade gráfica.
-
-### 4.5 Construção da marca
-
-- aprendizados;
-- testes;
-- decisões;
-- bastidores;
-- processos;
-- hipóteses;
-- validações.
+### Passo 6: Publicar no Laboratório (Instagram)
+Cole a legenda (também já refinada pela IA) e poste.
 
 ---
 
-## 5. Formatos de conteúdo
+## 5. Pesquisa e Curadoria de Fontes Originais
 
-### 5.1 Post curto
+Quando for fazer conteúdo de **Curadoria**, não dependa apenas do Pinterest, pois ele é um agregador de algoritmos e tende a homogeneizar a estética. 
 
-Bom para:
-
-- citações;
-- ideias;
-- reflexões;
-- observações rápidas;
-- imagens com legenda curta.
-
-### 5.2 Mini-ensaio
-
-Bom para:
-
-- explicar um tema;
-- organizar pensamento;
-- mostrar repertório.
-
-### 5.3 Carrossel
-
-Bom para:
-
-- listas;
-- comparações;
-- processos;
-- hipóteses;
-- dicas;
-- análise de produto.
-
-### 5.4 Vídeo curto
-
-Bom para:
-
-- comentários simples;
-- mostrar produtos;
-- mostrar referências;
-- apresentar ideias de forma rápida.
-
-### 5.5 Série editorial
-
-Bom para:
-
-- temas recorrentes;
-- construção de linguagem;
-- identidade contínua.
+Vá nas fontes originais para trazer coisas que poucas pessoas estão vendo:
+*   **Revistas independentes de design e arquitetura.**
+*   **Estúdios de branding.**
+*   **Sites de premiações de embalagens e design industrial.**
+*   **Editoriais de moda contemporânea.**
+*   **Fotógrafos independentes.**
 
 ---
 
-## 6. Primeiras séries sugeridas
+## 6. A Regra de Distribuição (Contexto vs. Replicação)
 
-### Série 1 — O mundo High House
+**Não existe distribuição obrigatória cruzada nesta fase.** 
+Se o post foi feito para o Instagram (Casa), ele fica no Instagram.
 
-Conteúdo sobre os temas centrais da marca:
+Se você decidir usar o Reddit, **não republique o card gerado no Figma lá**. O Reddit é para conversas, não para banners de marca.
+*   **No Instagram:** Você posta o card "Material importa."
+*   **No Reddit:** Você faz uma pergunta: *"Vocês acham que os acessórios da cultura canábica ainda são vistos como descartáveis? O que faz um objeto parecer bem projetado para vocês?"*
 
-- cannabis;
-- arte;
-- música;
-- design;
-- comunidade;
-- resistência;
-- lifestyle.
-
-### Série 2 — Objetos e materiais
-
-Conteúdo analisando:
-
-- qualidade;
-- durabilidade;
-- utilidade;
-- design;
-- estética.
-
-### Série 3 — Marca em construção
-
-Conteúdo sobre:
-
-- o que a High House está aprendendo;
-- o que está sendo testado;
-- o que ainda não foi decidido.
-
-### Série 4 — Referências e curadoria
-
-Conteúdo mostrando:
-
-- marcas;
-- artistas;
-- lugares;
-- projetos;
-- ideias interessantes.
-
----
-
-## 7. Tom de voz
-
-O tom da High House deve ser:
-
-- direto;
-- curioso;
-- cuidadoso;
-- confiante sem arrogância;
-- estético;
-- observador;
-- sensível à cultura;
-- honesto sobre o estágio atual do projeto.
-
-Não deve ser:
-
-- corporativo demais;
-- forçado;
-- juvenil por obrigação;
-- performático;
-- cheio de clichês;
-- pretensioso.
-
----
-
-## 8. O papel da consistência
-
-O conteúdo só funciona se existir constância.
-
-Melhor publicar pouco e bem do que tentar fazer muito e parar.
-
-A consistência importa porque:
-
-- cria memória;
-- mostra seriedade;
-- permite aprendizado;
-- ajuda a formar linguagem.
-
----
-
-## 9. O que medir
-
-O conteúdo não deve ser produzido "no escuro".
-
-Toda publicação deve observar:
-
-- visualizações;
-- salvamentos;
-- comentários;
-- compartilhamentos;
-- mensagens;
-- cliques;
-- seguidores novos;
-- retorno de audiência.
-
-A pergunta central não é:
-
-> "Gostaram?"
-
-A pergunta é:
-
-> "O que chamou atenção de verdade?"
-
----
-
-## 10. Conteúdo como ponte para produto
-
-O conteúdo não é um fim em si.
-
-Ele deve preparar o terreno para:
-
-- um primeiro produto;
-- uma comunidade;
-- uma colaboração;
-- um micro-drop;
-- um teste de pré-venda.
-
-Ou seja:
-
-> Primeiro o olhar, depois a compra.
-
----
-
-## 11. Estrutura mínima recomendada
-
-### Canal principal
-
-Escolher apenas um canal principal no começo.
-
-### Canal secundário
-
-Ter no máximo um canal de apoio.
-
-### Ritmo
-
-Melhor um ritmo sustentável do que promessa impossível.
-
-### Biblioteca
-
-Guardar:
-
-- referências;
-- textos;
-- links;
-- produtos;
-- posts;
-- imagens;
-- aprendizados.
-
-Essa biblioteca será a memória da marca.
-
----
-
-## 12. Hipótese de conteúdo
-
-> **Se a High House conseguir construir uma voz clara e interessante, ela pode criar atenção e legitimidade antes mesmo de ter um produto físico grande.**
-
-Essa hipótese precisa ser testada pelo engajamento real.
-
----
-
-## 13. Relação com os próximos passos
-
-O conteúdo deve alimentar:
-
-1. priorização de oportunidades;
-2. validação de produto;
-3. primeira comunidade;
-4. futuro catálogo;
-5. reputação da marca.
-
----
-
-## 14. Próximo movimento prático
-
-Começar com:
-
-- 1 tema principal;
-- 1 formato principal;
-- 1 frequência possível;
-- 1 sistema simples de registro.
-
-Exemplo de início:
-
-- 2 posts por semana;
-- 1 mini-ensaio;
-- 1 carrossel de referência;
-- 1 arquivo de aprendizados por mês.
-
-O sistema pode ser pequeno.
-
-Mas precisa existir.
+Use cada ambiente para a sua função principal. Não gaste energia adaptando tamanhos de imagem para mil redes sociais diferentes se você ainda está apenas validando a sua primeira mensagem.
