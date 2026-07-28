@@ -143,4 +143,4 @@ O repositório já está preparado para o GitHub Pages. Ao ativar nas configura�
 8. Validar a primeira gota/drop e atingir a **Meta 1** e **Meta 2** de viabilidade financeira.
 
 ---
-*Atualizado em Julho de 2026 — reformulação metodológica honesta da seção de Referências na Apresentação V2 (Caderno de Projeto).*
+*Atualizado em Julho de 2026 — ajuste da origem e contexto da referência Não Me Torra (Niterói, RJ) na Apresentação V2.*
