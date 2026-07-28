@@ -124,6 +124,7 @@ O repositório já está preparado para o GitHub Pages. Ao ativar nas configura�
 ---
 
 ## 📄 Documentos Recentes
+- **Protocolo de Experimentação e Aprendizado** — Motor de validação com 4 hipóteses práticas, testes estruturados, métricas (saves/shares) e restrições (R$ 0) para o laboratório inicial: [`03_ESTRATEGIA/protocolo-de-experimentacao.md`](file:///c:/Users/user/Documents/High%20House/03_ESTRATEGIA/protocolo-de-experimentacao.md)
 - **Identidade Visual Mínima Viável (MVP Visual)** — Kit provisório de marca (paleta, tipografia, composição, tom de voz e assinatura) para postar sem paralisar: [`06_IDENTIDADE_VISUAL/identidade-visual-minima-viavel.md`](file:///c:/Users/user/Documents/High%20House/06_IDENTIDADE_VISUAL/identidade-visual-minima-viavel.md)
 - **Plano de Validação de Baixo Contato** — Metodologia de validação adaptada ao perfil introspectivo do fundador, com 5 fases progressivas e 5 experimentos práticos: [`03_ESTRATEGIA/plano-de-validacao-de-baixo-contato.md`](file:///c:/Users/user/Documents/High%20House/03_ESTRATEGIA/plano-de-validacao-de-baixo-contato.md)
 - **Primeiro Sistema de Conteúdo** — Sistema completo de conteúdo definindo territórios, formatos, séries editoriais, tom de voz e métricas: [`03_ESTRATEGIA/primeiro-sistema-de-conteudo.md`](file:///c:/Users/user/Documents/High%20House/03_ESTRATEGIA/primeiro-sistema-de-conteudo.md)
@@ -139,8 +140,9 @@ O repositório já está preparado para o GitHub Pages. Ao ativar nas configura�
 4. ~~Definir plano de validação de baixo contato~~ → 5 fases e 5 experimentos documentados ✅
 5. ~~Criar primeiro sistema de conteúdo~~ → Territórios, formatos e séries definidos ✅
 6. ~~Estruturar Identidade Visual Mínima Viável (MVP Visual)~~ → Kit básico (cores, fontes, grid, assinatura) definido ✅
-7. **Executar Experimento 1:** produzir os primeiros 3 a 5 posts usando a Identidade Mínima Viável para testar engajamento.
-8. Validar a primeira gota/drop e atingir a **Meta 1** e **Meta 2** de viabilidade financeira.
+7. ~~Criar Protocolo de Experimentação~~ → Hipóteses, testes e métricas definidos ✅
+8. **Rodar o Ciclo 1 do Laboratório:** Criar 8 a 12 conteúdos via Figma/Canva com IA e testar hipóteses no Instagram.
+9. **Definir o Drop 0 (Produto Mínimo):** Iniciar assim que as métricas qualitativas de engajamento validarem o público.
 
 ---
-*Atualizado em Julho de 2026 — ajuste da origem e contexto da referência Não Me Torra (Niterói, RJ) na Apresentação V2.*
+*Atualizado em Julho de 2026 — criado Protocolo de Experimentação avançando o projeto para a Fase 2 (Validação de Público).*
