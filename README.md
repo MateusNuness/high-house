@@ -110,7 +110,7 @@ Apresentação conceitual com visão de objetivo final da marca — o que a High
 ### Caderno de Projeto — Narrativa de Construção (`apresentacao-v2/`)
 Nova apresentação com narrativa focada em processo e pertencimento — honesta sobre o que já existe e o que ainda está sendo descobeto. Feita para ser compartilhada com pessoas próximas para coletar feedback sobre a ideia.
 
-- **Estrutura:** Abertura → O que é → Por que existe → O que já descobrimos → O que ainda não sabemos → O caminho → Referências → Onde estamos
+- **Estrutura:** Abertura → O que é → Por que existe → O que já descobrimos → O que ainda não sabemos → O caminho → Referências a estudar → Onde estamos
 - **Tom:** Caderno de projeto · journal · brand deck de construção
 - **Estética:** DM Serif Display + Inter, paleta sóbria em dourado envelhecido, layout editorial
 - **Localização:** [`apresentacao-v2/index.html`](file:///c:/Users/user/Documents/High%20House/apresentacao-v2/index.html)
@@ -143,4 +143,4 @@ O repositório já está preparado para o GitHub Pages. Ao ativar nas configura�
 8. Validar a primeira gota/drop e atingir a **Meta 1** e **Meta 2** de viabilidade financeira.
 
 ---
-*Atualizado em Julho de 2026 — adicionada apresentação v2 (Caderno de Projeto).*
+*Atualizado em Julho de 2026 — reformulação metodológica honesta da seção de Referências na Apresentação V2 (Caderno de Projeto).*
