@@ -39,29 +39,38 @@ Após a execução da auditoria **EOS-000**, as seguintes âncoras tornam-se ine
 
 - **Fontes primárias (Tipografia):** Space Grotesk (Títulos) / Inter (Corpo).
 - **Paleta Oficial:**
-  - **Primárias:** Preto Profundo, Off-White Quente
-  - **Acentos:** Terracota Suave, Lilás Denso
-  - **Secundárias Experimentais:** Verde Água Apagado, Areia Escura
-- **Direção de Arte / Identidade:** Editorial contemporâneo, espaço negativo (vazio visual ativo) e Minimalismo Brutalista.
-  - **Minimalismo Brutalista High House:**
-    - **NÃO significa:** Agressividade visual, caos, excesso tipográfico, Bauhaus estrita, estética punk ou brutalismo web dos anos 2000.
-    - **SIGNIFICA:** Estruturas simples, hierarquia forte, materiais honestos, abundância de espaço negativo, ausência absoluta de decoração desnecessária.
+  - **Primárias:** Preto Profundo, Off-White Quente (fundos e textos base).
+  - **Acentos:** Terracota Suave, Lilás Denso (usar 1 acento por peça).
+  - **Secundárias experimentais:** Verde Água Apagado, Areia Escura.
+- **Direção de Arte / Identidade:** Editorial contemporâneo e Minimalismo Brutalista.
+  - **Minimalismo brutalista High House Significa:**
+    - Estruturas simples
+    - Hierarquia forte
+    - Materiais honestos
+    - Espaço negativo
+    - Ausência de decoração desnecessária
+  - **Minimalismo brutalista High House NÃO Significa:**
+    - Agressividade visual
+    - Caos
+    - Excesso tipográfico
+    - Bauhaus literal ou brutalismo web dos anos 2000
 - **Anti-patterns (Rejeitar terminantemente):**
   - Luxo tradicional / Estética premium dourada.
   - Clichês canábicos (folhas literais, fumaça excessiva, estilo stoner).
   - Vibe hiper-corporativa ou marketing invasivo.
+  - Aglomeração de informações (medo do vazio).
 
 ## EOS-000.1 — Validação Humana
 
 **Decisões aprovadas:**
 - `[ ]` Tipografia
-- `[ ]` Paleta
-- `[ ]` Direção visual
+- `[ ]` Paleta Oficial e Regra de Acentos
+- `[ ]` Direção visual e Definição do Minimalismo Brutalista
 - `[ ]` Anti-patterns
 
-**Pendências (Próximos passos para a IA):**
-- `[ ]` Definir escala tipográfica
-- `[ ]` Definir tokens
-- `[ ]` Definir componentes
+**Pendências (Próximos passos após aprovação):**
+- `[ ]` Definir escala tipográfica (no 03.1)
+- `[ ]` Definir tokens (no 03.1)
+- `[ ]` Definir componentes (no 03.1)
 
-*Nota técnica: Após a marcação de aprovação humana deste documento (todas as decisões aprovadas), as definições alimentarão diretamente o documento `03.1_DESIGN_SYSTEM_SPECIFICATION.md`.*
+*Nota técnica: Estas definições deverão agora alimentar naturalmente o documento `03.1_DESIGN_SYSTEM_SPECIFICATION.md` apenas APÓS o Humano preencher as aprovações acima com `[x]`.*
