@@ -64,7 +64,7 @@ HIGH HOUSE/
 │   ├── plano-de-validacao-de-baixo-contato.md # Estratégia de validação introspectiva (5 fases)
 │   ├── primeiro-sistema-de-conteudo.md        # Transição para coleções editoriais (Revistas)
 │   ├── protocolo-de-experimentacao.md         # Motor de testes com hipóteses e métricas
-│   └── estrategia-conteudo-ciclo-1.md         # Plano tático do Ciclo 1 (50 ideias + 1º post)
+│   └── estrategia-conteudo-ciclo-1.md         # Plano tático do Ciclo 1 (Banco de Perguntas + Coleção 001)
 │
 ├── 04_IDENTIDADE_DA_MARCA/     # Personalidade, voz, linguagem e comunicação
 │   ├── personalidade.md        # Arquetipia e traços de personalidade da marca
@@ -164,7 +164,7 @@ O repositório está configurado para servir as apresentações via GitHub Pages
 ## 📄 Detalhamento dos Documentos Estratégicos Recentes
 
 1. **Estratégia de Conteúdo (Ciclo 1):** [`03_ESTRATEGIA/estrategia-conteudo-ciclo-1.md`](file:///c:/Users/user/Documents/High%20House/03_ESTRATEGIA/estrategia-conteudo-ciclo-1.md)
-   - Define o universo editorial inicial, 3 pilares temáticos, banco com 50 ideias de posts e o roteiro estruturado do primeiro conteúdo para o Instagram.
+   - Define o universo editorial inicial, pilares temáticos, o Banco de Perguntas e o roteiro estruturado da primeira Coleção (Revista) para o Instagram.
 2. **Protocolo de Experimentação e Aprendizado:** [`03_ESTRATEGIA/protocolo-de-experimentacao.md`](file:///c:/Users/user/Documents/High%20House/03_ESTRATEGIA/protocolo-de-experimentacao.md)
    - Motor de validação com 4 hipóteses práticas de engajamento, métricas primárias (salvamentos/compartilhamentos) e restrição de custo zero (R$ 0).
 3. **Identidade Visual Mínima Viável (MVP Visual):** [`06_IDENTIDADE_VISUAL/identidade-visual-minima-viavel.md`](file:///c:/Users/user/Documents/High%20House/06_IDENTIDADE_VISUAL/identidade-visual-minima-viavel.md)
@@ -245,10 +245,10 @@ As seguintes frentes operacionais e táticas estão atualmente sob análise para
 5. ~~Construir sistema de coleções editoriais (Revistas)~~ ✅
 6. ~~Desenvolver Identidade Visual Mínima Viável (MVP Visual)~~ ✅
 7. ~~Elaborar Protocolo de Experimentação de Conteúdo~~ ✅
-8. ~~Desenhar Estratégia de Conteúdo do Ciclo 1 (50 ideias + 1º post)~~ ✅
+8. ~~Desenhar Estratégia de Conteúdo do Ciclo 1 (Banco de Perguntas + Coleção 001)~~ ✅
 
 ### Próximos Passos Ativos
-9. **Decidir o que criar e postar (Coleção 1):** Selecionar as ideias do banco de 50, definir a linha editorial da primeira coleção e produzir as lâminas visuais no Figma/Canva.
+9. **Produzir a Coleção 001:** Selecionar as perguntas exploratórias, definir os capítulos da primeira Revista Editorial e produzir as lâminas visuais no Figma.
 10. **Publicar e testar no Instagram:** Rodar o Ciclo 1 do Laboratório de Conteúdo e coletar dados reais de engajamento.
 11. **Avaliar métricas qualitativas:** Analisar salvamentos, compartilhamentos e comentários para validar a persona e a linguagem visual.
 12. **Definir o produto (Drop 0):** Somente após validação — selecionar o formato do primeiro produto físico com base nos dados de audiência.

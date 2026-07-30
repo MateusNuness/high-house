@@ -66,21 +66,21 @@ A inteligência artificial não atua na invenção da essência, mas como uma fe
 
 ---
 
-## Etapa 4: O Plano de Voo (Roteiro de Publicação)
+## Etapa 4: O Plano de Voo (Sistema de Coleções)
 
 A intenção principal do lançamento não é a viralização, o ensino ou a explicação literal da marca. 
 
-**Função do Post 001**
-O primeiro post existe para responder a uma única pergunta de quem acessa o perfil pela primeira vez: *"Vale a pena acompanhar essa marca?"*
-Por ser fundacional e a marca ainda não possuir um histórico público de observações, o Post 001 é puramente fundamentado na **essência e no manifesto**.
+**Função da Coleção 001**
+A primeira coleção (ou Revista) existe para responder a uma única pergunta de quem acessa o perfil pela primeira vez: *"Vale a pena acompanhar essa marca?"*
+Por ser fundacional e a marca ainda não possuir um histórico público de observações, a Coleção 001 é puramente fundamentada na **essência e no manifesto**.
 
-**Roteiro de Crescimento:**
+**Roteiro de Crescimento (Revistas/Coleções):**
 
-- **Post 001 (Fundacional):** Baseado no manifesto. Afirmação estética e filosófica.
-- **Posts 002–010 (Exploração):** Mescla de observações diárias, repertório e respostas ao **Banco de Perguntas**.
-- **Posts 011+ (Comunidade):** Integração de interações e contribuições da comunidade no repertório.
+- **Coleção 001 (Fundacional):** Baseada no manifesto. Afirmação estética e filosófica (Capítulos: Manifesto, Universo, Construção, Convite).
+- **Coleções 002–010 (Exploração):** Mescla de observações, repertório e respostas ao **Banco de Perguntas**. Focadas no Fio Condutor da "Ausência de Tempo".
+- **Coleções 011+ (Comunidade):** Integração de interações e contribuições da comunidade no repertório.
 
-**Estrutura Definida para o Post 001 (Fundacional):**
+**Estrutura Base para a Coleção 001 (Capítulo 1 - Manifesto):**
 - **Ideia base:** "Por que o material importa" (Semente central).
 - **Formato:** Template D (Carrossel).
 - **Slide 1 (Imagem Forte):** Foto macro/close-up de textura rica e "pesada" (ex: cerâmica crua ou metal fosco sobre concreto). Título em Space Grotesk: *Por que o material importa.*
