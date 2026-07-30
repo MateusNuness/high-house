@@ -14,6 +14,7 @@ class AgentRole(str, Enum):
     CREATIVE = "creative"
     VALIDATOR = "validator"
     REASONING = "reasoning"
+    RESEARCH = "research"
 
 class ModelRouter:
     """
