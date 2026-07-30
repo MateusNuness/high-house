@@ -4,9 +4,9 @@
 >
 > Documento: Brand Design Foundation
 >
-> Versão: 1.0
+> Versão: 2.0 (Design Cultural Underground)
 >
-> Status: Draft
+> Status: Ativo
 >
 > Dependências:
 >
@@ -55,21 +55,17 @@ Também não deseja parecer retrô.
 
 Não deseja parecer futurista.
 
-Não deseja parecer tecnológica.
+Não deseja parecer corporativa.
 
-Não deseja parecer luxuosa.
+A High House deve parecer uma cultura que está se formando, viva, crua e intensa.
 
-Nenhuma dessas características constitui sua identidade.
+Como se sempre tivesse existido nas ruas e nos estúdios.
 
-A High House deve parecer inevitável.
+Como se pudesse existir daqui cinquenta anos sem perder a autenticidade.
 
-Como se sempre tivesse existido.
+O objetivo visual não é acompanhar tendências limpas.
 
-Como se pudesse existir daqui cinquenta anos sem parecer datada.
-
-O objetivo visual não é acompanhar tendências.
-
-É construir permanência.
+É construir permanência através do underground contemporâneo.
 
 ---
 
@@ -81,11 +77,11 @@ O design existe para comunicar.
 
 Toda decisão visual deve fortalecer um significado.
 
-Quando um elemento gráfico não comunica nada, ele deve ser removido.
+Quando um elemento gráfico (como o xarpi, uma distorção ou uma cor vibrante) é inserido, ele deve ser voz, não adorno.
 
-A simplicidade é consequência da clareza.
+A riqueza visual é consequência da expressão.
 
-Nunca um objetivo isolado.
+O caos é intencional.
 
 ---
 
@@ -97,13 +93,11 @@ Ele funciona como um ecossistema.
 
 Cada decisão influencia todas as demais.
 
-Alterar uma cor altera a percepção da tipografia.
+A tipografia pesada ancora o grafite caótico.
 
-Alterar a tipografia altera a percepção da fotografia.
+A cor de fundo limpa equilibra a textura crua da imagem.
 
-Alterar a fotografia altera a percepção da narrativa.
-
-Nenhum elemento existe isoladamente.
+Nenhum elemento existe isoladamente. A tensão entre os elementos cria o design.
 
 ---
 
@@ -111,63 +105,53 @@ Nenhum elemento existe isoladamente.
 
 Todo projeto visual deverá respeitar os princípios abaixo.
 
-## Clareza
+## Tensão e Contraste
 
-Toda composição deve possuir uma leitura imediata.
+Toda composição deve possuir uma tensão dinâmica entre estrutura (o limpo) e expressão (o sujo/underground).
 
-O observador nunca deve perguntar onde olhar primeiro.
-
-A hierarquia precisa ser evidente.
+A hierarquia é mantida pelo contraste visual, não necessariamente pela separação física com grandes espaços em branco.
 
 ---
 
-## Honestidade
+## Honestidade e Rua
 
-Nada deve parecer maior do que realmente é.
+Nada deve parecer sintético se não for a intenção.
 
-Nenhum elemento visual deve criar uma falsa percepção de valor.
+Nenhum elemento visual deve criar uma falsa percepção de "luxo silencioso".
 
-A estética nunca deve prometer aquilo que a marca não entrega.
+A estética nunca deve esconder as raízes e as texturas brutas da marca.
 
 ---
 
-## Materialidade
+## Materialidade e Textura
 
 Objetos devem parecer possuir peso.
 
-Superfícies devem parecer possuir textura.
+Superfícies devem possuir textura (concreto, tijolo, metal, papel, tecido).
 
-Luz deve parecer física.
-
-Nada deve transmitir aparência sintética ou artificial quando isso não for intencional.
+Nada deve transmitir aparência "clean corporativa" ou app fofinho.
 
 ---
 
-## Imersão (O Estado de Presença)
+## Imersão e Cultura em Movimento
 
-O design não existe apenas para durar décadas.
+O design existe para induzir um estado psicológico.
 
-Ele existe para induzir um estado psicológico.
+A energia viva de uma festa, a introspecção de um estúdio criativo, a ocupação de uma parede.
 
-O estado de presença e de não se importar com o tempo.
-
-De não se preocupar com a urgência.
-
-A composição visual deve transmitir a sensação de um refúgio imersivo.
-
-Onde o relógio deixa de importar.
+A composição visual deve transmitir a sensação de pertencer a uma cultura que nunca para, mesmo quando está em silêncio.
 
 ---
 
-## Contenção
+## Caos Organizado
 
-A High House não disputa atenção.
+A High House não busca a neutralidade.
 
-Ela conquista atenção.
+Ela busca a intensidade com ritmo.
 
-O silêncio visual possui tanto valor quanto a informação.
+O caos visual (muitas cores, texturas, tipografia sobreposta) é bem-vindo, **desde que possua composição, ritmo e assinatura**.
 
-Espaços vazios fazem parte da composição.
+Pode ser intenso, mas nunca desorganizado.
 
 ---
 
@@ -175,99 +159,45 @@ Espaços vazios fazem parte da composição.
 
 O DNA da High House pode ser resumido em seis características permanentes.
 
-## Editorial
+## Expressivo (Tipografia e Xarpi)
 
-A marca se comunica como uma publicação.
-
-Não como publicidade.
-
-Cada peça deve parecer parte de uma coleção.
-
-Nunca um anúncio isolado.
+A marca comunica sua voz com intervenções reais.
+Xarpi, grafite e distorções não são poluição, são assinaturas.
 
 ---
 
-## Arquitetônico
+## Psicodélico e Artístico
 
-A composição deve transmitir estrutura.
-
-Grades.
-
-Ritmo.
-
-Proporção.
-
-Equilíbrio.
-
-Nada deve parecer improvisado.
+Cores vibrantes, sensações de movimento e surrealismo entram não como clichê de folha, mas como expansão mental.
 
 ---
 
-## Tátil
+## Subversivo (Underground)
 
-Mesmo em meios digitais, os materiais devem parecer físicos.
+As referências devem surgir da cultura, das ruas, da música e dos movimentos independentes. Nunca do marketing tradicional.
+
+---
+
+## Tátil e Urbano
 
 Concreto.
-
-Algodão.
-
-Papel.
-
-Madeira.
-
-Vidro.
-
+Grafite.
 Metal.
-
-Imperfeições naturais são bem-vindas.
+Imperfeições.
+A textura da vida real não precisa ser polida.
 
 ---
 
 ## Contemporâneo
 
-A linguagem deve dialogar com o presente.
-
-Sem depender de tendências.
-
-Sem nostalgia.
-
-Sem futurismo exagerado.
+Dialoga com o presente da cultura eletrônica, hip hop e arte digital, sem forçar nostalgia artificial.
 
 ---
 
-## Cultural
+## Humano e Coletivo
 
-As referências devem surgir da cultura.
-
-Nunca do marketing.
-
-A inspiração principal está em:
-
-Arquitetura.
-
-Fotografia.
-
-Cinema.
-
-Editorial.
-
-Design industrial.
-
-Música.
-
-Arte contemporânea.
-
-Não em campanhas publicitárias.
-
----
-
-## Humano
-
-Mesmo quando extremamente sofisticado.
-
-O resultado deve parecer criado por pessoas.
-
-Jamais por algoritmos.
+O resultado deve parecer criado por artistas em um coletivo.
+Jamais por algoritmos sem alma.
 
 ---
 
@@ -276,32 +206,19 @@ Jamais por algoritmos.
 Se a High House fosse uma pessoa.
 
 Ela seria:
-
-Calma.
-
+Artística.
+Intensa.
+Autêntica.
+Urbana.
+Sofisticada em seu próprio nicho.
 Observadora.
 
-Confiante.
-
-Curiosa.
-
-Discreta.
-
-Sofisticada.
-
 Nunca seria:
-
-Barulhenta.
-
-Agressiva.
-
-Infantil.
-
-Extravagante.
-
-Pretensiosa.
-
-Exibicionista.
+Corporativa.
+Fria e "clean".
+Extravagante sem propósito.
+Genérica (startup aesthetics).
+Clichê.
 
 ---
 
@@ -315,39 +232,19 @@ Consulte esta seção.
 
 A High House nunca deverá parecer:
 
-Uma loja de streetwear.
+Um headshop comercial genérico.
 
-Uma marca hype.
+Um produto turístico de maconha (rasta, tie-dye forçado, folhas óbvias).
 
-Um headshop.
+Uma marca de streetwear masculino estereotipada e vazia.
 
-Uma marca de cannabis.
+Uma cultura underground usada apenas como enfeite/decoração (superficialização).
 
-Uma startup de tecnologia.
+Nostalgia artificial (falsa vibe vintage só por ser).
 
-Uma agência criativa.
+Uma startup SaaS "clean".
 
-Uma cafeteria.
-
-Uma marca premium artificial.
-
-Uma marca minimalista genérica.
-
-Uma marca de luxo tradicional.
-
-Uma marca corporativa.
-
-Um perfil motivacional.
-
-Uma página de frases.
-
-Um template de Instagram.
-
-Uma apresentação de PowerPoint.
-
-Uma landing page SaaS.
-
-Uma identidade baseada em tendências do momento.
+Uma marca de "luxo minimalista" de Instagram.
 
 Caso qualquer composição se aproxime dessas referências.
 
@@ -358,73 +255,30 @@ Ela deverá ser rejeitada.
 # 9. Influências
 
 As influências da High House não devem ser copiadas.
-
 Devem servir apenas como direção.
 
-O objetivo é compreender princípios.
+A inspiração principal está em:
+Pixação e grafite brasileiro.
+Cultura rave e flyers eletrônicos.
+Pôsteres psicodélicos.
+Galerias de arte independentes.
+Designers e estúdios underground.
+Cultura do hip hop e vinil.
 
-Nunca reproduzir estética.
-
-As referências devem ser buscadas prioritariamente em:
-
-Arquitetura.
-
-Livros.
-
-Editoriais.
-
-Museus.
-
-Cinema.
-
-Design gráfico histórico.
-
-Fotografia documental.
-
-Design industrial.
-
-Mobiliário.
-
-Moda autoral.
-
-Sinalização urbana.
-
-Materiais naturais.
-
-A inspiração nunca deverá partir de feeds de redes sociais.
-
-Especialmente quando estes apresentarem forte homogeneização estética.
+A inspiração nunca deverá partir de marcas "clean premium" sem cultura.
 
 ---
 
-# 10. Anti-Princípios
+# 10. Princípios de Intensidade
 
-Além dos princípios positivos.
+Diferente do minimalismo que remove por remover, a High House adota a intensidade com propósito.
 
-Existem princípios negativos.
+As restrições são de *caminhos sem significado*:
 
-Eles representam caminhos proibidos.
+Não use 5 cores se a mensagem pedir 1. Mas não tenha medo de usar 5 cores se for a divulgação de uma festa.
 
-São eles:
+Não use tipografia distorcida para uma tabela de preços, mas use para estampar a identidade de uma peça artística.
 
-Excesso de informação.
+Não adicione elementos se não forem voz, textura ou assinatura.
 
-Excesso de efeitos.
-
-Excesso de animações.
-
-Excesso de cores.
-
-Excesso de tipografias.
-
-Excesso de contraste gratuito.
-
-Excesso de ornamentos.
-
-Excesso de tendências.
-
-Excesso de elementos decorativos.
-
-Sempre que um projeto puder remover elementos sem perder significado.
-
-Essa remoção deverá acontecer.
+Tudo que está na tela deve pulsar a cultura da High House.

@@ -21,6 +21,11 @@ A implementação parte das seguintes premissas e do seguinte estado de arte:
 - O motor de memória possui esquema inicial.
 - O Design System ainda não está materializado em código (CSS/HTML).
 
+### 3.1 Shift Arquitetural V2 (Design Cultural Underground)
+- Toda a documentação e injeção de contexto dos Agentes passa a seguir o **Brand Evolution Proposal 001** (Design Cultural Underground). 
+- Isso altera as permissões de bloqueio de arte urbana, psicodelia artística e estética streetwear (liberadas e encorajadas, desde que fujam de clichês superficiais).
+- O Design System Base (EOS-002 e EOS-003) adotará os novos tokens para Tipografia Experimental, Contraste Intencional e Caos Organizado.
+
 ## 4. Estratégia de Implementação Incremental
 Para garantir rastreabilidade, injetar todo o contexto simultaneamente impediria testes isolados e auditorias. Cada alteração deve ser feita, documentada e validada contra o documento-mãe aplicável e comitada no Git antes da próxima.
 

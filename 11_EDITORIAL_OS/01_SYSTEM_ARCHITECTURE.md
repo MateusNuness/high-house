@@ -10,9 +10,9 @@
 ## 1. Filosofia
 
 - **Patrimônio sobre Conteúdo:** A High House não publica posts isolados; constrói repertório, autoridade e patrimônio intelectual.
-- **Coleções Editoriais:** Todo o conteúdo é organizado em coleções com narrativa contínua entre capítulos, onde cada publicação fortalece a anterior.
-- **Estado de Presença:** A essência da marca se apoia na desaceleração, no estado de flow, na imersão profunda e no ritual urbano sofisticado.
-- **Antítese do Clichê:** Rejeição absoluta a templates genéricos ("Visual Canva"), linguagem de startup ("Thread 10 passos") e apologia estilizada superficial ("Clichês Canábicos Neon").
+- **Coleções Editoriais:** Todo o conteúdo é organizado em coleções com narrativa contínua, onde cada publicação fortalece a anterior.
+- **Cultura em Movimento & Presença:** A essência se apoia no estado de flow e imersão. A arquitetura reflete uma "cultura viva", feita de arte, rua, música, pessoas e experimentação.
+- **Antítese do Clichê Comercial:** A marca abraça o *Caos Organizado* e a complexidade do *Design Cultural Underground*. A rejeição absoluta aplica-se apenas a templates genéricos, headshops estereotipados, superficialidade e "minimalismo brutalista vazio" sem alma.
 
 ---
 
