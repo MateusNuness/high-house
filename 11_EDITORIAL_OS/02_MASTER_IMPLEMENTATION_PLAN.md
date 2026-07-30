@@ -36,86 +36,100 @@ Nenhuma etapa do pipeline pode ser pulada. (ex: IA sem Design System = criativid
 - **Memória gerada:** `11_EDITORIAL_OS/05_GOVERNANCE/eos-000-source-of-truth-audit.md`
 
 ### EOS-001 — Atualização do Curator Agent
-- **Objetivo:** Atualizar regras de curadoria do Curator Agent conforme as diretrizes oficiais de Identidade e Estratégia.
-- **Artefato gerado:** `05_IMPLEMENTACAO/modules/curation-guidelines.md` e `04_AGENT_SPECIFICATIONS.md` (Curator).
+- **Objetivo:** Materializar regras de curadoria do Curator Agent conforme as diretrizes oficiais de Identidade e Estratégia.
+- **Artefato gerado:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/modules/curation-guidelines.md`
 - **Validação:** Regras do arquivo conferem 100% com a identidade atual.
-- **Memória gerada:** `05_IMPLEMENTACAO/memory/decision-log/eos-001-curator.md`
+- **Memória gerada:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/memory/decision-log/eos-001-curator.md`
 
 ### EOS-002 — Implementação do Design System Base (Tokens)
 - **Objetivo:** Criar `tokens.css` mapeando tipografia primária/secundária, cores, grids e espaçamentos estritamente de acordo com `03.1_DESIGN_SYSTEM_SPECIFICATION.md`.
-- **Artefato gerado:** `05_IMPLEMENTACAO/design_system/tokens.css`
+- **Artefato gerado:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/design_system/tokens.css`
 - **Validação:** Browser render test demonstrando o mapeamento correto dos tokens sem inferir design.
-- **Memória gerada:** `05_IMPLEMENTACAO/memory/decision-log/design-system-v1.md`
+- **Memória gerada:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/memory/decision-log/design-system-v1.md`
 
 ### EOS-003 — Implementação do Design System Base (Templates HTML)
 - **Objetivo:** Criar componentes base (ex: `carrossel-base.html`) utilizando `tokens.css` de acordo com os princípios do `03.1_DESIGN_SYSTEM_SPECIFICATION.md`.
-- **Artefato gerado:** `05_IMPLEMENTACAO/design_system/templates/...`
+- **Artefato gerado:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/design_system/templates/...`
 - **Validação:** HTML responsivo renderizando os tokens corretamente e respeitando regras estéticas fundamentais.
-- **Memória gerada:** `05_IMPLEMENTACAO/memory/decision-log/html-templates-v1.md`
+- **Memória gerada:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/memory/decision-log/html-templates-v1.md`
 
 ### EOS-004 — Injeção de Contexto: Brand Guardian
-- **Objetivo:** Atualizar contrato cognitivo do Brand Guardian Agent conforme `04_AGENT_SPECIFICATIONS.md` e fundação da marca.
-- **Artefato gerado:** Checklist de aprovação/reprovação dentro do respectivo Agente.
-- **Validação:** Agente corretamente configurado na especificação e pronto para proteger a essência.
-- **Memória gerada:** `05_IMPLEMENTACAO/memory/decision-log/eos-004-guardian.md`
+- **Objetivo:** Implementar o Brand Guardian Agent conforme a fundação da marca.
+- **Artefato gerado:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/agents/brand_guardian/context.md` (ou similar).
+- **Validação:** Agente corretamente configurado na pasta de implementação e pronto para proteger a essência.
+- **Memória gerada:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/memory/decision-log/eos-004-guardian.md`
 
 ### EOS-005 — Injeção de Contexto: Editorial e Estratégia
-- **Objetivo:** Atualizar o contrato do Editorial Agent com a estratégia de marca e tom de voz conforme documentação raiz.
-- **Artefato gerado:** Atualização no `04_AGENT_SPECIFICATIONS.md` (Editorial).
+- **Objetivo:** Implementar o Editorial Agent com a estratégia de marca e tom de voz.
+- **Artefato gerado:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/agents/editorial/context.md`
 - **Validação:** Agente sabe reproduzir as narrativas alinhadas à estratégia atual.
-- **Memória gerada:** `05_IMPLEMENTACAO/memory/decision-log/eos-005-editorial.md`
+- **Memória gerada:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/memory/decision-log/eos-005-editorial.md`
 
 ### EOS-006 — Injeção de Contexto: Art Director e Designer
-- **Objetivo:** Injetar regras visuais oficiais no Art Director e Designer Agent conforme `03.1_DESIGN_SYSTEM_SPECIFICATION.md`.
-- **Artefato gerado:** Atualização no `04_AGENT_SPECIFICATIONS.md` (Art Director e Designer).
+- **Objetivo:** Implementar regras visuais oficiais no Art Director e Designer Agent.
+- **Artefato gerado:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/agents/design/context.md`
 - **Validação:** Agentes não produzem hyper-saturação e seguem os 24 pontos da RFC.
-- **Memória gerada:** `05_IMPLEMENTACAO/memory/decision-log/eos-006-design.md`
+- **Memória gerada:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/memory/decision-log/eos-006-design.md`
 
 ### EOS-007 — Injeção de Contexto: Image Agent
-- **Objetivo:** Injetar a estratégia fotográfica e hierarquia de criação de imagens conforme especificações.
-- **Artefato gerado:** Atualização no `04_AGENT_SPECIFICATIONS.md` (Image).
+- **Objetivo:** Implementar a estratégia fotográfica e hierarquia de criação de imagens.
+- **Artefato gerado:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/agents/image/context.md`
 - **Validação:** Image agent prefere soluções de markup antes de forçar geração de IA.
-- **Memória gerada:** `05_IMPLEMENTACAO/memory/decision-log/eos-007-image.md`
+- **Memória gerada:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/memory/decision-log/eos-007-image.md`
 
 ### EOS-008 — Injeção de Contexto: Critic e Metrics Agent
-- **Objetivo:** Atualizar hipóteses oficiais de teste para o Critic e Metrics Agent.
-- **Artefato gerado:** Atualização no `04_AGENT_SPECIFICATIONS.md` (Critic, Metrics).
+- **Objetivo:** Implementar hipóteses oficiais de teste para o Critic e Metrics Agent.
+- **Artefato gerado:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/agents/metrics/context.md`
 - **Validação:** KPIs e critérios de auditoria estão lincados com a meta do ciclo atual.
-- **Memória gerada:** `05_IMPLEMENTACAO/memory/decision-log/eos-008-metrics.md`
+- **Memória gerada:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/memory/decision-log/eos-008-metrics.md`
 
 ### EOS-009 — Injeção de Contexto: Research Agent
-- **Objetivo:** Adicionar restrições de pesquisa e limites de fontes no Research Agent conforme especificações.
-- **Artefato gerado:** Atualização no `04_AGENT_SPECIFICATIONS.md` (Research).
+- **Objetivo:** Adicionar restrições de pesquisa e limites de fontes no Research Agent.
+- **Artefato gerado:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/agents/research/context.md`
 - **Validação:** Entradas são filtradas para garantir qualidade antes da criação.
-- **Memória gerada:** `05_IMPLEMENTACAO/memory/decision-log/eos-009-research.md`
+- **Memória gerada:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/memory/decision-log/eos-009-research.md`
+
+### EOS-010 — Injeção de Contexto: Memory Agent
+- **Objetivo:** Criar capacidade de memória, rastreabilidade e persistência (Knowledge Graph e Experiment Memory).
+- **Artefato gerado:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/agents/memory/context.md`
+- **Validação:** Motor de memória apto a gravar e ler contextos transversalmente.
+- **Memória gerada:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/memory/decision-log/eos-010-memory.md`
+
+### EOS-011 — Injeção de Contexto: Coder e Vision Agent
+- **Objetivo:** Implementar os executores estáticos e validadores visuais automatizados.
+- **Artefato gerado:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/agents/execution/context.md`
+- **Validação:** O código passa pelos testes visuais sem desrespeitar os blueprints.
+- **Memória gerada:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/memory/decision-log/eos-011-execution.md`
 
 ---
 
 ## 6. Roadmap (Fases de Implementação)
 - **Fase 0: A Validação da Verdade**
-  - **Objetivos:** Confirmar coerência nas fontes raiz de documentação.
+  - **Objetivo:** Confirmar coerência nas fontes raiz de documentação (01 a 10).
   - **Tarefas:** EOS-000.
-- **Fase 1: O Desbloqueio e a Fundação Visual**
-  - **Objetivos:** Fornecer ferramentas (CSS/HTML) para a IA desenhar, baseando-se estritamente na documentação estética.
-  - **Tarefas:** EOS-001, EOS-002, EOS-003.
-- **Fase 2: O Escudo e a Narrativa**
-  - **Objetivos:** Injetar identidade no Brand Guardian e estratégia no Editorial Agent. Blinda o sistema estrategicamente.
-  - **Tarefas:** EOS-004, EOS-005.
-- **Fase 3: A Direção de Arte e a Execução**
-  - **Objetivos:** Garantir que o Art Director e o Designer saibam usar o Design System (Fase 1).
-  - **Tarefas:** EOS-006, EOS-007.
-- **Fase 4: O Fechamento Metodológico**
-  - **Objetivos:** Garantir que o começo (Research) e o fim (Metrics/Critic) possuam o escopo correto do ciclo.
-  - **Tarefas:** EOS-008, EOS-009.
-- **Fase 5: Auditoria Final e Code Review**
-  - **Objetivos:** Rodar o primeiro pipeline teste (Pipeline Dry-Run).
+- **Fase 1: Infraestrutura Cognitiva**
+  - **Objetivo:** Criar capacidade de memória, rastreabilidade e persistência.
+  - **Tarefas:** EOS-010 (Memory Agent).
+- **Fase 2: Conhecimento e Estratégia**
+  - **Objetivo:** Criar os agentes que transformam informação em contexto editorial.
+  - **Tarefas:** EOS-009 (Research), EOS-001 (Curator), EOS-005 (Editorial).
+- **Fase 3: Governança e Proteção**
+  - **Objetivo:** Criar as barreiras de identidade antes da produção visual.
+  - **Tarefas:** EOS-004 (Brand Guardian).
+- **Fase 4: Direção Criativa e Materialização**
+  - **Objetivo:** Transformar regras em linguagem visual e código.
+  - **Tarefas:** EOS-006 (Art Director / Designer), EOS-002 (Tokens CSS), EOS-003 (Templates HTML), EOS-007 (Image Agent), EOS-011 (Coder / Vision Agent).
+- **Fase 5: Aprendizado e Evolução**
+  - **Objetivo:** Medir, criticar e retroalimentar o sistema.
+  - **Tarefas:** EOS-008 (Critic / Metrics Agent).
 
 ---
 
 ## 7. Dependências
-- **A ordem (Fase 0 ➔ Fase 5) é inegociável.**
-- **Fase 1 DEVE ocorrer antes da Fase 3:** IA sem Design System implementado gera criatividade sem restrição estrutural (comporta-se como um compiler livre).
-- **Fase 2 DEVE ocorrer antes da Fase 4:** A proteção do Guardian é crítica para barrar alucinações antes de aprofundar restrições de pesquisas e métricas.
+- **A ordem (Fase 0 ➔ Fase 5) deve considerar as hierarquias definidas.**
+- O **Memory Agent** é infraestrutura transversal; precisa existir na Fase 1.
+- Os agentes de **Conhecimento (Fase 2)** alimentam-se diretamente da fundação para curar dados, antes da materialização visual.
+- A **Governança (Fase 3)** precisa estar apta a auditar as peças produzidas pela Direção Criativa, garantindo proteção antes da emissão final.
 
 ---
 
@@ -155,6 +169,8 @@ Nenhuma tarefa pode ser migrada para "Concluída" sem:
 | EOS-007 | Não iniciado | - | - |
 | EOS-008 | Não iniciado | - | - |
 | EOS-009 | Não iniciado | - | - |
+| EOS-010 | Não iniciado | - | - |
+| EOS-011 | Não iniciado | - | - |
 
 ---
 
