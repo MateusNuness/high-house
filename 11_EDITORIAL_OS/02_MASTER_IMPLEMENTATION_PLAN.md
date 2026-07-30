@@ -101,11 +101,29 @@ Nenhuma etapa do pipeline pode ser pulada. (ex: IA sem Design System = criativid
 - **Validação:** O código passa pelos testes visuais sem desrespeitar os blueprints.
 - **Memória gerada:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/memory/decision-log/eos-011-execution.md`
 
-### EOS-012 — Implementação do Runtime de Orquestração (LangGraph)
-- **Objetivo:** Implementar a arquitetura de runtime, nós (nodes), estado (state) e checkpoints utilizando LangGraph e LangChain, fundamentado na especificação de runtime.
-- **Artefato gerado:** Códigos do grafo de orquestração na pasta `11_EDITORIAL_OS/05_IMPLEMENTACAO/runtime/`
-- **Validação:** O grafo compila e roda um fluxo vazio corretamente de ponta a ponta sem loops infinitos não desejados.
-- **Memória gerada:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/memory/decision-log/eos-012-runtime.md`
+### EOS-012.1 — Implementação do Runtime: State Schema Architecture
+- **Objetivo:** Definir os TypedDicts e estruturas do estado global do LangGraph (Immutable, Transient, Payloads, Audit Logs, Memory).
+- **Artefato gerado:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/runtime/state.py` (ou spec análogo).
+- **Validação:** Contratos de tipagem estrita que refletem o particionamento do 03.2.
+- **Memória gerada:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/memory/decision-log/eos-012-1-state.md`
+
+### EOS-012.2 — Implementação do Runtime: LLM Provider Abstraction
+- **Objetivo:** Criar a interface abstrata via LangChain para integração com DeepSeek.
+- **Artefato gerado:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/runtime/llm_provider.py`
+- **Validação:** O provedor deve estar desacoplado e permitir chamadas genéricas.
+- **Memória gerada:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/memory/decision-log/eos-012-2-llm.md`
+
+### EOS-012.3 — Implementação do Runtime: LangGraph Orchestrator
+- **Objetivo:** Construir o DAG, os nós e as arestas de transição do pipeline (incluindo Human-in-the-loop).
+- **Artefato gerado:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/runtime/orchestrator.py`
+- **Validação:** Grafo compila e transita perfeitamente do Start ao End Node.
+- **Memória gerada:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/memory/decision-log/eos-012-3-orchestrator.md`
+
+### EOS-012.4 — Implementação do Runtime: Checkpoint and Persistence Layer
+- **Objetivo:** Implementar persistência de interrupções (Thread/Checkpoints).
+- **Artefato gerado:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/runtime/checkpoints.py`
+- **Validação:** Capacidade de pausar um grafo rodando e retomar do mesmo ponto.
+- **Memória gerada:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/memory/decision-log/eos-012-4-persistence.md`
 
 ---
 
@@ -115,7 +133,7 @@ Nenhuma etapa do pipeline pode ser pulada. (ex: IA sem Design System = criativid
   - **Tarefas:** EOS-000.
 - **Fase 1: Infraestrutura Cognitiva**
   - **Objetivo:** Criar capacidade de orquestração de runtime, memória, rastreabilidade e persistência.
-  - **Tarefas:** EOS-012 (Runtime LangGraph), EOS-010 (Memory Agent).
+  - **Tarefas:** EOS-012.1, EOS-012.2, EOS-012.3, EOS-012.4, EOS-010.
 - **Fase 2: Conhecimento e Estratégia**
   - **Objetivo:** Criar os agentes que transformam informação em contexto editorial.
   - **Tarefas:** EOS-009 (Research), EOS-001 (Curator), EOS-005 (Editorial).
@@ -177,7 +195,10 @@ Nenhuma tarefa pode ser migrada para "Concluída" sem:
 | EOS-009 | Não iniciado | - | - |
 | EOS-010 | Não iniciado | - | - |
 | EOS-011 | Não iniciado | - | - |
-| EOS-012 | Não iniciado | - | - |
+| EOS-012.1 | Não iniciado | - | - |
+| EOS-012.2 | Não iniciado | - | - |
+| EOS-012.3 | Não iniciado | - | - |
+| EOS-012.4 | Não iniciado | - | - |
 
 ---
 
@@ -186,3 +207,4 @@ Nenhuma tarefa pode ser migrada para "Concluída" sem:
 2. **Isolamento:** Nunca modificar múltiplos agentes ou módulos estruturais sem justificativa ligada estritamente à tarefa atual.
 3. **Fidelidade ao DNA:** Sempre basear-se estritamente nas documentações de Fundação e nas Especificações de Design/Agentes. O MASTER apenas delega; a IA consulta a fonte antes de alterar qualquer contrato.
 4. **Atualização Contínua:** Sempre atualizar este documento (MASTER_IMPLEMENTATION_PLAN.md) refletindo a finalização de uma tarefa (Seção 11).
+5. **Prompt and Agent Versioning:** Versões de lógicas e contextos (prompts) são tratados estritamente como código fonte. Alterações exigem "bump" de `prompt_version` registrado no cabeçalho do arquivo. Essa versão deve fluir pela *Observability Layer* para permitir rollbacks determinísticos de decisões cognitivas ou narrativas.
