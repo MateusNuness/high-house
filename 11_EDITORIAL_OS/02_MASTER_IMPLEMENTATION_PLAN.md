@@ -101,6 +101,12 @@ Nenhuma etapa do pipeline pode ser pulada. (ex: IA sem Design System = criativid
 - **Validação:** O código passa pelos testes visuais sem desrespeitar os blueprints.
 - **Memória gerada:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/memory/decision-log/eos-011-execution.md`
 
+### EOS-012 — Implementação do Runtime de Orquestração (LangGraph)
+- **Objetivo:** Implementar a arquitetura de runtime, nós (nodes), estado (state) e checkpoints utilizando LangGraph e LangChain, fundamentado na especificação de runtime.
+- **Artefato gerado:** Códigos do grafo de orquestração na pasta `11_EDITORIAL_OS/05_IMPLEMENTACAO/runtime/`
+- **Validação:** O grafo compila e roda um fluxo vazio corretamente de ponta a ponta sem loops infinitos não desejados.
+- **Memória gerada:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/memory/decision-log/eos-012-runtime.md`
+
 ---
 
 ## 6. Roadmap (Fases de Implementação)
@@ -108,8 +114,8 @@ Nenhuma etapa do pipeline pode ser pulada. (ex: IA sem Design System = criativid
   - **Objetivo:** Confirmar coerência nas fontes raiz de documentação (01 a 10).
   - **Tarefas:** EOS-000.
 - **Fase 1: Infraestrutura Cognitiva**
-  - **Objetivo:** Criar capacidade de memória, rastreabilidade e persistência.
-  - **Tarefas:** EOS-010 (Memory Agent).
+  - **Objetivo:** Criar capacidade de orquestração de runtime, memória, rastreabilidade e persistência.
+  - **Tarefas:** EOS-012 (Runtime LangGraph), EOS-010 (Memory Agent).
 - **Fase 2: Conhecimento e Estratégia**
   - **Objetivo:** Criar os agentes que transformam informação em contexto editorial.
   - **Tarefas:** EOS-009 (Research), EOS-001 (Curator), EOS-005 (Editorial).
@@ -171,6 +177,7 @@ Nenhuma tarefa pode ser migrada para "Concluída" sem:
 | EOS-009 | Não iniciado | - | - |
 | EOS-010 | Não iniciado | - | - |
 | EOS-011 | Não iniciado | - | - |
+| EOS-012 | Não iniciado | - | - |
 
 ---
 
