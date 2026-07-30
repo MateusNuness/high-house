@@ -63,10 +63,10 @@ Após a execução da auditoria **EOS-000**, as seguintes âncoras tornam-se ine
 ## EOS-000.1 — Validação Humana
 
 **Decisões aprovadas:**
-- `[ ]` Tipografia
-- `[ ]` Paleta Oficial e Regra de Acentos
-- `[ ]` Direção visual e Definição do Minimalismo Brutalista
-- `[ ]` Anti-patterns
+- `[x]` Tipografia
+- `[x]` Paleta Oficial e Regra de Acentos
+- `[x]` Direção visual e Definição do Minimalismo Brutalista
+- `[x]` Anti-patterns
 
 **Pendências (Próximos passos após aprovação):**
 - `[ ]` Definir escala tipográfica (no 03.1)

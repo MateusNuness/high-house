@@ -145,7 +145,7 @@ Nenhuma tarefa pode ser migrada para "Concluída" sem:
 
 | Tarefa | Status | Responsável | Hash do Commit (Futuro) |
 |---|---|---|---|
-| EOS-000 | Em revisão | Antigravity | d89ec6d |
+| EOS-000 | Concluído | Antigravity | d89ec6d |
 | EOS-001 | Não iniciado | - | - |
 | EOS-002 | Não iniciado | - | - |
 | EOS-003 | Não iniciado | - | - |
