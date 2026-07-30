@@ -44,7 +44,23 @@ Para garantir a rastreabilidade estrutural do Roadmap, as tarefas abaixo estão 
 - **Validação:** Não existem conflitos entre Fundação, Estratégia, Identidade Visual e Design System. Pendente de validação humana (EOS-000.1).
 - **Memória gerada:** `11_EDITORIAL_OS/05_GOVERNANCE/eos-000-source-of-truth-audit.md`
 
-### Fase 1: Infraestrutura Cognitiva
+### Fase 0.5: Arquitetura Cognitiva
+
+#### EOS-013 — Definição da Camada Cognitiva
+- **Objetivo:** Definir os contratos operacionais e fluxos cognitivos da orquestração.
+- **Artefato gerado:** `11_EDITORIAL_OS/04.1_AGENT_OPERATIONAL_CONTRACTS.md` e `11_EDITORIAL_OS/04.2_COGNITIVE_WORKFLOWS.md`
+- **Validação:** Aprovação estrutural do workflow.
+- **Memória gerada:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/memory/decision-log/eos-013-cognitive-layer.md`
+
+### Fase 1: Runtime Cognitivo
+
+#### EOS-014 — Materialização dos Contratos Cognitivos
+- **Objetivo:** Converter os contratos cognitivos documentados em estruturas executáveis Pydantic e criar o primeiro workflow LangGraph.
+- **Artefato gerado:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/src/eos/domain/contracts/` e `11_EDITORIAL_OS/05_IMPLEMENTACAO/src/eos/application/workflows/editorial_creation.py`
+- **Validação:** Contratos executáveis sem erros e workflow transita do Start ao End.
+- **Memória gerada:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/memory/decision-log/eos-014-cognitive-runtime.md`
+
+### Fase 1.5: Infraestrutura Abstrata (Refinamento)
 
 #### EOS-012.1 — Implementação do Runtime: State Schema Architecture
 - **Objetivo:** Definir os TypedDicts e estruturas do estado global do LangGraph (Immutable, Transient, Payloads, Audit Logs, Memory).
@@ -76,7 +92,7 @@ Para garantir a rastreabilidade estrutural do Roadmap, as tarefas abaixo estão 
 - **Validação:** Motor de memória apto a gravar e ler contextos transversalmente.
 - **Memória gerada:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/memory/decision-log/eos-010-memory.md`
 
-### Fase 2: Conhecimento e Estratégia
+### Fase 2: Implementação dos Agentes (Conhecimento e Estratégia)
 
 #### EOS-009 — Injeção de Contexto: Research Agent
 - **Objetivo:** Adicionar restrições de pesquisa e limites de fontes no Research Agent.
@@ -150,10 +166,16 @@ Para garantir a rastreabilidade estrutural do Roadmap, as tarefas abaixo estão 
 - **Fase 0: A Validação da Verdade**
   - **Objetivo:** Confirmar coerência nas fontes raiz de documentação (01 a 10).
   - **Tarefas:** EOS-000.
-- **Fase 1: Infraestrutura Cognitiva**
-  - **Objetivo:** Criar capacidade de orquestração de runtime, memória, rastreabilidade e persistência.
+- **Fase 0.5: Arquitetura Cognitiva**
+  - **Objetivo:** Estruturar contratos e workflows.
+  - **Tarefas:** EOS-013.
+- **Fase 1: Runtime Cognitivo**
+  - **Objetivo:** Materializar Pydantic e Workflow LangGraph inicial.
+  - **Tarefas:** EOS-014.
+- **Fase 1.5: Infraestrutura Abstrata (Refinamento)**
+  - **Objetivo:** Criar capacidade de memória abstrata, rastreabilidade e persistência LLM.
   - **Tarefas:** EOS-012.1, EOS-012.2, EOS-012.3, EOS-012.4, EOS-010.
-- **Fase 2: Conhecimento e Estratégia**
+- **Fase 2: Implementação dos Agentes (Conhecimento e Estratégia)**
   - **Objetivo:** Criar os agentes que transformam informação em contexto editorial.
   - **Tarefas:** EOS-009 (Research), EOS-001 (Curator), EOS-005 (Editorial).
 - **Fase 3: Governança e Proteção**
@@ -203,11 +225,13 @@ Nenhuma tarefa pode ser migrada para "Concluída" sem:
 | Fase | Tarefa | Status | Responsável | Hash do Commit (Futuro) |
 |---|---|---|---|---|
 | Fase 0 | EOS-000 | Concluído | Matheus | d89ec6d |
-| Fase 1 | EOS-012.1 | Não iniciado | - | - |
-| Fase 1 | EOS-012.2 | Não iniciado | - | - |
-| Fase 1 | EOS-012.3 | Não iniciado | - | - |
-| Fase 1 | EOS-012.4 | Não iniciado | - | - |
-| Fase 1 | EOS-010 | Não iniciado | - | - |
+| Fase 0.5 | EOS-013 | Concluído | IA | - |
+| Fase 1 | EOS-014 | Concluído | IA | - |
+| Fase 1.5 | EOS-012.1 | Não iniciado | - | - |
+| Fase 1.5 | EOS-012.2 | Não iniciado | - | - |
+| Fase 1.5 | EOS-012.3 | Não iniciado | - | - |
+| Fase 1.5 | EOS-012.4 | Não iniciado | - | - |
+| Fase 1.5 | EOS-010 | Não iniciado | - | - |
 | Fase 2 | EOS-009 | Não iniciado | - | - |
 | Fase 2 | EOS-001 | Concluído | Matheus | 386314d |
 | Fase 2 | EOS-005 | Não iniciado | - | - |
