@@ -1,7 +1,20 @@
-# Programação Cultural
+# Programação Cultural — High House
 
-Ideias para a agenda do espaço:
-- Exposições rotativas de arte local;
-- Apresentações musicais (DJ sets, rap acústico, jazz);
-- Tardes de jogos e campeonatos amigáveis;
-- Workshops e debates sobre cultura urbana e cannabis.
+> **Status:** Visão de longo prazo. A programação cultural será desenvolvida em paralelo à operação do espaço físico (Etapa 11 do Roadmap).
+
+## Frentes de Programação
+
+### Arte & Exposições
+- Exposições rotativas de artistas locais e emergentes (curadoria própria).
+- Vernissages com convite à comunidade da marca.
+- Comissionamento e/ou espaço gratuito para artistas selecionados.
+
+### Música ao Vivo (High House Studio)
+- Pocket shows e sessões acústicas ao vivo com artistas independentes.
+- DJ sets temáticos alinhados à identidade sonora da marca.
+- Gravações de sessões ao vivo como conteúdo para as plataformas digitais da marca.
+
+### Cultura & Comunidade
+- Tardes de jogos e campeonatos amigáveis (xadrez, dominó, cartas).
+- Workshops e debates sobre cultura urbana, arte, moda e cannabis.
+- Lançamentos de drops e coleções como eventos presenciais exclusivos.

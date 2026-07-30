@@ -90,11 +90,11 @@ HIGH HOUSE/
 │   ├── acessorios/             # Pins, bags, bonés e itens de lifestyle [Em Construção]
 │   └── colecoes/               # Planejamento de drops e coleções capsule [Em Construção]
 │
-├── 08_ESPACO_FISICO/           # Conceito arquitetônico, áreas e dinâmica do espaço
-│   ├── conceito-do-espaco.md   # Diretrizes arquitetônicas do futuro espaço físico
-│   ├── experiencia.md          # Jornada do cliente e atmosfera imersiva
-│   ├── areas.md                # Zoneamento do espaço (Lounge, Retail, Bar/Café)
-│   └── programacao.md          # Eventos, workshops e ativações culturais
+├── 08_ESPACO_FISICO/           # Visão de longo prazo: conceito, áreas e programação cultural
+│   ├── conceito-do-espaco.md   # Visão do espaço (Galeria, Studio, Bar, Boutique)
+│   ├── experiencia.md          # Jornada do visitante e dinâmica dia/noite
+│   ├── areas.md                # Zoneamento: Bar, Galeria, Studio, Boutique, Convivência
+│   └── programacao.md          # Arte, música ao vivo, eventos e ativações
 │
 ├── 09_NEGOCIO/                 # Sustentabilidade financeira, receitas e viabilidade
 │   ├── modelo-de-negocio.md    # Estrutura financeira resumida
@@ -189,7 +189,7 @@ O repositório está configurado para servir as apresentações via GitHub Pages
 2. **Acessibilidade Cultural:** A marca recusa a postura de elitismo esnobe. Embora ofereça produtos com alto padrão de design, a linguagem e o ambiente mantêm portas abertas a diferentes perfis.
 3. **Cultura Canábica Elegante e Inclusiva:** Abordagem desmistificada e contemporânea da cannabis, evitando clichês visuais estéreis e acolhendo consumidores e não consumidores.
 4. **Crescimento Responsável (*Bootstrapping*):** Proibição estrita de contração de dívidas irresponsáveis. Cada etapa deve gerar caixa para financiar o passo seguinte.
-5. **Espaço Físico como Destino Final:** O produto de vestuário e headshop é o veículo de conexão inicial; o espaço físico imersivo é o objetivo supremo do projeto.
+5. **Espaço Físico como Destino Final:** O produto de vestuário e headshop é o veículo de conexão inicial; o espaço físico imersivo é o objetivo supremo do projeto. A visão consolidada inclui quatro pilares: **Galeria de Arte** (exposições rotativas e apoio a artistas locais), **High House Studio** (música ao vivo, pocket shows, DJ sets e gravações), **Bar & Convivência** (drinks, café e permanência prolongada) e **Boutique & Headshop** (retail integrado à experiência). Documentação detalhada em [`08_ESPACO_FISICO/`](file:///c:/Users/user/Documents/High%20House/08_ESPACO_FISICO/).
 
 ### 🗺️ Modelo de Camadas de Identidade Territorial
 
@@ -218,9 +218,12 @@ As seguintes frentes operacionais e táticas estão atualmente sob análise para
 
 ---
 
-## 🎯 Próximos Passos Imediatos
+## 🎯 Foco Atual e Próximos Passos
 
-1. ~~Mapear repertório e formulção de hipóteses de mercado~~ ✅
+> **Prioridade Imediata (Julho/2026):** Definir o que criar e postar — a primeira coleção editorial no Instagram. A definição do produto físico (Drop 0) acontece somente após a validação de linguagem e audiência no conteúdo digital.
+
+### Etapas Concluídas
+1. ~~Mapear repertório e formulação de hipóteses de mercado~~ ✅
 2. ~~Diagnosticar recursos, restrições e perfil do fundador~~ ✅
 3. ~~Definir matriz de priorização de oportunidades de negócio~~ ✅
 4. ~~Estruturar plano de validação de baixo contato (5 fases)~~ ✅
@@ -228,9 +231,13 @@ As seguintes frentes operacionais e táticas estão atualmente sob análise para
 6. ~~Desenvolver Identidade Visual Mínima Viável (MVP Visual)~~ ✅
 7. ~~Elaborar Protocolo de Experimentação de Conteúdo~~ ✅
 8. ~~Desenhar Estratégia de Conteúdo do Ciclo 1 (50 ideias + 1º post)~~ ✅
-9. **Executar o Ciclo 1 do Laboratório de Conteúdo:** Produzir as 10 primeiras lâminas visuais no Figma/Canva e publicar no Instagram.
-10. **Avaliar Métricas Qualitativas:** Analisar taxa de retenção, salvamentos e comentários para validar a persona antes de encomendar a produção do Drop 0.
+
+### Próximos Passos Ativos
+9. **Decidir o que criar e postar (Coleção 1):** Selecionar as ideias do banco de 50, definir a linha editorial da primeira coleção e produzir as lâminas visuais no Figma/Canva.
+10. **Publicar e testar no Instagram:** Rodar o Ciclo 1 do Laboratório de Conteúdo e coletar dados reais de engajamento.
+11. **Avaliar métricas qualitativas:** Analisar salvamentos, compartilhamentos e comentários para validar a persona e a linguagem visual.
+12. **Definir o produto (Drop 0):** Somente após validação — selecionar o formato do primeiro produto físico com base nos dados de audiência.
 
 ---
 
-*Documentação oficial atualizada em Julho de 2026 — Consolidação da Fase 2 (Validação e Descoberta de Público) e adoção do Modelo de Camadas de Identidade Territorial (cultura-first, sem filtro geográfico na comunicação pública).*
+*Documentação oficial atualizada em Julho de 2026 — Fase 2 (Validação e Descoberta de Público). Foco imediato: criação da primeira coleção editorial para o Instagram. Visão do espaço físico expandida (Galeria, Studio, Bar, Boutique). Modelo de Camadas de Identidade Territorial ativo (cultura-first).*
