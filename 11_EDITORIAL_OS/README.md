@@ -31,3 +31,13 @@ A documentação e implementação seguem um fluxo estrito e agnóstico de tecno
 4. **`03.1_DESIGN_SYSTEM_SPECIFICATION.md`** - *Como uma IA deve pensar antes de desenhar?* (Manual de Direção de Arte / RFC Estética)
 5. **`04_AGENT_SPECIFICATIONS.md`** - *Quem toma cada decisão?* (Especificação rigorosa dos 12 Agentes)
 6. **`05_IMPLEMENTACAO/`** - *Onde mora o código.* (Contém `agents/`, `design_system/`, `memory/`, `html/`, `css/`, etc. Esta é a única pasta que pode mudar de tecnologia no futuro sem quebrar o EOS).
+
+## 📐 Padrão Arquitetural Obrigatório
+
+Todos os documentos contidos nesta pasta (`11_EDITORIAL_OS`) **DEVEM** obedecer estritamente às seguintes regras de engenharia de sistema:
+
+1. **Fonte Única da Verdade (SSOT):** O conhecimento não deve ser duplicado. Se uma regra visual ou identidade da marca já existe em `03.1_DESIGN_SYSTEM_SPECIFICATION.md` ou na raiz do projeto (`01` a `10`), ela **nunca** deve ser reescrita em planos de implementação ou orquestração. Documentos de gestão devem apenas conter referências para a Fonte da Verdade.
+2. **Ordem Inegociável:** O código nasce da documentação. O design não pode ocorrer sem especificação (`03.1`), a injeção não pode ocorrer sem o contrato do agente (`04`), e o código (`05`) não pode existir sem os dois anteriores. 
+3. **Planos Orquestram, Não Definem:** Documentos como `02_MASTER_IMPLEMENTATION_PLAN.md` existem para gerenciar *como* e *quando* construir o sistema. Eles não podem carregar restrições de negócio, cores, fontes ou comportamentos de IA internamente em suas tarefas.
+4. **Estado Inicial vs Estado Atual:** Documentações arquiteturais devem ser escritas visando longevidade. Use "Estado Inicial da Implementação" (um fato histórico inalterável) em vez de "Estado Atual" (que envelhece e requer manutenção constante).
+5. **Entregáveis (Artefatos):** Toda tarefa ou mudança no sistema gera um **Artefato** material (código/documento), exige uma **Validação** objetiva, e produz uma **Memória gerada** (logs de decisão na pasta `memory`).
