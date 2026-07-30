@@ -204,7 +204,7 @@ Nenhuma tarefa pode ser migrada para "Concluída" sem:
 | Fase 1 | EOS-012.4 | Não iniciado | - | - |
 | Fase 1 | EOS-010 | Não iniciado | - | - |
 | Fase 2 | EOS-009 | Não iniciado | - | - |
-| Fase 2 | EOS-001 | Concluído | Matheus | pendente |
+| Fase 2 | EOS-001 | Concluído | Matheus | 386314d |
 | Fase 2 | EOS-005 | Não iniciado | - | - |
 | Fase 3 | EOS-004 | Não iniciado | - | - |
 | Fase 4 | EOS-006 | Não iniciado | - | - |

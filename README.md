@@ -112,11 +112,19 @@ HIGH HOUSE/
 │   └── videos/                 # Material audiovisual de inspiração [Em Construção]
 │
 ├── 11_EDITORIAL_OS/            # Sistema Operacional Editorial autônomo baseado em IA
-│   ├── memory/                 # Motor de memória de longo prazo (decisões e logs)
-│   ├── agents/                 # Personas, System Prompts e funções de agentes
-│   ├── modules/                # Regras do sistema de Curadoria e Review Engine
-│   ├── design_system/          # Assets HTML/CSS base para renderização
-│   └── experiments/            # Templates e registro de testes e aprendizados
+│   ├── 01_SYSTEM_ARCHITECTURE.md              # Filosofia, pipeline de orquestração e domínios do sistema
+│   ├── 02_MASTER_IMPLEMENTATION_PLAN.md       # Roadmap tático estruturado por Fases de Execução
+│   ├── 03_BRAND_DESIGN_FOUNDATION.md          # O propósito estético, valores e DNA não-negociável
+│   ├── 03.1_DESIGN_SYSTEM_SPECIFICATION.md    # Regras matemáticas, cores, tipografia (Manual de Direção de Arte)
+│   ├── 03.2_AGENT_RUNTIME_SPECIFICATION.md    # Mecânica de execução, grafos, state schema e checkpoints
+│   ├── 04_AGENT_SPECIFICATIONS.md             # Contratos cognitivos, limites e responsabilidades dos 12 Agentes
+│   ├── 05_IMPLEMENTACAO/                      # Onde a orquestração e os testes vivem (código real)
+│   │   ├── agents/                            # Prompts, contextos e funções de cada um dos 12 agentes
+│   │   ├── design_system/                     # HTML/CSS base para renderização (Design System tokenizado)
+│   │   ├── memory/                            # Logs de decisões de design, logs empíricos e grafos de memória
+│   │   └── runtime/                           # Lógica do LangGraph, estado e LLM Provider Abstraction
+│   ├── 06_GOVERNANCE/                         # Documentos de auditoria humana, validação da Fonte de Verdade
+│   └── README.md                              # Regras fundamentais de arquitetura para a camada de Inteligência
 │
 ├── apresentacao/               # Brand Deck Conceitual V1 (HTML/CSS responsivo)
 ├── apresentacao-v2/            # Caderno de Projeto V2 (HTML/CSS editorial responsivo)
