@@ -1,9 +1,14 @@
 # Divisão de Áreas — Espaço Físico
 
-> **Status:** Visão conceitual de longo prazo. Detalhamento arquitetônico a ser desenvolvido nas Etapas 10–11 do Roadmap.
+> **Status:** Ideias exploratórias. Nenhuma área está definida. A composição final do espaço dependerá do imóvel, do capital disponível e das oportunidades que surgirem.
 
-1. **Bar & Gastronomia:** Balcão de bar com drinks autorais, café especial e comidinhas. Operação contínua como âncora de permanência e convivência.
-2. **Convivência & Jogos:** Mesas, sofás, xadrez, dominó e jogos sociais — ambiente projetado para permanência prolongada e encontro.
-3. **Galeria de Arte:** Paredes e áreas modulares dedicadas a exposições rotativas de artistas locais, com curadoria própria da marca.
-4. **High House Studio:** Ambiente musical com infraestrutura para pocket shows, DJ sets, sessões acústicas ao vivo e gravações. Extensão da identidade sonora da marca.
-5. **Boutique & Headshop:** Exposição integrada de vestuário (streetwear) e artigos de design & headshop — retail como parte da experiência, não como loja convencional.
+## Possibilidades de Áreas
+
+1. **Café:** Café especial e ambiente de permanência diurna (trabalho, estudo, convivência).
+2. **Bar & Gastronomia:** Drinks autorais, gastronomia leve, ambiente de encontro noturno.
+3. **Convivência & Jogos:** Mesas, sofás, xadrez, dominó e jogos sociais.
+4. **Galeria de Arte:** Paredes e áreas modulares para exposições rotativas de artistas locais.
+5. **High House Studio:** Ambiente musical para pocket shows, DJ sets, sessões acústicas e gravações.
+6. **Boutique & Headshop:** Exposição de vestuário (streetwear) e artigos de design & headshop.
+
+> Qualquer combinação dessas áreas pode se materializar. O formato final será definido pela oportunidade concreta.

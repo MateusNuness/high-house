@@ -1,25 +1,38 @@
 # Conceito do Espaço Físico — High House
 
-> **Status:** Visão de longo prazo. O desenvolvimento ativo do espaço físico está condicionado à consolidação da comunidade digital e ao acúmulo de capital nas fases anteriores (Etapas 8–10 do Roadmap).
+> **Status:** Visão exploratória de longo prazo. Nenhuma definição está consolidada. O formato, a composição e a viabilidade do espaço físico dependem inteiramente de oportunidade, capital acumulado e perfil da comunidade construída nas fases anteriores.
 
-## Visão do Lugar
+## Visão Geral
 
-Um espaço multifuncional, cultural e fluido que integra bar, gastronomia leve, boutique de roupas, curadoria de headshop, galeria de arte e estúdio musical. O espaço opera como a materialização física da marca — o ponto onde a comunidade digital se encontra presencialmente.
+O espaço físico representa o destino final do projeto — o ponto onde a comunidade digital se encontra presencialmente. A forma exata que esse espaço assumirá ainda não está definida e será moldada pelas oportunidades concretas que surgirem ao longo do caminho.
 
-## Pilares do Espaço
+## Possibilidades em Exploração
 
-### 1. Galeria & Apoio a Artistas Locais
-O espaço funciona como **plataforma de exposição de arte**, com paredes e áreas dedicadas a curadoria rotativa de artistas locais. A High House assume o papel de vitrine e mecenas informal — oferecendo visibilidade, espaço gratuito ou comissionado e conexão entre artistas e a comunidade da marca.
+As ideias abaixo representam **territórios de interesse**, não decisões. Qualquer combinação pode se materializar dependendo do contexto, do imóvel disponível, do capital e do momento da marca.
 
-### 2. High House Studio (Ambiente Musical)
-Um ambiente dedicado à música, com infraestrutura para **sessões ao vivo, pocket shows, DJ sets e gravações acústicas**. O estúdio opera como extensão da identidade sonora da marca, conectando músicos locais e independentes ao público frequentador.
+### Galeria & Apoio a Artistas Locais
+Possibilidade de funcionar como **plataforma de exposição de arte**, com curadoria rotativa de artistas locais e emergentes. A High House como vitrine e espaço de visibilidade para artistas.
 
-### 3. Bar & Convivência
-A operação de bar complementa a experiência imersiva — drinks autorais, café especial e gastronomia leve em ambiente de **convivência descontraída e prolongada**. A dinâmica do bar favorece permanência, conversa e encontro, reforçando o princípio central da marca: *criar experiências onde não se vê o tempo passar*.
+### High House Studio (Ambiente Musical)
+Possibilidade de um ambiente dedicado à música — **sessões ao vivo, pocket shows, DJ sets, gravações acústicas**. Extensão da identidade sonora da marca, conectando músicos independentes ao público.
 
-### 4. Boutique & Headshop
-Exposição física das linhas de vestuário (streetwear) e da curadoria de artigos de headshop & design. O retail é integrado ao ambiente — não como loja convencional, mas como parte da experiência de estar no espaço.
+### Café
+Possibilidade de operação de **café especial** como âncora de permanência diurna — ambiente de trabalho, estudo e convivência leve com café de qualidade.
+
+### Bar & Convivência
+Possibilidade de operação de **bar** com drinks autorais e gastronomia leve, favorecendo permanência prolongada e encontro noturno.
+
+### Boutique & Headshop
+Possibilidade de exposição física das linhas de vestuário (streetwear) e curadoria de artigos de headshop & design, integrada ao ambiente do espaço.
 
 ## Princípio de Experiência
 
-O espaço físico não é uma loja com café. É um **lugar de cultura e convivência** que também vende produtos. A ordem de prioridade é: *estar > descobrir > consumir*.
+Independentemente do formato final, o espaço não será uma loja convencional. O princípio orientador é: *estar > descobrir > consumir*. Um lugar de cultura e convivência que também comercializa produtos.
+
+## O que Depende de Oportunidade
+
+- Formato do espaço (café, bar, galeria, estúdio, ou combinação)
+- Localização (cidade, bairro, tipo de imóvel)
+- Modelo de operação (próprio, parceria, aluguel)
+- Escala e investimento necessário
+- Timing (condicionado à maturidade da comunidade e ao capital acumulado)

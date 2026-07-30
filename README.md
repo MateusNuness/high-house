@@ -90,11 +90,11 @@ HIGH HOUSE/
 │   ├── acessorios/             # Pins, bags, bonés e itens de lifestyle [Em Construção]
 │   └── colecoes/               # Planejamento de drops e coleções capsule [Em Construção]
 │
-├── 08_ESPACO_FISICO/           # Visão de longo prazo: conceito, áreas e programação cultural
-│   ├── conceito-do-espaco.md   # Visão do espaço (Galeria, Studio, Bar, Boutique)
+├── 08_ESPACO_FISICO/           # Visão exploratória de longo prazo (nada definido)
+│   ├── conceito-do-espaco.md   # Possibilidades: Café, Bar, Galeria, Studio, Boutique
 │   ├── experiencia.md          # Jornada do visitante e dinâmica dia/noite
-│   ├── areas.md                # Zoneamento: Bar, Galeria, Studio, Boutique, Convivência
-│   └── programacao.md          # Arte, música ao vivo, eventos e ativações
+│   ├── areas.md                # Ideias de áreas (tudo depende de oportunidade)
+│   └── programacao.md          # Ideias de programação cultural
 │
 ├── 09_NEGOCIO/                 # Sustentabilidade financeira, receitas e viabilidade
 │   ├── modelo-de-negocio.md    # Estrutura financeira resumida
@@ -189,7 +189,7 @@ O repositório está configurado para servir as apresentações via GitHub Pages
 2. **Acessibilidade Cultural:** A marca recusa a postura de elitismo esnobe. Embora ofereça produtos com alto padrão de design, a linguagem e o ambiente mantêm portas abertas a diferentes perfis.
 3. **Cultura Canábica Elegante e Inclusiva:** Abordagem desmistificada e contemporânea da cannabis, evitando clichês visuais estéreis e acolhendo consumidores e não consumidores.
 4. **Crescimento Responsável (*Bootstrapping*):** Proibição estrita de contração de dívidas irresponsáveis. Cada etapa deve gerar caixa para financiar o passo seguinte.
-5. **Espaço Físico como Destino Final:** O produto de vestuário e headshop é o veículo de conexão inicial; o espaço físico imersivo é o objetivo supremo do projeto. A visão consolidada inclui quatro pilares: **Galeria de Arte** (exposições rotativas e apoio a artistas locais), **High House Studio** (música ao vivo, pocket shows, DJ sets e gravações), **Bar & Convivência** (drinks, café e permanência prolongada) e **Boutique & Headshop** (retail integrado à experiência). Documentação detalhada em [`08_ESPACO_FISICO/`](file:///c:/Users/user/Documents/High%20House/08_ESPACO_FISICO/).
+5. **Espaço Físico como Destino Final:** O produto de vestuário e headshop é o veículo de conexão inicial; o espaço físico imersivo é o objetivo supremo do projeto. **Nenhum formato está definido** — as possibilidades em exploração incluem café, bar, galeria de arte com apoio a artistas locais, estúdio musical (High House Studio) e boutique/headshop, em qualquer combinação que a oportunidade concreta permitir. Documentação exploratória em [`08_ESPACO_FISICO/`](file:///c:/Users/user/Documents/High%20House/08_ESPACO_FISICO/).
 
 ### 🗺️ Modelo de Camadas de Identidade Territorial
 
