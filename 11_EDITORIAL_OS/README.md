@@ -21,10 +21,13 @@ Todo o fluxo de conteúdo obedece estritamente a este pipeline, impedindo que o 
 13. ⬇️ **Metrics Agent** (Injeta os resultados e hipóteses no motor empírico)
 14. **Publish**
 
-## 📂 Arquitetura do Sistema
-- `agents/`: System Prompts dos 12 agentes do Pipeline.
-- `memory/`: Gerenciado pelo *Memory Agent*, registra o histórico contínuo para evitar contradições.
-- `modules/`: Regras de negócio, contendo a Tríade de Auditoria e Curadoria.
-- `design_system/`: Repositório de HTML/CSS para consumo do *Coder Agent*.
-- `experiments/`: Gerenciado pelo *Metrics Agent*, formaliza os testes.
-- `logs_and_docs/`: Rastro documental ativo de loops de revisão e vetos.
+## 📂 Estrutura do Sistema
+
+A documentação e implementação seguem um fluxo estrito e agnóstico de tecnologia, guiando a inteligência antes da codificação real:
+
+1. **`01_SYSTEM_ARCHITECTURE.md`** - *Como o sistema funciona?* (Filosofia, Pipeline, Domínios)
+2. **`02_MASTER_IMPLEMENTATION_PLAN.md`** - *Como vamos construir o sistema?* (Roadmap, Backlog, Fases)
+3. **`03_BRAND_DESIGN_FOUNDATION.md`** - *Qual é o DNA puro da marca?* (Propósito estético permanente)
+4. **`03.1_DESIGN_SYSTEM_SPECIFICATION.md`** - *Como uma IA deve pensar antes de desenhar?* (Manual de Direção de Arte / RFC Estética)
+5. **`04_AGENT_SPECIFICATIONS.md`** - *Quem toma cada decisão?* (Especificação rigorosa dos 12 Agentes)
+6. **`05_IMPLEMENTACAO/`** - *Onde mora o código.* (Contém `agents/`, `design_system/`, `memory/`, `html/`, `css/`, etc. Esta é a única pasta que pode mudar de tecnologia no futuro sem quebrar o EOS).
