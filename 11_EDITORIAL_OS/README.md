@@ -29,7 +29,7 @@ A documentação e implementação seguem um fluxo estrito e agnóstico de tecno
 2. **`02_MASTER_IMPLEMENTATION_PLAN.md`** - *Como vamos construir o sistema?* (Roadmap, Backlog, Fases)
 3. **`03_BRAND_DESIGN_FOUNDATION.md`** - *Qual é o DNA puro da marca?* (Propósito estético permanente)
 4. **`03.1_DESIGN_SYSTEM_SPECIFICATION.md`** - *Como uma IA deve pensar antes de desenhar?* (Manual de Direção de Arte / RFC Estética)
-5. **`04_AGENT_SPECIFICATIONS.md`** - *Quem toma cada decisão?* (Especificação rigorosa dos 12 Agentes)
+5. **`04_AGENT_SPECIFICATIONS.md`** - *Qual é o contrato cognitivo de cada agente?* (Hierarquia, responsabilidades, limites e especificações dos 12 Agentes)
 6. **`05_IMPLEMENTACAO/`** - *Onde mora o código.* (Contém `agents/`, `design_system/`, `memory/`, `html/`, `css/`, etc. Esta é a única pasta que pode mudar de tecnologia no futuro sem quebrar o EOS).
 
 ## 📐 Padrão Arquitetural Obrigatório
