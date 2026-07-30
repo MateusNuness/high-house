@@ -33,15 +33,29 @@ Validar que os documentos raiz (01 a 10) não possuem conflitos que prejudiquem 
 - **Decisão:** Fica abolida a estética de "luxo dourado". A paleta oficial aprovada no MVP Visual passa a ser: Preto Profundo, Off-White Quente, Terracota Suave, Lilás Denso, Verde Água Apagado, Areia Escura.
 - **Motivo:** A estética de luxo afasta a sensação de ambiente cultural e acolhedor (a "ausência do tempo"). A marca exige brutalismo contido e não um premium artificial.
 
+## Hierarquia de Fonte de Verdade
+
+Em caso de conflito, a autoridade segue a seguinte prioridade estrutural:
+1. Brand Foundation (Raiz 01 a 10)
+2. Source of Truth Audit (EOS-000)
+3. Design System Specification (03.1)
+4. Agent Specifications (04)
+5. Experimentações Visuais (05)
+
+Isso evita que referências externas ou sugestões aleatórias da IA sobrescrevam o DNA da marca.
+
 ## Decisões congeladas
 
 Após a execução da auditoria **EOS-000**, as seguintes âncoras tornam-se inegociáveis para a construção da especificação (03.1 e 04) e implementação:
 
-- **Fontes primárias (Tipografia):** Space Grotesk (Títulos) / Inter (Corpo).
+- **Sistema Tipográfico:**
+  - **Display / Headlines:** Space Grotesk
+  - **Body / Text:** Inter
 - **Paleta Oficial:**
   - **Primárias:** Preto Profundo, Off-White Quente (fundos e textos base).
-  - **Acentos:** Terracota Suave, Lilás Denso (usar 1 acento por peça).
-  - **Secundárias experimentais:** Verde Água Apagado, Areia Escura.
+  - **Acentos:** Terracota Suave, Lilás Denso.
+  - **Regra de Acento:** Cada composição deve possuir no máximo um elemento cromático de destaque. O acento deve reforçar hierarquia, nunca competir com a mensagem.
+  - **Cores exploratórias:** Verde Água Apagado, Areia Escura (Uso permitido apenas em experimentações aprovadas).
 - **Direção de Arte / Identidade:** Editorial contemporâneo e Minimalismo Brutalista.
   - **Minimalismo brutalista High House Significa:**
     - Estruturas simples
@@ -54,6 +68,9 @@ Após a execução da auditoria **EOS-000**, as seguintes âncoras tornam-se ine
     - Caos
     - Excesso tipográfico
     - Bauhaus literal ou brutalismo web dos anos 2000
+    - Estética industrial fria
+    - Aparência de software experimental
+    - Interfaces desconfortáveis
 - **Anti-patterns (Rejeitar terminantemente):**
   - Luxo tradicional / Estética premium dourada.
   - Clichês canábicos (folhas literais, fumaça excessiva, estilo stoner).
@@ -61,6 +78,10 @@ Após a execução da auditoria **EOS-000**, as seguintes âncoras tornam-se ine
   - Aglomeração de informações (medo do vazio).
 
 ## EOS-000.1 — Validação Humana
+
+**Status:** Approved
+**Responsável:** Matheus
+**Data:** 2026-07-30
 
 **Decisões aprovadas:**
 - `[x]` Tipografia
@@ -73,4 +94,4 @@ Após a execução da auditoria **EOS-000**, as seguintes âncoras tornam-se ine
 - `[ ]` Definir tokens (no 03.1)
 - `[ ]` Definir componentes (no 03.1)
 
-*Nota técnica: Estas definições deverão agora alimentar naturalmente o documento `03.1_DESIGN_SYSTEM_SPECIFICATION.md` apenas APÓS o Humano preencher as aprovações acima com `[x]`.*
+*Nota técnica: Estas definições deverão agora alimentar naturalmente o documento `03.1_DESIGN_SYSTEM_SPECIFICATION.md`.*
