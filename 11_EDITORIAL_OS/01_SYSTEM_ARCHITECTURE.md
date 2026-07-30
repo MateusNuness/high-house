@@ -256,7 +256,7 @@ Nenhum MCP opcional é necessário para o funcionamento do núcleo do EOS.
 O EOS foi projetado de forma neutra para **nunca depender de um único modelo de IA**. O sistema deverá funcionar de maneira agnóstica com:
 - OpenAI (GPT-4, GPT-5)
 - Anthropic (Claude 3.5, Claude 3.7)
-- Google (Gemini 1.5, Gemini 2.0, Gemini 3.1)
+- Google (Gemini 2.5, Gemini 2.0, Gemini 3.1)
 - DeepSeek
 - Antigravity / Modelos futuros
 
