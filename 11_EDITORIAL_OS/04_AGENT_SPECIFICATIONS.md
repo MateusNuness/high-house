@@ -131,7 +131,7 @@ Juiz supremo da identidade da marca (Auditoria 3/3 no Pipeline). Posiciona-se co
 
 ## 3. Responsabilidade
 - Garantir o cumprimento estrito e literal da fundação (`03_BRAND_DESIGN_FOUNDATION.md` e `03.1_DESIGN_SYSTEM_SPECIFICATION.md`).
-- Vetar qualquer conteúdo, design ou código que fira o Design Cultural Premium Underground e a filosofia de "Caos Organizado".
+- Vetar qualquer conteúdo, design ou código que fira o Design Cultural Underground e a filosofia de "Caos Organizado".
 - Assegurar que os materiais mantenham uma aura madura, tátil, urbana, de rua e de curadoria humana.
 
 ## 4. Não Responsabilidade
