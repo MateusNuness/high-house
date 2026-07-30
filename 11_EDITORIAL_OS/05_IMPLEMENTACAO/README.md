@@ -81,7 +81,19 @@ Todo fluxo entre nós do LangGraph ou agentes individuais obedece estritamente a
 
 ---
 
-## 4. Status de Implementação dos Agentes
+## 4. Status de Implementação e Infraestrutura
+
+### 4.1 Infraestrutura Abstrata & Runtime (Fase 1.5)
+
+| Módulo | Tarefa | Status | Artefato | Validação |
+|---|---|---|---|---|
+| **State Schema Architecture** | EOS-012.1 | **Concluído** | `src/eos/domain/state.py` | TypedDicts globais (`GlobalState`) |
+| **LLM Provider Abstraction** | EOS-012.2 | **Concluído** | `src/eos/infrastructure/llm_provider.py` & `llm_router.py` | Desacoplamento e roteamento por `AgentRole` |
+| **LangGraph Orchestrator** | EOS-012.3 | **Concluído** | `src/eos/application/workflows/editorial_creation.py` | DAG com nós, arestas e ponto de interrupção (HIL) |
+| **Checkpoints & Persistence** | EOS-012.4 | **Concluído** | `src/eos/infrastructure/checkpoints.py` & `memory.py` | Interrupção, salvamento e retomada de estado via `test_persistence.py` |
+| **Memory Agent Context** | EOS-010 | **Concluído** | `src/eos/application/agents/memory_agent.py` | Rastreabilidade e log de eventos/decisões |
+
+### 4.2 Agentes Cognitivos (Fases 1 e 2)
 
 | Agente | Tarefa | Status | Contrato I/O | Loader SSOT | Fallback Mock |
 |---|---|---|---|---|---|

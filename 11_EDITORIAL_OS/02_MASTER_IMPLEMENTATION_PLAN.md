@@ -227,11 +227,11 @@ Nenhuma tarefa pode ser migrada para "Concluída" sem:
 | Fase 0 | EOS-000 | Concluído | Matheus | d89ec6d |
 | Fase 0.5 | EOS-013 | Concluído | IA | - |
 | Fase 1 | EOS-014 | Concluído | IA | - |
-| Fase 1.5 | EOS-012.1 | Não iniciado | - | - |
-| Fase 1.5 | EOS-012.2 | Não iniciado | - | - |
-| Fase 1.5 | EOS-012.3 | Não iniciado | - | - |
-| Fase 1.5 | EOS-012.4 | Não iniciado | - | - |
-| Fase 1.5 | EOS-010 | Não iniciado | - | - |
+| Fase 1.5 | EOS-012.1 | Concluído | IA | - |
+| Fase 1.5 | EOS-012.2 | Concluído | IA | - |
+| Fase 1.5 | EOS-012.3 | Concluído | IA | - |
+| Fase 1.5 | EOS-012.4 | Concluído | IA | - |
+| Fase 1.5 | EOS-010 | Concluído | IA | - |
 | Fase 2 | EOS-009 | Concluído | IA | fda3b8b |
 | Fase 2 | EOS-001 | Concluído | Matheus | 386314d |
 | Fase 2 | EOS-005 | Não iniciado | - | - |
