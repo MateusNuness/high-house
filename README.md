@@ -124,6 +124,8 @@ HIGH HOUSE/
 │   │   ├── memory/                            # Logs de decisões de design, logs empíricos e grafos de memória
 │   │   └── runtime/                           # Lógica do LangGraph, estado e LLM Provider Abstraction
 │   ├── 06_GOVERNANCE/                         # Documentos de auditoria humana, validação da Fonte de Verdade
+│   │   ├── 00_BRAND_DIRECTION_CHANGE_PROPOSAL.md # Proposta de evolução estética e cultural
+│   │   └── eos-000-source-of-truth-audit.md   # Auditoria da Fonte de Verdade
 │   └── README.md                              # Regras fundamentais de arquitetura para a camada de Inteligência
 │
 ├── apresentacao/               # Brand Deck Conceitual V1 (HTML/CSS responsivo)

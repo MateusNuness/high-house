@@ -143,13 +143,13 @@ Nada deve transmitir aparência sintética ou artificial quando isso não for in
 
 ---
 
-## Imersão (A Ausência do Tempo)
+## Imersão (O Estado de Presença)
 
 O design não existe apenas para durar décadas.
 
 Ele existe para induzir um estado psicológico.
 
-O estado de não ver o tempo passar.
+O estado de presença e de não se importar com o tempo.
 
 De não se preocupar com a urgência.
 

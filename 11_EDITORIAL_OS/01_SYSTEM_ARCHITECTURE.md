@@ -11,7 +11,7 @@
 
 - **Patrimônio sobre Conteúdo:** A High House não publica posts isolados; constrói repertório, autoridade e patrimônio intelectual.
 - **Coleções Editoriais:** Todo o conteúdo é organizado em coleções com narrativa contínua entre capítulos, onde cada publicação fortalece a anterior.
-- **Ausência do Tempo:** A essência da marca se apoia na desaceleração, no estado de flow, na imersão profunda e no ritual urbano sofisticado.
+- **Estado de Presença:** A essência da marca se apoia na desaceleração, no estado de flow, na imersão profunda e no ritual urbano sofisticado.
 - **Antítese do Clichê:** Rejeição absoluta a templates genéricos ("Visual Canva"), linguagem de startup ("Thread 10 passos") e apologia estilizada superficial ("Clichês Canábicos Neon").
 
 ---

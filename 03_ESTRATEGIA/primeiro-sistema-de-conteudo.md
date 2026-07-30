@@ -18,7 +18,7 @@ O foco não é descobrir "o que o público gosta", mas sim expressar de forma co
 
 ---
 
-## 2. O Fio Condutor: A Ausência do Tempo (Imersão)
+## 2. O Fio Condutor: O Estado de Presença (Imersão)
 
 O critério de curadoria de todo conteúdo publicado pela marca é o **tempo** — mais especificamente, experiências imersivas onde não se vê o tempo passar (estado de flow, presença absoluta).
 
@@ -52,7 +52,7 @@ A coleção deve ser montada narrativamente em capítulos:
 
 ## 4. O Banco de Experiências (Não Banco de Temas)
 
-Para montar as coleções, não procuramos por "temas", procuramos por experiências que exemplificam a ausência do tempo e a imersão profunda.
+Para montar as coleções, não procuramos por "temas", procuramos por experiências que exemplificam o estado de presença (não se importar com o tempo) e a imersão profunda.
 
 **Em vez de:** "Vamos falar sobre design de cadeira."  
 **A busca é:** "Vamos mostrar um objeto que é feito para durar décadas e ser herdado, que absorve nossa atenção total."

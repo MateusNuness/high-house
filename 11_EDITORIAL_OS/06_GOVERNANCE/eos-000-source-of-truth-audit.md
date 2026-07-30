@@ -31,7 +31,7 @@ Validar que os documentos raiz (01 a 10) não possuem conflitos que prejudiquem 
 ### Conflito 2: Paleta de Cores e Atmosfera
 - **Ocorrência:** Diretrizes de curadoria antigas e arquivos em `03_ESTRATEGIA` carregam referências à cor `Dourado`, remetendo a "luxo tradicional".
 - **Decisão:** Fica abolida a estética de "luxo dourado". A paleta oficial aprovada no MVP Visual passa a ser: Preto Profundo, Off-White Quente, Terracota Suave, Lilás Denso, Verde Água Apagado, Areia Escura.
-- **Motivo:** A estética de luxo afasta a sensação de ambiente cultural e acolhedor (a "ausência do tempo"). A marca exige brutalismo contido e não um premium artificial.
+- **Motivo:** A estética de luxo afasta a sensação de ambiente cultural e acolhedor (o "estado de presença"). A marca exige brutalismo contido e não um premium artificial.
 
 ## Hierarquia de Fonte de Verdade
 

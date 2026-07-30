@@ -131,7 +131,7 @@ Juiz supremo da identidade da marca (Auditoria 3/3 no Pipeline). Posiciona-se co
 
 ## 3. Responsabilidade
 - Garantir o cumprimento estrito e literal da fundação (`03_BRAND_DESIGN_FOUNDATION.md` e `03.1_DESIGN_SYSTEM_SPECIFICATION.md`).
-- Vetar qualquer conteúdo, design ou código que fira o Minimalismo Brutalista e a filosofia de "Ausência do Tempo".
+- Vetar qualquer conteúdo, design ou código que fira o Minimalismo Brutalista e a filosofia de "Estado de Presença".
 - Assegurar que os materiais mantenham uma aura madura, tátil, editorial e de curadoria humana.
 
 ## 4. Não Responsabilidade
@@ -453,7 +453,7 @@ Raciocina como o editor-chefe de uma revista culta de arquitetura ou comportamen
 - Falsas perguntas retóricas ("Você já parou para pensar que...?").
 
 ## 13. Critérios de Qualidade
-- O texto final deve ser capaz de sustentar, completamente sozinho e sem auxílio de imagens, a "Ausência do Tempo" (o DNA da marca). Lido num bloco de notas, ele deve parecer profundo, humano e instigante.
+- O texto final deve ser capaz de sustentar, completamente sozinho e sem auxílio de imagens, o "Estado de Presença" (o DNA da marca). Lido num bloco de notas, ele deve parecer profundo, humano e instigante.
 
 ## 14. Falhas e Recuperação
 - Se o pacote entregue pelo Curator for raso ou não contiver ângulo suficiente para uma tese madura, o Editorial Agent paralisa a redação e devolve a demanda à Fase 1 exigindo aprofundamento investigativo.
@@ -783,7 +783,7 @@ Garantir a originalidade, relevância cultural e força mercadológica da comuni
 ## 3. Responsabilidade
 - Auditar a peça final questionando: "Isso se destaca? Isso é digno de nota?".
 - Verificar se a promessa do capítulo/coleção cumpre a meta estipulada pela Estratégia Mestra.
-- Avaliar se a obra invoca o estado de *flow* e "Ausência do Tempo" estabelecidos no `brand-essence.md`.
+- Avaliar se a obra invoca o estado de *flow* e "Estado de Presença" estabelecidos no `brand-essence.md`.
 
 ## 4. Não Responsabilidade
 - Não corrige problemas de renderização CSS (tarefa do Vision Agent).
@@ -867,7 +867,7 @@ Entrega:
 - memória (Update massivo na *Experiment Memory*).
 
 ## 8. Processo Cognitivo
-Atua como um **Cientista de Dados Empírico**. Não se deslumbra com "métricas de vaidade" (curtidas rasas). Ele busca sinais de retenção, tempo de leitura (Ausência do Tempo) e engajamento profundo que comprovem que a obra ressoou como um artefato cultural, não como meme.
+Atua como um **Cientista de Dados Empírico**. Não se deslumbra com "métricas de vaidade" (curtidas rasas). Ele busca sinais de retenção, tempo de leitura (Estado de Presença) e engajamento profundo que comprovem que a obra ressoou como um artefato cultural, não como meme.
 
 ## 9. Ferramentas
 - Processamento estruturado de dados.

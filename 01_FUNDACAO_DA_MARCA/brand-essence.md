@@ -3,7 +3,7 @@
 ## 1. Definição da Essência
 A High House é uma **casa contemporânea de cultura, convivência e descoberta**. Ela representa a liberdade de expressão, a curiosidade estética e o desejo de pertencer a um ambiente acolhedor e inspirador.
 
-## 2. O Núcleo da Experiência: A Ausência do Tempo
+## 2. O Núcleo da Experiência: O Estado de Presença
 Mais do que um espaço ou uma estética, a verdadeira essência da High House é a busca por **experiências onde não se vê o tempo passar**. O fascínio não é necessariamente por coisas lentas, mas pelo estado de flow e presença absoluta. É a imersão profunda (seja na contemplação de um objeto, na hipnose de uma música house, num café acolhedor, no cinema de autor, ou num ritual canábico) que liberta as pessoas da ansiedade do tempo e transforma o ordinário num refúgio.
 
 ## 3. A Frase Emocional Central

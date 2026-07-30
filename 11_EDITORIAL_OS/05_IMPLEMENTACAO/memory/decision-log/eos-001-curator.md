@@ -8,7 +8,7 @@ O Curator Agent (Fase 2 - Conhecimento e Estratégia) é o responsável por atua
 
 ## Decisão
 1. **Migração e Renomeação:** O arquivo embrionário (`modules/curation-guidelines.md`) foi deletado e substituído por `agents/curator/curation_rules.md`, assumindo uma estrutura yaml frontmatter para controle de versão (`prompt_version: 1.0.0`).
-2. **Convergência de Conhecimento:** As regras de curadoria foram refinadas para incorporar a "Ausência do Tempo" (01), rejeitar clichês stoner e corporativos (01 a 10) e forçar a densidade e enxugamento estrutural do texto, satisfazendo a regra de "Horror ao Preenchimento" estipulada pelo Brutalismo do Design System (03.1).
+2. **Convergência de Conhecimento:** As regras de curadoria foram refinadas para incorporar o "Estado de Presença" (01), rejeitar clichês stoner e corporativos (01 a 10) e forçar a densidade e enxugamento estrutural do texto, satisfazendo a regra de "Horror ao Preenchimento" estipulada pelo Brutalismo do Design System (03.1).
 3. **Comportamento de Máquina (State):** Adicionada instrução explícita de "Business Error": se 100% da pesquisa original for considerada imprópria, o agente forçará um *fail* no estado (conforme `03.2`), obrigando a refação em vez de tolerar mediocridade para dar andamento ao fluxo.
 
 ## Impacto
