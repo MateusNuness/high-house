@@ -11,19 +11,12 @@ from eos.domain.contracts import (
     PublicationPackage,
     AuditStatus
 )
+from eos.domain.state import GlobalState
+from eos.infrastructure.checkpoints import get_checkpointer
+from eos.application.agents.memory_agent import MemoryAgentStub
 
-class GlobalState(TypedDict):
-    execution_id: str
-    current_phase: str
-    audit_log: list[str]
-    
-    # Artifacts as separated states
-    brief: Optional[EditorialBrief]
-    research: Optional[ResearchReport]
-    direction: Optional[CreativeDirection]
-    proposal: Optional[VisualProposal]
-    audit: Optional[BrandAuditReport]
-    package: Optional[PublicationPackage]
+# Initialize memory agent stub
+memory_agent = MemoryAgentStub()
 
 def research_node(state: GlobalState) -> GlobalState:
     brief = state.get("brief")
@@ -42,9 +35,13 @@ def research_node(state: GlobalState) -> GlobalState:
         confidence_score=0.85
     )
     
+    memory_agent.log_event("research_completed", {"agent": "research", "confidence": report.confidence_score})
+    
     state["research"] = report
+    state["current_agent"] = "research"
     state["current_phase"] = "research_completed"
-    state["audit_log"].append("Research completed")
+    if "audit_events" not in state: state["audit_events"] = []
+    state["audit_events"].append({"event": "Research completed", "agent": "research"})
     return state
 
 def editorial_node(state: GlobalState) -> GlobalState:
@@ -63,9 +60,13 @@ def editorial_node(state: GlobalState) -> GlobalState:
         references=["https://mock-moodboard.com/1"]
     )
     
+    memory_agent.save_decision("editorial", "Established creative direction", {"concept": direction.core_concept})
+    
     state["direction"] = direction
+    state["current_agent"] = "editorial"
     state["current_phase"] = "editorial_completed"
-    state["audit_log"].append("Creative Direction established")
+    if "audit_events" not in state: state["audit_events"] = []
+    state["audit_events"].append({"event": "Creative Direction established", "agent": "editorial"})
     return state
 
 def designer_node(state: GlobalState) -> GlobalState:
@@ -84,8 +85,10 @@ def designer_node(state: GlobalState) -> GlobalState:
     )
     
     state["proposal"] = proposal
+    state["current_agent"] = "designer"
     state["current_phase"] = "design_completed"
-    state["audit_log"].append("Visual Proposal generated")
+    if "audit_events" not in state: state["audit_events"] = []
+    state["audit_events"].append({"event": "Visual Proposal generated", "agent": "designer"})
     return state
 
 def brand_guardian_node(state: GlobalState) -> GlobalState:
@@ -104,9 +107,13 @@ def brand_guardian_node(state: GlobalState) -> GlobalState:
         recommendations=[]
     )
     
+    memory_agent.save_decision("brand_guardian", "Approved visual proposal", {"status": audit.status})
+    
     state["audit"] = audit
+    state["current_agent"] = "brand_guardian"
     state["current_phase"] = "audit_completed"
-    state["audit_log"].append("Brand Audit completed")
+    if "audit_events" not in state: state["audit_events"] = []
+    state["audit_events"].append({"event": "Brand Audit completed", "agent": "brand_guardian"})
     return state
 
 def human_approval_node(state: GlobalState) -> GlobalState:
@@ -123,8 +130,10 @@ def human_approval_node(state: GlobalState) -> GlobalState:
     )
     
     state["package"] = package
+    state["current_agent"] = "human_approval"
     state["current_phase"] = "publication_ready"
-    state["audit_log"].append("Publication Package generated")
+    if "audit_events" not in state: state["audit_events"] = []
+    state["audit_events"].append({"event": "Publication Package generated", "agent": "human_approval"})
     return state
 
 
@@ -144,5 +153,6 @@ workflow.add_edge("agent_designer", "agent_brand_guardian")
 workflow.add_edge("agent_brand_guardian", "agent_human_approval")
 workflow.add_edge("agent_human_approval", END)
 
-# Compile
-app = workflow.compile()
+# Compile with Checkpointer
+checkpointer = get_checkpointer()
+app = workflow.compile(checkpointer=checkpointer)
