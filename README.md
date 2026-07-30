@@ -1,4 +1,4 @@
-# High House — Marca, Cultura & Espaço Físico
+# High House — Cultura, Convivência & Design
 
 > **Princípio Central:** *A High House deve começar pequena o suficiente para ser possível, mas ser construída com uma visão grande o suficiente para um dia se tornar um lugar.*
 
@@ -6,10 +6,11 @@
 
 ## 📌 Visão Geral do Projeto
 
-A **High House** é uma marca contemporânea de lifestyle, cultura urbana e convivência originada em Niterói (RJ). O projeto combina moda (streetwear), artigos de design & headshop, arte, música e cultura canábica desmistificada, tendo como destino final a criação de um **espaço físico imersivo** em Niterói.
+A **High House** é uma marca contemporânea de lifestyle, cultura urbana e convivência. O projeto combina moda (streetwear), artigos de design & headshop, arte, música e cultura canábica desmistificada, tendo como destino final de longo prazo a criação de um **espaço físico imersivo**.
 
 - **Frase Emocional de Comunidade:** *"Vamos na High hoje?"*
-- **Estratégia de Expansão:** Identidade e raízes locais em Niterói (RJ), com distribuição e engajamento de alcance nacional via e-commerce e ecossistema digital.
+- **Território de Marca:** A identidade pública da High House é definida por **cultura, estética e valores** — não por geografia. A origem do projeto (Niterói, RJ) é parte da história de fundo, revelada organicamente para quem mergulha mais fundo na marca.
+- **Estratégia de Expansão:** Construção digital-first com alcance nacional via Instagram e e-commerce, sem filtro geográfico na comunicação pública.
 - **Fase Atual do Projeto:** **Fase 2 — Validação e Descoberta de Público** (Laboratório de Conteúdo & Experimentação).
 - **Modelo de Financiamento:** *Bootstrapping* sustentável por etapas, sem endividamento, em que cada fase financia a seguinte.
 
@@ -90,7 +91,7 @@ HIGH HOUSE/
 │   └── colecoes/               # Planejamento de drops e coleções capsule [Em Construção]
 │
 ├── 08_ESPACO_FISICO/           # Conceito arquitetônico, áreas e dinâmica do espaço
-│   ├── conceito-do-espaco.md   # Diretrizes arquitetônicas do espaço em Niterói
+│   ├── conceito-do-espaco.md   # Diretrizes arquitetônicas do futuro espaço físico
 │   ├── experiencia.md          # Jornada do cliente e atmosfera imersiva
 │   ├── areas.md                # Zoneamento do espaço (Lounge, Retail, Bar/Café)
 │   └── programacao.md          # Eventos, workshops e ativações culturais
@@ -178,17 +179,30 @@ O repositório está configurado para servir as apresentações via GitHub Pages
 | **08** | Desenvolvimento de Produtos (Drop 0) | ⏳ Pendente | Criação e confecção das primeiras peças (camiseta/acessório) pós-validação de audiência. |
 | **09** | Operação e Crescimento | ⏳ Pendente | Lançamento do e-commerce oficial, logística nacional e retenção de comunidade. |
 | **10** | Acúmulo de Capital | ⏳ Pendente | Formação de reserva financeira dedicada exclusivamente à viabilização da sede física. |
-| **11** | Espaço Físico High House | ⏳ Pendente | Escolha de imóvel em Niterói (RJ), projeto arquitetônico, licenças e abertura. |
+| **11** | Espaço Físico High House | ⏳ Pendente | Seleção de imóvel, projeto arquitetônico, licenças e abertura (localização a ser definida com base na comunidade consolidada). |
 
 ---
 
 ## 🔒 Decisões Estratégicas Consolidadas
 
-1. **Raiz Local (Niterói) + Alcance Nacional (E-Commerce):** A marca fixa sua identidade física em Niterói (RJ), mas constrói sua base comunitária e de vendas em escala nacional via meios digitais.
+1. **Identidade Territorial em Camadas (Cultura First):** A comunicação pública da marca lidera com cultura, estética e valores — sem filtro geográfico. A origem (Niterói, RJ) é revelada progressivamente como elemento de autenticidade para quem acompanha a marca de perto, e o espaço físico é comunicado apenas quando a comunidade nacional já estiver consolidada. *(Decisão de Julho/2026 — ver modelo de camadas abaixo.)*
 2. **Acessibilidade Cultural:** A marca recusa a postura de elitismo esnobe. Embora ofereça produtos com alto padrão de design, a linguagem e o ambiente mantêm portas abertas a diferentes perfis.
 3. **Cultura Canábica Elegante e Inclusiva:** Abordagem desmistificada e contemporânea da cannabis, evitando clichês visuais estéreis e acolhendo consumidores e não consumidores.
 4. **Crescimento Responsável (*Bootstrapping*):** Proibição estrita de contração de dívidas irresponsáveis. Cada etapa deve gerar caixa para financiar o passo seguinte.
 5. **Espaço Físico como Destino Final:** O produto de vestuário e headshop é o veículo de conexão inicial; o espaço físico imersivo é o objetivo supremo do projeto.
+
+### 🗺️ Modelo de Camadas de Identidade Territorial
+
+A identidade geográfica da marca opera em quatro camadas progressivas de profundidade, calibradas para maximizar a identificação do público nacional na fase digital sem ocultar a origem autêntica do projeto:
+
+| Camada | Nível | O que aparece | Onde aparece |
+| :---: | :--- | :--- | :--- |
+| **1** | Vitrine (1º contato) | Lifestyle, estética, cultura, música e valores universais | Feed do Instagram, conteúdo público, anúncios |
+| **2** | Bastidor (quem acompanha) | Atmosfera visual urbana/litorânea sem nomear cidade | Stories, making-of, referências visuais |
+| **3** | Origem (quem mergulha) | *"Nascida em Niterói"* como fato de autenticidade | Bio, manifesto, About, documentação interna |
+| **4** | Destino (longo prazo) | Anúncio do espaço físico em Niterói | Comunicado à comunidade consolidada |
+
+> **Princípio Operacional:** Na Fase 2 (digital-first), a comunicação pública opera exclusivamente nas Camadas 1 e 2. A Camada 3 é acessível a quem busca, mas não é projetada como mensagem principal. A Camada 4 permanece reservada até a viabilização financeira e comunitária do espaço físico.
 
 ---
 
@@ -197,10 +211,10 @@ O repositório está configurado para servir as apresentações via GitHub Pages
 As seguintes frentes operacionais e táticas estão atualmente sob análise para deliberação nos próximos ciclos:
 
 1. **Definição do Produto do Drop 0:** Seleção entre camiseta institucional premium, boné em sarja pesada ou acessório exclusivo de headshop.
-2. **Modelo de Produção & Fornecedores:** Validação entre confecção própria local em Niterói/RJ vs. modelo *Private Label* parceiro com estamparia em silkscreen.
+2. **Modelo de Produção & Fornecedores:** Validação entre confecção própria local vs. modelo *Private Label* parceiro com estamparia em silkscreen.
 3. **Plataforma E-Commerce Inicial:** Escolha tecnológica entre Shopify ou Nuvemshop para o lançamento do Drop 0.
 4. **Métricas de Corte para Avanço de Fase:** Estabelecimento dos volumes mínimos de salvamentos e compartilhamentos no Instagram necessários para autorizar a produção física do Drop 0.
-5. **Localização Física em Niterói:** Estudo preliminar de viabilidade de bairros em Niterói (Icaraí, Centro ou São Francisco) quanto a fluxo, zoneamento e custo de ocupação.
+5. **Localização do Espaço Físico (Longo Prazo):** Estudo preliminar de viabilidade adiado para após a consolidação da comunidade digital nacional — a escolha da cidade/bairro será informada pelo perfil geográfico da base de clientes real.
 
 ---
 
@@ -219,4 +233,4 @@ As seguintes frentes operacionais e táticas estão atualmente sob análise para
 
 ---
 
-*Documentação oficial atualizada em Julho de 2026 — Estrutura completa consolidada para a Fase 2 (Validação e Descoberta de Público).*
+*Documentação oficial atualizada em Julho de 2026 — Consolidação da Fase 2 (Validação e Descoberta de Público) e adoção do Modelo de Camadas de Identidade Territorial (cultura-first, sem filtro geográfico na comunicação pública).*
