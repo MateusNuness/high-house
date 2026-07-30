@@ -160,7 +160,7 @@ Nenhuma tarefa pode ser migrada para "Concluída" sem:
 | Tarefa | Status | Responsável | Hash do Commit (Futuro) |
 |---|---|---|---|
 | EOS-000 | Concluído | Matheus | d89ec6d |
-| EOS-001 | Não iniciado | - | - |
+| EOS-001 | Concluído | Matheus | pendente |
 | EOS-002 | Não iniciado | - | - |
 | EOS-003 | Não iniciado | - | - |
 | EOS-004 | Não iniciado | - | - |
