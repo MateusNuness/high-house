@@ -31,7 +31,7 @@ Nenhuma etapa do pipeline pode ser pulada. (ex: IA sem Design System = criativid
 ### EOS-000 — Auditoria de Fonte de Verdade
 - **Objetivo:** Validar documentos raiz (01 a 10) como fontes oficiais e resolver contradições antes de escrever qualquer código.
 - **Justificativa:** Código nasce da documentação. Se existirem inconsistências na Fundação ou Estratégia, o EOS herdará essas falhas.
-- **Artefato gerado:** `05_IMPLEMENTACAO/logs/auditoria_fonte_de_verdade.md`
+- **Artefato gerado:** `05_GOVERNANCE/eos-000-source-of-truth-audit.md`
 - **Validação:** Não existem conflitos entre Fundação, Estratégia, Identidade Visual e Design System.
 - **Memória gerada:** `05_IMPLEMENTACAO/memory/decision-log/eos-000-audit.md`
 
@@ -145,7 +145,7 @@ Nenhuma tarefa pode ser migrada para "Concluída" sem:
 
 | Tarefa | Status | Responsável | Hash do Commit (Futuro) |
 |---|---|---|---|
-| EOS-000 | Concluído | Antigravity | d89ec6d |
+| EOS-000 | Em revisão | - | - |
 | EOS-001 | Não iniciado | - | - |
 | EOS-002 | Não iniciado | - | - |
 | EOS-003 | Não iniciado | - | - |
