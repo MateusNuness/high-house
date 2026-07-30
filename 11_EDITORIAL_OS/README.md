@@ -1,28 +1,30 @@
 # High House — Editorial Operating System (EOS)
 
-O **Editorial Operating System (EOS)** é a camada de inteligência autônoma da High House. Ele atua como um sistema operacional editorial projetado para criar, curar, documentar e evoluir todo o ecossistema de conteúdo da marca.
+O **Editorial Operating System (EOS)** é a camada de inteligência autônoma da High House, estruturada não como um mero gerador de imagens ou textos, mas como uma **agência autônoma baseada na construção sequencial de marca a longo prazo**.
 
-Diferente de gerar prompts isolados, o EOS opera como uma **agência autônoma**, orquestrando pesquisa, conceituação, design, documentação e uma rigorosa crítica automática.
+## 🏗️ O Pipeline de 12 Agentes
 
-## 🏗️ Arquitetura do Sistema
+Todo o fluxo de conteúdo obedece estritamente a este pipeline, impedindo que o Design se inicie antes da Narrativa e que a Publicação ocorra sem o crivo da Marca.
 
-O sistema é dividido em diretórios funcionais que representam seus módulos e instâncias de agentes:
+1. **Briefing** (Gatilho)
+2. ⬇️ **Research Agent** (Pesquisa repertório)
+3. ⬇️ **Curator Agent** (Seleciona e filtra anti-patterns)
+4. ⬇️ **Editorial Agent** (Cria a narrativa do capítulo)
+5. ⬇️ **Art Director Agent** (Define direção criativa e visual)
+6. ⬇️ **Designer Agent** (Estrutura a hierarquia do layout)
+7. ⬇️ **Image Agent** (Decide técnica: Foto Real vs IA vs HTML)
+8. ⬇️ **Coder Agent** (Implementa HTML/CSS/SVG)
+9. ⬇️ **Vision Agent** [Auditoria 1/3] (Renderiza e avalia layout/técnica)
+10. ⬇️ **Critic Agent** [Auditoria 2/3] (Avalia originalidade frente ao mercado)
+11. ⬇️ **Brand Guardian Agent** [Auditoria 3/3] (Juiz supremo da identidade da marca)
+12. ⬇️ **Memory Agent** (Arquiva o processo concluído para a perpetuidade)
+13. ⬇️ **Metrics Agent** (Injeta os resultados e hipóteses no motor empírico)
+14. **Publish**
 
-- `agents/`: Contém os "System Prompts" e personas de cada agente (Editor-Chefe, Diretor Criativo, Pesquisador, etc.).
-- `memory/`: O coração do EOS. Armazena o registro permanente das narrativas, decisões e hipóteses validadas. A IA consulta isso **antes** de criar algo novo.
-- `modules/`: Regras de negócio, fluxos de curadoria e o *Review Engine* (Crítica Automática).
-- `design_system/`: Repositório de tokens (HTML, CSS, SVG) para renderização de peças de conteúdo e layouts editoriais (evitando o "aspecto Canva").
-- `experiments/`: Templates e logs de hipóteses de conteúdo, métricas esperadas e resultados empíricos.
-- `logs_and_docs/`: Documentação passiva autogerada (o "porquê" de cada decisão ser tomada).
-
-## 🚀 Fluxo de Trabalho (Workflow)
-
-1. **Gatilho:** Uma nova necessidade de coleção/capítulo é iniciada.
-2. **Pesquisa & Memória:** O *Pesquisador* vasculha referências e o `memory/` garante a não contradição com decisões anteriores.
-3. **Criação Sequencial:** *Editor-Chefe* estrutura a narrativa ➔ *Diretor Criativo* define a linguagem ➔ *Diretor de Arte* codifica o visual.
-4. **Crítica Automática (Review Engine):** O conteúdo passa pela aprovação unânime de todos os agentes especialistas em `modules/review-engine.md`. Reprovações entram em loop de refação.
-5. **Aprovação & Documentação:** A peça final é versionada via Git, o relatório de justificativas é salvo em `logs_and_docs/`, e as hipóteses atualizadas em `experiments/`.
-
----
-
-> **Diretriz Máxima:** Qualidade sobrepõe a velocidade. O EOS recusa conteúdo genérico, estéril, ou que não fortaleça ativamente os princípios arquiteturais da High House estabelecidos na fundação da marca.
+## 📂 Arquitetura do Sistema
+- `agents/`: System Prompts dos 12 agentes do Pipeline.
+- `memory/`: Gerenciado pelo *Memory Agent*, registra o histórico contínuo para evitar contradições.
+- `modules/`: Regras de negócio, contendo a Tríade de Auditoria e Curadoria.
+- `design_system/`: Repositório de HTML/CSS para consumo do *Coder Agent*.
+- `experiments/`: Gerenciado pelo *Metrics Agent*, formaliza os testes.
+- `logs_and_docs/`: Rastro documental ativo de loops de revisão e vetos.

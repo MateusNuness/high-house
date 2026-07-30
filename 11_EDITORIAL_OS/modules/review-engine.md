@@ -1,27 +1,34 @@
-# Review Engine (Crítica Automática)
+# Review Engine (A Tríade de Auditoria)
 
-O **Review Engine** é o ciclo de validação obrigatório de qualquer peça de conteúdo gerada pelo EOS. Nada é publicado sem o aval de toda a equipe de agentes.
+O **Review Engine** não é mais um comitê genérico. Ele é uma esteira final rígida composta por três instâncias de auditoria sucessivas. A peça deve superar as três barreiras para ser publicada.
 
-## 🔄 Fluxo de Aprovação em Cascata
+## 🔄 A Tríade de Auditoria
 
-A peça passa pelos agentes na seguinte ordem (Sequence Pipeline):
+### Passo 1: Auditoria Estética & Funcional
+**Responsável:** `Vision Agent`
+- Analisa a renderização em tela, screenshots e HTML gerado via *Playwright*.
+- **Critérios:**
+  - A hierarquia visual está legível?
+  - O contraste e os espaçamentos respeitam o grid do Design System?
+  - Existem erros técnicos ou acessibilidade falha?
+- **Se falhar:** A peça retorna imediatamente para o `Designer Agent` ou `Coder Agent`.
 
-1. **Editor-Chefe:** Verifica coesão narrativa e continuidade com o `Memory Engine`.
-2. **Diretor Criativo:** Verifica originalidade, choque estético e ausência de clichês.
-3. **Estrategista de Marca:** Verifica o alinhamento com os pilares fundamentais da High House.
-4. **Copy & Consistência:** Refina vocabulário (remove adjetivação vazia e exclamações desnecessárias).
-5. **Diretor de Arte & UX:** Avalia se a composição visual ou HTML/CSS atende aos critérios do Design System.
+### Passo 2: Auditoria Estratégica & Competitiva
+**Responsável:** `Critic Agent`
+- Analisa o impacto semântico e a força da peça.
+- **Critérios:**
+  - A peça parece derivada e facilmente confundida com uma postagem de outra marca (startup, lojinha, influencer)?
+  - Há presença de "Anti-Patterns" ou clichês não percebidos anteriormente?
+- **Se falhar:** A peça retorna para o `Curator Agent` ou `Art Director Agent` para repensar o impacto e textura.
 
-## ❌ Ciclo de Reprovação e Loop
+### Passo 3: Auditoria de Identidade e Essência
+**Responsável:** `Brand Guardian Agent`
+- Analisa a sobrevivência da peça no longo prazo e alinhamento central.
+- **Critérios:**
+  - A peça reforça ou dilui a marca?
+  - Essa postagem faz sentido como continuação orgânica do capítulo passado?
+  - O tom de voz e o rigor de fundação foram mantidos?
+- **Se falhar:** Interrupção total. O projeto retorna ao `Editorial Agent` para reformular o *porquê* da postagem existir.
 
-Se **QUALQUER** agente rejeitar a peça, o processo é interrompido, e um relatório (Feedback Log) é gerado na pasta `logs_and_docs/`.
-
-O relatório de falha deve conter:
-- **Agente Reprovador:** (Ex: Diretor Criativo)
-- **Motivo da Reprovação:** (Ex: "A imagem proposta parece muito renderizada por IA genérica. Parece plástico. Precisamos de textura analógica.")
-- **Ação de Correção:** (Ex: "Substituir a geração por um layout puramente tipográfico consumindo nosso arquivo CSS de Design System.")
-
-A Criação deve processar a correção e reiniciar o Review Engine do passo 1.
-
-## ✅ Crivo de Alta Exigência
-A IA não tem pressa. É preferível que o Review Engine fique em loop por 5 interações consertando detalhes de sombra, contraste ou vocabulário do que publicar um material que desvalorize o "Premium Feeling" da marca.
+## ❌ Feedback Loop
+Cada rejeição produz um relatório de log na pasta `logs_and_docs/`. Um agente nunca aprova por cansaço; se a peça voltar 10 vezes, ela será consertada 10 vezes, mantendo o princípio de **Qualidade acima de Velocidade**.

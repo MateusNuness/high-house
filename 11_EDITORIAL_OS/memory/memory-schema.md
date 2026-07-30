@@ -1,29 +1,20 @@
 # Memory Engine (Esquema de Memória Permanente)
 
-O motor de memória (`Memory Engine`) garante que a High House possua um fio condutor ao longo do tempo. Agentes de IA são proibidos de gerar conteúdos novos sem ler o estado atual da memória.
+O motor de memória garante a linearidade do sistema, servindo como o sistema nervoso de longo prazo da marca.
 
-## 🗂️ Estrutura de Registros
+## 🗂️ Os Mantenedores da Memória
 
-A memória é composta por arquivos textuais versionados que atuam como base de contexto longo (Long-Term Context).
+No Pipeline V2 do EOS, **outros agentes não tocam diretamente na gravação da memória**. Essa responsabilidade é isolada:
 
-### 1. `colecoes-anteriores.md`
-- **O que armazena:** Resumo narrativo, tema central e diretrizes visuais de cada coleção já publicada.
-- **Objetivo:** Impedir que o *Editor-Chefe* repita temas, clichês ou fure a continuidade cronológica.
+### 1. The Memory Agent (Arquivista de Narrativas)
+Sempre que uma peça supera o `Brand Guardian` e é aprovada, o **Memory Agent** entra em ação e atualiza de forma autônoma os seguintes arquivos:
+- `colecoes-anteriores.md`: Insere um resumo executivo de como a peça estendeu a história, para que o capítulo seguinte conheça o capítulo passado.
+- `decisoes-estrategicas.md`: Registra se alguma escolha conceitual nova foi tomada e deve virar regra.
+- `logs_and_docs/`: Versiona um sumário com todas as hipóteses testadas e referências que foram eliminadas na jornada de aprovação.
 
-### 2. `decisoes-estrategicas.md`
-- **O que armazena:** Escolhas definitivas da marca (ex: "Não utilizaremos logotipos gigantes", "Optamos por fotografias reais para a Coleção 2").
-- **Objetivo:** Garantir a obediência cega aos vetores da marca pela inteligência artificial.
+### 2. The Metrics Agent (Analista Empírico)
+Atua com os dados matemáticos da operação e resultados da comunidade, alimentando:
+- `experiments/`: Preenche a performance no template de experimento.
+- `aprendizados-empiricos.md`: Isola fatos absolutos gerados pelas métricas (ex: "Peças que não focaram no produto principal tiveram 50% mais compartilhamentos"). 
 
-### 3. `anti-patterns.md` (Integrado à Memória)
-- **O que armazena:** O que a High House **não é**. O que ela já testou e reprovou. (ex: estética startup SaaS, visual derivativo do Canva).
-- **Objetivo:** Refinar a curadoria. A IA deve auditar seu próprio trabalho cruzando com os anti-patterns.
-
-### 4. `aprendizados-empiricos.md`
-- **O que armazena:** Resultados oriundos do `experiments/`. Ex: "Textos curtos retiveram 30% a mais que textões", "HTML renderizado em Preto e Dourado converteu mais salvamentos do que fotos geradas por IA".
-- **Objetivo:** A evolução autônoma e paramétrica do estilo da marca.
-
-## ⚙️ Regra de Atualização (Auto-Update)
-
-1. Quando um *Capítulo* ou *Coleção* é aprovado e publicado, um agente deve resumir os dados e injetá-los no `colecoes-anteriores.md`.
-2. Após análise de métricas, os insights e taxas de conversão/engajamento entram em `aprendizados-empiricos.md`.
-3. O histórico não deve ser apagado, apenas adicionado em formato `Append-Only` (Logs sequenciais), permitindo a rastreabilidade temporal.
+O `Research Agent` e o `Editorial Agent` sempre realizarão a **leitura** obrigatória dessa memória na fase inicial do próximo pipeline, garantindo a evolução contínua (A = B = C).
