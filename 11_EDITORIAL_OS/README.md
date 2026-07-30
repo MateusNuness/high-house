@@ -41,3 +41,6 @@ Todos os documentos contidos nesta pasta (`11_EDITORIAL_OS`) **DEVEM** obedecer 
 3. **Planos Orquestram, Não Definem:** Documentos como `02_MASTER_IMPLEMENTATION_PLAN.md` existem para gerenciar *como* e *quando* construir o sistema. Eles não podem carregar restrições de negócio, cores, fontes ou comportamentos de IA internamente em suas tarefas.
 4. **Estado Inicial vs Estado Atual:** Documentações arquiteturais devem ser escritas visando longevidade. Use "Estado Inicial da Implementação" (um fato histórico inalterável) em vez de "Estado Atual" (que envelhece e requer manutenção constante).
 5. **Entregáveis (Artefatos):** Toda tarefa ou mudança no sistema gera um **Artefato** material (código/documento), exige uma **Validação** objetiva, e produz uma **Memória gerada** (logs de decisão na pasta `memory`).
+
+---
+*Última atualização: Reordenação do backlog no Plano Mestre (02) para refletir estritamente as Fases de Execução.*

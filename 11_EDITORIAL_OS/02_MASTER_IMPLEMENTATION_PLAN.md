@@ -26,104 +26,118 @@ Para garantir rastreabilidade, injetar todo o contexto simultaneamente impediria
 
 Nenhuma etapa do pipeline pode ser pulada. (ex: IA sem Design System = criatividade sem restrição). O sistema quebra se as premissas não forem seguidas em ordem cronológica.
 
-## 5. Backlog Mestre
+## 5. Backlog Mestre (Ordenado por Fases de Execução)
 
-### EOS-000 — Auditoria de Fonte de Verdade
+Para garantir a rastreabilidade estrutural do Roadmap, as tarefas abaixo estão listadas na ordem exata de execução planejada.
+
+### Fase 0: A Validação da Verdade
+
+#### EOS-000 — Auditoria de Fonte de Verdade
 - **Objetivo:** Validar documentos raiz (01 a 10) como fontes oficiais e resolver contradições antes de escrever qualquer código.
 - **Justificativa:** Código nasce da documentação. Se existirem inconsistências na Fundação ou Estratégia, o EOS herdará essas falhas.
 - **Artefato gerado:** `11_EDITORIAL_OS/05_GOVERNANCE/eos-000-source-of-truth-audit.md`
 - **Validação:** Não existem conflitos entre Fundação, Estratégia, Identidade Visual e Design System. Pendente de validação humana (EOS-000.1).
 - **Memória gerada:** `11_EDITORIAL_OS/05_GOVERNANCE/eos-000-source-of-truth-audit.md`
 
-### EOS-001 — Atualização do Curator Agent
-- **Objetivo:** Materializar regras de curadoria do Curator Agent conforme as diretrizes oficiais de Identidade e Estratégia.
-- **Artefato gerado:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/modules/curation-guidelines.md`
-- **Validação:** Regras do arquivo conferem 100% com a identidade atual.
-- **Memória gerada:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/memory/decision-log/eos-001-curator.md`
+### Fase 1: Infraestrutura Cognitiva
 
-### EOS-002 — Implementação do Design System Base (Tokens)
-- **Objetivo:** Criar `tokens.css` mapeando tipografia primária/secundária, cores, grids e espaçamentos estritamente de acordo com `03.1_DESIGN_SYSTEM_SPECIFICATION.md`.
-- **Artefato gerado:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/design_system/tokens.css`
-- **Validação:** Browser render test demonstrando o mapeamento correto dos tokens sem inferir design.
-- **Memória gerada:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/memory/decision-log/design-system-v1.md`
-
-### EOS-003 — Implementação do Design System Base (Templates HTML)
-- **Objetivo:** Criar componentes base (ex: `carrossel-base.html`) utilizando `tokens.css` de acordo com os princípios do `03.1_DESIGN_SYSTEM_SPECIFICATION.md`.
-- **Artefato gerado:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/design_system/templates/...`
-- **Validação:** HTML responsivo renderizando os tokens corretamente e respeitando regras estéticas fundamentais.
-- **Memória gerada:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/memory/decision-log/html-templates-v1.md`
-
-### EOS-004 — Injeção de Contexto: Brand Guardian
-- **Objetivo:** Implementar o Brand Guardian Agent conforme a fundação da marca.
-- **Artefato gerado:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/agents/brand_guardian/context.md` (ou similar).
-- **Validação:** Agente corretamente configurado na pasta de implementação e pronto para proteger a essência.
-- **Memória gerada:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/memory/decision-log/eos-004-guardian.md`
-
-### EOS-005 — Injeção de Contexto: Editorial e Estratégia
-- **Objetivo:** Implementar o Editorial Agent com a estratégia de marca e tom de voz.
-- **Artefato gerado:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/agents/editorial/context.md`
-- **Validação:** Agente sabe reproduzir as narrativas alinhadas à estratégia atual.
-- **Memória gerada:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/memory/decision-log/eos-005-editorial.md`
-
-### EOS-006 — Injeção de Contexto: Art Director e Designer
-- **Objetivo:** Implementar regras visuais oficiais no Art Director e Designer Agent.
-- **Artefato gerado:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/agents/design/context.md`
-- **Validação:** Agentes não produzem hyper-saturação e seguem os 24 pontos da RFC.
-- **Memória gerada:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/memory/decision-log/eos-006-design.md`
-
-### EOS-007 — Injeção de Contexto: Image Agent
-- **Objetivo:** Implementar a estratégia fotográfica e hierarquia de criação de imagens.
-- **Artefato gerado:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/agents/image/context.md`
-- **Validação:** Image agent prefere soluções de markup antes de forçar geração de IA.
-- **Memória gerada:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/memory/decision-log/eos-007-image.md`
-
-### EOS-008 — Injeção de Contexto: Critic e Metrics Agent
-- **Objetivo:** Implementar hipóteses oficiais de teste para o Critic e Metrics Agent.
-- **Artefato gerado:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/agents/metrics/context.md`
-- **Validação:** KPIs e critérios de auditoria estão lincados com a meta do ciclo atual.
-- **Memória gerada:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/memory/decision-log/eos-008-metrics.md`
-
-### EOS-009 — Injeção de Contexto: Research Agent
-- **Objetivo:** Adicionar restrições de pesquisa e limites de fontes no Research Agent.
-- **Artefato gerado:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/agents/research/context.md`
-- **Validação:** Entradas são filtradas para garantir qualidade antes da criação.
-- **Memória gerada:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/memory/decision-log/eos-009-research.md`
-
-### EOS-010 — Injeção de Contexto: Memory Agent
-- **Objetivo:** Criar capacidade de memória, rastreabilidade e persistência (Knowledge Graph e Experiment Memory).
-- **Artefato gerado:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/agents/memory/context.md`
-- **Validação:** Motor de memória apto a gravar e ler contextos transversalmente.
-- **Memória gerada:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/memory/decision-log/eos-010-memory.md`
-
-### EOS-011 — Injeção de Contexto: Coder e Vision Agent
-- **Objetivo:** Implementar os executores estáticos e validadores visuais automatizados.
-- **Artefato gerado:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/agents/execution/context.md`
-- **Validação:** O código passa pelos testes visuais sem desrespeitar os blueprints.
-- **Memória gerada:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/memory/decision-log/eos-011-execution.md`
-
-### EOS-012.1 — Implementação do Runtime: State Schema Architecture
+#### EOS-012.1 — Implementação do Runtime: State Schema Architecture
 - **Objetivo:** Definir os TypedDicts e estruturas do estado global do LangGraph (Immutable, Transient, Payloads, Audit Logs, Memory).
 - **Artefato gerado:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/runtime/state.py` (ou spec análogo).
 - **Validação:** Contratos de tipagem estrita que refletem o particionamento do 03.2.
 - **Memória gerada:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/memory/decision-log/eos-012-1-state.md`
 
-### EOS-012.2 — Implementação do Runtime: LLM Provider Abstraction
+#### EOS-012.2 — Implementação do Runtime: LLM Provider Abstraction
 - **Objetivo:** Criar a interface abstrata via LangChain para integração com DeepSeek.
 - **Artefato gerado:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/runtime/llm_provider.py`
 - **Validação:** O provedor deve estar desacoplado e permitir chamadas genéricas.
 - **Memória gerada:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/memory/decision-log/eos-012-2-llm.md`
 
-### EOS-012.3 — Implementação do Runtime: LangGraph Orchestrator
+#### EOS-012.3 — Implementação do Runtime: LangGraph Orchestrator
 - **Objetivo:** Construir o DAG, os nós e as arestas de transição do pipeline (incluindo Human-in-the-loop).
 - **Artefato gerado:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/runtime/orchestrator.py`
 - **Validação:** Grafo compila e transita perfeitamente do Start ao End Node.
 - **Memória gerada:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/memory/decision-log/eos-012-3-orchestrator.md`
 
-### EOS-012.4 — Implementação do Runtime: Checkpoint and Persistence Layer
+#### EOS-012.4 — Implementação do Runtime: Checkpoint and Persistence Layer
 - **Objetivo:** Implementar persistência de interrupções (Thread/Checkpoints).
 - **Artefato gerado:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/runtime/checkpoints.py`
 - **Validação:** Capacidade de pausar um grafo rodando e retomar do mesmo ponto.
 - **Memória gerada:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/memory/decision-log/eos-012-4-persistence.md`
+
+#### EOS-010 — Injeção de Contexto: Memory Agent
+- **Objetivo:** Criar capacidade de memória, rastreabilidade e persistência (Knowledge Graph e Experiment Memory).
+- **Artefato gerado:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/agents/memory/context.md`
+- **Validação:** Motor de memória apto a gravar e ler contextos transversalmente.
+- **Memória gerada:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/memory/decision-log/eos-010-memory.md`
+
+### Fase 2: Conhecimento e Estratégia
+
+#### EOS-009 — Injeção de Contexto: Research Agent
+- **Objetivo:** Adicionar restrições de pesquisa e limites de fontes no Research Agent.
+- **Artefato gerado:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/agents/research/context.md`
+- **Validação:** Entradas são filtradas para garantir qualidade antes da criação.
+- **Memória gerada:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/memory/decision-log/eos-009-research.md`
+
+#### EOS-001 — Atualização do Curator Agent
+- **Objetivo:** Materializar regras de curadoria do Curator Agent conforme as diretrizes oficiais de Identidade e Estratégia.
+- **Artefato gerado:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/modules/curation-guidelines.md`
+- **Validação:** Regras do arquivo conferem 100% com a identidade atual.
+- **Memória gerada:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/memory/decision-log/eos-001-curator.md`
+
+#### EOS-005 — Injeção de Contexto: Editorial e Estratégia
+- **Objetivo:** Implementar o Editorial Agent com a estratégia de marca e tom de voz.
+- **Artefato gerado:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/agents/editorial/context.md`
+- **Validação:** Agente sabe reproduzir as narrativas alinhadas à estratégia atual.
+- **Memória gerada:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/memory/decision-log/eos-005-editorial.md`
+
+### Fase 3: Governança e Proteção
+
+#### EOS-004 — Injeção de Contexto: Brand Guardian
+- **Objetivo:** Implementar o Brand Guardian Agent conforme a fundação da marca.
+- **Artefato gerado:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/agents/brand_guardian/context.md` (ou similar).
+- **Validação:** Agente corretamente configurado na pasta de implementação e pronto para proteger a essência.
+- **Memória gerada:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/memory/decision-log/eos-004-guardian.md`
+
+### Fase 4: Direção Criativa e Materialização
+
+#### EOS-006 — Injeção de Contexto: Art Director e Designer
+- **Objetivo:** Implementar regras visuais oficiais no Art Director e Designer Agent.
+- **Artefato gerado:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/agents/design/context.md`
+- **Validação:** Agentes não produzem hyper-saturação e seguem os 24 pontos da RFC.
+- **Memória gerada:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/memory/decision-log/eos-006-design.md`
+
+#### EOS-002 — Implementação do Design System Base (Tokens)
+- **Objetivo:** Criar `tokens.css` mapeando tipografia primária/secundária, cores, grids e espaçamentos estritamente de acordo com `03.1_DESIGN_SYSTEM_SPECIFICATION.md`.
+- **Artefato gerado:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/design_system/tokens.css`
+- **Validação:** Browser render test demonstrando o mapeamento correto dos tokens sem inferir design.
+- **Memória gerada:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/memory/decision-log/design-system-v1.md`
+
+#### EOS-003 — Implementação do Design System Base (Templates HTML)
+- **Objetivo:** Criar componentes base (ex: `carrossel-base.html`) utilizando `tokens.css` de acordo com os princípios do `03.1_DESIGN_SYSTEM_SPECIFICATION.md`.
+- **Artefato gerado:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/design_system/templates/...`
+- **Validação:** HTML responsivo renderizando os tokens corretamente e respeitando regras estéticas fundamentais.
+- **Memória gerada:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/memory/decision-log/html-templates-v1.md`
+
+#### EOS-007 — Injeção de Contexto: Image Agent
+- **Objetivo:** Implementar a estratégia fotográfica e hierarquia de criação de imagens.
+- **Artefato gerado:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/agents/image/context.md`
+- **Validação:** Image agent prefere soluções de markup antes de forçar geração de IA.
+- **Memória gerada:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/memory/decision-log/eos-007-image.md`
+
+#### EOS-011 — Injeção de Contexto: Coder e Vision Agent
+- **Objetivo:** Implementar os executores estáticos e validadores visuais automatizados.
+- **Artefato gerado:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/agents/execution/context.md`
+- **Validação:** O código passa pelos testes visuais sem desrespeitar os blueprints.
+- **Memória gerada:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/memory/decision-log/eos-011-execution.md`
+
+### Fase 5: Aprendizado e Evolução
+
+#### EOS-008 — Injeção de Contexto: Critic e Metrics Agent
+- **Objetivo:** Implementar hipóteses oficiais de teste para o Critic e Metrics Agent.
+- **Artefato gerado:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/agents/metrics/context.md`
+- **Validação:** KPIs e critérios de auditoria estão lincados com a meta do ciclo atual.
+- **Memória gerada:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/memory/decision-log/eos-008-metrics.md`
 
 ---
 
@@ -181,24 +195,24 @@ Nenhuma tarefa pode ser migrada para "Concluída" sem:
 
 ## 11. Registro de Progresso
 
-| Tarefa | Status | Responsável | Hash do Commit (Futuro) |
-|---|---|---|---|
-| EOS-000 | Concluído | Matheus | d89ec6d |
-| EOS-001 | Concluído | Matheus | pendente |
-| EOS-002 | Não iniciado | - | - |
-| EOS-003 | Não iniciado | - | - |
-| EOS-004 | Não iniciado | - | - |
-| EOS-005 | Não iniciado | - | - |
-| EOS-006 | Não iniciado | - | - |
-| EOS-007 | Não iniciado | - | - |
-| EOS-008 | Não iniciado | - | - |
-| EOS-009 | Não iniciado | - | - |
-| EOS-010 | Não iniciado | - | - |
-| EOS-011 | Não iniciado | - | - |
-| EOS-012.1 | Não iniciado | - | - |
-| EOS-012.2 | Não iniciado | - | - |
-| EOS-012.3 | Não iniciado | - | - |
-| EOS-012.4 | Não iniciado | - | - |
+| Fase | Tarefa | Status | Responsável | Hash do Commit (Futuro) |
+|---|---|---|---|---|
+| Fase 0 | EOS-000 | Concluído | Matheus | d89ec6d |
+| Fase 1 | EOS-012.1 | Não iniciado | - | - |
+| Fase 1 | EOS-012.2 | Não iniciado | - | - |
+| Fase 1 | EOS-012.3 | Não iniciado | - | - |
+| Fase 1 | EOS-012.4 | Não iniciado | - | - |
+| Fase 1 | EOS-010 | Não iniciado | - | - |
+| Fase 2 | EOS-009 | Não iniciado | - | - |
+| Fase 2 | EOS-001 | Concluído | Matheus | pendente |
+| Fase 2 | EOS-005 | Não iniciado | - | - |
+| Fase 3 | EOS-004 | Não iniciado | - | - |
+| Fase 4 | EOS-006 | Não iniciado | - | - |
+| Fase 4 | EOS-002 | Não iniciado | - | - |
+| Fase 4 | EOS-003 | Não iniciado | - | - |
+| Fase 4 | EOS-007 | Não iniciado | - | - |
+| Fase 4 | EOS-011 | Não iniciado | - | - |
+| Fase 5 | EOS-008 | Não iniciado | - | - |
 
 ---
 
