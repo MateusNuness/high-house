@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "eos"
+version = "0.1.0"
+description = "Editorial OS - High House AI Agentic Framework"
+authors = ["High House"]
+readme = "README.md"
+packages = [{include = "eos", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+langchain = "^0.3.0"
+langgraph = "^0.2.0"
+pydantic = "^2.0"
+pydantic-settings = "^2.0"
+python-dotenv = "^1.0.0"
+structlog = "^24.1.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0.0"
+ruff = "^0.4.0"
+mypy = "^1.10.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.mypy]
+strict = true
