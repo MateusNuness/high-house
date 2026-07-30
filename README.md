@@ -111,6 +111,13 @@ HIGH HOUSE/
 │   ├── marcas/                 # Benchmarks de marcas nacionais e globais [Em Construção]
 │   └── videos/                 # Material audiovisual de inspiração [Em Construção]
 │
+├── 11_EDITORIAL_OS/            # Sistema Operacional Editorial autônomo baseado em IA
+│   ├── memory/                 # Motor de memória de longo prazo (decisões e logs)
+│   ├── agents/                 # Personas, System Prompts e funções de agentes
+│   ├── modules/                # Regras do sistema de Curadoria e Review Engine
+│   ├── design_system/          # Assets HTML/CSS base para renderização
+│   └── experiments/            # Templates e registro de testes e aprendizados
+│
 ├── apresentacao/               # Brand Deck Conceitual V1 (HTML/CSS responsivo)
 ├── apresentacao-v2/            # Caderno de Projeto V2 (HTML/CSS editorial responsivo)
 ├── index.html                  # Portal Hub de entrada para navegação das apresentações
