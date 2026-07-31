@@ -16,14 +16,22 @@ from eos.infrastructure.checkpoints import get_checkpointer
 from eos.application.agents.memory_agent import MemoryAgentStub
 from eos.application.agents.editorial_agent import EditorialAgent
 from eos.application.agents.brand_guardian_agent import BrandGuardianAgent
+from eos.application.agents.art_director_agent import ArtDirectorAgent
+from eos.application.agents.designer_agent import DesignerAgent
 from eos.application.workflows.guardian_policy import GuardianDecisionPolicy
 from tests.fixtures.mock_editorial_agent import MockEditorialAgent
 from tests.fixtures.mock_brand_guardian_agent import MockBrandGuardianAgent
+from tests.fixtures.mock_art_director_agent import MockArtDirectorAgent
+from tests.fixtures.mock_designer_agent import MockDesignerAgent
 
 # Initialize agents
 memory_agent = MemoryAgentStub()
 editorial_agent = EditorialAgent()
 mock_editorial_agent = MockEditorialAgent()
+art_director_agent = ArtDirectorAgent()
+mock_art_director_agent = MockArtDirectorAgent()
+designer_agent = DesignerAgent()
+mock_designer_agent = MockDesignerAgent()
 brand_guardian_agent = BrandGuardianAgent()
 mock_brand_guardian_agent = MockBrandGuardianAgent(scenario="approved")
 
@@ -73,20 +81,37 @@ def editorial_node(state: GlobalState) -> GlobalState:
     return state
 
 
+def art_director_node(state: GlobalState) -> GlobalState:
+    direction = state.get("direction")
+    if not direction:
+        raise ValueError("Art Director Node requires a CreativeDirection")
+    
+    try:
+        direction = art_director_agent.run(direction)
+    except Exception:
+        direction = mock_art_director_agent.run(direction)
+        
+    memory_agent.save_decision("art_director", "Enriched creative direction with aesthetic mood", {"mood": direction.aesthetic_mood})
+    
+    state["direction"] = direction
+    state["current_agent"] = "art_director"
+    state["current_phase"] = "art_direction_completed"
+    if "audit_events" not in state: state["audit_events"] = []
+    state["audit_events"].append({"event": "Aesthetic mood defined", "agent": "art_director"})
+    return state
+
+
 def designer_node(state: GlobalState) -> GlobalState:
     direction = state.get("direction")
     if not direction:
         raise ValueError("Designer Node requires a CreativeDirection")
     
-    # Mocking Designer Agent
-    proposal = VisualProposal(
-        grid_structure="Asymmetric brutalist grid",
-        visual_elements=["Halftone textures", "Distorted typography"],
-        color_palette=["#000000", "#FFFFFF", "#FF0033"],
-        typography_spec="Space Grotesk primary, custom distortion secondary",
-        generation_prompt="A gritty urban scene with high contrast and noise",
-        implementation_notes="Apply noise filter overlay at 15% opacity"
-    )
+    try:
+        proposal = designer_agent.run(direction)
+    except Exception:
+        proposal = mock_designer_agent.run(direction)
+    
+    memory_agent.save_decision("designer", "Generated Design Blueprint", {"grid": proposal.grid_structure})
     
     state["proposal"] = proposal
     state["current_agent"] = "designer"
@@ -212,13 +237,15 @@ workflow = StateGraph(GlobalState)
 
 workflow.add_node("agent_research", research_node)
 workflow.add_node("agent_editorial", editorial_node)
+workflow.add_node("agent_art_director", art_director_node)
 workflow.add_node("agent_designer", designer_node)
 workflow.add_node("agent_brand_guardian", brand_guardian_node)
 workflow.add_node("agent_human_approval", human_approval_node)
 
 workflow.add_edge(START, "agent_research")
 workflow.add_edge("agent_research", "agent_editorial")
-workflow.add_edge("agent_editorial", "agent_designer")
+workflow.add_edge("agent_editorial", "agent_art_director")
+workflow.add_edge("agent_art_director", "agent_designer")
 workflow.add_edge("agent_designer", "agent_brand_guardian")
 
 # Routing condicional pós-Guardian (controlado pela GuardianDecisionPolicy)

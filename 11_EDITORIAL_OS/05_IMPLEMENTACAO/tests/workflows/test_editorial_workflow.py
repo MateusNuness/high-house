@@ -60,6 +60,7 @@ def test_workflow_end_to_end():
     # Check if specific mocked values are present
     assert final_state["research"].confidence_score == 0.85
     assert len(final_state["direction"].core_concept) > 0
+    assert len(final_state["direction"].aesthetic_mood) > 0  # Preenchido pelo Art Director
     assert final_state["audit"].status == AuditStatus.APPROVED
     assert len(final_state.get("audit_events", [])) > 0
 

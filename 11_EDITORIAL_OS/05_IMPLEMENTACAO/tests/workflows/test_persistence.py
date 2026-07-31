@@ -51,7 +51,7 @@ def test_workflow_persistence_pause_resume():
     
     assert saved_state is not None
     assert saved_state.next == ('agent_designer',)
-    assert saved_state.values["current_phase"] == "editorial_completed"
+    assert saved_state.values["current_phase"] == "art_direction_completed"
     assert saved_state.values["direction"] is not None
     assert saved_state.values.get("proposal") is None
     
