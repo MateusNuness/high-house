@@ -1,0 +1,71 @@
+/* 
+ * HIGH HOUSE DESIGN SYSTEM - BASE TOKENS (EOS-002)
+ * Single Source of Truth (SSOT) para toda a estilização visual do sistema.
+ * 
+ * NENHUMA inferência de cor ou espaçamento que não esteja documentada
+ * no `03.1_DESIGN_SYSTEM_SPECIFICATION.md` é permitida neste arquivo.
+ */
+
+:root {
+  /* =========================================================================
+   * 1. COLORS 
+   * [Ref: 03.1_DESIGN_SYSTEM_SPECIFICATION.md - Bloco 2, Item 12 (Color Philosophy)]
+   * ========================================================================= */
+  
+  /* Cores Base (Explicitamente documentadas) */
+  --color-base-black: #0E0F12;      /* "Preto Profundo" - O asfalto */
+  --color-base-offwhite: #F3EDE3;   /* "Off-White Quente" - A tela em branco */
+  
+  /* Nota sobre Acentos: O item 12 menciona cores vibrantes (vermelhos densos, neons desgastados, 
+     laranjas quentes, azuis elétricos). Como não há HEX explícito na documentação 03.1, 
+     nenhuma variável de acento será inferida aqui, preservando o SSOT. 
+     Se no futuro houver especificação de HEX no 03.1, eles entrarão aqui. */
+
+  /* =========================================================================
+   * 2. TYPOGRAPHY
+   * [Ref: 03.1_DESIGN_SYSTEM_SPECIFICATION.md - Bloco 2, Item 11 (Typography Philosophy)]
+   * ========================================================================= */
+  
+  /* Font Families */
+  --font-primary: 'Space Grotesk', sans-serif; /* "A Estrutura" (Brutalismo, Títulos) */
+  --font-secondary: 'Inter', sans-serif;       /* "O Corpo" (Leitura ininterrupta, Técnica) */
+  --font-experimental: system-ui, sans-serif;  /* "A Intervenção" (Marcador para tipografia de Xarpi/Imagem) */
+  
+  /* Escala Tipográfica - "Contraste dramático" (Item 8) */
+  --font-size-xs: 0.75rem;     /* "Textos minúsculos técnicos espremidos no canto" */
+  --font-size-body: 1rem;      /* Leitura base */
+  --font-size-h3: 2rem;
+  --font-size-h2: 4rem;
+  --font-size-h1-colossal: 8rem; /* "Explosões cromáticas e de escala", "Gigante" */
+  
+  /* Pesos - "Jamais utilizar pesos tipográficos 'médios' que gerem monotonia" (Item 18/Grids/Fundação) */
+  --font-weight-regular: 400;  
+  --font-weight-heavy: 800;    /* Impacto em extremos */
+
+  /* =========================================================================
+   * 3. SPACE AND DENSITY (O CAOS ORGANIZADO)
+   * [Ref: 03.1_DESIGN_SYSTEM_SPECIFICATION.md - Bloco 2, Item 10]
+   * ========================================================================= */
+  
+  /* O vazio é uma "pausa musical" entre picos de intensidade */
+  --spacing-tight: 0.5rem;
+  --spacing-base: 1.5rem;
+  --spacing-large: 4rem;
+  --spacing-massive: 10vw; /* Margens agressivas para tensão proporcional */
+
+  /* =========================================================================
+   * 4. BORDERS AND RADIUS (COMPONENT PHILOSOPHY)
+   * [Ref: 03.1_DESIGN_SYSTEM_SPECIFICATION.md - Bloco 4, Item 18]
+   * ========================================================================= */
+  
+  /* "Eles são utilitários, sólidos, quadrados (border-radius 0 na maioria das vezes)" */
+  --radius-square: 0px; 
+  
+  /* 
+   * NOTA SOBRE SHADOWS:
+   * O documento menciona "A beleza do componente não está no seu arredondamento ou sombra", 
+   * e proíbe explicitamente sombras suaves ou estética de dashboard/SaaS. 
+   * Como nenhuma sombra dura/brutal foi explicitada em HEX ou offset, NENHUM 
+   * token de sombra será inferido aqui.
+   */
+}
