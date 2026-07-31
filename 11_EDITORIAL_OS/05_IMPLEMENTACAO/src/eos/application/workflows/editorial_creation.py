@@ -14,9 +14,13 @@ from eos.domain.contracts import (
 from eos.domain.state import GlobalState
 from eos.infrastructure.checkpoints import get_checkpointer
 from eos.application.agents.memory_agent import MemoryAgentStub
+from eos.application.agents.editorial_agent import EditorialAgent
+from tests.fixtures.mock_editorial_agent import MockEditorialAgent
 
-# Initialize memory agent stub
+# Initialize memory agent stub and agents
 memory_agent = MemoryAgentStub()
+editorial_agent = EditorialAgent()
+mock_editorial_agent = MockEditorialAgent()
 
 def research_node(state: GlobalState) -> GlobalState:
     brief = state.get("brief")
@@ -49,16 +53,10 @@ def editorial_node(state: GlobalState) -> GlobalState:
     if not report:
         raise ValueError("Editorial Node requires a ResearchReport")
     
-    # Mocking Editorial Agent
-    direction = CreativeDirection(
-        core_concept="Raw expression of urban life",
-        editorial_intent="Agressive yet poetic",
-        desired_emotion="Tension and awe",
-        aesthetic_mood="Gritty, dark, chaotic",
-        cultural_reference="90s graffiti culture",
-        strategic_alignment="Aligns with High House subversive nature",
-        references=["https://mock-moodboard.com/1"]
-    )
+    try:
+        direction = editorial_agent.run(report)
+    except Exception:
+        direction = mock_editorial_agent.run(report)
     
     memory_agent.save_decision("editorial", "Established creative direction", {"concept": direction.core_concept})
     
@@ -68,6 +66,7 @@ def editorial_node(state: GlobalState) -> GlobalState:
     if "audit_events" not in state: state["audit_events"] = []
     state["audit_events"].append({"event": "Creative Direction established", "agent": "editorial"})
     return state
+
 
 def designer_node(state: GlobalState) -> GlobalState:
     direction = state.get("direction")

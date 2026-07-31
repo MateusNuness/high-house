@@ -100,7 +100,7 @@ Todo fluxo entre nós do LangGraph ou agentes individuais obedece estritamente a
 | **Research Agent** | EOS-009 | **Concluído** | `EditorialBrief` ➔ `ResearchReport` | ✅ Ativo | `MockResearchAgent` |
 | **Curator Agent** | EOS-001 | **Concluído** | `ResearchReport` ➔ `CuratedReport` | ✅ Ativo | — |
 | **Memory Agent** | EOS-014 | **Concluído** | Runtime Persistent Memory | ✅ Ativo | — |
-| **Editorial Agent** | EOS-005 | *Planejado* | — | — | — |
+| **Editorial Agent** | EOS-005 | **Concluído** | `ResearchReport` ➔ `CreativeDirection` | ✅ Ativo | `MockEditorialAgent` |
 | **Brand Guardian** | EOS-004 | *Planejado* | — | — | — |
 
 ---

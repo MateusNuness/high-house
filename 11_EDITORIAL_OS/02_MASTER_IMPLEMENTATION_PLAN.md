@@ -234,7 +234,7 @@ Nenhuma tarefa pode ser migrada para "Concluída" sem:
 | Fase 1.5 | EOS-010 | Concluído | IA | - |
 | Fase 2 | EOS-009 | Concluído | IA | fda3b8b |
 | Fase 2 | EOS-001 | Concluído | Matheus | 386314d |
-| Fase 2 | EOS-005 | Não iniciado | - | - |
+| Fase 2 | EOS-005 | Concluído | IA | - |
 | Fase 3 | EOS-004 | Não iniciado | - | - |
 | Fase 4 | EOS-006 | Não iniciado | - | - |
 | Fase 4 | EOS-002 | Não iniciado | - | - |

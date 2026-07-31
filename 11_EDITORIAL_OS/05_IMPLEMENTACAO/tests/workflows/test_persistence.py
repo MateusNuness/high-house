@@ -53,7 +53,7 @@ def test_workflow_persistence_pause_resume():
     assert saved_state.next == ('agent_designer',)
     assert saved_state.values["current_phase"] == "editorial_completed"
     assert saved_state.values["direction"] is not None
-    assert saved_state.values["proposal"] is None
+    assert saved_state.values.get("proposal") is None
     
     # Resume workflow by passing None
     test_app.invoke(None, config=config)

@@ -3,6 +3,15 @@ LLM Provider Abstraction & Routing.
 Allows routing to different models depending on the agent's role (e.g., DeepSeek for reasoning, OpenAI for fast tasks).
 """
 import os
+import sys
+
+# Guard against broken PyTorch DLL on Windows when importing transformers via langchain_core
+if "transformers" not in sys.modules:
+    try:
+        import transformers  # type: ignore # noqa
+    except Exception:
+        sys.modules["transformers"] = None
+
 from enum import Enum
 from langchain_core.language_models import BaseChatModel
 
@@ -15,6 +24,8 @@ class AgentRole(str, Enum):
     VALIDATOR = "validator"
     REASONING = "reasoning"
     RESEARCH = "research"
+    EDITORIAL = "editorial"
+
 
 class ModelRouter:
     """

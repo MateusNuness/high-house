@@ -15,7 +15,11 @@ def test_research_agent_adherence_to_culture():
     brief = EditorialBrief(
         topic="Xarpi Carioca",
         objective="Explorar a intervenção urbana e tensão social",
-        constraints=["Sem romantização criminosa", "Sem visão de dicionário"]
+        audience="Cultura urbana",
+        cultural_context="Rio de Janeiro underground",
+        constraints=["Sem romantização criminosa", "Sem visão de dicionário"],
+        source_reference="Pesquisa de campo",
+        created_by="Curador"
     )
     
     report = agent.run(brief)
