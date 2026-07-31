@@ -114,11 +114,29 @@ Para garantir a rastreabilidade estrutural do Roadmap, as tarefas abaixo estão 
 
 ### Fase 3: Governança e Proteção
 
-#### EOS-004 — Injeção de Contexto: Brand Guardian
-- **Objetivo:** Implementar o Brand Guardian Agent conforme a fundação da marca.
-- **Artefato gerado:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/agents/brand_guardian/context.md` (ou similar).
-- **Validação:** Agente corretamente configurado na pasta de implementação e pronto para proteger a essência.
-- **Memória gerada:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/memory/decision-log/eos-004-guardian.md`
+#### EOS-004.1 — Brand Guardian Context
+- **Objetivo:** Criar o contexto operacional (.md) do Brand Guardian com critérios explícitos de APPROVE/REJECT/HUMAN_REVIEW.
+- **Artefato gerado:** `11_EDITORIAL_OS/04_AGENT_CONTEXTS/brand_guardian_context.md`
+- **Validação:** Contexto carrega via MarkdownContextLoader e contém todos os anti-patterns e princípios fundacionais.
+- **Memória gerada:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/memory/decision-log/eos-004-1-context.md`
+
+#### EOS-004.2 — Brand Guardian Runtime
+- **Objetivo:** Implementar `brand_guardian_agent.py` com método `audit()`, fail-secure e retorno `BrandAuditReport` (Pydantic).
+- **Artefato gerado:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/src/eos/application/agents/brand_guardian_agent.py`
+- **Validação:** Agente audita 4 artefatos (Brief, Research, Direction, Proposal) e nunca retorna APPROVED por default em falha.
+- **Memória gerada:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/memory/decision-log/eos-004-2-runtime.md`
+
+#### EOS-004.3 — Brand Guardian Workflow
+- **Objetivo:** Integrar o Guardian no LangGraph com routing condicional (APPROVED→Human, REJECTED→Designer loop, max 3 revisões).
+- **Artefato gerado:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/src/eos/application/workflows/guardian_policy.py` + atualização de `editorial_creation.py`
+- **Validação:** Workflow transita condicionalmente com base no AuditStatus e respeita limite de 3 revisões.
+- **Memória gerada:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/memory/decision-log/eos-004-3-workflow.md`
+
+#### EOS-004.4 — Brand Guardian Tests
+- **Objetivo:** Suite de testes de aderência, contrato, anti-patterns e fail-secure.
+- **Artefato gerado:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/tests/agents/test_brand_guardian_agent.py` + fixtures JSON
+- **Validação:** 7 testes unitários + 6 testes de routing condicional passando.
+- **Memória gerada:** `11_EDITORIAL_OS/05_IMPLEMENTACAO/memory/decision-log/eos-004-4-tests.md`
 
 ### Fase 4: Direção Criativa e Materialização
 
@@ -180,7 +198,7 @@ Para garantir a rastreabilidade estrutural do Roadmap, as tarefas abaixo estão 
   - **Tarefas:** EOS-009 (Research), EOS-001 (Curator), EOS-005 (Editorial).
 - **Fase 3: Governança e Proteção**
   - **Objetivo:** Criar as barreiras de identidade antes da produção visual.
-  - **Tarefas:** EOS-004 (Brand Guardian).
+  - **Tarefas:** EOS-004.1 (Context), EOS-004.2 (Runtime), EOS-004.3 (Workflow), EOS-004.4 (Tests).
 - **Fase 4: Direção Criativa e Materialização**
   - **Objetivo:** Transformar regras em linguagem visual e código.
   - **Tarefas:** EOS-006 (Art Director / Designer), EOS-002 (Tokens CSS), EOS-003 (Templates HTML), EOS-007 (Image Agent), EOS-011 (Coder / Vision Agent).
@@ -235,7 +253,10 @@ Nenhuma tarefa pode ser migrada para "Concluída" sem:
 | Fase 2 | EOS-009 | Concluído | IA | fda3b8b |
 | Fase 2 | EOS-001 | Concluído | Matheus | 386314d |
 | Fase 2 | EOS-005 | Concluído | IA | - |
-| Fase 3 | EOS-004 | Não iniciado | - | - |
+| Fase 3 | EOS-004.1 (Context) | Concluído | IA | - |
+| Fase 3 | EOS-004.2 (Runtime) | Concluído | IA | - |
+| Fase 3 | EOS-004.3 (Workflow) | Concluído | IA | - |
+| Fase 3 | EOS-004.4 (Tests) | Concluído | IA | - |
 | Fase 4 | EOS-006 | Não iniciado | - | - |
 | Fase 4 | EOS-002 | Não iniciado | - | - |
 | Fase 4 | EOS-003 | Não iniciado | - | - |

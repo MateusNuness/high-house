@@ -1,0 +1,40 @@
+{
+  "status": "REJECTED",
+  "evaluated_rules": [
+    "03.1_DESIGN_SYSTEM_SPECIFICATION §23.1 (Estética SaaS e Startup)",
+    "03.1_DESIGN_SYSTEM_SPECIFICATION §23.4 (Hiper-Corporativismo)",
+    "03_BRAND_DESIGN_FOUNDATION §5 (Tensão e Contraste — AUSENTE)",
+    "03_BRAND_DESIGN_FOUNDATION §8 (Nunca Deve Parecer: startup SaaS clean)"
+  ],
+  "violations": [
+    "§23.1: Grid rounded com botões de cantos super arredondados — estética SaaS",
+    "§23.1: Paleta pastel tranquilizante (#A8D8EA, #AA96DA) — cores de startup",
+    "§23.1: Tipografia Nunito Sans rounded — fonte friendly corporativa",
+    "§23.4: Layout de landing page com CTA centralizado e gradiente vetorial",
+    "§5: Ausência total de tensão estrutural ou ruptura orgânica"
+  ],
+  "severity": "Critical",
+  "justification": "A proposta viola frontalmente a constituição da marca. O grid rounded com botões arredondados, a paleta pastel e a tipografia Nunito Sans configuram estética SaaS pura (§23.1). A ausência de qualquer textura, materialidade ou intervenção orgânica destrói o princípio de Tensão Estrutural (§5). Esta peça poderia pertencer a qualquer startup de tecnologia — não há nenhum elemento que identifique a cultura underground da High House.",
+  "audit_context": "Auditoria de VisualProposal com estética SaaS / startup",
+  "recommendations": [
+    "Substituir grid rounded por grid assimétrico brutalista com border-radius: 0",
+    "Substituir paleta pastel por base #0E0F12 / #F3EDE3 com acentos de alta intensidade",
+    "Substituir Nunito Sans por Space Grotesk (display) + Inter (corpo)",
+    "Adicionar camadas de textura: concreto, halftone, noise CSS",
+    "Introduzir intervenção orgânica (xarpi, tipografia experimental) para criar tensão"
+  ],
+  "proposal": {
+    "grid_structure": "Rounded card grid SaaS layout with centered CTA",
+    "visual_elements": ["Flat vector illustration", "Smooth gradient background", "Rounded badges"],
+    "color_palette": ["#A8D8EA", "#AA96DA", "#FCBAD3", "#FFFFD2"],
+    "typography_spec": "Nunito Sans friendly rounded for all text",
+    "generation_prompt": "A clean, modern SaaS dashboard with pastel colors and friendly illustrations",
+    "implementation_notes": "Use border-radius: 16px on all cards, add subtle shadow for depth"
+  },
+  "direction": {
+    "core_concept": "Inovação disruptiva no mercado de lifestyle premium",
+    "editorial_intent": "Comunicação clean e acessível para o maior público possível",
+    "aesthetic_mood": "Minimalismo tranquilo com cores suaves e layout amigável",
+    "references": ["https://dribbble.com/tags/saas-dashboard"]
+  }
+}

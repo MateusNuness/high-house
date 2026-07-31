@@ -1,0 +1,36 @@
+{
+  "status": "APPROVED_WITH_CHANGES",
+  "evaluated_rules": [
+    "03_BRAND_DESIGN_FOUNDATION §5 (Tensão e Contraste — parcial)",
+    "03.1_DESIGN_SYSTEM_SPECIFICATION §3 (Tensão Estrutural — parcial)",
+    "03.1_DESIGN_SYSTEM_SPECIFICATION §11 (Typography — correto)",
+    "03.1_DESIGN_SYSTEM_SPECIFICATION §13 (Materialidade — insuficiente)"
+  ],
+  "violations": [
+    "§13: Materialidade insuficiente — layout carece de texturas táteis (concreto, halftone, noise)",
+    "§5: Contraste presente na tipografia mas ausente nas superfícies de fundo"
+  ],
+  "severity": "Medium",
+  "justification": "A proposta está no caminho correto: a tipografia utiliza Space Grotesk com escala colossal contrastando com Inter funcional, e a paleta monocromática respeita a base da marca. No entanto, a materialidade é insuficiente — as superfícies carecem de textura tátil que evoque o mundo analógico (concreto, papel, desgaste). O layout funciona como 'grid correto sem alma', precisando de intervenção orgânica para atingir a Tensão Estrutural exigida.",
+  "audit_context": "Auditoria de VisualProposal com conceito correto mas materialidade insuficiente",
+  "recommendations": [
+    "Adicionar camada de textura de concreto ou paper grain no background",
+    "Introduzir pelo menos um elemento de ruptura orgânica (xarpi, mancha, recorte)",
+    "Aplicar noise CSS (radial-gradient com grain) a 8-15% de opacidade nas superfícies",
+    "Considerar sobreposição de fotografia documental em mix-blend-mode"
+  ],
+  "proposal": {
+    "grid_structure": "Asymmetric brutalist grid with strong column hierarchy",
+    "visual_elements": ["Bold typography contrast", "Monochromatic palette"],
+    "color_palette": ["#0E0F12", "#F3EDE3", "#1A1A1A"],
+    "typography_spec": "Space Grotesk colossal display + Inter body text",
+    "generation_prompt": "Brutalist typographic composition with strong contrast",
+    "implementation_notes": "Clean grid implementation, needs texture layers"
+  },
+  "direction": {
+    "core_concept": "A verticalidade como linguagem: o corpo urbano escala e marca o concreto",
+    "editorial_intent": "Narrativa silenciosa e observadora sobre a geometria da intervenção urbana",
+    "aesthetic_mood": "Brutalismo tipográfico contido com respiração arquitetônica",
+    "references": ["https://highhouse.estudio/references/brutalismo-tipografico"]
+  }
+}

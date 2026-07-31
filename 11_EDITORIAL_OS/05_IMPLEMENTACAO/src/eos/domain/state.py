@@ -16,6 +16,7 @@ class GlobalState(TypedDict):
     audit_log: list[str]
     audit_events: list[dict]
     errors: list[str]
+    revision_count: int  # Contador de loops Designer ↔ Guardian (workflow, não domínio)
     
     # Artifacts as separated states
     brief: Optional[EditorialBrief]
@@ -24,3 +25,4 @@ class GlobalState(TypedDict):
     proposal: Optional[VisualProposal]
     audit: Optional[BrandAuditReport]
     package: Optional[PublicationPackage]
+

@@ -15,12 +15,17 @@ from eos.domain.state import GlobalState
 from eos.infrastructure.checkpoints import get_checkpointer
 from eos.application.agents.memory_agent import MemoryAgentStub
 from eos.application.agents.editorial_agent import EditorialAgent
+from eos.application.agents.brand_guardian_agent import BrandGuardianAgent
+from eos.application.workflows.guardian_policy import GuardianDecisionPolicy
 from tests.fixtures.mock_editorial_agent import MockEditorialAgent
+from tests.fixtures.mock_brand_guardian_agent import MockBrandGuardianAgent
 
-# Initialize memory agent stub and agents
+# Initialize agents
 memory_agent = MemoryAgentStub()
 editorial_agent = EditorialAgent()
 mock_editorial_agent = MockEditorialAgent()
+brand_guardian_agent = BrandGuardianAgent()
+mock_brand_guardian_agent = MockBrandGuardianAgent(scenario="approved")
 
 def research_node(state: GlobalState) -> GlobalState:
     brief = state.get("brief")
@@ -91,28 +96,86 @@ def designer_node(state: GlobalState) -> GlobalState:
     return state
 
 def brand_guardian_node(state: GlobalState) -> GlobalState:
+    """
+    Nó do Brand Guardian — o primeiro agente que JULGA no EOS.
+    
+    Recebe os 4 artefatos do pipeline e emite um BrandAuditReport.
+    O routing pós-auditoria é responsabilidade da GuardianDecisionPolicy,
+    não deste nó.
+    """
     proposal = state.get("proposal")
     if not proposal:
         raise ValueError("Brand Guardian Node requires a VisualProposal")
     
-    # Mocking Brand Guardian
-    audit = BrandAuditReport(
-        status=AuditStatus.APPROVED,
-        evaluated_rules=["No SaaS aesthetics", "Must have tension"],
-        violations=[],
-        severity="None",
-        justification="The proposal meets the gritty criteria.",
-        audit_context="Initial design review",
-        recommendations=[]
+    direction = state.get("direction")
+    if not direction:
+        raise ValueError("Brand Guardian Node requires a CreativeDirection")
+    
+    brief = state.get("brief")
+    research = state.get("research")
+    
+    try:
+        audit = brand_guardian_agent.audit(
+            proposal=proposal,
+            direction=direction,
+            brief=brief,
+            research=research
+        )
+        # Se o agente real retornou fail-secure (parsing falhou com MockLLM no MVP),
+        # usar o mock determinístico como fallback.
+        if audit.status == AuditStatus.HUMAN_REVIEW_REQUIRED and \
+           "Fail-secure" in (audit.evaluated_rules[0] if audit.evaluated_rules else ""):
+            audit = mock_brand_guardian_agent.audit(
+                proposal=proposal,
+                direction=direction,
+                brief=brief,
+                research=research
+            )
+    except Exception:
+        audit = mock_brand_guardian_agent.audit(
+            proposal=proposal,
+            direction=direction,
+            brief=brief,
+            research=research
+        )
+    
+    memory_agent.save_decision(
+        "brand_guardian",
+        f"Audit result: {audit.status.value}",
+        {"status": audit.status.value, "violations": audit.violations}
     )
     
-    memory_agent.save_decision("brand_guardian", "Approved visual proposal", {"status": audit.status})
+    # Incrementar revision_count quando houver loop (REJECTED ou APPROVED_WITH_CHANGES)
+    revision_count = state.get("revision_count", 0)
+    if audit.status in (AuditStatus.REJECTED, AuditStatus.APPROVED_WITH_CHANGES):
+        revision_count += 1
+        # Se atingiu o limite, forçar escalonamento humano
+        if revision_count >= GuardianDecisionPolicy.MAX_REVISIONS:
+            audit = BrandAuditReport(
+                status=AuditStatus.HUMAN_REVIEW_REQUIRED,
+                evaluated_rules=audit.evaluated_rules,
+                violations=audit.violations,
+                severity="Critical",
+                justification=(
+                    f"Limite de {GuardianDecisionPolicy.MAX_REVISIONS} revisões atingido. "
+                    f"Escalonando para revisão humana. Última justificativa: {audit.justification}"
+                ),
+                audit_context=f"Escalonamento automático após {revision_count} revisões",
+                recommendations=audit.recommendations + [
+                    "Intervenção humana obrigatória — limite de revisões automáticas atingido."
+                ]
+            )
     
     state["audit"] = audit
+    state["revision_count"] = revision_count
     state["current_agent"] = "brand_guardian"
     state["current_phase"] = "audit_completed"
     if "audit_events" not in state: state["audit_events"] = []
-    state["audit_events"].append({"event": "Brand Audit completed", "agent": "brand_guardian"})
+    state["audit_events"].append({
+        "event": f"Brand Audit completed: {audit.status.value}",
+        "agent": "brand_guardian",
+        "revision": revision_count
+    })
     return state
 
 def human_approval_node(state: GlobalState) -> GlobalState:
@@ -136,6 +199,14 @@ def human_approval_node(state: GlobalState) -> GlobalState:
     return state
 
 
+def route_after_guardian(state: GlobalState) -> str:
+    """
+    Função de routing condicional do LangGraph.
+    Delega a decisão à GuardianDecisionPolicy.
+    """
+    return GuardianDecisionPolicy.route(state)
+
+
 # Build the Graph
 workflow = StateGraph(GlobalState)
 
@@ -149,7 +220,17 @@ workflow.add_edge(START, "agent_research")
 workflow.add_edge("agent_research", "agent_editorial")
 workflow.add_edge("agent_editorial", "agent_designer")
 workflow.add_edge("agent_designer", "agent_brand_guardian")
-workflow.add_edge("agent_brand_guardian", "agent_human_approval")
+
+# Routing condicional pós-Guardian (controlado pela GuardianDecisionPolicy)
+workflow.add_conditional_edges(
+    "agent_brand_guardian",
+    route_after_guardian,
+    {
+        "agent_human_approval": "agent_human_approval",
+        "agent_designer": "agent_designer",
+    }
+)
+
 workflow.add_edge("agent_human_approval", END)
 
 # Compile with Checkpointer

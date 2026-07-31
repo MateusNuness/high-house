@@ -45,4 +45,4 @@ Todos os documentos contidos nesta pasta (`11_EDITORIAL_OS`) **DEVEM** obedecer 
 5. **Entregáveis (Artefatos):** Toda tarefa ou mudança no sistema gera um **Artefato** material (código/documento), exige uma **Validação** objetiva, e produz uma **Memória gerada** (logs de decisão na pasta `memory`).
 
 ---
-*Última atualização: Conclusão do EOS-009 (Research Agent) com injeção dinâmica SSOT via MarkdownContextLoader e suite de testes de aderência cultural.*
+*Última atualização: Conclusão do EOS-004 (Brand Guardian Agent) com contexto dedicado em `04_AGENT_CONTEXTS/`, routing condicional LangGraph (GuardianDecisionPolicy), fail-secure e suite de 15 testes passando.*

@@ -118,6 +118,10 @@ HIGH HOUSE/
 │   ├── 03.1_DESIGN_SYSTEM_SPECIFICATION.md    # Regras matemáticas, cores, tipografia (Manual de Direção de Arte)
 │   ├── 03.2_AGENT_RUNTIME_SPECIFICATION.md    # Mecânica de execução, grafos, state schema e checkpoints
 │   ├── 04_AGENT_SPECIFICATIONS.md             # Contratos cognitivos, limites e responsabilidades dos 12 Agentes
+│   ├── 04_AGENT_CONTEXTS/                     # Contextos operacionais dedicados por agente (Brand Guardian, etc.)
+│   │   └── brand_guardian_context.md          # Contexto do Brand Guardian com critérios APPROVE/REJECT/HUMAN_REVIEW
+│   ├── 04.1_AGENT_OPERATIONAL_CONTRACTS.md    # Contratos Pydantic de I/O
+│   ├── 04.2_COGNITIVE_WORKFLOWS.md            # Modelo mental e fluxos cognitivos
 │   ├── 05_IMPLEMENTACAO/                      # Onde a orquestração e os testes vivem (código real)
 │   │   ├── agents/                            # Prompts, contextos e funções de cada um dos 12 agentes
 │   │   ├── design_system/                     # HTML/CSS base para renderização (Design System tokenizado)
@@ -257,4 +261,4 @@ As seguintes frentes operacionais e táticas estão atualmente sob análise para
 
 ---
 
-*Documentação oficial atualizada em Julho de 2026 — Fase 2 (Validação e Descoberta de Público). Foco imediato: criação da primeira coleção editorial para o Instagram. Sistema Operacional Editorial (EOS-005 Editorial Agent) concluído.*
+*Documentação oficial atualizada em Julho de 2026 — Fase 2 (Validação e Descoberta de Público). Foco imediato: criação da primeira coleção editorial para o Instagram. Sistema Operacional Editorial: Fase 3 (Governança) concluída — Brand Guardian Agent (EOS-004) implementado com routing condicional LangGraph e fail-secure.*

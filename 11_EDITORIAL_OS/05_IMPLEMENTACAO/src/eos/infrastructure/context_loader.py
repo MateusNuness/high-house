@@ -4,7 +4,13 @@ from pathlib import Path
 class MarkdownContextLoader:
     """
     Abstração para localizar, carregar e versionar contextos de agentes (prompts) escritos em Markdown.
-    Lê a fonte de verdade absoluta (04_AGENT_SPECIFICATIONS.md) para evitar duplicação de informações.
+    
+    Hierarquia de carregamento:
+    1. Contexto dedicado em 04_AGENT_CONTEXTS/<slug>_context.md (preferencial)
+    2. Bloco correspondente em 04_AGENT_SPECIFICATIONS.md (fallback)
+    
+    Isso permite que agentes com contextos mais ricos (ex: Brand Guardian) tenham
+    arquivos dedicados, enquanto os demais continuam usando o documento monolítico.
     """
     
     @staticmethod
@@ -19,12 +25,30 @@ class MarkdownContextLoader:
         return Path.cwd()
 
     @classmethod
+    def _role_to_slug(cls, role_name: str) -> str:
+        """Converte 'Brand Guardian Agent' → 'brand_guardian'."""
+        slug = role_name.lower().replace(" agent", "").strip()
+        return slug.replace(" ", "_")
+
+    @classmethod
     def load(cls, role_name: str) -> str:
         """
-        Carrega o bloco correspondente ao agente dentro do 04_AGENT_SPECIFICATIONS.md.
-        role_name: Nome do agente (ex: 'Research Agent').
+        Carrega o contexto do agente. Primeiro tenta um arquivo dedicado em
+        04_AGENT_CONTEXTS/, depois faz fallback para 04_AGENT_SPECIFICATIONS.md.
+        
+        role_name: Nome do agente (ex: 'Research Agent', 'Brand Guardian Agent').
         """
         root = cls._find_project_root()
+        
+        # 1. Tentar carregar contexto dedicado
+        slug = cls._role_to_slug(role_name)
+        context_path = root / "11_EDITORIAL_OS" / "04_AGENT_CONTEXTS" / f"{slug}_context.md"
+        
+        if context_path.exists():
+            with open(context_path, "r", encoding="utf-8") as f:
+                return f.read().strip()
+        
+        # 2. Fallback: parsear do documento monolítico
         spec_path = root / "11_EDITORIAL_OS" / "04_AGENT_SPECIFICATIONS.md"
         
         if not spec_path.exists():
