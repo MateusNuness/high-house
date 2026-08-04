@@ -31,7 +31,7 @@ class IEditorialAgent(Protocol):
         ...
 
 class IArtDirectorAgent(Protocol):
-    def run(self, direction: CreativeDirection) -> CreativeDirection:
+    def run(self, direction: CreativeDirection, previous_posters: list[dict[str, Any]] | None = None) -> CreativeDirection:
         ...
 
 class IDesignerAgent(Protocol):

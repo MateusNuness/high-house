@@ -4,9 +4,9 @@
 
 **Blocked by:** 01 — Accumulator Core & Orchestration
 
-**Status:** ready-for-agent
+**Status:** done
 
-- [ ] `IArtDirectorAgent` run signature accepts an optional `previous_posters` list.
-- [ ] `EditorialWorkflow` extracts `previous_posters` from the state and passes it to the `ArtDirectorAgent`.
-- [ ] `ArtDirectorAgent` LLM prompt uses the history to suggest aesthetic contrast (e.g. brutalist vs clean) compared to earlier posters.
-- [ ] The generated visual direction reflects a deliberate contrast relative to prior loops.
+- [x] `IArtDirectorAgent` run signature accepts an optional `previous_posters` list.
+- [x] `EditorialWorkflow` extracts `previous_posters` from the state and passes it to the `ArtDirectorAgent`.
+- [x] `ArtDirectorAgent` LLM prompt uses the history to suggest aesthetic contrast (e.g. brutalist vs clean) compared to earlier posters.
+- [x] The generated visual direction reflects a deliberate contrast relative to prior loops.

@@ -93,7 +93,8 @@ class EditorialWorkflow:
         if not direction:
             raise ValueError("Art Director Node requires a CreativeDirection")
         
-        direction = self.art_director_agent.run(direction)
+        previous_posters = state.get("previous_posters", [])
+        direction = self.art_director_agent.run(direction, previous_posters=previous_posters)
             
         self.memory_agent.save_decision("art_director", "Enriched creative direction with aesthetic mood", {"mood": direction.aesthetic_mood})
         
