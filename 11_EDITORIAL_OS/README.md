@@ -2,21 +2,24 @@
 
 O **Editorial Operating System (EOS)** é a camada de inteligência autônoma da High House, estruturada não como um mero gerador de imagens ou textos, mas como uma **agência autônoma baseada na construção sequencial de marca a longo prazo**.
 
-## 🏗️ O Pipeline de 9 Agentes (MVP)
+## 🏗️ O Pipeline de 12 Agentes (Visão Arquitetural)
 
-Todo o fluxo de conteúdo obedece estritamente a este pipeline, impedindo que o Design se inicie antes da Narrativa e que a Publicação ocorra sem o crivo da Marca.
+*Nota: A lista abaixo representa o **End-State** projetado da arquitetura. O estado atual da implementação (MVP Iterativo) opera com 9 agentes ativos na esteira. Os agentes marcados como `[Projetado]` terão sua lógica materializada em fases futuras.*
 
 1. **Briefing** (Gatilho)
-2. ⬇️ **Research Agent** (Pesquisa repertório)
-3. ⬇️ **Editorial Agent** (Cria a narrativa do capítulo)
-4. ⬇️ **Art Director Agent** (Define direção criativa e visual)
-5. ⬇️ **Designer Agent** (Estrutura a hierarquia do layout)
-6. ⬇️ **Brand Guardian Agent** [Auditoria 1/2] (Juiz supremo da identidade da marca)
-7. ⬇️ **Image Agent** (Gera a fotografia base / textura caótica)
-8. ⬇️ **Coder Agent** (Implementa HTML/CSS/SVG)
-9. ⬇️ **Vision Agent** [Auditoria 2/2] (Renderiza e avalia layout/técnica)
-10. ⬇️ **Memory Agent** (Arquiva o processo concluído para a perpetuidade)
-11. **Publish**
+2. ⬇️ **Research Agent** (Pesquisa repertório) `[Implementado]`
+3. ⬇️ **Curator Agent** (Seleciona e filtra anti-patterns) `[Projetado]`
+4. ⬇️ **Editorial Agent** (Cria a narrativa do capítulo) `[Implementado]`
+5. ⬇️ **Art Director Agent** (Define direção criativa e visual) `[Implementado]`
+6. ⬇️ **Designer Agent** (Estrutura a hierarquia do layout) `[Implementado]`
+7. ⬇️ **Image Agent** (Gera a fotografia base) `[Implementado]`
+8. ⬇️ **Coder Agent** (Implementa HTML/CSS) `[Implementado]`
+9. ⬇️ **Vision Agent** [Auditoria 1/3] (Auditoria técnica e estética) `[Implementado]`
+10. ⬇️ **Critic Agent** [Auditoria 2/3] (Originalidade frente ao mercado) `[Projetado]`
+11. ⬇️ **Brand Guardian Agent** [Auditoria 3/3] (Juiz supremo da identidade da marca) `[Implementado]`
+12. ⬇️ **Memory Agent** (Arquiva o processo) `[Implementado]`
+13. ⬇️ **Metrics Agent** (Hipóteses no motor empírico) `[Projetado]`
+14. **Publish**
 
 ## 📂 Estrutura do Sistema
 
