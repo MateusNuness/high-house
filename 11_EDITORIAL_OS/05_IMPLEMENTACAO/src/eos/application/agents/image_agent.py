@@ -1,7 +1,8 @@
 from eos.domain.contracts.visual_proposal import VisualProposal
 from eos.domain.contracts.image_asset import ImageAsset
-from eos.infrastructure.llm_router import ModelRouter, AgentRole
+from eos.infrastructure.llm_router import AgentRole
 from eos.infrastructure.context_loader import MarkdownContextLoader
+from eos.infrastructure.structured_llm_adapter import StructuredLLMAdapter
 from langchain_core.messages import SystemMessage, HumanMessage
 
 import json
@@ -14,7 +15,7 @@ class ImageAgent:
 
     def __init__(self):
         self.system_prompt = MarkdownContextLoader.load("Image Agent")
-        self.llm = ModelRouter.get_model_for_role(AgentRole.IMAGE)
+        self.adapter = StructuredLLMAdapter(AgentRole.IMAGE)
         
     def run(self, proposal: VisualProposal) -> ImageAsset:
         human_msg = f"""
@@ -31,20 +32,11 @@ class ImageAgent:
             HumanMessage(content=human_msg)
         ]
         
-        structured_llm = self.llm.with_structured_output(ImageAsset)
-        
-        try:
-            response = structured_llm.invoke(messages)
-            if isinstance(response, ImageAsset):
-                return response
-            elif isinstance(response, dict):
-                return ImageAsset(**response)
-        except Exception:
-            pass
-            
-        return ImageAsset(
+        fallback = ImageAsset(
             image_url="https://images.unsplash.com/photo-1616422285623-146698dc96a5?q=80&w=1080&auto=format&fit=crop",
             generation_prompt_used=f"Refined Analog Prompt based on: {proposal.generation_prompt}",
             alt_text="Textura urbana fotográfica com granulação analógica",
             metadata={"engine": "fallback", "style": "analog"}
         )
+        
+        return self.adapter.invoke(messages, ImageAsset, fallback)

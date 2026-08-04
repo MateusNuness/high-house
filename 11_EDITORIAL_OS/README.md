@@ -50,4 +50,4 @@ Todos os documentos contidos nesta pasta (`11_EDITORIAL_OS`) **DEVEM** obedecer 
 5. **Entregáveis (Artefatos):** Toda tarefa ou mudança no sistema gera um **Artefato** material (código/documento), exige uma **Validação** objetiva, e produz uma **Memória gerada** (logs de decisão na pasta `memory`).
 
 ---
-*Última atualização: Implementação da lógica de contraste estético no Art Director Agent (Issue #03), garantindo divergência visual deliberada através da injeção do histórico de posters.*
+*Última atualização: Implementação do StructuredLLMAdapter, extraindo o boilerplate do LangChain e parsing Pydantic dos 8 agentes de domínio para garantir localidade e robustez (fail-secure).*

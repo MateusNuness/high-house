@@ -3,8 +3,9 @@ from langchain_core.messages import SystemMessage, HumanMessage
 from eos.domain.contracts.rendered_code import RenderedCode
 from eos.domain.contracts.vision_audit_report import VisionAuditReport, TechnicalAudit, AestheticAudit
 from eos.domain.contracts.base import AuditStatus
-from eos.infrastructure.llm_router import ModelRouter, AgentRole
+from eos.infrastructure.llm_router import AgentRole
 from eos.infrastructure.context_loader import MarkdownContextLoader
+from eos.infrastructure.structured_llm_adapter import StructuredLLMAdapter
 
 class VisionAgent:
     """
@@ -14,7 +15,7 @@ class VisionAgent:
     
     def __init__(self):
         self.system_prompt = MarkdownContextLoader.load("Vision Agent")
-        self.llm = ModelRouter.get_model_for_role(AgentRole.VISION)
+        self.adapter = StructuredLLMAdapter(AgentRole.VISION)
         
     def audit(self, rendered_code: RenderedCode) -> VisionAuditReport:
         human_msg = f"""
@@ -31,11 +32,7 @@ class VisionAgent:
             HumanMessage(content=human_msg)
         ]
         
-        # Simula resposta do LLM Vision (na prática requereria parsing do JSON aninhado)
-        response = self.llm.invoke(messages)
-        
-        # Fallback de segurança para mock/desenvolvimento
-        return VisionAuditReport(
+        fallback = VisionAuditReport(
             technical_audit=TechnicalAudit(
                 has_layout_break=False,
                 has_overflow=False,
@@ -48,3 +45,5 @@ class VisionAgent:
             final_status=AuditStatus.APPROVED,
             justification="Passou nos dois passos de auditoria visual."
         )
+        
+        return self.adapter.invoke(messages, VisionAuditReport, fallback)

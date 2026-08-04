@@ -6,8 +6,9 @@ from eos.domain.contracts.editorial_brief import EditorialBrief
 from eos.domain.contracts.research_report import ResearchReport
 from eos.domain.contracts.brand_audit_report import BrandAuditReport
 from eos.domain.contracts.base import AuditStatus
-from eos.infrastructure.llm_router import ModelRouter, AgentRole
+from eos.infrastructure.llm_router import AgentRole
 from eos.infrastructure.context_loader import MarkdownContextLoader
+from eos.infrastructure.structured_llm_adapter import StructuredLLMAdapter
 
 
 class BrandGuardianAgent:
@@ -27,7 +28,7 @@ class BrandGuardianAgent:
         # Carrega o contexto dedicado de 04_AGENT_CONTEXTS/brand_guardian_context.md
         self.system_prompt = MarkdownContextLoader.load("Brand Guardian Agent")
         # Roteia para o modelo do papel VALIDATOR
-        self.llm = ModelRouter.get_model_for_role(AgentRole.VALIDATOR)
+        self.adapter = StructuredLLMAdapter(AgentRole.VALIDATOR)
         
     def audit(
         self,
@@ -53,16 +54,8 @@ class BrandGuardianAgent:
             HumanMessage(content=human_msg)
         ]
         
-        structured_llm = self.llm.with_structured_output(BrandAuditReport)
-        
-        try:
-            response = structured_llm.invoke(messages)
-            return self._parse_response(response)
-        except Exception:
-            # Fail-secure: qualquer falha → HUMAN_REVIEW_REQUIRED
-            return self._fail_secure_report(
-                context="Falha na execução do LLM ou parsing da resposta"
-            )
+        fallback = self._fail_secure_report(context="Falha na execução do LLM ou parsing da resposta")
+        return self.adapter.invoke(messages, BrandAuditReport, fallback)
     
     def _build_audit_message(
         self,
@@ -113,24 +106,7 @@ class BrandGuardianAgent:
         
         return "\n\n".join(sections)
     
-    def _parse_response(self, response) -> BrandAuditReport:
-        """
-        Parseia a resposta do LLM em BrandAuditReport.
-        Fail-secure: se o parsing falhar, retorna HUMAN_REVIEW_REQUIRED.
-        """
-        try:
-            if isinstance(response, BrandAuditReport):
-                return response
-            elif isinstance(response, dict):
-                return BrandAuditReport(**response)
-        except Exception:
-            pass
-        
-        # Fail-secure: parsing falhou → HUMAN_REVIEW_REQUIRED
-        return self._fail_secure_report(
-            context="Resposta do LLM não pôde ser parseada em BrandAuditReport válido"
-        )
-    
+
     @staticmethod
     def _fail_secure_report(context: str) -> BrandAuditReport:
         """

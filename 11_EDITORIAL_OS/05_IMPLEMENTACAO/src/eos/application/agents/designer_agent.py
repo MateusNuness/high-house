@@ -2,8 +2,9 @@ import json
 from langchain_core.messages import SystemMessage, HumanMessage
 from eos.domain.contracts.creative_direction import CreativeDirection
 from eos.domain.contracts.visual_proposal import VisualProposal
-from eos.infrastructure.llm_router import ModelRouter, AgentRole
+from eos.infrastructure.llm_router import AgentRole
 from eos.infrastructure.context_loader import MarkdownContextLoader
+from eos.infrastructure.structured_llm_adapter import StructuredLLMAdapter
 
 class DesignerAgent:
     """
@@ -16,7 +17,7 @@ class DesignerAgent:
         # Carrega o contexto dedicado de 04_AGENT_CONTEXTS/designer_context.md
         self.system_prompt = MarkdownContextLoader.load("Designer Agent")
         # Roteia para o modelo
-        self.llm = ModelRouter.get_model_for_role(AgentRole.CREATIVE)
+        self.adapter = StructuredLLMAdapter(AgentRole.CREATIVE)
         
     def run(self, direction: CreativeDirection) -> VisualProposal:
         """
@@ -36,19 +37,7 @@ class DesignerAgent:
             HumanMessage(content=human_msg)
         ]
         
-        structured_llm = self.llm.with_structured_output(VisualProposal)
-        
-        try:
-            response = structured_llm.invoke(messages)
-            if isinstance(response, VisualProposal):
-                return response
-            elif isinstance(response, dict):
-                return VisualProposal(**response)
-        except Exception:
-            pass
-            
-        # Fallback Fail-safe
-        return VisualProposal(
+        fallback = VisualProposal(
             grid_structure="Asymmetric grid with heavy negative space",
             visual_elements=["High contrast text blocks", "Monochrome borders"],
             color_palette=["#000000", "#F5F5F5"],
@@ -56,3 +45,5 @@ class DesignerAgent:
             generation_prompt="High contrast black and white abstract texture",
             implementation_notes="Ensure 10vw padding on left side. Horror ao preenchimento."
         )
+        
+        return self.adapter.invoke(messages, VisualProposal, fallback)

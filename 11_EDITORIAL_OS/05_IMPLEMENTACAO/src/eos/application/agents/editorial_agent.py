@@ -2,8 +2,9 @@ import json
 from langchain_core.messages import SystemMessage, HumanMessage
 from eos.domain.contracts.research_report import ResearchReport
 from eos.domain.contracts.creative_direction import CreativeDirection
-from eos.infrastructure.llm_router import ModelRouter, AgentRole
+from eos.infrastructure.llm_router import AgentRole
 from eos.infrastructure.context_loader import MarkdownContextLoader
+from eos.infrastructure.structured_llm_adapter import StructuredLLMAdapter
 
 class EditorialAgent:
     """
@@ -16,7 +17,7 @@ class EditorialAgent:
         # Carrega o contexto (System Prompt) direto da especificação mestre (04_AGENT_SPECIFICATIONS.md)
         self.system_prompt = MarkdownContextLoader.load("Editorial Agent")
         # Roteia para o modelo do papel EDITORIAL
-        self.llm = ModelRouter.get_model_for_role(AgentRole.EDITORIAL)
+        self.adapter = StructuredLLMAdapter(AgentRole.EDITORIAL)
         
     def run(self, report: ResearchReport, previous_posters: list[dict] | None = None) -> CreativeDirection:
         """
@@ -44,22 +45,12 @@ class EditorialAgent:
             HumanMessage(content=human_msg)
         ]
         
-        structured_llm = self.llm.with_structured_output(CreativeDirection)
-        
-        try:
-            response = structured_llm.invoke(messages)
-            if isinstance(response, CreativeDirection):
-                return response
-            elif isinstance(response, dict):
-                return CreativeDirection(**response)
-        except Exception:
-            pass
-            
-        # Fallback de segurança para mock/desenvolvimento ou LLM genérico
         primary_finding = report.key_findings[0] if report.key_findings else "Expressão urbana underground"
-        return CreativeDirection(
+        fallback = CreativeDirection(
             core_concept=f"Intervenção e sofisticação silenciosa: {primary_finding}",
             editorial_intent="Narrativa madura e autoral, observando a tensão urbana sem retórica apelativa de marketing.",
             aesthetic_mood="Caos organizado com textura brutalista e tipografia contida.",
             references=report.sources if report.sources else ["https://highhouse.estudio/editorial-manifesto"]
         )
+        
+        return self.adapter.invoke(messages, CreativeDirection, fallback)
