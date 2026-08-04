@@ -261,7 +261,7 @@ Nenhuma tarefa pode ser migrada para "Concluída" sem:
 | Fase 4 | EOS-002 | [x] Concluído | - | - |
 | Fase 4 | EOS-003 | Não iniciado | - | - |
 | Fase 4 | EOS-007 | Não iniciado | - | - |
-| Fase 4 | EOS-011 | Não iniciado | - | - |
+| Fase 4 | EOS-011 | Concluído | IA | - |
 | Fase 5 | EOS-008 | Não iniciado | - | - |
 
 ---

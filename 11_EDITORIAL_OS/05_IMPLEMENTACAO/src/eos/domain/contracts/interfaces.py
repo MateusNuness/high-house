@@ -4,6 +4,16 @@ from eos.domain.contracts.research_report import ResearchReport
 from eos.domain.contracts.creative_direction import CreativeDirection
 from eos.domain.contracts.visual_proposal import VisualProposal
 from eos.domain.contracts.brand_audit_report import BrandAuditReport
+from eos.domain.contracts.rendered_code import RenderedCode
+from eos.domain.contracts.vision_audit_report import VisionAuditReport
+
+class ICoderAgent(Protocol):
+    def run(self, proposal: VisualProposal) -> RenderedCode:
+        ...
+
+class IVisionAgent(Protocol):
+    def audit(self, rendered_code: RenderedCode) -> VisionAuditReport:
+        ...
 
 class IResearchAgent(Protocol):
     def run(self, brief: EditorialBrief) -> ResearchReport:

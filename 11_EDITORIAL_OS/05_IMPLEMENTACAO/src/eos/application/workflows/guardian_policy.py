@@ -26,6 +26,7 @@ class GuardianDecisionPolicy:
     # Nomes dos nós no LangGraph
     NODE_HUMAN_APPROVAL = "agent_human_approval"
     NODE_DESIGNER = "agent_designer"
+    NODE_CODER = "agent_coder"
     
     @classmethod
     def route(cls, state: GlobalState) -> str:
@@ -45,9 +46,9 @@ class GuardianDecisionPolicy:
         
         status = audit.status
         
-        # Aprovação direta → human review final
+        # Aprovação direta → coder
         if status == AuditStatus.APPROVED:
-            return cls.NODE_HUMAN_APPROVAL
+            return cls.NODE_CODER
         
         # Escalonamento explícito → human review
         if status == AuditStatus.HUMAN_REVIEW_REQUIRED:

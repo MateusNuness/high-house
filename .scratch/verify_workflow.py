@@ -12,6 +12,8 @@ from tests.fixtures.mock_editorial_agent import MockEditorialAgent
 from tests.fixtures.mock_art_director_agent import MockArtDirectorAgent
 from tests.fixtures.mock_designer_agent import MockDesignerAgent
 from tests.fixtures.mock_brand_guardian_agent import MockBrandGuardianAgent
+from tests.fixtures.mock_coder_agent import MockCoderAgent
+from tests.fixtures.mock_vision_agent import MockVisionAgent
 
 def main():
     print("Instanciando Mocks...")
@@ -20,6 +22,8 @@ def main():
     art_mock = MockArtDirectorAgent()
     designer_mock = MockDesignerAgent()
     guardian_mock = MockBrandGuardianAgent(scenario="approved")
+    coder_mock = MockCoderAgent()
+    vision_mock = MockVisionAgent(scenario="approved")
     memory_stub = MemoryAgentStub()
 
     print("Instanciando Workflow...")
@@ -29,7 +33,9 @@ def main():
         art_director_agent=art_mock,
         designer_agent=designer_mock,
         brand_guardian_agent=guardian_mock,
-        memory_agent=memory_stub
+        memory_agent=memory_stub,
+        coder_agent=coder_mock,
+        vision_agent=vision_mock
     )
 
     print("Compilando Grafo...")

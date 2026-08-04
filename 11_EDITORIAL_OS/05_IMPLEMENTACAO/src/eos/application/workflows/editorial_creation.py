@@ -20,7 +20,9 @@ from eos.domain.contracts.interfaces import (
     IArtDirectorAgent,
     IDesignerAgent,
     IBrandGuardianAgent,
-    IMemoryAgent
+    IMemoryAgent,
+    ICoderAgent,
+    IVisionAgent
 )
 
 class EditorialWorkflow:
@@ -37,7 +39,9 @@ class EditorialWorkflow:
         art_director_agent: IArtDirectorAgent,
         designer_agent: IDesignerAgent,
         brand_guardian_agent: IBrandGuardianAgent,
-        memory_agent: IMemoryAgent
+        memory_agent: IMemoryAgent,
+        coder_agent: ICoderAgent,
+        vision_agent: IVisionAgent
     ):
         self.research_agent = research_agent
         self.editorial_agent = editorial_agent
@@ -45,6 +49,8 @@ class EditorialWorkflow:
         self.designer_agent = designer_agent
         self.brand_guardian_agent = brand_guardian_agent
         self.memory_agent = memory_agent
+        self.coder_agent = coder_agent
+        self.vision_agent = vision_agent
 
     def _research_node(self, state: GlobalState) -> GlobalState:
         brief = state.get("brief")
@@ -171,6 +177,49 @@ class EditorialWorkflow:
         })
         return state
 
+    def _coder_node(self, state: GlobalState) -> GlobalState:
+        proposal = state.get("proposal")
+        if not proposal:
+            raise ValueError("Coder Node requires a VisualProposal")
+        
+        rendered_code = self.coder_agent.run(proposal)
+        
+        self.memory_agent.log_event("coding_completed", {"agent": "coder"})
+        
+        state["rendered_code"] = rendered_code
+        state["current_agent"] = "coder"
+        state["current_phase"] = "coding_completed"
+        if "audit_events" not in state: state["audit_events"] = []
+        state["audit_events"].append({"event": "Code generated", "agent": "coder"})
+        return state
+
+    def _vision_node(self, state: GlobalState) -> GlobalState:
+        rendered_code = state.get("rendered_code")
+        if not rendered_code:
+            raise ValueError("Vision Node requires RenderedCode")
+        
+        audit = self.vision_agent.audit(rendered_code)
+        
+        self.memory_agent.log_event(
+            "vision_audit", 
+            {"status": audit.final_status.value, "details": audit.technical_audit.details}
+        )
+        
+        vision_revision_count = state.get("vision_revision_count", 0)
+        if audit.final_status == AuditStatus.REJECTED:
+            vision_revision_count += 1
+            if vision_revision_count >= GuardianDecisionPolicy.MAX_REVISIONS:
+                audit.final_status = AuditStatus.HUMAN_REVIEW_REQUIRED
+                audit.justification = "Vision max revisions reached. Escalating to human."
+        
+        state["vision_audit"] = audit
+        state["vision_revision_count"] = vision_revision_count
+        state["current_agent"] = "vision"
+        state["current_phase"] = "vision_audit_completed"
+        if "audit_events" not in state: state["audit_events"] = []
+        state["audit_events"].append({"event": f"Vision Audit: {audit.final_status.value}", "agent": "vision"})
+        return state
+
     def _human_approval_node(self, state: GlobalState) -> GlobalState:
         audit = state.get("audit")
         if not audit:
@@ -196,6 +245,17 @@ class EditorialWorkflow:
     def _route_after_guardian(self, state: GlobalState) -> str:
         return GuardianDecisionPolicy.route(state)
 
+    def _route_after_vision(self, state: GlobalState) -> str:
+        audit = state.get("vision_audit")
+        if not audit:
+            return "agent_human_approval"
+        if audit.final_status == AuditStatus.APPROVED:
+            return "agent_human_approval"
+        elif audit.final_status == AuditStatus.HUMAN_REVIEW_REQUIRED:
+            return "agent_human_approval"
+        else:
+            return "agent_coder"
+
     def build_app(self) -> CompiledStateGraph:
         workflow = StateGraph(GlobalState)
 
@@ -204,6 +264,8 @@ class EditorialWorkflow:
         workflow.add_node("agent_art_director", self._art_director_node)
         workflow.add_node("agent_designer", self._designer_node)
         workflow.add_node("agent_brand_guardian", self._brand_guardian_node)
+        workflow.add_node("agent_coder", self._coder_node)
+        workflow.add_node("agent_vision", self._vision_node)
         workflow.add_node("agent_human_approval", self._human_approval_node)
 
         workflow.add_edge(START, "agent_research")
@@ -218,8 +280,21 @@ class EditorialWorkflow:
             {
                 "agent_human_approval": "agent_human_approval",
                 "agent_designer": "agent_designer",
+                "agent_coder": "agent_coder",
             }
         )
+        
+        workflow.add_edge("agent_coder", "agent_vision")
+        
+        workflow.add_conditional_edges(
+            "agent_vision",
+            self._route_after_vision,
+            {
+                "agent_human_approval": "agent_human_approval",
+                "agent_coder": "agent_coder",
+            }
+        )
+        
         workflow.add_edge("agent_human_approval", END)
 
         checkpointer = get_checkpointer()
