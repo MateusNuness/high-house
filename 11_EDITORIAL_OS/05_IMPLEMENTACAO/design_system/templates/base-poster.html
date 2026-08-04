@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <!-- O viewport e scale garantem que o render fique consistente pro screenshot 1080x1350 -->
+  <meta name="viewport" content="width=1080, height=1350, initial-scale=1.0">
+  <title>High House - Blueprint Poster</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Space Grotesk (Estrutura) e Inter (Corpo) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800&family=Space+Grotesk:wght@400;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Injeção dos Tokens Base do Sistema -->
+  <link rel="stylesheet" href="../tokens.css">
+  
+  <style>
+    /* Reset Mínimo e Configuração de Aspect Ratio (Instagram Portrait) */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      background-color: var(--color-base-black);
+      color: var(--color-base-offwhite);
+      font-family: var(--font-secondary);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    /* O Pôster / Canvas Final (1080x1350) */
+    .hh-poster-canvas {
+      width: 1080px;
+      height: 1350px;
+      position: relative; /* Container Mestre para as 3 Camadas ABSOLUTAS */
+      overflow: hidden;
+      background-color: var(--color-base-offwhite); /* Fundo padrão quente */
+    }
+
+    /* CAMADA 1: BACKGROUND (z-layer-background) */
+    .hh-layer-bg {
+      position: absolute;
+      inset: 0;
+      z-index: var(--z-layer-background);
+      /* Opcional: filtro de noise ou blend mode para peso analógico */
+      filter: contrast(1.1) brightness(0.9);
+    }
+    .hh-layer-bg img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      /* Multiply para interagir com o off-white do fundo */
+      mix-blend-mode: multiply;
+    }
+
+    /* CAMADA 2: STRUCTURE (z-layer-structure) */
+    .hh-layer-structure {
+      position: absolute;
+      inset: 0;
+      z-index: var(--z-layer-structure);
+      padding: var(--spacing-large);
+      
+      /* Grid Rigoroso interno (O Caos Organizado) */
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: auto 1fr auto;
+      gap: var(--spacing-base);
+    }
+    
+    .hh-layer-structure h1 {
+      font-family: var(--font-primary);
+      font-size: var(--font-size-h1-colossal);
+      font-weight: var(--font-weight-heavy);
+      text-transform: uppercase;
+      line-height: 0.85;
+      letter-spacing: -0.04em;
+      grid-column: 1 / -1;
+      grid-row: 1;
+      color: var(--color-base-black);
+    }
+
+    .hh-layer-structure .hh-body-text {
+      grid-column: 8 / 13;
+      grid-row: 3;
+      font-size: var(--font-size-h3);
+      line-height: 1.2;
+      color: var(--color-base-black);
+      align-self: end;
+      text-align: right;
+    }
+
+    .hh-layer-structure .hh-signature {
+      grid-column: 1 / 6;
+      grid-row: 3;
+      font-size: var(--font-size-body);
+      font-family: var(--font-primary);
+      align-self: end;
+      color: var(--color-base-black);
+      text-transform: uppercase;
+    }
+
+    /* CAMADA 3: NOISE / XARPI (z-layer-noise) */
+    .hh-layer-noise {
+      position: absolute;
+      inset: 0;
+      z-index: var(--z-layer-noise);
+      pointer-events: none; /* Para não bloquear interação, caso fosse web */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    /* Ruptura intencional - O Ponto de Tensão Urbana */
+    .hh-noise-element {
+      font-family: var(--font-experimental);
+      font-size: var(--font-size-h1-colossal);
+      color: var(--color-accent-terracotta);
+      mix-blend-mode: exclusion;
+      transform: rotate(-5deg) translateY(-200px);
+      white-space: nowrap;
+      /* Simula o xarpi / lettering sujo */
+      font-style: italic;
+      font-weight: 900;
+    }
+
+    /* Variação de Dark Mode (Invertido pelo Coder) */
+    .hh-poster-canvas[data-theme="dark"] {
+      background-color: var(--color-base-black);
+    }
+    .hh-poster-canvas[data-theme="dark"] .hh-layer-bg img {
+      mix-blend-mode: normal;
+      opacity: 0.6;
+    }
+    .hh-poster-canvas[data-theme="dark"] .hh-layer-structure h1,
+    .hh-poster-canvas[data-theme="dark"] .hh-layer-structure .hh-body-text,
+    .hh-poster-canvas[data-theme="dark"] .hh-layer-structure .hh-signature {
+      color: var(--color-base-offwhite);
+    }
+    .hh-poster-canvas[data-theme="dark"] .hh-noise-element {
+      color: var(--color-accent-lilac);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ROOT DO PÔSTER (1080x1350) -->
+  <main class="hh-poster-canvas" data-theme="light">
+    
+    <!-- CAMADA 1: Imagem/Textura Caótica -->
+    <figure class="hh-layer-bg">
+      <!-- O Image Agent injetará a src real aqui. Usando um placeholder tátil. -->
+      <img src="https://images.unsplash.com/photo-1616422285623-146698dc96a5?q=80&w=1080&auto=format&fit=crop" alt="Textura Urbana de Concreto">
+    </figure>
+
+    <!-- CAMADA 2: Estrutura / Rigor Matemático -->
+    <article class="hh-layer-structure">
+      <h1>Caos<br>Organizado</h1>
+      
+      <p class="hh-signature">HIGH HOUSE — Niterói, RJ</p>
+      
+      <p class="hh-body-text">
+        Uma cultura viva: feita de arte, rua, música e rigidez matemática.
+      </p>
+    </article>
+
+    <!-- CAMADA 3: Ruído / Xarpi (Infiltrado Sofisticado) -->
+    <aside class="hh-layer-noise">
+      <div class="hh-noise-element">URBAN TENSION</div>
+    </aside>
+
+  </main>
+
+</body>
+</html>

@@ -18,50 +18,37 @@
          * das variáveis e garantir que o CSS parses corretamente no browser.
          */
         body {
-            background-color: var(--color-base-offwhite);
-            color: var(--color-base-black);
-            font-family: var(--font-secondary);
-            font-size: var(--font-size-body);
-            margin: var(--spacing-massive); /* Testando spacing */
-            padding: var(--spacing-base);
-        }
-        
-        .test-box {
             background-color: var(--color-base-black);
             color: var(--color-base-offwhite);
-            padding: var(--spacing-large);
-            border-radius: var(--radius-square); /* Testando formas duras */
-            margin-bottom: var(--spacing-base);
-        }
-        
-        h1 {
-            font-family: var(--font-primary);
-            font-size: var(--font-size-h1-colossal);
-            font-weight: var(--font-weight-heavy);
-            margin-bottom: var(--spacing-tight);
-            line-height: 0.9;
+            font-family: var(--font-secondary);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: var(--spacing-base);
+            min-height: 100vh;
         }
         
         h2 {
             font-family: var(--font-primary);
-            font-size: var(--font-size-h3);
+            font-weight: var(--font-weight-heavy);
             margin-bottom: var(--spacing-base);
+        }
+        
+        iframe {
+            width: 1080px;
+            height: 1350px;
+            border: none;
+            transform: scale(0.6); /* Escala para caber na maioria dos monitores na horizontal */
+            transform-origin: top center;
+            box-shadow: 0 0 50px rgba(0,0,0,0.5);
         }
     </style>
 </head>
 <body>
 
-    <h1>HIGH HOUSE</h1>
-    <h2>Design System Tokens: Render Test (EOS-002)</h2>
+    <h2>EOS-003: Render Validation (Base Poster Template)</h2>
     
-    <div class="test-box">
-        Essa caixa testa a inversão de cores primárias (--color-base-black / --color-base-offwhite), 
-        espaçamento interno (--spacing-large) e bordas geométricas rígidas (--radius-square).
-    </div>
-
-    <p style="font-family: var(--font-experimental);">
-        Tipografia experimental fallback.
-    </p>
+    <iframe src="templates/base-poster.html" title="Base Poster Preview"></iframe>
 
 </body>
 </html>

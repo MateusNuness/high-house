@@ -16,10 +16,11 @@
   --color-base-black: #0E0F12;      /* "Preto Profundo" - O asfalto */
   --color-base-offwhite: #F3EDE3;   /* "Off-White Quente" - A tela em branco */
   
-  /* Nota sobre Acentos: O item 12 menciona cores vibrantes (vermelhos densos, neons desgastados, 
-     laranjas quentes, azuis elétricos). Como não há HEX explícito na documentação 03.1, 
-     nenhuma variável de acento será inferida aqui, preservando o SSOT. 
-     Se no futuro houver especificação de HEX no 03.1, eles entrarão aqui. */
+  /* Cores de Apoio (Acentos e Expressão - Ref: identidade-visual-minima-viavel.md V2) */
+  --color-accent-terracotta: #D46A4C; /* Acento pontual */
+  --color-accent-lilac: #7467E6;      /* Atmosfera densa */
+  --color-accent-teal: #36C2A6;       /* Pequenos acentos */
+  --color-neutral-sand: #C8B59C;      /* Textos secundários neutros */
 
   /* =========================================================================
    * 2. TYPOGRAPHY
@@ -68,4 +69,12 @@
    * Como nenhuma sombra dura/brutal foi explicitada em HEX ou offset, NENHUM 
    * token de sombra será inferido aqui.
    */
+
+  /* =========================================================================
+   * 5. ARCHITECTURE (Z-INDEX)
+   * Estrutura de camadas rígida para suportar a persona "Infiltrado Sofisticado"
+   * ========================================================================= */
+  --z-layer-background: -10;  /* A foto pesada ou textura de fundo */
+  --z-layer-structure: 10;    /* Tipografia base, grid e navegação */
+  --z-layer-noise: 100;       /* Rupturas, tags, xarpi e elementos flutuantes */
 }
