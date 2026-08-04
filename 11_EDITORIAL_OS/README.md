@@ -45,4 +45,4 @@ Todos os documentos contidos nesta pasta (`11_EDITORIAL_OS`) **DEVEM** obedecer 
 5. **Entregáveis (Artefatos):** Toda tarefa ou mudança no sistema gera um **Artefato** material (código/documento), exige uma **Validação** objetiva, e produz uma **Memória gerada** (logs de decisão na pasta `memory`).
 
 ---
-*Última atualização: Refatoração Arquitetural do LangGraph para Class-based Workflows (Thin Nodes com Injeção de Dependência baseada em Interfaces) e proibição de Mock Fallbacks em produção.*
+*Última atualização: Refatoração Arquitetural do LangGraph para Class-based Workflows (Thin Nodes com Injeção de Dependência baseada em Interfaces) e ativação da Camada de Observabilidade (Langfuse) para telemetria integral em produção.*

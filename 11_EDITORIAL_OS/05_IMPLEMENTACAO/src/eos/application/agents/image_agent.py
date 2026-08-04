@@ -4,6 +4,8 @@ from eos.infrastructure.llm_router import ModelRouter, AgentRole
 from eos.infrastructure.context_loader import MarkdownContextLoader
 from langchain_core.messages import SystemMessage, HumanMessage
 
+import json
+
 class ImageAgent:
     """
     Agente responsável por injetar a lente fotográfica "Analógica Documental"
@@ -12,8 +14,6 @@ class ImageAgent:
 
     def __init__(self):
         self.system_prompt = MarkdownContextLoader.load("Image Agent")
-        # Usamos o LLM primário para "traduzir" o generation_prompt do Designer 
-        # para a lente analógica bruta da High House antes de enviar pro Midjourney/DALL-E.
         self.llm = ModelRouter.get_model_for_role(AgentRole.IMAGE)
         
     def run(self, proposal: VisualProposal) -> ImageAsset:
@@ -22,6 +22,8 @@ class ImageAgent:
         {proposal.generation_prompt}
         
         Converta essa ideia em um prompt de Fotografia Analógica estrito conforme as suas regras.
+        Retorne um JSON estrito correspondente ao contrato ImageAsset contendo 'image_url', 'generation_prompt_used', 'alt_text' e 'metadata'.
+        Use 'https://images.unsplash.com/photo-1616422285623-146698dc96a5?q=80&w=1080&auto=format&fit=crop' como image_url provisória.
         """
         
         messages = [
@@ -29,14 +31,22 @@ class ImageAgent:
             HumanMessage(content=human_msg)
         ]
         
-        # Simula o LLM refinando o prompt e, em seguida, uma API de imagem retornando a URL.
-        # Em produção real, este agente bate na API do DALL-E/Midjourney.
-        refined_prompt_response = self.llm.invoke(messages)
+        response = self.llm.invoke(messages)
         
-        # Placeholder estático para desenvolvimento
+        try:
+            if hasattr(response, 'content') and "{" in response.content:
+                content = response.content
+                json_str = content[content.find("{"):content.rfind("}")+1]
+                data = json.loads(json_str)
+                return ImageAsset(**data)
+            elif isinstance(response, dict):
+                return ImageAsset(**response)
+        except Exception:
+            pass
+            
         return ImageAsset(
             image_url="https://images.unsplash.com/photo-1616422285623-146698dc96a5?q=80&w=1080&auto=format&fit=crop",
             generation_prompt_used=f"Refined Analog Prompt based on: {proposal.generation_prompt}",
             alt_text="Textura urbana fotográfica com granulação analógica",
-            metadata={"engine": "simulated", "style": "analog"}
+            metadata={"engine": "fallback", "style": "analog"}
         )

@@ -44,7 +44,37 @@ def main():
     print("Compilando Grafo...")
     app = workflow.build_app()
     print("Grafo compilado com sucesso!")
-    print(app)
+    
+    from eos.domain.contracts.editorial_brief import EditorialBrief
+    from pprint import pprint
+    
+    print("\n[!] Iniciando a Execução do Flow...")
+    brief = EditorialBrief(
+        topic="A influência da arquitetura brutalista na moda urbana",
+        objective="Posicionamento de marca",
+        audience="Jovens criativos e designers",
+        cultural_context="Cultura de rua, skate, brutalismo",
+        constraints=["Max 300 palavras", "Tom ácido"],
+        source_reference="Manual V2 da High House",
+        created_by="Simulador"
+    )
+    
+    # Executa o grafo e armazena os eventos
+    final_state = app.invoke({"brief": brief}, config={"configurable": {"thread_id": "simulacao_1"}})
+    
+    print("\n=== FLUXO CONCLUÍDO ===")
+    print("Auditorias e Passos Executados:")
+    for event in final_state.get("audit_events", []):
+        print(f" - [{event['agent']}] {event['event']}")
+        
+    print("\nStatus Final:")
+    print(f"Agent Parada: {final_state.get('current_agent')}")
+    print(f"Fase Atual: {final_state.get('current_phase')}")
+    
+    if "image_asset" in final_state:
+        print(f"Imagem Gerada: {final_state['image_asset'].image_url}")
+        
+    print("=========================\n")
 
 if __name__ == "__main__":
     main()

@@ -16,8 +16,7 @@ from enum import Enum
 from langchain_core.language_models import BaseChatModel
 
 # We would import actual Langchain Chat classes here, but for MVP we mock it.
-# from langchain_openai import ChatOpenAI
-# from langchain_community.chat_models import ChatDeepSeek
+from langchain_openai import ChatOpenAI
 
 class AgentRole(str, Enum):
     CREATIVE = "creative"
@@ -25,29 +24,34 @@ class AgentRole(str, Enum):
     REASONING = "reasoning"
     RESEARCH = "research"
     EDITORIAL = "editorial"
+    IMAGE = "image"
+    CODER = "coder"
+    VISION = "vision"
+    BRAND_GUARDIAN = "brand_guardian"
 
 
 class ModelRouter:
     """
     Factory to return the correct LangChain LLM instance based on the agent's required capabilities.
+    Configurado para a API da DeepSeek.
     """
     @staticmethod
     def get_model_for_role(role: AgentRole) -> BaseChatModel:
         """
-        Returns a configured LLM for the given role.
-        In this MVP, we return a mock or a generic model setup.
+        Retorna o modelo adequado. Para a DeepSeek, usamos o ChatOpenAI apontando para a base_url deles.
         """
-        # Mocking the LLM instantiation for the MVP
-        class MockLLM(BaseChatModel):
-            def _generate(self, messages, stop=None, run_manager=None, **kwargs):
-                from langchain_core.messages import AIMessage
-                from langchain_core.outputs import ChatResult, ChatGeneration
-                
-                msg = AIMessage(content=f"[Mocked LLM Response for {role}]")
-                return ChatResult(generations=[ChatGeneration(message=msg)])
+        api_key = os.environ.get("DEEPSEEK_API_KEY")
+        if not api_key:
+            raise ValueError("A variável de ambiente 'DEEPSEEK_API_KEY' não está configurada.")
             
-            @property
-            def _llm_type(self) -> str:
-                return "mock_llm"
+        # Para validação e código pesados, deepseek-reasoner pode ser melhor, 
+        # mas para o MVP usaremos deepseek-chat por ter melhor suporte genérico a JSON/tool calls na interface da OpenAI.
+        model_name = "deepseek-chat"
         
-        return MockLLM()
+        return ChatOpenAI(
+            model=model_name,
+            api_key=api_key,
+            base_url="https://api.deepseek.com/v1",
+            max_tokens=2048,
+            temperature=0.7 if role in (AgentRole.CREATIVE, AgentRole.EDITORIAL, AgentRole.IMAGE) else 0.1
+        )

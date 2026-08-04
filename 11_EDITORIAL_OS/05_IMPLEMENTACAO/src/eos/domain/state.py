@@ -5,7 +5,10 @@ from .contracts import (
     CreativeDirection,
     VisualProposal,
     BrandAuditReport,
-    PublicationPackage
+    PublicationPackage,
+    ImageAsset,
+    RenderedCode,
+    VisionAuditReport
 )
 
 class GlobalState(TypedDict):
@@ -24,5 +27,9 @@ class GlobalState(TypedDict):
     direction: Optional[CreativeDirection]
     proposal: Optional[VisualProposal]
     audit: Optional[BrandAuditReport]
+    image_asset: Optional[ImageAsset]
+    rendered_code: Optional[RenderedCode]
+    vision_audit: Optional[VisionAuditReport]
+    vision_revision_count: int
     package: Optional[PublicationPackage]
 

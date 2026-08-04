@@ -5,6 +5,9 @@ from .creative_direction import CreativeDirection
 from .visual_proposal import VisualProposal
 from .brand_audit_report import BrandAuditReport
 from .publication_package import PublicationPackage
+from .image_asset import ImageAsset
+from .rendered_code import RenderedCode
+from .vision_audit_report import VisionAuditReport
 
 __all__ = [
     'AuditStatus',
@@ -13,5 +16,8 @@ __all__ = [
     'CreativeDirection',
     'VisualProposal',
     'BrandAuditReport',
-    'PublicationPackage'
+    'PublicationPackage',
+    'ImageAsset',
+    'RenderedCode',
+    'VisionAuditReport'
 ]
