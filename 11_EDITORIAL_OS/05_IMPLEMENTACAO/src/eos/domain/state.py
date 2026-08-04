@@ -20,6 +20,7 @@ class GlobalState(TypedDict):
     audit_events: list[dict]
     errors: list[str]
     revision_count: int  # Contador de loops Designer ↔ Guardian (workflow, não domínio)
+    previous_posters: list[dict]
     
     # Artifacts as separated states
     brief: Optional[EditorialBrief]

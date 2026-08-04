@@ -22,6 +22,7 @@ class CollectionOrchestrator:
         
         app = self.editorial_workflow.build_app()
         results = []
+        previous_posters = []
 
         print(f"\n[ORCHESTRATOR] Iniciando o lote para a Coleção: {collection_brief.name} ({len(collection_brief.chapters)} Pôsteres)")
 
@@ -35,7 +36,7 @@ class CollectionOrchestrator:
             langfuse_handler = CallbackHandler()
 
             final_state = app.invoke(
-                {"brief": chapter_brief}, 
+                {"brief": chapter_brief, "previous_posters": previous_posters}, 
                 config={
                     "configurable": {"thread_id": session_id},
                     "callbacks": [langfuse_handler],
@@ -57,6 +58,15 @@ class CollectionOrchestrator:
                 continue
 
             caption = package.caption if package else ""
+            direction = final_state.get("direction")
+            
+            poster_summary = {
+                "topic": chapter_brief.topic,
+                "caption": caption,
+                "aesthetic_mood": direction.aesthetic_mood if direction else "",
+                "core_concept": direction.core_concept if direction else ""
+            }
+            previous_posters.append(poster_summary)
 
             # Save PNG via Renderer
             png_path = os.path.join(collection_path, f"poster_{poster_num}.png")

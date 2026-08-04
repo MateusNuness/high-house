@@ -4,9 +4,9 @@
 
 **Blocked by:** None — can start immediately.
 
-**Status:** ready-for-agent
+**Status:** completed
 
-- [ ] `GlobalState` type in `state.py` is updated to include `previous_posters: list[dict]`.
-- [ ] `CollectionOrchestrator` loop maintains a `previous_posters` list and appends poster summaries after each iteration.
-- [ ] `previous_posters` array is passed into the LangGraph state initial payload.
-- [ ] Unit tests for `process_collection` assert that the array correctly accumulates across a multi-poster mock collection.
+- [x] `GlobalState` type in `state.py` is updated to include `previous_posters: list[dict]`.
+- [x] `CollectionOrchestrator` loop maintains a `previous_posters` list and appends poster summaries after each iteration.
+- [x] `previous_posters` array is passed into the LangGraph state initial payload.
+- [x] Unit tests for `process_collection` assert that the array correctly accumulates across a multi-poster mock collection.
