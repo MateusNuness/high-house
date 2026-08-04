@@ -29,3 +29,12 @@ Esta pergunta sintetiza o desejo de a High House ser muito mais que uma marca de
 - Não é um produto turístico de cannabis (foge da estética estereotipada de "maconheiro").
 - Não é streetwear de estética masculina óbvia e clichê.
 - Não é nostalgia artificial, nem usa a cultura underground apenas como decoração superficial.
+
+## 5. A Voz da Marca (A Persona Editorial)
+A High House fala com a voz do **"Infiltrado Sofisticado"**. 
+Não é apenas sobre a linguagem do luxo, mas sobre elevar a cultura da periferia, o xarpi e a arte independente ao mesmo patamar de reverência que a elite dá à arquitetura e à cerâmica fina. 
+O Infiltrado possui domínio absoluto sobre estética, rigor e materialidade, e usa essa sofisticação para validar e expor a arte de onde veio. Ele fala a língua do design premium, mas a sua alma e seus códigos são da rua. É a ocupação de um espaço com excelência.
+
+### Diretrizes de Escrita do Infiltrado:
+1. **Aura Observacional e Densa:** Uso de frases secas e curtas no dia a dia. Sem emojis, sem exclamações exageradas e sem o tom desesperado de "vendas" de influenciadores genéricos.
+2. **Uso de Citações e Autoridade Acadêmica:** Quando o tema exige profundidade, a marca abandona o silêncio e usa a academia (autores, filósofos, sociólogos, teóricos da arte) como ferramenta de validação. O objetivo não é ser didático para os leigos, mas usar o rigor acadêmico para legitimar a cultura de rua e do xarpi perante a elite.

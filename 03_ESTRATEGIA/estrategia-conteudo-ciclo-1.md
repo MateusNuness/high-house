@@ -71,20 +71,19 @@ A inteligência artificial não atua na invenção da essência, mas como uma fe
 A intenção principal do lançamento não é a viralização, o ensino ou a explicação literal da marca. 
 
 **Função da Coleção 001**
-A primeira coleção (ou Revista) existe para responder a uma única pergunta de quem acessa o perfil pela primeira vez: *"Vale a pena acompanhar essa marca?"*
-Por ser fundacional e a marca ainda não possuir um histórico público de observações, a Coleção 001 é puramente fundamentada na **essência e no manifesto**.
+A primeira coleção (ou Revista) existe para responder a uma única pergunta de quem acessar o perfil recém-criado (começando do absoluto zero): *"Vale a pena acompanhar essa marca?"*
+Por ser fundacional, a Coleção 001 estabelece o "moodboard" público da marca no grid, operando puramente na **essência e no manifesto**.
 
 **Roteiro de Crescimento (Revistas/Coleções):**
 
-- **Coleção 001 (Fundacional):** Baseada no manifesto. Afirmação estética e filosófica (Capítulos: Manifesto, Universo, Construção, Convite).
+- **Coleção 001 (Fundacional - O Grid Inicial):** Baseada no manifesto. Afirmação estética e filosófica. Lançamento via **Drip Strategy (Gotejamento)**: pôsteres de altíssimo rigor visual postados com dias de silêncio entre eles, para que o Infiltrado não pareça estar "gritando" por atenção, mas sim construindo seu espaço.
 - **Coleções 002–010 (Exploração):** Mescla de observações, repertório e respostas ao **Banco de Perguntas**. Focadas no Fio Condutor da "Ausência de Tempo".
 - **Coleções 011+ (Comunidade):** Integração de interações e contribuições da comunidade no repertório.
 
 **Estrutura Base para a Coleção 001 (Capítulo 1 - Manifesto):**
-- **Ideia base:** "Por que o material importa" (Semente central).
-- **Formato:** Template D (Carrossel).
-- **Slide 1 (Imagem Forte):** Foto macro/close-up de textura rica e "pesada" (ex: cerâmica crua ou metal fosco sobre concreto). Título em Space Grotesk: *Por que o material importa.*
-- **Slide 2 (Texto Manifesto):** "O peso, a textura, a temperatura. O mundo está cheio de objetos rápidos, leves e descartáveis. Queremos voltar a sentir o peso das coisas bem feitas. A qualidade do ritual começa pelo que se tem nas mãos."
-- **Slide 3 (Imagem Inspiracional):** Ambiente de luz baixa e sofisticado, com objetos de design curados (sala de estar, mesa de centro, café), refletindo a visão da High House sem exibição óbvia de produtos.
+- **Formato:** Campanha de Pôsteres Individuais (Drip Strategy).
+- **Pôster 01 (Impacto Visual):** Uma imagem absurdamente densa e estética (ex: textura de concreto/cerâmica ou uma tipografia bruta). Legenda: Uma frase curta do Infiltrado validando a cultura de rua ou a materialidade, sem pedir para seguir ou curtir. O silêncio gera curiosidade.
+- **Pôster 02 (O Contraste - Dias depois):** Uma referência visual de xarpi elevada ao status de arte premium. Legenda com peso acadêmico para legitimar o grafite como alta expressão.
+- **Pôster 03 (O Objeto de Desejo):** Uma imagem inspiracional de hospitalidade ou um objeto material. 
 
-Esta estrutura alinha-se à premissa inicial: afasta o público que busca a estética do plástico e atrai aqueles interessados em design, maturidade e hospitalidade. A partir deste ponto, inicia-se a exploração contínua do Banco de Perguntas.
+Esta estrutura alinha-se perfeitamente à realidade de uma conta que nasce com 0 seguidores: cada novo pôster é um tijolo no grid. Quando a primeira pessoa chegar, encontrará um ambiente estético denso, maduro e coeso. A partir deste ponto, inicia-se a exploração contínua do Banco de Perguntas.

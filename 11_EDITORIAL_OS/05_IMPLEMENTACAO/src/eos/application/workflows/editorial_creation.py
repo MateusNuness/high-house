@@ -1,6 +1,6 @@
-import uuid
-from typing import TypedDict, Optional, Literal
+from typing import TypedDict, Optional, Literal, cast
 from langgraph.graph import StateGraph, START, END
+from langgraph.graph.state import CompiledStateGraph
 
 from eos.domain.contracts import (
     EditorialBrief,
@@ -13,253 +13,214 @@ from eos.domain.contracts import (
 )
 from eos.domain.state import GlobalState
 from eos.infrastructure.checkpoints import get_checkpointer
-from eos.application.agents.memory_agent import MemoryAgentStub
-from eos.application.agents.editorial_agent import EditorialAgent
-from eos.application.agents.brand_guardian_agent import BrandGuardianAgent
-from eos.application.agents.art_director_agent import ArtDirectorAgent
-from eos.application.agents.designer_agent import DesignerAgent
 from eos.application.workflows.guardian_policy import GuardianDecisionPolicy
-from tests.fixtures.mock_editorial_agent import MockEditorialAgent
-from tests.fixtures.mock_brand_guardian_agent import MockBrandGuardianAgent
-from tests.fixtures.mock_art_director_agent import MockArtDirectorAgent
-from tests.fixtures.mock_designer_agent import MockDesignerAgent
-
-# Initialize agents
-memory_agent = MemoryAgentStub()
-editorial_agent = EditorialAgent()
-mock_editorial_agent = MockEditorialAgent()
-art_director_agent = ArtDirectorAgent()
-mock_art_director_agent = MockArtDirectorAgent()
-designer_agent = DesignerAgent()
-mock_designer_agent = MockDesignerAgent()
-brand_guardian_agent = BrandGuardianAgent()
-mock_brand_guardian_agent = MockBrandGuardianAgent(scenario="approved")
-
-def research_node(state: GlobalState) -> GlobalState:
-    brief = state.get("brief")
-    if not brief:
-        raise ValueError("Research Node requires an EditorialBrief")
-    
-    # Mocking Research Agent
-    report = ResearchReport(
-        research_question=f"What is the cultural relevance of {brief.topic}?",
-        methodology="Mocked Web Search",
-        sources=["https://mock-underground-source.com"],
-        cultural_hypotheses=["The theme resonates with rebellion."],
-        key_findings=[f"{brief.topic} is trending in urban spaces."],
-        cultural_relevance="High",
-        limitations="Limited data on recent weeks.",
-        confidence_score=0.85
-    )
-    
-    memory_agent.log_event("research_completed", {"agent": "research", "confidence": report.confidence_score})
-    
-    state["research"] = report
-    state["current_agent"] = "research"
-    state["current_phase"] = "research_completed"
-    if "audit_events" not in state: state["audit_events"] = []
-    state["audit_events"].append({"event": "Research completed", "agent": "research"})
-    return state
-
-def editorial_node(state: GlobalState) -> GlobalState:
-    report = state.get("research")
-    if not report:
-        raise ValueError("Editorial Node requires a ResearchReport")
-    
-    try:
-        direction = editorial_agent.run(report)
-    except Exception:
-        direction = mock_editorial_agent.run(report)
-    
-    memory_agent.save_decision("editorial", "Established creative direction", {"concept": direction.core_concept})
-    
-    state["direction"] = direction
-    state["current_agent"] = "editorial"
-    state["current_phase"] = "editorial_completed"
-    if "audit_events" not in state: state["audit_events"] = []
-    state["audit_events"].append({"event": "Creative Direction established", "agent": "editorial"})
-    return state
-
-
-def art_director_node(state: GlobalState) -> GlobalState:
-    direction = state.get("direction")
-    if not direction:
-        raise ValueError("Art Director Node requires a CreativeDirection")
-    
-    try:
-        direction = art_director_agent.run(direction)
-    except Exception:
-        direction = mock_art_director_agent.run(direction)
-        
-    memory_agent.save_decision("art_director", "Enriched creative direction with aesthetic mood", {"mood": direction.aesthetic_mood})
-    
-    state["direction"] = direction
-    state["current_agent"] = "art_director"
-    state["current_phase"] = "art_direction_completed"
-    if "audit_events" not in state: state["audit_events"] = []
-    state["audit_events"].append({"event": "Aesthetic mood defined", "agent": "art_director"})
-    return state
-
-
-def designer_node(state: GlobalState) -> GlobalState:
-    direction = state.get("direction")
-    if not direction:
-        raise ValueError("Designer Node requires a CreativeDirection")
-    
-    try:
-        proposal = designer_agent.run(direction)
-    except Exception:
-        proposal = mock_designer_agent.run(direction)
-    
-    memory_agent.save_decision("designer", "Generated Design Blueprint", {"grid": proposal.grid_structure})
-    
-    state["proposal"] = proposal
-    state["current_agent"] = "designer"
-    state["current_phase"] = "design_completed"
-    if "audit_events" not in state: state["audit_events"] = []
-    state["audit_events"].append({"event": "Visual Proposal generated", "agent": "designer"})
-    return state
-
-def brand_guardian_node(state: GlobalState) -> GlobalState:
-    """
-    Nó do Brand Guardian — o primeiro agente que JULGA no EOS.
-    
-    Recebe os 4 artefatos do pipeline e emite um BrandAuditReport.
-    O routing pós-auditoria é responsabilidade da GuardianDecisionPolicy,
-    não deste nó.
-    """
-    proposal = state.get("proposal")
-    if not proposal:
-        raise ValueError("Brand Guardian Node requires a VisualProposal")
-    
-    direction = state.get("direction")
-    if not direction:
-        raise ValueError("Brand Guardian Node requires a CreativeDirection")
-    
-    brief = state.get("brief")
-    research = state.get("research")
-    
-    try:
-        audit = brand_guardian_agent.audit(
-            proposal=proposal,
-            direction=direction,
-            brief=brief,
-            research=research
-        )
-        # Se o agente real retornou fail-secure (parsing falhou com MockLLM no MVP),
-        # usar o mock determinístico como fallback.
-        if audit.status == AuditStatus.HUMAN_REVIEW_REQUIRED and \
-           "Fail-secure" in (audit.evaluated_rules[0] if audit.evaluated_rules else ""):
-            audit = mock_brand_guardian_agent.audit(
-                proposal=proposal,
-                direction=direction,
-                brief=brief,
-                research=research
-            )
-    except Exception:
-        audit = mock_brand_guardian_agent.audit(
-            proposal=proposal,
-            direction=direction,
-            brief=brief,
-            research=research
-        )
-    
-    memory_agent.save_decision(
-        "brand_guardian",
-        f"Audit result: {audit.status.value}",
-        {"status": audit.status.value, "violations": audit.violations}
-    )
-    
-    # Incrementar revision_count quando houver loop (REJECTED ou APPROVED_WITH_CHANGES)
-    revision_count = state.get("revision_count", 0)
-    if audit.status in (AuditStatus.REJECTED, AuditStatus.APPROVED_WITH_CHANGES):
-        revision_count += 1
-        # Se atingiu o limite, forçar escalonamento humano
-        if revision_count >= GuardianDecisionPolicy.MAX_REVISIONS:
-            audit = BrandAuditReport(
-                status=AuditStatus.HUMAN_REVIEW_REQUIRED,
-                evaluated_rules=audit.evaluated_rules,
-                violations=audit.violations,
-                severity="Critical",
-                justification=(
-                    f"Limite de {GuardianDecisionPolicy.MAX_REVISIONS} revisões atingido. "
-                    f"Escalonando para revisão humana. Última justificativa: {audit.justification}"
-                ),
-                audit_context=f"Escalonamento automático após {revision_count} revisões",
-                recommendations=audit.recommendations + [
-                    "Intervenção humana obrigatória — limite de revisões automáticas atingido."
-                ]
-            )
-    
-    state["audit"] = audit
-    state["revision_count"] = revision_count
-    state["current_agent"] = "brand_guardian"
-    state["current_phase"] = "audit_completed"
-    if "audit_events" not in state: state["audit_events"] = []
-    state["audit_events"].append({
-        "event": f"Brand Audit completed: {audit.status.value}",
-        "agent": "brand_guardian",
-        "revision": revision_count
-    })
-    return state
-
-def human_approval_node(state: GlobalState) -> GlobalState:
-    audit = state.get("audit")
-    if not audit:
-        raise ValueError("Human Approval Node requires a BrandAuditReport")
-    
-    # Mocking Final Package Generation after "Human Approval"
-    package = PublicationPackage(
-        final_copy="Here is the final gritty copy.",
-        image_assets=["/assets/final_render_1.png"],
-        caption="Embracing the chaos. #HighHouse",
-        metadata={"platform": "instagram"}
-    )
-    
-    state["package"] = package
-    state["current_agent"] = "human_approval"
-    state["current_phase"] = "publication_ready"
-    if "audit_events" not in state: state["audit_events"] = []
-    state["audit_events"].append({"event": "Publication Package generated", "agent": "human_approval"})
-    return state
-
-
-def route_after_guardian(state: GlobalState) -> str:
-    """
-    Função de routing condicional do LangGraph.
-    Delega a decisão à GuardianDecisionPolicy.
-    """
-    return GuardianDecisionPolicy.route(state)
-
-
-# Build the Graph
-workflow = StateGraph(GlobalState)
-
-workflow.add_node("agent_research", research_node)
-workflow.add_node("agent_editorial", editorial_node)
-workflow.add_node("agent_art_director", art_director_node)
-workflow.add_node("agent_designer", designer_node)
-workflow.add_node("agent_brand_guardian", brand_guardian_node)
-workflow.add_node("agent_human_approval", human_approval_node)
-
-workflow.add_edge(START, "agent_research")
-workflow.add_edge("agent_research", "agent_editorial")
-workflow.add_edge("agent_editorial", "agent_art_director")
-workflow.add_edge("agent_art_director", "agent_designer")
-workflow.add_edge("agent_designer", "agent_brand_guardian")
-
-# Routing condicional pós-Guardian (controlado pela GuardianDecisionPolicy)
-workflow.add_conditional_edges(
-    "agent_brand_guardian",
-    route_after_guardian,
-    {
-        "agent_human_approval": "agent_human_approval",
-        "agent_designer": "agent_designer",
-    }
+from eos.domain.contracts.interfaces import (
+    IResearchAgent,
+    IEditorialAgent,
+    IArtDirectorAgent,
+    IDesignerAgent,
+    IBrandGuardianAgent,
+    IMemoryAgent
 )
 
-workflow.add_edge("agent_human_approval", END)
+class EditorialWorkflow:
+    """
+    Class-based Workflow para a Criação Editorial do High House EOS.
+    Utiliza Injeção de Dependência para receber os agentes, garantindo que
+    os nós atuem apenas como Thin Adapters sem lógicas de domínio ou fallbacks.
+    """
 
-# Compile with Checkpointer
-checkpointer = get_checkpointer()
-app = workflow.compile(checkpointer=checkpointer)
+    def __init__(
+        self,
+        research_agent: IResearchAgent,
+        editorial_agent: IEditorialAgent,
+        art_director_agent: IArtDirectorAgent,
+        designer_agent: IDesignerAgent,
+        brand_guardian_agent: IBrandGuardianAgent,
+        memory_agent: IMemoryAgent
+    ):
+        self.research_agent = research_agent
+        self.editorial_agent = editorial_agent
+        self.art_director_agent = art_director_agent
+        self.designer_agent = designer_agent
+        self.brand_guardian_agent = brand_guardian_agent
+        self.memory_agent = memory_agent
+
+    def _research_node(self, state: GlobalState) -> GlobalState:
+        brief = state.get("brief")
+        if not brief:
+            raise ValueError("Research Node requires an EditorialBrief")
+        
+        report = self.research_agent.run(brief)
+        
+        self.memory_agent.log_event("research_completed", {"agent": "research", "confidence": report.confidence_score})
+        
+        state["research"] = report
+        state["current_agent"] = "research"
+        state["current_phase"] = "research_completed"
+        if "audit_events" not in state: state["audit_events"] = []
+        state["audit_events"].append({"event": "Research completed", "agent": "research"})
+        return state
+
+    def _editorial_node(self, state: GlobalState) -> GlobalState:
+        report = state.get("research")
+        if not report:
+            raise ValueError("Editorial Node requires a ResearchReport")
+        
+        direction = self.editorial_agent.run(report)
+        
+        self.memory_agent.save_decision("editorial", "Established creative direction", {"concept": direction.core_concept})
+        
+        state["direction"] = direction
+        state["current_agent"] = "editorial"
+        state["current_phase"] = "editorial_completed"
+        if "audit_events" not in state: state["audit_events"] = []
+        state["audit_events"].append({"event": "Creative Direction established", "agent": "editorial"})
+        return state
+
+    def _art_director_node(self, state: GlobalState) -> GlobalState:
+        direction = state.get("direction")
+        if not direction:
+            raise ValueError("Art Director Node requires a CreativeDirection")
+        
+        direction = self.art_director_agent.run(direction)
+            
+        self.memory_agent.save_decision("art_director", "Enriched creative direction with aesthetic mood", {"mood": direction.aesthetic_mood})
+        
+        state["direction"] = direction
+        state["current_agent"] = "art_director"
+        state["current_phase"] = "art_direction_completed"
+        if "audit_events" not in state: state["audit_events"] = []
+        state["audit_events"].append({"event": "Aesthetic mood defined", "agent": "art_director"})
+        return state
+
+    def _designer_node(self, state: GlobalState) -> GlobalState:
+        direction = state.get("direction")
+        if not direction:
+            raise ValueError("Designer Node requires a CreativeDirection")
+        
+        proposal = self.designer_agent.run(direction)
+        
+        self.memory_agent.save_decision("designer", "Generated Design Blueprint", {"grid": proposal.grid_structure})
+        
+        state["proposal"] = proposal
+        state["current_agent"] = "designer"
+        state["current_phase"] = "design_completed"
+        if "audit_events" not in state: state["audit_events"] = []
+        state["audit_events"].append({"event": "Visual Proposal generated", "agent": "designer"})
+        return state
+
+    def _brand_guardian_node(self, state: GlobalState) -> GlobalState:
+        proposal = state.get("proposal")
+        if not proposal:
+            raise ValueError("Brand Guardian Node requires a VisualProposal")
+        
+        direction = state.get("direction")
+        if not direction:
+            raise ValueError("Brand Guardian Node requires a CreativeDirection")
+        
+        brief = state.get("brief")
+        research = state.get("research")
+        
+        # Tipando os parâmetros que podem ser None (para fins de type hinting), 
+        # assumindo que chegar neste estágio implica que existem, mas garantimos no assert.
+        assert brief is not None
+        assert research is not None
+
+        audit = self.brand_guardian_agent.audit(
+            proposal=proposal,
+            direction=direction,
+            brief=brief,
+            research=research
+        )
+        
+        self.memory_agent.save_decision(
+            "brand_guardian",
+            f"Audit result: {audit.status.value}",
+            {"status": audit.status.value, "violations": audit.violations}
+        )
+        
+        revision_count = state.get("revision_count", 0)
+        if audit.status in (AuditStatus.REJECTED, AuditStatus.APPROVED_WITH_CHANGES):
+            revision_count += 1
+            if revision_count >= GuardianDecisionPolicy.MAX_REVISIONS:
+                audit = BrandAuditReport(
+                    status=AuditStatus.HUMAN_REVIEW_REQUIRED,
+                    evaluated_rules=audit.evaluated_rules,
+                    violations=audit.violations,
+                    severity="Critical",
+                    justification=(
+                        f"Limite de {GuardianDecisionPolicy.MAX_REVISIONS} revisões atingido. "
+                        f"Escalonando para revisão humana. Última justificativa: {audit.justification}"
+                    ),
+                    audit_context=f"Escalonamento automático após {revision_count} revisões",
+                    recommendations=audit.recommendations + [
+                        "Intervenção humana obrigatória — limite de revisões automáticas atingido."
+                    ]
+                )
+        
+        state["audit"] = audit
+        state["revision_count"] = revision_count
+        state["current_agent"] = "brand_guardian"
+        state["current_phase"] = "audit_completed"
+        if "audit_events" not in state: state["audit_events"] = []
+        state["audit_events"].append({
+            "event": f"Brand Audit completed: {audit.status.value}",
+            "agent": "brand_guardian",
+            "revision": revision_count
+        })
+        return state
+
+    def _human_approval_node(self, state: GlobalState) -> GlobalState:
+        audit = state.get("audit")
+        if not audit:
+            raise ValueError("Human Approval Node requires a BrandAuditReport")
+        
+        # Nota: Idealmente, a Geração de Pacote seria um Serviço também, mas
+        # como é atualmente um mock inline da estrutura base, vamos mantê-lo assim
+        # ou transformá-lo num agente publicador futuramente.
+        package = PublicationPackage(
+            final_copy="Here is the final gritty copy.",
+            image_assets=["/assets/final_render_1.png"],
+            caption="Embracing the chaos. #HighHouse",
+            metadata={"platform": "instagram"}
+        )
+        
+        state["package"] = package
+        state["current_agent"] = "human_approval"
+        state["current_phase"] = "publication_ready"
+        if "audit_events" not in state: state["audit_events"] = []
+        state["audit_events"].append({"event": "Publication Package generated", "agent": "human_approval"})
+        return state
+
+    def _route_after_guardian(self, state: GlobalState) -> str:
+        return GuardianDecisionPolicy.route(state)
+
+    def build_app(self) -> CompiledStateGraph:
+        workflow = StateGraph(GlobalState)
+
+        workflow.add_node("agent_research", self._research_node)
+        workflow.add_node("agent_editorial", self._editorial_node)
+        workflow.add_node("agent_art_director", self._art_director_node)
+        workflow.add_node("agent_designer", self._designer_node)
+        workflow.add_node("agent_brand_guardian", self._brand_guardian_node)
+        workflow.add_node("agent_human_approval", self._human_approval_node)
+
+        workflow.add_edge(START, "agent_research")
+        workflow.add_edge("agent_research", "agent_editorial")
+        workflow.add_edge("agent_editorial", "agent_art_director")
+        workflow.add_edge("agent_art_director", "agent_designer")
+        workflow.add_edge("agent_designer", "agent_brand_guardian")
+
+        workflow.add_conditional_edges(
+            "agent_brand_guardian",
+            self._route_after_guardian,
+            {
+                "agent_human_approval": "agent_human_approval",
+                "agent_designer": "agent_designer",
+            }
+        )
+        workflow.add_edge("agent_human_approval", END)
+
+        checkpointer = get_checkpointer()
+        return workflow.compile(checkpointer=checkpointer)
