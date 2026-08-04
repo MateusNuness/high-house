@@ -261,4 +261,4 @@ As seguintes frentes operacionais e táticas estão atualmente sob análise para
 
 ---
 
-*Documentação oficial atualizada em Julho de 2026 — Fase 2 (Validação e Descoberta de Público). Foco imediato: criação da primeira coleção editorial para o Instagram. Sistema Operacional Editorial: Fase 3 (Governança) concluída — Brand Guardian Agent (EOS-004) implementado com routing condicional LangGraph e fail-secure.*
+*Documentação oficial atualizada em Agosto de 2026 — Fase 2 (Validação e Descoberta de Público). Foco imediato: criação da primeira coleção editorial para o Instagram. Sistema Operacional Editorial: Fase 3 (Governança) concluída — Brand Guardian Agent (EOS-004) implementado com routing condicional LangGraph e fail-secure. O Research Agent teve sua extração de output corrigida com a utilização nativa de `with_structured_output` no Langchain, garantindo JSON válido e eliminando a dependência de parsers manuais falhos.*

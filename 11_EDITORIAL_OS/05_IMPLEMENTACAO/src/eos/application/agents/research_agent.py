@@ -21,10 +21,8 @@ class ResearchAgent:
         """
         Executa a pesquisa com base no brief e retorna o relatório estruturado.
         """
-        # Em uma implementação real do LangChain com suporte a structured output:
-        # structured_llm = self.llm.with_structured_output(ResearchReport)
+        structured_llm = self.llm.with_structured_output(ResearchReport)
         
-        # Como estamos simulando/iniciando, construímos a mensagem.
         human_msg = f"""
         Topic: {brief.topic}
         Objective: {brief.objective}
@@ -36,35 +34,19 @@ class ResearchAgent:
             HumanMessage(content=human_msg)
         ]
         
-        # Chamada ao modelo (no MVP, pode retornar um mock string ou um dict json formatado)
-        response = self.llm.invoke(messages)
-        
-        # Para compatibilidade com o mock do llm_router que retorna strings simples, 
-        # ou caso o llm suporte structured output. 
-        # Aqui, vamos assumir que o LLM retorna JSON no nosso setup real,
-        # Mas como temos o MockLLM no router agora, fazemos um fallback caso falhe.
-        
         try:
-            # Em um cenário real com structured output, a resposta já seria o BaseModel,
-            # ou um JSON que podemos fazer parse.
-            if hasattr(response, 'content') and "{" in response.content:
-                # Tenta parsear o JSON se vier em texto
-                content = response.content
-                # Simples extract de json:
-                json_str = content[content.find("{"):content.rfind("}")+1]
-                data = json.loads(json_str)
-                return ResearchReport(**data)
+            response = structured_llm.invoke(messages)
+            if isinstance(response, ResearchReport):
+                return response
             elif isinstance(response, dict):
                 return ResearchReport(**response)
-            elif isinstance(response, ResearchReport):
-                return response
-        except Exception:
+        except Exception as e:
             pass
             
-        # Fallback de segurança caso a resposta não seja parseável ou seja o Mock string
+        # Fallback de segurança caso a resposta não seja parseável
         return ResearchReport(
             sources=["Falha no parser ou mock"],
             cultural_hypotheses=["O agente não retornou JSON válido"],
-            key_findings=["Verificar implementação do Structured Output no LLM", str(response.content) if hasattr(response, 'content') else str(response)],
+            key_findings=["Verificar implementação do Structured Output no LLM"],
             confidence_score=0.0
         )
