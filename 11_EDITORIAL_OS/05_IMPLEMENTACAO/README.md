@@ -154,6 +154,12 @@ Research → Editorial → Designer → Brand Guardian → [Decision Policy]
                                                         └── Any (rev >= 3) → Human Review → END
 ```
 
+### 4.4 Acumulador Sequencial e Continuidade Narrativa
+O `CollectionOrchestrator` implementa o recurso de Acumulação Sequencial:
+- Pôsteres gerados numa mesma coleção alimentam um histórico (`previous_posters`).
+- O `EditorialWorkflow` injeta esse contexto no `EditorialAgent`.
+- A direção criativa avança mantendo coerência visual e textual entre os elementos da coleção.
+
 ---
 
 ## 5. Guia de Execução e Testes
@@ -175,7 +181,7 @@ pytest tests/agents/test_brand_guardian_agent.py -v
 # Testes de Workflow com routing condicional
 pytest tests/workflows/test_editorial_workflow.py -v
 
-# Suite completa (21 testes)
+# Suite completa
 pytest tests/ -v
 ```
 
@@ -185,4 +191,4 @@ pytest tests/ -v
 
 ---
 
-*Última atualização: Conclusão do EOS-004 (Brand Guardian Agent) com routing condicional LangGraph, GuardianDecisionPolicy, fail-secure e suite de 15 testes passando.*
+*Última atualização: Implementação da Continuidade Narrativa (Sequential Accumulator) para geração coesa de pôsteres em coleções.*

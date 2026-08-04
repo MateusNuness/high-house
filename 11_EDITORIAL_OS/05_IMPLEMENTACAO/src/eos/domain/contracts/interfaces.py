@@ -27,7 +27,7 @@ class IResearchAgent(Protocol):
         ...
 
 class IEditorialAgent(Protocol):
-    def run(self, report: ResearchReport) -> CreativeDirection:
+    def run(self, report: ResearchReport, previous_posters: list[dict[str, Any]] | None = None) -> CreativeDirection:
         ...
 
 class IArtDirectorAgent(Protocol):

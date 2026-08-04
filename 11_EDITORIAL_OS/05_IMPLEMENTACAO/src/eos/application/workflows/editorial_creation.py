@@ -76,7 +76,8 @@ class EditorialWorkflow:
         if not report:
             raise ValueError("Editorial Node requires a ResearchReport")
         
-        direction = self.editorial_agent.run(report)
+        previous_posters = state.get("previous_posters", [])
+        direction = self.editorial_agent.run(report, previous_posters=previous_posters)
         
         self.memory_agent.save_decision("editorial", "Established creative direction", {"concept": direction.core_concept})
         

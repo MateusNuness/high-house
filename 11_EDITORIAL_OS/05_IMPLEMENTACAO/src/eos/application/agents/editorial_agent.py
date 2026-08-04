@@ -18,15 +18,25 @@ class EditorialAgent:
         # Roteia para o modelo do papel EDITORIAL
         self.llm = ModelRouter.get_model_for_role(AgentRole.EDITORIAL)
         
-    def run(self, report: ResearchReport) -> CreativeDirection:
+    def run(self, report: ResearchReport, previous_posters: list[dict] | None = None) -> CreativeDirection:
         """
         Executa a síntese editorial com base no relatório de pesquisa e retorna a direção criativa estruturada.
         """
+        history_context = ""
+        if previous_posters:
+            history_context = "\nContexto Narrativo Anterior da Coleção (Pôsteres já gerados):\n"
+            for i, p in enumerate(previous_posters):
+                history_context += f"Pôster {i+1} - Tópico: {p.get('topic')}\n"
+                history_context += f"Caption: {p.get('caption')}\n"
+                history_context += f"Core Concept: {p.get('core_concept')}\n\n"
+            history_context += "Instrução: Considere o contexto narrativo acima para garantir continuidade. A caption deste novo pôster deve soar como o próximo capítulo ou continuação natural, mantendo coesão e progressão em relação aos pôsteres anteriores."
+
         human_msg = f"""
         Research Sources: {', '.join(report.sources) if report.sources else 'None'}
         Cultural Hypotheses: {'; '.join(report.cultural_hypotheses) if report.cultural_hypotheses else 'None'}
         Key Findings: {'; '.join(report.key_findings) if report.key_findings else 'None'}
         Confidence Score: {report.confidence_score}
+        {history_context}
         """
         
         messages = [
