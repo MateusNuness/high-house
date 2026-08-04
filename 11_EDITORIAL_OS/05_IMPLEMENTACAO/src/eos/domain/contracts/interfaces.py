@@ -4,6 +4,7 @@ from eos.domain.contracts.research_report import ResearchReport
 from eos.domain.contracts.creative_direction import CreativeDirection
 from eos.domain.contracts.visual_proposal import VisualProposal
 from eos.domain.contracts.brand_audit_report import BrandAuditReport
+from eos.domain.contracts.image_asset import ImageAsset
 from eos.domain.contracts.rendered_code import RenderedCode
 from eos.domain.contracts.vision_audit_report import VisionAuditReport
 
@@ -39,6 +40,10 @@ class IBrandGuardianAgent(Protocol):
         brief: EditorialBrief,
         research: ResearchReport
     ) -> BrandAuditReport:
+        ...
+
+class IImageAgent(Protocol):
+    def run(self, proposal: VisualProposal) -> ImageAsset:
         ...
 
 class IMemoryAgent(Protocol):

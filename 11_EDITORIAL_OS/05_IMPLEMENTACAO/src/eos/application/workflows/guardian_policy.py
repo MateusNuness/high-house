@@ -26,6 +26,7 @@ class GuardianDecisionPolicy:
     # Nomes dos nós no LangGraph
     NODE_HUMAN_APPROVAL = "agent_human_approval"
     NODE_DESIGNER = "agent_designer"
+    NODE_IMAGE = "agent_image"
     NODE_CODER = "agent_coder"
     
     @classmethod
@@ -46,9 +47,9 @@ class GuardianDecisionPolicy:
         
         status = audit.status
         
-        # Aprovação direta → coder
+        # Aprovação direta → image agent
         if status == AuditStatus.APPROVED:
-            return cls.NODE_CODER
+            return cls.NODE_IMAGE
         
         # Escalonamento explícito → human review
         if status == AuditStatus.HUMAN_REVIEW_REQUIRED:

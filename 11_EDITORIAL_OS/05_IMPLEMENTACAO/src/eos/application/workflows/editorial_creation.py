@@ -22,7 +22,8 @@ from eos.domain.contracts.interfaces import (
     IBrandGuardianAgent,
     IMemoryAgent,
     ICoderAgent,
-    IVisionAgent
+    IVisionAgent,
+    IImageAgent
 )
 
 class EditorialWorkflow:
@@ -41,7 +42,8 @@ class EditorialWorkflow:
         brand_guardian_agent: IBrandGuardianAgent,
         memory_agent: IMemoryAgent,
         coder_agent: ICoderAgent,
-        vision_agent: IVisionAgent
+        vision_agent: IVisionAgent,
+        image_agent: IImageAgent
     ):
         self.research_agent = research_agent
         self.editorial_agent = editorial_agent
@@ -51,6 +53,7 @@ class EditorialWorkflow:
         self.memory_agent = memory_agent
         self.coder_agent = coder_agent
         self.vision_agent = vision_agent
+        self.image_agent = image_agent
 
     def _research_node(self, state: GlobalState) -> GlobalState:
         brief = state.get("brief")
@@ -177,6 +180,22 @@ class EditorialWorkflow:
         })
         return state
 
+    def _image_node(self, state: GlobalState) -> GlobalState:
+        proposal = state.get("proposal")
+        if not proposal:
+            raise ValueError("Image Node requires a VisualProposal")
+        
+        image_asset = self.image_agent.run(proposal)
+        
+        self.memory_agent.log_event("image_generated", {"agent": "image_agent", "url": image_asset.image_url})
+        
+        state["image_asset"] = image_asset
+        state["current_agent"] = "image"
+        state["current_phase"] = "image_generation_completed"
+        if "audit_events" not in state: state["audit_events"] = []
+        state["audit_events"].append({"event": "Base Image generated", "agent": "image_agent"})
+        return state
+
     def _coder_node(self, state: GlobalState) -> GlobalState:
         proposal = state.get("proposal")
         if not proposal:
@@ -264,6 +283,7 @@ class EditorialWorkflow:
         workflow.add_node("agent_art_director", self._art_director_node)
         workflow.add_node("agent_designer", self._designer_node)
         workflow.add_node("agent_brand_guardian", self._brand_guardian_node)
+        workflow.add_node("agent_image", self._image_node)
         workflow.add_node("agent_coder", self._coder_node)
         workflow.add_node("agent_vision", self._vision_node)
         workflow.add_node("agent_human_approval", self._human_approval_node)
@@ -280,10 +300,11 @@ class EditorialWorkflow:
             {
                 "agent_human_approval": "agent_human_approval",
                 "agent_designer": "agent_designer",
-                "agent_coder": "agent_coder",
+                "agent_image": "agent_image",
             }
         )
         
+        workflow.add_edge("agent_image", "agent_coder")
         workflow.add_edge("agent_coder", "agent_vision")
         
         workflow.add_conditional_edges(
