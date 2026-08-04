@@ -35,21 +35,24 @@ class ArtDirectorAgent:
             HumanMessage(content=human_msg)
         ]
         
-        response = self.llm.invoke(messages)
+        structured_llm = self.llm.with_structured_output(CreativeDirection)
         
         try:
-            if hasattr(response, 'content') and "{" in response.content:
-                content = response.content
-                json_str = content[content.find("{"):content.rfind("}")+1]
-                data = json.loads(json_str)
-                # Mantém as definições editoriais originais caso o LLM omita
-                if "core_concept" not in data or not data["core_concept"]:
-                    data["core_concept"] = direction.core_concept
-                if "editorial_intent" not in data or not data["editorial_intent"]:
-                    data["editorial_intent"] = direction.editorial_intent
-                return CreativeDirection(**data)
+            response = structured_llm.invoke(messages)
+            
+            if isinstance(response, CreativeDirection):
+                data = response.model_dump()
             elif isinstance(response, dict):
-                return CreativeDirection(**response)
+                data = response
+            else:
+                raise ValueError("Unexpected response type")
+                
+            # Mantém as definições editoriais originais caso o LLM omita
+            if "core_concept" not in data or not data["core_concept"]:
+                data["core_concept"] = direction.core_concept
+            if "editorial_intent" not in data or not data["editorial_intent"]:
+                data["editorial_intent"] = direction.editorial_intent
+            return CreativeDirection(**data)
         except Exception:
             pass
             

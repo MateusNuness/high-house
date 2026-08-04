@@ -31,14 +31,12 @@ class ImageAgent:
             HumanMessage(content=human_msg)
         ]
         
-        response = self.llm.invoke(messages)
+        structured_llm = self.llm.with_structured_output(ImageAsset)
         
         try:
-            if hasattr(response, 'content') and "{" in response.content:
-                content = response.content
-                json_str = content[content.find("{"):content.rfind("}")+1]
-                data = json.loads(json_str)
-                return ImageAsset(**data)
+            response = structured_llm.invoke(messages)
+            if isinstance(response, ImageAsset):
+                return response
             elif isinstance(response, dict):
                 return ImageAsset(**response)
         except Exception:

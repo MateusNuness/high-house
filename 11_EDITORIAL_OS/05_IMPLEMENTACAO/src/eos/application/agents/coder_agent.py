@@ -29,14 +29,12 @@ class CoderAgent:
             HumanMessage(content=human_msg)
         ]
         
-        response = self.llm.invoke(messages)
+        structured_llm = self.llm.with_structured_output(RenderedCode)
         
         try:
-            if hasattr(response, 'content') and "{" in response.content:
-                content = response.content
-                json_str = content[content.find("{"):content.rfind("}")+1]
-                data = json.loads(json_str)
-                return RenderedCode(**data)
+            response = structured_llm.invoke(messages)
+            if isinstance(response, RenderedCode):
+                return response
             elif isinstance(response, dict):
                 return RenderedCode(**response)
         except Exception:

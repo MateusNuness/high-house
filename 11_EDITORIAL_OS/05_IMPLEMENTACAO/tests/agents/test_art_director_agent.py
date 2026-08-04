@@ -25,8 +25,13 @@ def test_art_director_context_loading(mock_get_model):
 def test_art_director_contract_output(mock_get_model):
     """Testa se o agente retorna o contrato esperado (CreativeDirection enriquecida)."""
     mock_llm = MagicMock()
-    # Mocking a valid JSON response from LLM
-    mock_llm.invoke.return_value = MagicMock(content='{"core_concept": "Urban tension", "editorial_intent": "Critique", "aesthetic_mood": "Dark and brutal", "references": ["Brutalism"]}')
+    mock_llm.with_structured_output.return_value = mock_llm
+    mock_llm.invoke.return_value = CreativeDirection(
+        core_concept="Urban tension", 
+        editorial_intent="Critique", 
+        aesthetic_mood="Dark and brutal", 
+        references=["Brutalism"]
+    )
     mock_get_model.return_value = mock_llm
     
     agent = ArtDirectorAgent()
@@ -41,8 +46,9 @@ def test_art_director_contract_output(mock_get_model):
 def test_art_director_fail_secure(mock_get_model):
     """Testa se o agente cai no fallback determinístico em caso de falha."""
     mock_llm = MagicMock()
-    # Simulando um erro de parsing (retorna uma string sem JSON)
-    mock_llm.invoke.return_value = MagicMock(content="Here is your creative direction without JSON.")
+    mock_llm.with_structured_output.return_value = mock_llm
+    # Simulando um erro
+    mock_llm.invoke.side_effect = Exception("Parsing error")
     mock_get_model.return_value = mock_llm
     
     agent = ArtDirectorAgent()

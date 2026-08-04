@@ -34,18 +34,14 @@ class EditorialAgent:
             HumanMessage(content=human_msg)
         ]
         
-        response = self.llm.invoke(messages)
+        structured_llm = self.llm.with_structured_output(CreativeDirection)
         
         try:
-            if hasattr(response, 'content') and "{" in response.content:
-                content = response.content
-                json_str = content[content.find("{"):content.rfind("}")+1]
-                data = json.loads(json_str)
-                return CreativeDirection(**data)
+            response = structured_llm.invoke(messages)
+            if isinstance(response, CreativeDirection):
+                return response
             elif isinstance(response, dict):
                 return CreativeDirection(**response)
-            elif isinstance(response, CreativeDirection):
-                return response
         except Exception:
             pass
             

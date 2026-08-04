@@ -53,8 +53,10 @@ class BrandGuardianAgent:
             HumanMessage(content=human_msg)
         ]
         
+        structured_llm = self.llm.with_structured_output(BrandAuditReport)
+        
         try:
-            response = self.llm.invoke(messages)
+            response = structured_llm.invoke(messages)
             return self._parse_response(response)
         except Exception:
             # Fail-secure: qualquer falha → HUMAN_REVIEW_REQUIRED
@@ -117,15 +119,10 @@ class BrandGuardianAgent:
         Fail-secure: se o parsing falhar, retorna HUMAN_REVIEW_REQUIRED.
         """
         try:
-            if hasattr(response, 'content') and "{" in response.content:
-                content = response.content
-                json_str = content[content.find("{"):content.rfind("}") + 1]
-                data = json.loads(json_str)
-                return BrandAuditReport(**data)
+            if isinstance(response, BrandAuditReport):
+                return response
             elif isinstance(response, dict):
                 return BrandAuditReport(**response)
-            elif isinstance(response, BrandAuditReport):
-                return response
         except Exception:
             pass
         

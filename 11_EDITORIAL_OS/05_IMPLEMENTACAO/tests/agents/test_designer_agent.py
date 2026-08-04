@@ -27,18 +27,15 @@ def test_designer_context_loading(mock_get_model):
 def test_designer_contract_output(mock_get_model):
     """Testa se o agente retorna o contrato esperado (VisualProposal)."""
     mock_llm = MagicMock()
-    # Mocking a valid JSON response
-    json_response = '''
-    {
-      "grid_structure": "Heavy asymmetric grid",
-      "visual_elements": ["Block quotes"],
-      "color_palette": ["#000000", "#FFFFFF"],
-      "typography_spec": "Space Grotesk primary",
-      "generation_prompt": "None",
-      "implementation_notes": "Use extreme padding"
-    }
-    '''
-    mock_llm.invoke.return_value = MagicMock(content=json_response)
+    mock_llm.with_structured_output.return_value = mock_llm
+    mock_llm.invoke.return_value = VisualProposal(
+        grid_structure="Heavy asymmetric grid",
+        visual_elements=["Block quotes"],
+        color_palette=["#000000", "#FFFFFF"],
+        typography_spec="Space Grotesk primary",
+        generation_prompt="None",
+        implementation_notes="Use extreme padding"
+    )
     mock_get_model.return_value = mock_llm
     
     agent = DesignerAgent()
@@ -52,7 +49,8 @@ def test_designer_contract_output(mock_get_model):
 def test_designer_fail_secure(mock_get_model):
     """Testa se o agente cai no fallback determinístico em caso de falha de parsing."""
     mock_llm = MagicMock()
-    mock_llm.invoke.return_value = MagicMock(content="Here is your proposal without JSON.")
+    mock_llm.with_structured_output.return_value = mock_llm
+    mock_llm.invoke.side_effect = Exception("Parsing Error")
     mock_get_model.return_value = mock_llm
     
     agent = DesignerAgent()

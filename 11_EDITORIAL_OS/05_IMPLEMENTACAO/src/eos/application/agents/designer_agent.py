@@ -36,14 +36,12 @@ class DesignerAgent:
             HumanMessage(content=human_msg)
         ]
         
-        response = self.llm.invoke(messages)
+        structured_llm = self.llm.with_structured_output(VisualProposal)
         
         try:
-            if hasattr(response, 'content') and "{" in response.content:
-                content = response.content
-                json_str = content[content.find("{"):content.rfind("}")+1]
-                data = json.loads(json_str)
-                return VisualProposal(**data)
+            response = structured_llm.invoke(messages)
+            if isinstance(response, VisualProposal):
+                return response
             elif isinstance(response, dict):
                 return VisualProposal(**response)
         except Exception:
