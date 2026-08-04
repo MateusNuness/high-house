@@ -93,6 +93,23 @@ def main():
                 )
             ]
         )
+    elif args.collection == "001_poster1":
+        collection_brief = CollectionBrief(
+            collection_id="001_poster1",
+            name="Coleção 001 (Apenas Pôster 1)",
+            description="A coleção fundacional da marca - Primeiro Pôster apenas.",
+            chapters=[
+                EditorialBrief(
+                    topic="Pôster 1: Impacto Visual (Textura de concreto ou tipografia bruta)",
+                    objective="Afirmação estética e filosófica, estabelecendo a materialidade sem clichês.",
+                    audience="Jovens criativos e cultura urbana",
+                    cultural_context="Brutalismo, arquitetura urbana, ruído",
+                    constraints=["Mínimo de interferência visual", "Uso estrito da tipografia oficial", "Nenhuma call to action"],
+                    source_reference="Manifesto da High House",
+                    created_by="CLI Batch Launcher"
+                )
+            ]
+        )
     else:
         print(f"[ERRO] A Coleção '{args.collection}' não está mapeada no launcher ainda.")
         sys.exit(1)

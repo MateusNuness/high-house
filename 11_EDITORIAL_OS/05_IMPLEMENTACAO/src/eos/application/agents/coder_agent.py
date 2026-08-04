@@ -43,9 +43,8 @@ class CoderAgent:
         Grid e Estrutura:
         {proposal.grid_structure}
         
-        Constraints: No inline CSS, no frameworks. Use ONLY tokens.css abstractions.
-        Você deve gerar um HTML semântico utilizando o conteúdo editorial real, e aplicar a imagem de fundo via atributos style se o layout pedir.
-        """
+        Constraints: You MUST write a <style> block in the <head> of the HTML defining all the layout classes you use (e.g. .poster-grid, .monolith-block). Use the variables from tokens.css (like var(--color-surface)) inside your <style> block. The image must be visible and properly styled.
+        Você deve gerar um HTML completo, responsivo para 1080x1350, incorporando o conteúdo editorial, a imagem (como background ou tag img estilizada) e as regras CSS necessárias no head."""
         
         messages = [
             SystemMessage(content=self.system_prompt),

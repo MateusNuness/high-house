@@ -44,12 +44,16 @@ class CollectionOrchestrator:
                 }
             )
             
-            # Extract HTML and Caption
             rendered_code = final_state.get("rendered_code")
             package = final_state.get("package")
+            audit = final_state.get("audit")
             
             if not rendered_code or not rendered_code.html_content:
                 print(f"[ORCHESTRATOR] ERRO: Pôster {poster_num} falhou na geração do HTML.")
+                if audit:
+                    print(f"[ORCHESTRATOR] Audit Status: {audit.status}")
+                    print(f"[ORCHESTRATOR] Justification: {audit.justification}")
+                    print(f"[ORCHESTRATOR] Violations: {audit.violations}")
                 continue
 
             caption = package.caption if package else ""
