@@ -257,7 +257,7 @@ Nenhuma tarefa pode ser migrada para "Concluída" sem:
 | Fase 3 | EOS-004.2 (Runtime) | Concluído | IA | - |
 | Fase 3 | EOS-004.3 (Workflow) | Concluído | IA | - |
 | Fase 3 | EOS-004.4 (Tests) | Concluído | IA | - |
-| Fase 4 | EOS-006 | Não iniciado | - | - |
+| Fase 4 | EOS-006 | Concluído | IA | - |
 | Fase 4 | EOS-002 | [x] Concluído | - | - |
 | Fase 4 | EOS-003 | Não iniciado | - | - |
 | Fase 4 | EOS-007 | Não iniciado | - | - |
