@@ -2,6 +2,11 @@
 
 O **Editorial Operating System (EOS)** é a camada de inteligência autônoma da High House, estruturada não como um mero gerador de imagens ou textos, mas como uma **agência autônoma baseada na construção sequencial de marca a longo prazo**.
 
+- [x] Agentes Funcionais
+- [x] Integração Visual Bruta (HTML/CSS)
+- [x] Batch Pipeline & Playwright Renderer (Lançamento de Coleções)
+- [ ] Conexão com o Memory Server (Postgres)
+
 ## 🏗️ O Pipeline de 12 Agentes (Visão Arquitetural)
 
 *Nota: A lista abaixo representa o **End-State** projetado da arquitetura. O estado atual da implementação (MVP Iterativo) opera com 9 agentes ativos na esteira. Os agentes marcados como `[Projetado]` terão sua lógica materializada em fases futuras.*

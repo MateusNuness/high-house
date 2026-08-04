@@ -7,7 +7,8 @@ from .brand_audit_report import BrandAuditReport
 from .publication_package import PublicationPackage
 from .image_asset import ImageAsset
 from .rendered_code import RenderedCode
-from .vision_audit_report import VisionAuditReport
+from .vision_audit_report import VisionAuditReport, TechnicalAudit
+from .collection_brief import CollectionBrief
 
 __all__ = [
     'AuditStatus',
@@ -19,5 +20,7 @@ __all__ = [
     'PublicationPackage',
     'ImageAsset',
     'RenderedCode',
-    'VisionAuditReport'
+    'VisionAuditReport',
+    'TechnicalAudit',
+    'CollectionBrief'
 ]

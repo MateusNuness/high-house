@@ -244,13 +244,16 @@ class EditorialWorkflow:
         if not audit:
             raise ValueError("Human Approval Node requires a BrandAuditReport")
         
-        # Nota: Idealmente, a Geração de Pacote seria um Serviço também, mas
-        # como é atualmente um mock inline da estrutura base, vamos mantê-lo assim
-        # ou transformá-lo num agente publicador futuramente.
+        direction = state.get("direction")
+        image_asset = state.get("image_asset")
+        
+        caption = direction.suggested_caption if direction and hasattr(direction, "suggested_caption") else "High House."
+        image_url = image_asset.image_url if image_asset else ""
+        
         package = PublicationPackage(
-            final_copy="Here is the final gritty copy.",
-            image_assets=["/assets/final_render_1.png"],
-            caption="Embracing the chaos. #HighHouse",
+            final_copy=caption,
+            image_assets=[image_url] if image_url else [],
+            caption=caption,
             metadata={"platform": "instagram"}
         )
         
