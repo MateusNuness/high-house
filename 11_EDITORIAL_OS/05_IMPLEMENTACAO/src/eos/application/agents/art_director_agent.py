@@ -12,7 +12,7 @@ class ArtDirectorAgent:
     restrições poéticas, materialidade dominante e técnica visual (Atmosfera Estética).
     """
     
-    def __init__(self):
+    def __init__(self) -> None:
         # Carrega o contexto dedicado de 04_AGENT_CONTEXTS/art_director_context.md
         self.system_prompt = MarkdownContextLoader.load("Art Director Agent")
         # Roteia para o modelo (usa o mesmo nível do Designer/Creation)
