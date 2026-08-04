@@ -201,7 +201,19 @@ class EditorialWorkflow:
         if not proposal:
             raise ValueError("Coder Node requires a VisualProposal")
         
-        rendered_code = self.coder_agent.run(proposal)
+        brief = state.get("brief")
+        direction = state.get("direction")
+        image_asset = state.get("image_asset")
+        
+        if not brief or not direction:
+            raise ValueError("Coder Node requires EditorialBrief and CreativeDirection")
+        
+        rendered_code = self.coder_agent.run(
+            proposal=proposal,
+            brief=brief,
+            direction=direction,
+            image=image_asset
+        )
         
         self.memory_agent.log_event("coding_completed", {"agent": "coder"})
         

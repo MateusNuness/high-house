@@ -9,7 +9,13 @@ from eos.domain.contracts.rendered_code import RenderedCode
 from eos.domain.contracts.vision_audit_report import VisionAuditReport
 
 class ICoderAgent(Protocol):
-    def run(self, proposal: VisualProposal) -> RenderedCode:
+    def run(
+        self, 
+        proposal: VisualProposal, 
+        brief: EditorialBrief, 
+        direction: CreativeDirection, 
+        image: ImageAsset | None = None
+    ) -> RenderedCode:
         ...
 
 class IVisionAgent(Protocol):
