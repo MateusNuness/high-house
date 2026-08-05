@@ -7,6 +7,7 @@ from eos.domain.contracts.brand_audit_report import BrandAuditReport
 from eos.domain.contracts.image_asset import ImageAsset
 from eos.domain.contracts.rendered_code import RenderedCode
 from eos.domain.contracts.vision_audit_report import VisionAuditReport
+from eos.domain.collection_history import CollectionHistory
 
 class ICoderAgent(Protocol):
     def run(
@@ -27,11 +28,11 @@ class IResearchAgent(Protocol):
         ...
 
 class IEditorialAgent(Protocol):
-    def run(self, report: ResearchReport, previous_posters: list[dict[str, Any]] | None = None) -> CreativeDirection:
+    def run(self, report: ResearchReport, history: CollectionHistory | None = None) -> CreativeDirection:
         ...
 
 class IArtDirectorAgent(Protocol):
-    def run(self, direction: CreativeDirection, previous_posters: list[dict[str, Any]] | None = None) -> CreativeDirection:
+    def run(self, direction: CreativeDirection, history: CollectionHistory | None = None) -> CreativeDirection:
         ...
 
 class IDesignerAgent(Protocol):

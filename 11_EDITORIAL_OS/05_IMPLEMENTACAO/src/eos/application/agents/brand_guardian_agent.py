@@ -1,5 +1,4 @@
 import json
-from langchain_core.messages import SystemMessage, HumanMessage
 from eos.domain.contracts.visual_proposal import VisualProposal
 from eos.domain.contracts.creative_direction import CreativeDirection
 from eos.domain.contracts.editorial_brief import EditorialBrief
@@ -49,13 +48,8 @@ class BrandGuardianAgent:
         """
         human_msg = self._build_audit_message(proposal, direction, brief, research)
         
-        messages = [
-            SystemMessage(content=self.system_prompt),
-            HumanMessage(content=human_msg)
-        ]
-        
         fallback = self._fail_secure_report(context="Falha na execução do LLM ou parsing da resposta")
-        return self.adapter.invoke(messages, BrandAuditReport, fallback)
+        return self.adapter.invoke(self.system_prompt, human_msg, BrandAuditReport, fallback)
     
     def _build_audit_message(
         self,

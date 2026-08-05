@@ -1,5 +1,4 @@
 import json
-from langchain_core.messages import SystemMessage, HumanMessage
 from eos.domain.contracts.rendered_code import RenderedCode
 from eos.domain.contracts.vision_audit_report import VisionAuditReport, TechnicalAudit, AestheticAudit
 from eos.domain.contracts.base import AuditStatus
@@ -27,11 +26,6 @@ class VisionAgent:
         Execute dual-audit as per system context.
         """
         
-        messages = [
-            SystemMessage(content=self.system_prompt),
-            HumanMessage(content=human_msg)
-        ]
-        
         fallback = VisionAuditReport(
             technical_audit=TechnicalAudit(
                 has_layout_break=False,
@@ -46,4 +40,4 @@ class VisionAgent:
             justification="Passou nos dois passos de auditoria visual."
         )
         
-        return self.adapter.invoke(messages, VisionAuditReport, fallback)
+        return self.adapter.invoke(self.system_prompt, human_msg, VisionAuditReport, fallback)

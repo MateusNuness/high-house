@@ -2,7 +2,8 @@ import os
 from typing import List, Dict, Any
 from eos.domain.contracts.collection_brief import CollectionBrief
 from eos.application.workflows.editorial_creation import EditorialWorkflow
-from eos.infrastructure.renderer import PlaywrightRenderer
+from eos.infrastructure.publication_exporter import PublicationExporter
+from eos.domain.collection_history import CollectionHistory
 from langfuse.langchain import CallbackHandler
 
 class CollectionOrchestrator:
@@ -14,15 +15,12 @@ class CollectionOrchestrator:
     def __init__(self, editorial_workflow: EditorialWorkflow, output_dir: str):
         self.editorial_workflow = editorial_workflow
         self.output_dir = output_dir
-        self.renderer = PlaywrightRenderer()
+        self.exporter = PublicationExporter(output_dir)
 
     def process_collection(self, collection_brief: CollectionBrief) -> List[Dict[str, Any]]:
-        collection_path = os.path.join(self.output_dir, collection_brief.collection_id)
-        os.makedirs(collection_path, exist_ok=True)
-        
         app = self.editorial_workflow.build_app()
         results = []
-        previous_posters = []
+        history = CollectionHistory()
 
         print(f"\n[ORCHESTRATOR] Iniciando o lote para a Coleção: {collection_brief.name} ({len(collection_brief.chapters)} Pôsteres)")
 
@@ -36,7 +34,7 @@ class CollectionOrchestrator:
             langfuse_handler = CallbackHandler()
 
             final_state = app.invoke(
-                {"brief": chapter_brief, "previous_posters": previous_posters}, 
+                {"brief": chapter_brief, "history": history}, 
                 config={
                     "configurable": {"thread_id": session_id},
                     "callbacks": [langfuse_handler],
@@ -60,28 +58,20 @@ class CollectionOrchestrator:
             caption = package.caption if package else ""
             direction = final_state.get("direction")
             
-            poster_summary = {
-                "topic": chapter_brief.topic,
-                "caption": caption,
-                "aesthetic_mood": direction.aesthetic_mood if direction else "",
-                "core_concept": direction.core_concept if direction else ""
-            }
-            previous_posters.append(poster_summary)
+            history.add_poster(
+                topic=chapter_brief.topic,
+                caption=caption,
+                aesthetic_mood=direction.aesthetic_mood if direction else "",
+                core_concept=direction.core_concept if direction else ""
+            )
 
-            # Save PNG via Renderer
-            png_path = os.path.join(collection_path, f"poster_{poster_num}.png")
-            
-            # Assuming design_system path for resolving CSS tokens
-            # Na arquitetura atual o design_system fica em 05_IMPLEMENTACAO/design_system
-            base_dir = os.path.abspath(os.path.join(self.output_dir, "../design_system"))
-            
-            print(f"[ORCHESTRATOR] Renderizando {png_path} via Playwright...")
-            self.renderer.render_to_png(rendered_code.html_content, png_path, base_dir=base_dir)
-            
-            # Save Caption
-            txt_path = os.path.join(collection_path, f"poster_{poster_num}_caption.txt")
-            with open(txt_path, "w", encoding="utf-8") as f:
-                f.write(caption)
+            # Export PNG and Caption
+            png_path, txt_path = self.exporter.export(
+                collection_id=collection_brief.collection_id,
+                poster_num=poster_num,
+                html_content=rendered_code.html_content,
+                caption=caption
+            )
 
             print(f"[ORCHESTRATOR] Pôster {poster_num} finalizado e salvo.")
             results.append({

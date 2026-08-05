@@ -76,8 +76,8 @@ class EditorialWorkflow:
         if not report:
             raise ValueError("Editorial Node requires a ResearchReport")
         
-        previous_posters = state.get("previous_posters", [])
-        direction = self.editorial_agent.run(report, previous_posters=previous_posters)
+        history = state.get("history")
+        direction = self.editorial_agent.run(report, history=history)
         
         self.memory_agent.save_decision("editorial", "Established creative direction", {"concept": direction.core_concept})
         
@@ -93,8 +93,8 @@ class EditorialWorkflow:
         if not direction:
             raise ValueError("Art Director Node requires a CreativeDirection")
         
-        previous_posters = state.get("previous_posters", [])
-        direction = self.art_director_agent.run(direction, previous_posters=previous_posters)
+        history = state.get("history")
+        direction = self.art_director_agent.run(direction, history=history)
             
         self.memory_agent.save_decision("art_director", "Enriched creative direction with aesthetic mood", {"mood": direction.aesthetic_mood})
         

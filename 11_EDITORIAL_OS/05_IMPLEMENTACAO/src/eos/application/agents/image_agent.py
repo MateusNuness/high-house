@@ -3,7 +3,6 @@ from eos.domain.contracts.image_asset import ImageAsset
 from eos.infrastructure.llm_router import AgentRole
 from eos.infrastructure.context_loader import MarkdownContextLoader
 from eos.infrastructure.structured_llm_adapter import StructuredLLMAdapter
-from langchain_core.messages import SystemMessage, HumanMessage
 
 import json
 
@@ -27,11 +26,6 @@ class ImageAgent:
         Use 'https://images.unsplash.com/photo-1616422285623-146698dc96a5?q=80&w=1080&auto=format&fit=crop' como image_url provisória.
         """
         
-        messages = [
-            SystemMessage(content=self.system_prompt),
-            HumanMessage(content=human_msg)
-        ]
-        
         fallback = ImageAsset(
             image_url="https://images.unsplash.com/photo-1616422285623-146698dc96a5?q=80&w=1080&auto=format&fit=crop",
             generation_prompt_used=f"Refined Analog Prompt based on: {proposal.generation_prompt}",
@@ -39,4 +33,4 @@ class ImageAgent:
             metadata={"engine": "fallback", "style": "analog"}
         )
         
-        return self.adapter.invoke(messages, ImageAsset, fallback)
+        return self.adapter.invoke(self.system_prompt, human_msg, ImageAsset, fallback)

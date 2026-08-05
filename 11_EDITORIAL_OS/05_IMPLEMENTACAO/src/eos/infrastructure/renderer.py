@@ -46,6 +46,11 @@ class PlaywrightRenderer:
                 page.wait_for_load_state("networkidle")
                 
             page.screenshot(path=output_path, type="png")
+            # Save HTML next to PNG for debugging
+            html_path = output_path.replace(".png", ".html")
+            with open(html_path, "w", encoding="utf-8") as f:
+                f.write(html_content)
+                
             browser.close()
             
             # Limpeza do arquivo temporário

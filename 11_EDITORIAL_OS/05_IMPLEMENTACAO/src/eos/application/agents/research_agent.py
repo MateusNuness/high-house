@@ -1,4 +1,3 @@
-from langchain_core.messages import SystemMessage, HumanMessage
 from eos.domain.contracts.editorial_brief import EditorialBrief
 from eos.domain.contracts.research_report import ResearchReport
 from eos.infrastructure.llm_router import AgentRole
@@ -28,11 +27,6 @@ class ResearchAgent:
         Constraints: {', '.join(brief.constraints) if brief.constraints else 'None'}
         """
         
-        messages = [
-            SystemMessage(content=self.system_prompt),
-            HumanMessage(content=human_msg)
-        ]
-        
         fallback = ResearchReport(
             sources=["Falha no parser ou mock"],
             cultural_hypotheses=["O agente não retornou JSON válido"],
@@ -40,4 +34,4 @@ class ResearchAgent:
             confidence_score=0.0
         )
         
-        return self.adapter.invoke(messages, ResearchReport, fallback)
+        return self.adapter.invoke(self.system_prompt, human_msg, ResearchReport, fallback)

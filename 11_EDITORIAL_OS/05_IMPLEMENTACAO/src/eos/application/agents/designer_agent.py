@@ -1,5 +1,4 @@
 import json
-from langchain_core.messages import SystemMessage, HumanMessage
 from eos.domain.contracts.creative_direction import CreativeDirection
 from eos.domain.contracts.visual_proposal import VisualProposal
 from eos.infrastructure.llm_router import AgentRole
@@ -32,11 +31,6 @@ class DesignerAgent:
         Retorne estritamente um JSON correspondente ao contrato VisualProposal.
         """
         
-        messages = [
-            SystemMessage(content=self.system_prompt),
-            HumanMessage(content=human_msg)
-        ]
-        
         fallback = VisualProposal(
             grid_structure="Asymmetric grid with heavy negative space",
             visual_elements=["High contrast text blocks", "Monochrome borders"],
@@ -46,4 +40,4 @@ class DesignerAgent:
             implementation_notes="Ensure 10vw padding on left side. Horror ao preenchimento."
         )
         
-        return self.adapter.invoke(messages, VisualProposal, fallback)
+        return self.adapter.invoke(self.system_prompt, human_msg, VisualProposal, fallback)

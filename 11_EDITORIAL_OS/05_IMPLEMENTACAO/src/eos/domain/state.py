@@ -1,4 +1,5 @@
 from typing import TypedDict, Optional
+from eos.domain.collection_history import CollectionHistory
 from .contracts import (
     EditorialBrief,
     ResearchReport,
@@ -20,7 +21,7 @@ class GlobalState(TypedDict):
     audit_events: list[dict]
     errors: list[str]
     revision_count: int  # Contador de loops Designer ↔ Guardian (workflow, não domínio)
-    previous_posters: list[dict]
+    history: CollectionHistory
     
     # Artifacts as separated states
     brief: Optional[EditorialBrief]

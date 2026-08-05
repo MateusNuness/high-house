@@ -4,9 +4,9 @@
 
 **Blocked by:** 01 — Accumulator Core & Orchestration
 
-**Status:** ready-for-agent
+**Status:** done
 
-- [ ] `IEditorialAgent` run signature accepts an optional `previous_posters` list.
-- [ ] `EditorialWorkflow` extracts `previous_posters` from the state and passes it to the `EditorialAgent`.
-- [ ] `EditorialAgent` LLM prompt uses the history to generate text that maintains continuity.
-- [ ] The generated poster text reflects awareness of the narrative established in prior loops.
+- [x] `IEditorialAgent` run signature accepts an optional `previous_posters` list.
+- [x] `EditorialWorkflow` extracts `previous_posters` from the state and passes it to the `EditorialAgent`.
+- [x] `EditorialAgent` LLM prompt uses the history to generate text that maintains continuity.
+- [x] The generated poster text reflects awareness of the narrative established in prior loops.

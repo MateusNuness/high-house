@@ -1,10 +1,11 @@
 import json
 from typing import Any
-from langchain_core.messages import SystemMessage, HumanMessage
 from eos.domain.contracts.creative_direction import CreativeDirection
 from eos.infrastructure.llm_router import AgentRole
 from eos.infrastructure.context_loader import MarkdownContextLoader
 from eos.infrastructure.structured_llm_adapter import StructuredLLMAdapter
+from eos.domain.collection_history import CollectionHistory
+
 class ArtDirectorAgent:
     """
     Art Director Agent do EOS (EOS-006).
@@ -18,17 +19,13 @@ class ArtDirectorAgent:
         # Roteia para o modelo (usa o mesmo nível do Designer/Creation)
         self.adapter = StructuredLLMAdapter(AgentRole.CREATIVE)
         
-    def run(self, direction: CreativeDirection, previous_posters: list[dict[str, Any]] | None = None) -> CreativeDirection:
+    def run(self, direction: CreativeDirection, history: CollectionHistory | None = None) -> CreativeDirection:
         """
         Analisa a intenção editorial e define as restrições visuais, buscando contraste estético.
         """
         contrast_context = ""
-        if previous_posters:
-            contrast_context = "\nHistórico Visual da Coleção (Pôsteres já gerados):\n"
-            for i, p in enumerate(previous_posters):
-                contrast_context += f"Pôster {i+1} - Tópico: {p.get('topic')}\n"
-                contrast_context += f"Aesthetic Mood: {p.get('aesthetic_mood')}\n\n"
-            contrast_context += "Instrução: Analise o 'Aesthetic Mood' dos pôsteres anteriores e crie uma nova atmosfera visual que garanta **contraste deliberado** (ex: se o anterior foi clean/minimalista, este pode ser mais brutalista, ruidoso ou com luz mais dramática). O objetivo é não repetir a mesma estética consecutivamente."
+        if history:
+            contrast_context = history.get_contrast_context()
 
         human_msg = (
             f"Core Concept: {direction.core_concept}\n"
@@ -39,11 +36,6 @@ class ArtDirectorAgent:
             f"{contrast_context}"
         )
         
-        messages = [
-            SystemMessage(content=self.system_prompt),
-            HumanMessage(content=human_msg)
-        ]
-        
         fallback = CreativeDirection(
             core_concept=direction.core_concept,
             editorial_intent=direction.editorial_intent,
@@ -51,7 +43,7 @@ class ArtDirectorAgent:
             references=direction.references if direction.references else ["Fotografia documental preto e branco, brutalismo paulista"]
         )
         
-        response = self.adapter.invoke(messages, CreativeDirection, fallback)
+        response = self.adapter.invoke(self.system_prompt, human_msg, CreativeDirection, fallback)
         
         # Mantém as definições editoriais originais caso o LLM omita
         if not response.core_concept:

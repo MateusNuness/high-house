@@ -1,10 +1,10 @@
 import json
-from langchain_core.messages import SystemMessage, HumanMessage
 from eos.domain.contracts.research_report import ResearchReport
 from eos.domain.contracts.creative_direction import CreativeDirection
 from eos.infrastructure.llm_router import AgentRole
 from eos.infrastructure.context_loader import MarkdownContextLoader
 from eos.infrastructure.structured_llm_adapter import StructuredLLMAdapter
+from eos.domain.collection_history import CollectionHistory
 
 class EditorialAgent:
     """
@@ -19,18 +19,13 @@ class EditorialAgent:
         # Roteia para o modelo do papel EDITORIAL
         self.adapter = StructuredLLMAdapter(AgentRole.EDITORIAL)
         
-    def run(self, report: ResearchReport, previous_posters: list[dict] | None = None) -> CreativeDirection:
+    def run(self, report: ResearchReport, history: CollectionHistory | None = None) -> CreativeDirection:
         """
         Executa a síntese editorial com base no relatório de pesquisa e retorna a direção criativa estruturada.
         """
         history_context = ""
-        if previous_posters:
-            history_context = "\nContexto Narrativo Anterior da Coleção (Pôsteres já gerados):\n"
-            for i, p in enumerate(previous_posters):
-                history_context += f"Pôster {i+1} - Tópico: {p.get('topic')}\n"
-                history_context += f"Caption: {p.get('caption')}\n"
-                history_context += f"Core Concept: {p.get('core_concept')}\n\n"
-            history_context += "Instrução: Considere o contexto narrativo acima para garantir continuidade. A caption deste novo pôster deve soar como o próximo capítulo ou continuação natural, mantendo coesão e progressão em relação aos pôsteres anteriores."
+        if history:
+            history_context = history.get_narrative_context()
 
         human_msg = f"""
         Research Sources: {', '.join(report.sources) if report.sources else 'None'}
@@ -40,11 +35,6 @@ class EditorialAgent:
         {history_context}
         """
         
-        messages = [
-            SystemMessage(content=self.system_prompt),
-            HumanMessage(content=human_msg)
-        ]
-        
         primary_finding = report.key_findings[0] if report.key_findings else "Expressão urbana underground"
         fallback = CreativeDirection(
             core_concept=f"Intervenção e sofisticação silenciosa: {primary_finding}",
@@ -53,4 +43,4 @@ class EditorialAgent:
             references=report.sources if report.sources else ["https://highhouse.estudio/editorial-manifesto"]
         )
         
-        return self.adapter.invoke(messages, CreativeDirection, fallback)
+        return self.adapter.invoke(self.system_prompt, human_msg, CreativeDirection, fallback)
